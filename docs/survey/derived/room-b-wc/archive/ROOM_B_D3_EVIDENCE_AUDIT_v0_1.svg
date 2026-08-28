@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Room B D3 evidence audit v0.1</title><desc id="desc">FIELD SHEET — casing, return and finished-wall datums; schematic, not to scale</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker>
+    <style>
+      .title{font:700 31px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#475569}.h{font:700 20px Arial,sans-serif;fill:#0f172a}.t{font:15px Arial,sans-serif;fill:#1e293b}.small{font:13px Arial,sans-serif;fill:#334155}.tiny{font:11px Arial,sans-serif;fill:#475569}.wall{stroke:#1e3a8a;stroke-width:9;fill:none;stroke-linecap:round;stroke-linejoin:round}.tile{stroke:#0f766e;stroke-width:11;fill:none;stroke-linecap:round}.opening{stroke:#c2410c;stroke-width:7;fill:none;stroke-dasharray:12 9}.assembly{stroke:#7c3aed;stroke-width:4;fill:none;stroke-dasharray:8 7}.dim{stroke:#475569;stroke-width:2;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.diag{stroke:#64748b;stroke-width:2;fill:none;stroke-dasharray:7 7}.suspect{stroke:#dc2626;stroke-width:3;fill:none;stroke-dasharray:9 7}.node{fill:#fff;stroke:#1d4ed8;stroke-width:4}.mixed{fill:#fff;stroke:#7c3aed;stroke-width:5}.wc{fill:#fff;stroke:#047857;stroke-width:4}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:2}.bad{fill:#fef2f2;stroke:#dc2626;stroke-width:2}.good{fill:#f0fdf4;stroke:#16a34a;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc"/><text x="55" y="58" class="title">Room B D3 evidence audit v0.1</text><text x="55" y="88" class="sub">FIELD SHEET — casing, return and finished-wall datums; schematic, not to scale</text>
+  <rect x="55" y="115" width="1490" height="825" rx="14" class="box"/>
+  <path d="M 150 250 L 650 250" class="opening"/><path d="M 650 250 L 650 440 L 1280 440" class="wall"/><path d="M 150 250 L 150 820" class="wall"/>
+  <circle cx="150" cy="250" r="10" class="mixed"/><circle cx="650" cy="250" r="10" class="mixed"/><circle cx="650" cy="440" r="10" class="node"/><circle cx="1280" cy="440" r="10" class="mixed"/><circle cx="150" cy="820" r="10" class="node"/>
+  <text x="105" y="225" class="h">B0 / D3-BL</text><text x="605" y="225" class="h">D3-BR</text><text x="610" y="480" class="h">B0.5</text><text x="1180" y="480" class="h">B1 / D5-BL</text><text x="105" y="855" class="h">B4</text>
+  <text x="400" y="205" class="t" text-anchor="middle">D3 outer casing/opening span — derived 857.05 mm — no wall</text><text x="690" y="350" class="t">BASE-B-02 — 249 mm real return</text><text x="965" y="410" class="t" text-anchor="middle">BASE-B-03 — 823 mm finished plaster wall</text>
+  <path d="M 230 280 L 230 335 L 275 335" fill="none" stroke="#c2410c" stroke-width="5"/><path d="M 570 280 L 570 335 L 525 335" fill="none" stroke="#c2410c" stroke-width="5"/>
+  <text x="180" y="375" class="small">80 mm along casing</text><text x="180" y="397" class="small">+ 105 mm inward to door face</text><text x="470" y="375" class="small">65 mm along casing</text><text x="470" y="397" class="small">+ 105 mm inward</text>
+  <path d="M 150 250 L 650 440" class="diag"/><text x="390" y="320" class="small" text-anchor="middle">SUP-065 — B0→B0.5 — 888 mm</text>
+  <path d="M 650 250 L 450 820" class="suspect"/><text x="505" y="590" class="small" text-anchor="middle" transform="rotate(-70 505 590)">SUP-080 — D3-BR→marked back-wall landing — 2217 mm — repeat</text>
+  <rect x="820" y="560" width="650" height="300" rx="12" class="warn"/><text x="850" y="600" class="h">Physical-layer question to resolve in the flat</text>
+  <text x="850" y="637" class="t">B0 and D3-BR are photographed at outer casing/wall junctions.</text>
+<text x="850" y="663" class="t">D3 also contains approximately 105 mm inward steps to the door face.</text>
+<text x="850" y="689" class="t">The unexplained Room B depth error is approximately 80–140 mm.</text>
+<text x="850" y="715" class="t">That similarity makes a casing/reveal/door-face datum swap plausible,</text>
+<text x="850" y="741" class="t">but no raw record proves that such a swap occurred.</text>
+<text x="850" y="767" class="t"></text>
+<text x="850" y="793" class="t">Mark: outer casing face, finished wall face, reveal and door face.</text>
+<text x="850" y="819" class="t">Repeat priorities 1, 3 and 4 at the same recorded height.</text>
+  <text x="80" y="970" class="small" fill="#b91c1c">Do not move B0, D3-BR or B0.5 from this sheet. It is an endpoint-identification audit only.</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-400 -4580 10200 7600" role="img" aria-labelledby="title desc">
+  <title id="title">Whole-flat final 2D review candidate v1.1</title>
+  <desc id="desc">Human-review-only whole-flat 2D candidate. Permanent Room C host wall restored, door layers standardised, Room A rigidly rotated about the D2 anchor. Not construction locked.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker></defs>
+  <style>
+    .bg{fill:#f8fafc}.roomA{fill:#fff7ed}.roomC{fill:#eff6ff}.roomB{fill:#ecfdf5}.wc{fill:#f0fdfa}
+    .partitionFill{fill:#f3e8ff;fill-opacity:.55}.partitionEdge{fill:none;stroke:#a855f7;stroke-width:15;stroke-dasharray:32 18}
+    .cup{fill:#fef3c7;stroke:#a16207;stroke-width:18}.wallA,.wallC,.wallB,.wallWC{fill:none;stroke-width:38;stroke-linecap:round}
+    .wallA{stroke:#c2410c}.wallC{stroke:#1e3a8a}.wallB{stroke:#047857}.wallWC{stroke:#0f766e}.window{fill:none;stroke:#0284c7;stroke-width:38;stroke-linecap:round}
+    .opening{fill:none;stroke:#a21caf;stroke-width:24;stroke-linecap:round}.casing{fill:none;stroke:#d97706;stroke-width:30;stroke-linecap:round}
+    .reveal{fill:none;stroke:#0891b2;stroke-width:14;stroke-linecap:round}.leaf{fill:none;stroke:#111827;stroke-width:18;stroke-linecap:round}
+    .swing,.swingOpen,.swingArc{fill:none;stroke:#b91c1c;stroke-width:13;stroke-dasharray:25 16}.swingOpen{stroke-width:11}.roomLabel{font:bold 120px Arial;fill:#17324d}.title{font:bold 62px Arial;fill:#9f1239}
+    .label{font:62px Arial;fill:#17324d}.objectLabel{font:bold 55px Arial;fill:#7c2d12}.small{font:47px Arial;fill:#334155}.swingLabel{font:bold 44px Arial;fill:#991b1b}
+    .legend{font:48px Arial;fill:#334155}.priorRoomA{fill:none;stroke:#94a3b8;stroke-width:18;stroke-dasharray:45 25}.move{stroke:#e11d48;stroke-width:11}
+    .validationBefore{stroke:#94a3b8;stroke-width:12;stroke-dasharray:30 20}.validationAfter{stroke:#dc2626;stroke-width:13;stroke-dasharray:30 20}.diagnosticText{font:bold 40px Arial;fill:#7f1d1d}
+  </style>
+  <rect x="-400" y="-4580" width="10200" height="7600" class="bg"/>
+  <polygon points="0,0 54.99,-3690.92 4223.33,-3690.92 4168.34,0" class="roomC"/>
+  <polygon points="4432.645,-4166.9873 5733.2641,-4165.4314 5732.9117,-3870.9017 7687.9103,-3868.563 7681.7882,-4134.3306 8971.9705,-4135.4771 8971.942,134.9958 4432.6987,134.9958" class="roomA"/>
+  <polygon points="3309.78,103.859 4161.901,103.859 4161.901,239.859 4979.843,239.859 4979.843,1115.525 4979.843,2324.976 3309.78,2324.976" class="roomB"/><polygon points="5100.347,232.783 6763.035,232.783 6763.035,1307.584 5100.347,1307.584 5100.347,1133.675" class="wc"/>
+  <polygon points="1605.69,-3690.92 1570.95,-1359.61 4188.6,-1359.61 4190.53,-1489.16 1696.53,-1489.16 1729.33,-3690.92" class="partitionFill"/>
+  <polyline points="1605.69,-3690.92 1570.95,-1359.61 4188.6,-1359.61 4190.53,-1489.16 1696.53,-1489.16 1729.33,-3690.92 1605.69,-3690.92" class="partitionEdge"/>
+  
+  <line x1="0" y1="0" x2="54.99" y2="-3690.92" class="wallC" /><line x1="54.99" y1="-3690.92" x2="3468.33" y2="-3690.92" class="wallC" /><line x1="4223.33" y1="-3690.92" x2="4168.34" y2="0" class="wallC" />
+  <polygon points="54.99,-3690.92 1339.99,-3690.92 1347.71,-4208.86 62.71,-4208.86" class="cup"/>
+  <polygon points="3488.33,-3690.92 4196.33,-3690.92 4204.32,-4226.86 3496.32,-4226.86" class="cup"/>
+  <polygon points="3468.33,-3690.92 3488.33,-3690.92 3496.32,-4226.86 3476.32,-4226.86" class="cup"/>
+  <line x1="0" y1="0" x2="330" y2="0" class="wallC" /><line x1="330" y1="0" x2="327.54" y2="164.98" class="wallC" /><line x1="327.54" y1="164.98" x2="1596.54" y2="164.98" class="window" /><line x1="1596.54" y1="164.98" x2="1599" y2="0" class="wallC" />
+  <line x1="1599" y1="0" x2="2147" y2="0" class="wallC" /><line x1="3067" y1="0" x2="3283.34" y2="0" class="wallC" />
+  <line x1="4432.645" y1="-4166.9873" x2="5733.2641" y2="-4165.4314" class="wallA" /><line x1="5733.2641" y1="-4165.4314" x2="5732.9117" y2="-3870.9017" class="wallA" /><line x1="5732.9117" y1="-3870.9017" x2="7687.9103" y2="-3868.563" class="wallA" /><line x1="7687.9103" y1="-3868.563" x2="7681.7882" y2="-4134.3306" class="wallA" /><line x1="7681.7882" y1="-4134.3306" x2="8971.9705" y2="-4135.4771" class="wallA" />
+  <line x1="8971.9705" y1="-4135.4771" x2="8971.9671" y2="-2728.2661" class="wallA" /><line x1="8971.9671" y1="-2728.2661" x2="8971.9501" y2="-1292.9052" class="window" /><line x1="8971.9501" y1="-1292.9052" x2="8971.942" y2="134.9958" class="wallA" />
+  <line x1="8971.942" y1="134.9958" x2="8444.8216" y2="134.9952" class="wallA" /><line x1="7255.0007" y1="134.992" x2="4432.6987" y2="134.9958" class="wallA" /><line x1="4432.6987" y1="134.9958" x2="4432.6966" y2="-415.0046" class="wallA" /><line x1="4432.6834" y1="-1507.3454" x2="4432.645" y2="-4166.9873" class="wallA" />
+  <line x1="4161.901" y1="103.859" x2="4161.901" y2="239.859" class="wallB" /><line x1="4161.901" y1="239.859" x2="4979.843" y2="239.859" class="wallB" /><line x1="4979.843" y1="1115.525" x2="4979.843" y2="2324.976" class="wallB" /><line x1="4979.843" y1="2324.976" x2="3309.78" y2="2324.976" class="wallB" /><line x1="3309.78" y1="2324.976" x2="3309.78" y2="103.859" class="wallB" />
+  <line x1="5100.347" y1="232.783" x2="6763.035" y2="232.783" class="wallWC" /><line x1="6763.035" y1="232.783" x2="6763.035" y2="1307.584" class="wallWC" /><line x1="6763.035" y1="1307.584" x2="5100.347" y2="1307.584" class="wallWC" /><line x1="5100.347" y1="1307.584" x2="5100.347" y2="1133.675" class="wallWC" />
+  <!-- D1: measured casing/clear widths, schematic lateral leaf placement; no hinge invented. -->
+  <line x1="8444.8216" y1="134.9952" x2="7255.0007" y2="134.992" class="opening" /><line x1="7247.9112" y1="103.992" x2="8451.9112" y2="103.9952" class="casing" /><line x1="7459.4112" y1="134.9925" x2="8240.4111" y2="134.9947" class="leaf" />
+  <line x1="7849.9111" y1="134.9936" x2="7849.9119" y2="-165.0064" class="swing" marker-end="url(#arrow)"/><text x="7884.9119" y="-180.0064" class="swingLabel">to A</text>
+  <!-- D2: separate C opening, A opening/casing, reveal and fixed closing-plane leaf. -->
+  <line x1="4176.98" y1="-579.94" x2="4188.45" y2="-1349.85" class="opening" />
+  <line x1="4426.95" y1="-576.22" x2="4438.43" y2="-1346.13" class="opening" />
+  <line x1="4432.6967" y1="-413.175" x2="4432.6833" y2="-1509.175" class="casing" />
+  <line x1="4176.98" y1="-579.94" x2="4426.95" y2="-576.22" class="reveal" />
+  <line x1="4188.45" y1="-1349.85" x2="4438.43" y2="-1346.13" class="reveal" />
+  <line x1="4427.16" y1="-590.22" x2="4438.21" y2="-1332.14" class="leaf" /><line x1="4432.685" y1="-961.18" x2="4752.685" y2="-961.18" class="swing" marker-end="url(#arrow)"/><text x="4777.685" y="-976.18" class="swingLabel">to A</text>
+  <!-- D3: both casing faces, derived B reveal face and accepted C leaf. -->
+  <line x1="3283.34" y1="0" x2="4168.34" y2="0" class="casing" /><line x1="3309.78" y1="103.859" x2="4161.901" y2="103.859" class="casing" />
+  <line x1="3389.78" y1="103.859" x2="3374.34" y2="0" class="reveal" /><line x1="4096.901" y1="103.859" x2="4112.34" y2="0" class="reveal" />
+  <line x1="3363.34" y1="0" x2="4123.34" y2="0" class="leaf" /><line x1="4123.34" y1="0" x2="4123.34" y2="-760" class="swingOpen" />
+  <path d="M 3363.34 0 A 760 760 0 0 1 4123.34 -760" class="swingArc" marker-end="url(#arrow)"/>
+  <text x="4148.34" y="-775" class="swingLabel">into C</text>
+  <!-- D4: accepted casing and leaf; structural reveal and hinge remain unknown. -->
+  <line x1="2147" y1="0" x2="3067" y2="0" class="casing" /><line x1="2227" y1="0" x2="2987" y2="0" class="leaf" /><line x1="2607" y1="0" x2="2607" y2="-300" class="swing" marker-end="url(#arrow)"/><text x="2632" y="-320" class="swingLabel">to C</text>
+  <!-- D5: one opening, two casing faces, measured/derived reveal layers and one shared leaf. -->
+  <line x1="4979.843" y1="239.859" x2="4979.843" y2="1115.525" class="casing" /><line x1="5100.347" y1="1133.675" x2="5100.347" y2="232.783" class="casing" />
+  <line x1="4979.844" y1="298.866" x2="5059.84" y2="298.868" class="reveal" /><line x1="4979.844" y1="1035.519" x2="5076.841" y2="1035.525" class="reveal" />
+  <line x1="5100.347" y1="295.778" x2="5059.726" y2="293.826" class="reveal" /><line x1="5100.347" y1="1052.678" x2="5077.285" y2="1054.623" class="reveal" />
+  <line x1="5059.726" y1="293.826" x2="5077.285" y2="1054.623" class="leaf" /><line x1="5059.726" y1="293.826" x2="5820.726" y2="293.826" class="swingOpen" />
+  <path d="M 5077.285 1054.623 A 761 761 0 0 0 5820.726 293.826" class="swingArc" marker-end="url(#arrow)"/>
+  <text x="5845.726" y="278.826" class="swingLabel">into WC</text>
+  <text x="160" y="-4410" class="title">WHOLE-FLAT FINAL 2D REVIEW CANDIDATE v1.1</text>
+  <text x="430" y="-1850" class="roomLabel">ROOM C</text><text x="6400" y="-2200" class="roomLabel">ROOM A</text><text x="3500" y="1700" class="roomLabel">ROOM B</text><text x="5700" y="800" class="roomLabel">WC</text>
+  <text x="521.35" y="-3949.89" class="small">CP1 / C1</text><text x="3686.325" y="-3958.89" class="small">CP2 / C2</text>
+  <text x="1450" y="-3570" class="small">continuous permanent host wall restored</text><text x="1760" y="-1700" class="small">removable partition - geometry unchanged</text>
+  <text x="9006.9586" y="-2010.5856" class="objectLabel">W1</text><text x="962.04" y="244.98" class="objectLabel">W2</text>
+  <text x="7814.9111" y="229.9936" class="objectLabel">D1</text><text x="4322.685" y="-961.18" class="objectLabel">D2</text><text x="3708.34" y="95" class="objectLabel">D3</text><text x="2572" y="95" class="objectLabel">D4</text><text x="4943.501" y="674.23" class="objectLabel">D5</text>
+  <text x="4206.901" y="171.859" class="small">136 mm return</text>
+  <g transform="translate(180 2860)"><text class="legend"><tspan fill="#a21caf">magenta opening</tspan><tspan dx="55" fill="#d97706">ochre casing</tspan><tspan dx="55" fill="#0891b2">cyan reveal</tspan><tspan dx="55" fill="#111827">black leaf</tspan><tspan dx="55" fill="#b91c1c">dashed arrow = confirmed destination only</tspan></text></g>
+  <text x="5750" y="2860" class="small">D3/D5 arcs photo-supported; D1/D2/D4 hinge sides unresolved. HUMAN REVIEW REQUIRED.</text>
+  </svg>

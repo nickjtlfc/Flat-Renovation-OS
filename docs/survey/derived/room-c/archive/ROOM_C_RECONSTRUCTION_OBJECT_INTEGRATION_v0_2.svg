@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1450" viewBox="0 0 1800 1450" role="img" aria-labelledby="title desc">
+  <title id="title">Room C object-layer integration v0.2</title>
+  <desc id="desc">Accepted first-pass Room C shell and thick stud partition with measured CP1, CP2, D2, D3, D4 and W2 object layers. Shell unchanged. Human review only.</desc>
+  <defs><style>
+    .page{fill:#fff;stroke:#0f172a;stroke-width:3}.panel{fill:#f8fafc;stroke:#94a3b8;stroke-width:2}.head{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:19px Arial,sans-serif;fill:#334155}.warn{font:700 18px Arial,sans-serif;fill:#9f1239}.wall{stroke:#1e293b;stroke-width:9;stroke-linecap:square}.structFace{stroke:#b91c1c;stroke-width:8}.wallBand{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.openingCut{fill:#fff;stroke:#0f766e;stroke-width:3}.opening{stroke:#0f766e;stroke-width:13}.leaf{stroke:#166534;stroke-width:8}.casing{stroke:#d97706;stroke-width:16}.casingApprox{stroke:#d97706;stroke-width:16;stroke-dasharray:9 6}.window{stroke:#0284c7;stroke-width:11}.windowCasing{stroke:#d97706;stroke-width:20}.cupBody{fill:#fef3c7;stroke:#a16207;stroke-width:3}.cupDoor{fill:#fde68a;stroke:#a16207;stroke-width:2;stroke-dasharray:7 5}.cupCasing{fill:#fed7aa;stroke:#c2410c;stroke-width:2}.partition{fill:#e9d5ff;stroke:#7e22ce;stroke-width:4}.shellFill{fill:#eff6ff}.bedroomFill{fill:#faf5ff}.perm{fill:#fff;stroke:#0f172a;stroke-width:3}.objectNode{fill:#fffbeb;stroke:#d97706;stroke-width:3}.studNode{fill:#faf5ff;stroke:#7e22ce;stroke-width:3}.label{font:700 14px Arial,sans-serif;fill:#0f172a}.objectLabel{font:700 14px Arial,sans-serif;fill:#9a3412}.studLabel{font:700 14px Arial,sans-serif;fill:#7e22ce}.tiny{font:13px Arial,sans-serif;fill:#475569}.room{font:700 23px Arial,sans-serif;fill:#1e3a8a}.sideHead{font:700 22px Arial,sans-serif;fill:#0f172a}.side{font:16px Arial,sans-serif;fill:#1f2937}.sideSmall{font:14px Arial,sans-serif;fill:#334155}.callout{fill:#fff7ed;stroke:#d97706;stroke-width:2}.good{fill:#166534;font-weight:700}.bad{fill:#b91c1c;font-weight:700}.arrow{stroke:#166534;stroke-width:3;marker-end:url(#arrow)}
+  </style><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#166534"/></marker></defs>
+  <rect x="15" y="15" width="1770" height="1420" rx="12" class="page"/>
+  <text x="55" y="68" class="head">ROOM C SHELL + OBJECT LAYERS · v0.2</text>
+  <text x="55" y="103" class="sub">Accepted v0.1 shell retained · CP1 / CP2 / D2 / D3 / D4 / W2 integrated from 12 August object survey</text>
+  <text x="55" y="137" class="warn">HUMAN REVIEW ONLY — NO GLOBAL RECONCILIATION — NO RENOVATION DESIGN</text>
+  <rect x="42" y="170" width="1230" height="1215" rx="12" class="panel"/>
+  <rect x="1290" y="170" width="465" height="1215" rx="12" class="panel"/>
+
+  <polygon points="118.6,1164.8 130.3,381.7 1014.7,381.7 1003,1164.8" class="shellFill"/>
+  <polygon points="485.6,381.7 1014.7,381.7 1007.7,848.9 478.6,848.9" class="bedroomFill"/>
+  <polygon points="459.3,381.7 452,876.4 1007.3,876.4 1007.7,848.9 478.6,848.9 485.6,381.7" class="partition"/>
+
+  <polygon points="1014.7,381.7 1003,1164.8 1056.1,1165.6 1067.7,382.5" class="wallBand"/>
+  <polygon points="1007.3,878.4 1004.9,1041.8 1057.9,1042.6 1060.3,879.2" class="openingCut"/>
+  <line x1="118.6" y1="1164.8" x2="130.3" y2="381.7" class="wall"/><line x1="130.3" y1="381.7" x2="459.3" y2="381.7" class="wall"/><line x1="485.6" y1="381.7" x2="854.5" y2="381.7" class="wall"/><line x1="1014.7" y1="381.7" x2="1003" y2="1164.8" class="structFace"/>
+  <line x1="118.6" y1="1164.8" x2="188.7" y2="1164.8" class="wall"/><line x1="188.7" y1="1164.8" x2="188.1" y2="1199.8" class="wall"/><line x1="457.4" y1="1199.8" x2="457.9" y2="1164.8" class="wall"/><line x1="457.9" y1="1164.8" x2="574.2" y2="1164.8" class="wall"/>
+
+  <polygon points="130.3,381.7 402.9,381.7 404.6,271.9 132,271.9" class="cupBody"/>
+  <line x1="130.3" y1="381.7" x2="402.9" y2="381.7" class="cupDoor"/>
+  <polygon points="858.8,381.7 1009,381.7 1010.7,268 860.4,268" class="cupBody"/>
+  <polygon points="854.5,381.7 858.8,381.7 860.4,268 856.2,268" class="cupCasing"/>
+  <line x1="860.4" y1="268" x2="1010.7" y2="268" class="casingApprox"/>
+  <line x1="858.8" y1="381.7" x2="1009" y2="381.7" class="cupDoor"/>
+
+  <line x1="179.7" y1="1199.8" x2="465.9" y2="1199.8" class="windowCasing"/>
+  <line x1="188.1" y1="1199.8" x2="457.4" y2="1199.8" class="window"/>
+
+  <line x1="574.2" y1="1164.8" x2="769.4" y2="1164.8" class="casing"/><line x1="591.1" y1="1164.8" x2="752.4" y2="1164.8" class="leaf"/>
+  <line x1="769.4" y1="1164.8" x2="815.3" y2="1164.8" class="wall"/>
+  <line x1="815.3" y1="1164.8" x2="1003" y2="1164.8" class="casingApprox"/><line x1="832.2" y1="1164.8" x2="993.5" y2="1164.8" class="leaf"/>
+
+  <line x1="1007.3" y1="878.4" x2="1004.9" y2="1041.8" class="opening"/><line x1="1007.2" y1="881.4" x2="1004.9" y2="1038.8" class="leaf"/>
+  <line x1="1006.1" y1="960.1" x2="1046.4" y2="960.7" class="arrow"/>
+
+  <circle cx="118.6" cy="1164.8" r="7" class="perm"/><circle cx="188.7" cy="1164.8" r="7" class="perm"/><circle cx="457.9" cy="1164.8" r="7" class="perm"/><circle cx="1003" cy="1164.8" r="7" class="perm"/>
+  <path d="M130.3 374.7 L137.3 381.7 L130.3 388.7 L123.3 381.7 Z" class="objectNode"/><path d="M854.5 374.7 L861.5 381.7 L854.5 388.7 L847.5 381.7 Z" class="objectNode"/><path d="M1014.7 374.7 L1021.7 381.7 L1014.7 388.7 L1007.7 381.7 Z" class="objectNode"/><path d="M188.1 1192.8 L195.1 1199.8 L188.1 1206.8 L181.1 1199.8 Z" class="objectNode"/><path d="M457.4 1192.8 L464.4 1199.8 L457.4 1206.8 L450.4 1199.8 Z" class="objectNode"/><path d="M574.2 1157.8 L581.2 1164.8 L574.2 1171.8 L567.2 1164.8 Z" class="objectNode"/><path d="M1004.9 1034.8 L1011.9 1041.8 L1004.9 1048.8 L997.9 1041.8 Z" class="objectNode"/>
+  <rect x="453.3" y="375.7" width="12" height="12" class="studNode"/><rect x="446" y="870.4" width="12" height="12" class="studNode"/><rect x="1001.3" y="870.4" width="12" height="12" class="studNode"/><rect x="479.6" y="375.7" width="12" height="12" class="studNode"/><rect x="472.6" y="842.9" width="12" height="12" class="studNode"/><rect x="1001.7" y="842.9" width="12" height="12" class="studNode"/>
+  <path d="M402.9 374.7 L409.9 381.7 L402.9 388.7 L395.9 381.7 Z" class="objectNode"/><path d="M769.4 1157.8 L776.4 1164.8 L769.4 1171.8 L762.4 1164.8 Z" class="objectNode"/><path d="M815.3 1157.8 L822.3 1164.8 L815.3 1171.8 L808.3 1164.8 Z" class="objectNode"/>
+
+  <text x="108.6" y="1188.8" class="label" text-anchor="end">C0</text><text x="182.7" y="1150.8" class="label" text-anchor="end">C1</text><text x="464.9" y="1150.8" class="label" text-anchor="start">C2</text>
+  <text x="122.3" y="404.7" class="objectLabel" text-anchor="end">CP1-FL</text><text x="410.9" y="404.7" class="objectLabel" text-anchor="start">CP1-FR</text>
+  <text x="846.5" y="404.7" class="objectLabel" text-anchor="end">CP2-FL</text><text x="1006.7" y="404.7" class="objectLabel" text-anchor="end">CP2-FR outer ref</text>
+  <text x="181.1" y="1224.8" class="objectLabel" text-anchor="end">W2-CR</text><text x="464.4" y="1224.8" class="objectLabel" text-anchor="start">W2-CL</text>
+  <text x="567.2" y="1150.8" class="objectLabel" text-anchor="end">D4-CR</text><text x="762.4" y="1190.8" class="objectLabel" text-anchor="end">D4-CL</text>
+  <text x="822.3" y="1190.8" class="objectLabel" text-anchor="start">D3-CR</text><text x="995" y="1149.8" class="objectLabel" text-anchor="end">D3-CL · TURNING CORNER</text>
+  <text x="992.9" y="1046.8" class="objectLabel" text-anchor="end">D2-CR</text>
+  <text x="451.3" y="368.7" class="studLabel" text-anchor="end">PO1</text><text x="493.6" y="368.7" class="studLabel" text-anchor="start">PI1</text><text x="444" y="900.4" class="studLabel" text-anchor="end">PO2</text><text x="486.6" y="835.9" class="studLabel" text-anchor="start">PI2</text><text x="1015.3" y="900.4" class="studLabel" text-anchor="start">PO3</text><text x="1015.7" y="835.9" class="studLabel" text-anchor="start">PI3</text>
+
+  <text x="521.8" y="1016.3" class="room" text-anchor="middle">OPEN ROOM C</text>
+  <text x="755.1" y="581.4" class="room" text-anchor="middle">CURRENT BEDROOM</text>
+  <text x="755.1" y="604.4" class="tiny" text-anchor="middle">existing PO/PI stud partition retained</text>
+  <text x="1054.4" y="955.7" class="tiny">D2 opens into Room A</text>
+  <text x="990.1" y="980.1" class="tiny" text-anchor="end">250 mm wall depth</text>
+  <text x="990.1" y="999.1" class="tiny" text-anchor="end">770 opening · 742 leaf</text>
+
+  <rect x="72" y="1265" width="1150" height="92" rx="8" class="callout"/>
+  <text x="92" y="1293" class="side"><tspan font-weight="700">Shell unchanged:</tspan> every accepted v0.1 shell and PO/PI node movement = 0.00 mm.</text>
+  <text x="92" y="1321" class="side">Object stations replace v0.1 display/provisional points: CP1-FR 40.7 mm; D4-CL 18.33 mm; D3-CR 16.67 mm.</text>
+  <text x="92" y="1347" class="side">D3/D4 casing-derived gap = 216.34 mm versus RC-09 218 mm (residual -1.66 mm).</text>
+
+  <text x="1320" y="215" class="sideHead">Measured object layers</text>
+  <text x="1320" y="250" class="side"><tspan font-weight="700">CP1 body</tspan> 1285 × 518</text><text x="1320" y="274" class="sideSmall">suspended · no casing measured</text>
+  <text x="1320" y="310" class="side"><tspan font-weight="700">CP2 body</tspan> 708 × 536</text><text x="1320" y="334" class="sideSmall">~20 left casing + top casing separate</text>
+  <text x="1320" y="370" class="side"><tspan font-weight="700">D2</tspan> 250 wall · 770 opening · 742 leaf</text><text x="1320" y="394" class="sideSmall">leaf height 1975 · opens into Room A</text>
+  <text x="1320" y="430" class="side"><tspan font-weight="700">D3</tspan> leaf 760 × 1987</text><text x="1320" y="454" class="sideSmall">casing ~45 / ~80 / ~80 · opens into C</text>
+  <text x="1320" y="490" class="side"><tspan font-weight="700">D4</tspan> leaf 760 × 1987</text><text x="1320" y="514" class="sideSmall">casing 80 / 80 / 80 · opens into C</text>
+  <text x="1320" y="550" class="side"><tspan font-weight="700">W2 opening</tspan> 1269 × 1515</text><text x="1320" y="574" class="sideSmall">~40 casing · vertical offsets approximate</text>
+
+  <rect x="1310" y="610" width="425" height="210" rx="8" class="callout"/>
+  <text x="1330" y="644" class="sideHead">RC-19 remains unresolved</text>
+  <text x="1330" y="675" class="side">Baseline residual: <tspan class="bad">+111.17 mm</tspan></text>
+  <text x="1330" y="704" class="side">CP2 body + known left casing explains</text>
+  <text x="1330" y="729" class="side">part of the 755 mm footprint span, but</text>
+  <text x="1330" y="754" class="side">leaves 27 mm unallocated.</text>
+  <text x="1330" y="784" class="side">Body-edge alternative residual: <tspan class="bad">+105.02 mm</tspan></text>
+
+  <text x="1320" y="865" class="sideHead">Independent vertical evidence</text>
+  <text x="1320" y="898" class="side">D3 casing top → ceiling: <tspan font-weight="700">544 mm</tspan></text>
+  <text x="1320" y="926" class="side">D4 casing top → ceiling: <tspan font-weight="700">567 mm</tspan></text>
+  <text x="1320" y="954" class="side">Difference retained: <tspan font-weight="700">23 mm</tspan></text>
+  <text x="1320" y="982" class="sideSmall">Not averaged; no plan-coordinate effect.</text>
+
+  <text x="1320" y="1030" class="sideHead">Layer key</text>
+  <line x1="1320" y1="1060" x2="1350" y2="1060" class="wall"/><text x="1370" y="1066" class="side">permanent finished wall</text>
+  <rect x="1318" y="1082" width="34" height="18" class="wallBand"/><text x="1370" y="1097" class="side">250 mm structural wall band</text>
+  <line x1="1320" y1="1127" x2="1350" y2="1127" class="opening"/><text x="1370" y="1133" class="side">structural opening</text>
+  <line x1="1320" y1="1162" x2="1350" y2="1162" class="casing"/><text x="1370" y="1168" class="side">casing / architrave</text>
+  <line x1="1320" y1="1197" x2="1350" y2="1197" class="leaf"/><text x="1370" y="1203" class="side">leaf / window layer</text>
+  <rect x="1318" y="1220" width="34" height="20" class="cupBody"/><text x="1370" y="1236" class="side">cupboard body</text>
+  <rect x="1318" y="1254" width="34" height="20" class="cupCasing"/><text x="1370" y="1270" class="side">cupboard casing/joinery</text>
+  <text x="1320" y="1320" class="sideSmall">Plan orientation is a drawing gauge, not site north.</text>
+  <text x="1320" y="1347" class="sideSmall">Generated 2026-08-12 · data-driven successor script</text>
+</svg>

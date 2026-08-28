@@ -1,0 +1,1360 @@
+{
+  "documentType": "PROVISIONAL WHOLE-FLAT ARCHITECTURALLY CONSTRAINED RECONCILIATION",
+  "version": "0.1",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres unless stated otherwise",
+  "status": "PROVISIONAL WHOLE-FLAT ARCHITECTURALLY CONSTRAINED RECONCILIATION — HUMAN REVIEW REQUIRED",
+  "sources": {
+    "rigidGlobalBaseline": {
+      "relativePath": "docs/survey/derived/global-reconciliation/ROOM_A_C_B_WC_D3_RIGID_REGISTRATION_DIAGNOSTIC_v0_2.json",
+      "sha256": "D13C30AE9EFCC2FA9BF75DC0CF12AF09C62AA60058D76ED1EB1AB884F3893F37",
+      "frozenProvenance": true
+    },
+    "roomA": {
+      "relativePath": "docs/survey/derived/room-a/ROOM_A_RECONSTRUCTION_PILOT_v0_1.json",
+      "sha256": "91E6D48F3DBA7BDDC42A07CC4BD39E253974BECF1EB8B61FF895A401729F8C51",
+      "unchangedProvenance": true
+    },
+    "roomBWC": {
+      "relativePath": "docs/survey/derived/room-b-wc/ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1.json",
+      "sha256": "735EE4481219404B7E7C07A567CAE475C13CCC9AB3C34C40E29A7708363A3147",
+      "unchangedProvenance": true
+    },
+    "roomC": {
+      "relativePath": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+      "sha256": "4D36F1445E5AEBA95FAF6A1FE404E6BF81400CDDE67C22CB05386AF77A855C67",
+      "unchangedAndGloballyFixed": true
+    }
+  },
+  "constraintModel": {
+    "hardArchitectural": [
+      {
+        "id": "ARCH-A-A1-SQUARE",
+        "relation": "A0→A1 perpendicular to A1→A2",
+        "implementation": "A1 constrained to Thales circle with fixed A0/A2"
+      },
+      {
+        "id": "ARCH-B-D5-WALL-LINE",
+        "relation": "B1, B2 and B3 collinear; B1→B2 remains the D5 opening/casing, not wall"
+      },
+      {
+        "id": "ARCH-B-B3-SQUARE",
+        "relation": "B4→B3 perpendicular to B3→B2"
+      },
+      {
+        "id": "ARCH-WC-RECTANGLE",
+        "relation": "T0→T1→T2→T3 is rectangular"
+      },
+      {
+        "id": "ARCH-WC-D5-LINE",
+        "relation": "T3, D5-WCL and T0 collinear; T3→D5-WCL remains wall and D5-WCL→T0 remains D5 casing/opening"
+      },
+      {
+        "id": "TOPO-D3-RETURN",
+        "relation": "D3-BR→B0.5 preserved exactly as the accepted real return"
+      },
+      {
+        "id": "REGISTER-D2-D3",
+        "relation": "D2 and D3 interface nodes/layers unchanged"
+      }
+    ],
+    "softMeasured": {
+      "coordinateMovementSigmaMm": 10,
+      "roomAA1MovementSigmaMm": 8,
+      "distanceObservations": "accepted Room A and Room B/WC active distance observations with their recorded sigmas",
+      "validation3726SigmaMm": 40,
+      "validation9019Treatment": "validation only; its defining far walls and D2 line are outside adjusted nodes"
+    },
+    "deterministicMethod": "hard-constraint parameterisation plus finite-difference Levenberg-Marquardt; A1 uses one-dimensional bounded minimisation on its exact square-angle locus"
+  },
+  "topologyInterpretation": {
+    "chimneyAngle": "At A1, the adjacent sides are A0→A1 and A1→A2. A1→A2 is the return; A2→A3 is the following chimney-front segment and is not the corner being constrained in this pass.",
+    "b3SideStraightFamily": "B3→B2 is the permanent wall portion. The same underlying wall plane continues to B1 but is interrupted by the D5 casing/opening between B2 and B1. B1-B2-B3 are constrained collinear; no wall is drawn through D5.",
+    "wcStraightFamily": "T3→D5-WCL is permanent wall and D5-WCL→T0 is the WC-side D5 casing/opening on the same wall line. The layers remain typed separately."
+  },
+  "beforeAfter": {
+    "metrics": {
+      "before": {
+        "a1AngleDegrees": 88.123353,
+        "b3BackWallAngleDegrees": 89.401241,
+        "bD5WallCollinearityDeviationDegrees": 1.104724,
+        "wcD5KinkDeviationDegrees": 5.349038,
+        "validation9019ModelMm": 8957.13874,
+        "validation3726ModelMm": 3741.612579
+      },
+      "after": {
+        "a1AngleDegrees": 90,
+        "b3BackWallAngleDegrees": 90,
+        "bD5WallCollinearityDeviationDegrees": 0.000001,
+        "wcD5KinkDeviationDegrees": 0,
+        "validation9019ModelMm": 8957.13874,
+        "validation3726ModelMm": 3741.069821
+      }
+    },
+    "movements": {
+      "nodes": {
+        "A:A1": {
+          "deltaMm": {
+            "x": -9.1554,
+            "y": 0.0623
+          },
+          "magnitudeMm": 9.1556
+        },
+        "B:B2": {
+          "deltaMm": {
+            "x": 6.2415,
+            "y": 1.4057
+          },
+          "magnitudeMm": 6.3978
+        },
+        "B:B3": {
+          "deltaMm": {
+            "x": -7.9414,
+            "y": 0.4318
+          },
+          "magnitudeMm": 7.9531
+        },
+        "B:B4": {
+          "deltaMm": {
+            "x": -2.8061,
+            "y": -1.3442
+          },
+          "magnitudeMm": 3.1114
+        },
+        "B:B1": {
+          "deltaMm": {
+            "x": -0.4212,
+            "y": 1.3481
+          },
+          "magnitudeMm": 1.4124
+        },
+        "WC:T0": {
+          "deltaMm": {
+            "x": -22.8545,
+            "y": -5.7754
+          },
+          "magnitudeMm": 23.573
+        },
+        "WC:T1": {
+          "deltaMm": {
+            "x": -2.81,
+            "y": 9.3604
+          },
+          "magnitudeMm": 9.7731
+        },
+        "WC:D5-WCL": {
+          "deltaMm": {
+            "x": 21.8411,
+            "y": -4.6505
+          },
+          "magnitudeMm": 22.3307
+        },
+        "WC:T2": {
+          "deltaMm": {
+            "x": -7.6215,
+            "y": 5.877
+          },
+          "magnitudeMm": 9.6242
+        },
+        "WC:T3": {
+          "deltaMm": {
+            "x": 14.274,
+            "y": -3.7089
+          },
+          "magnitudeMm": 14.748
+        }
+      },
+      "maximum": {
+        "node": "WC:T0",
+        "magnitudeMm": 23.573
+      },
+      "rmsMovedNodesMm": 12.8828
+    },
+    "measurementSummary": {
+      "definition": "Unweighted RMS over comparable direct exact-endpoint distance observations: Room A accepted exact S3 distance set plus Room B/WC direct value observations excluding approximate/cross-tie classes. Ranges and global validations are reported separately.",
+      "count": 58,
+      "totalRmsBeforeMm": 5.0519,
+      "totalRmsAfterMm": 7.3104,
+      "worstBefore": {
+        "id": "SUP-069",
+        "residualMm": -15.8659
+      },
+      "worstAfter": {
+        "id": "BASE-WC-03",
+        "residualMm": -22.1695
+      },
+      "roomARmsBeforeMm": 5.0998,
+      "roomARmsAfterMm": 5.2952,
+      "roomBRmsBeforeMm": 5.9431,
+      "roomBRmsAfterMm": 9.9413,
+      "wcRmsBeforeMm": 1.3204,
+      "wcRmsAfterMm": 13.4586,
+      "affectedAreaResiduals": {
+        "roomAObservationsTouchingA1": [
+          {
+            "id": "BASE-A-01",
+            "beforeMm": -3.2319,
+            "afterMm": -12.3824,
+            "changeMm": -9.1505
+          },
+          {
+            "id": "BASE-A-02",
+            "beforeMm": -2.5806,
+            "afterMm": -3.0346,
+            "changeMm": -0.454
+          },
+          {
+            "id": "SUP-039",
+            "beforeMm": 7.5384,
+            "afterMm": 3.3019,
+            "changeMm": -4.2364
+          },
+          {
+            "id": "SUP-040",
+            "beforeMm": -1.5045,
+            "afterMm": -4.366,
+            "changeMm": -2.8616
+          },
+          {
+            "id": "SUP-039-R1",
+            "beforeMm": 5.5384,
+            "afterMm": 1.3019,
+            "changeMm": -4.2364
+          }
+        ],
+        "roomBAndWCChangedObservations": [
+          {
+            "id": "BASE-B-03",
+            "beforeMm": 0.4311,
+            "afterMm": 0.0132,
+            "changeMm": -0.4179
+          },
+          {
+            "id": "D5-B-CASING-WIDTH",
+            "beforeMm": 1.6663,
+            "afterMm": 1.347,
+            "changeMm": -0.3193
+          },
+          {
+            "id": "BASE-B-05",
+            "beforeMm": -0.9117,
+            "afterMm": -1.2189,
+            "changeMm": -0.3072
+          },
+          {
+            "id": "BASE-B-06",
+            "beforeMm": -1.5394,
+            "afterMm": -6.5751,
+            "changeMm": -5.0357
+          },
+          {
+            "id": "BASE-B-07",
+            "beforeMm": 32.4127,
+            "afterMm": 31.1886,
+            "changeMm": -1.2241
+          },
+          {
+            "id": "SUP-066",
+            "beforeMm": 15.2821,
+            "afterMm": 21.2149,
+            "changeMm": 5.9328
+          },
+          {
+            "id": "SUP-067",
+            "beforeMm": 48.1794,
+            "afterMm": 44.1221,
+            "changeMm": -4.0573
+          },
+          {
+            "id": "SUP-068",
+            "beforeMm": -15.7362,
+            "afterMm": -10.5511,
+            "changeMm": 5.1851
+          },
+          {
+            "id": "SUP-069",
+            "beforeMm": -15.8659,
+            "afterMm": -18.0312,
+            "changeMm": -2.1653
+          },
+          {
+            "id": "SUP-070",
+            "beforeMm": -2.8429,
+            "afterMm": -3.286,
+            "changeMm": -0.443
+          },
+          {
+            "id": "SUP-071",
+            "beforeMm": 4.8756,
+            "afterMm": 10.9223,
+            "changeMm": 6.0467
+          },
+          {
+            "id": "BASE-WC-01",
+            "beforeMm": -0.3077,
+            "afterMm": 19.8305,
+            "changeMm": 20.1382
+          },
+          {
+            "id": "BASE-WC-02",
+            "beforeMm": -0.359,
+            "afterMm": -3.8014,
+            "changeMm": -3.4424
+          },
+          {
+            "id": "BASE-WC-03",
+            "beforeMm": -0.3497,
+            "afterMm": -22.1695,
+            "changeMm": -21.8199
+          },
+          {
+            "id": "BASE-WC-04",
+            "beforeMm": -0.086,
+            "afterMm": 0.7716,
+            "changeMm": 0.8577
+          },
+          {
+            "id": "D5-WC-CASING-WIDTH",
+            "beforeMm": 2.8921,
+            "afterMm": 2.4269,
+            "changeMm": -0.4652
+          },
+          {
+            "id": "SUP-072",
+            "beforeMm": 1.4901,
+            "afterMm": 20.6231,
+            "changeMm": 19.1331
+          },
+          {
+            "id": "SUP-073",
+            "beforeMm": 31.0464,
+            "afterMm": 9.6231,
+            "changeMm": -21.4233
+          },
+          {
+            "id": "SUP-079",
+            "beforeMm": 0.6041,
+            "afterMm": -4.3724,
+            "changeMm": -4.9765
+          }
+        ]
+      }
+    },
+    "validationSpans": {
+      "span9019": {
+        "definition": "D2-normal line through the D2 A-face centre, intersecting the Room A A5-A6 far wall and Room C C0-CP1-FL outer wall",
+        "measuredMm": 9019,
+        "promptApproximateCurrentModelMm": 8965,
+        "exactModelBeforeMm": 8957.1387,
+        "exactModelAfterMm": 8957.1387,
+        "residualBeforeMm": -61.8613,
+        "residualAfterMm": -61.8613
+      },
+      "span3726": {
+        "definition": "D3-normal line through the D3 leaf centre, intersecting Room C outer stud face PO2-PO3 and Room B back wall B3-B4",
+        "measuredMm": 3726,
+        "promptApproximateCurrentModelMm": 3742,
+        "exactModelBeforeMm": 3741.6126,
+        "exactModelAfterMm": 3741.0698,
+        "residualBeforeMm": 15.6126,
+        "residualAfterMm": 15.0698
+      }
+    }
+  },
+  "compositionReview": {
+    "d3": "Underlying D3 geometry was already coherent: axes and shared leaf centres align. The visual defect came from omitting stepped inner-casing/reveal connectors in the global composition. The successor SVG renders the fixed C casing/leaf, fixed B outer and inner casing steps, reveal links and shared leaf plane separately.",
+    "d2RoomACasing": "Source geometry exists in the A/C v0.2 record. The A/C/B/WC v0.2 composition omitted the Room A measured outer-casing and clear-opening segments; they were not hidden or absent from source. Both layers are restored without coordinate change."
+  },
+  "humanReviewFlags": {
+    "wcWidthConflict": {
+      "status": "material local evidence tradeoff exposed; human acceptance required",
+      "measuredOpposingWidthsMm": {
+        "T0ToT1": 1643,
+        "T2ToT3": 1685,
+        "difference": 42
+      },
+      "constrainedCommonWidthMm": 1662.8305,
+      "reason": "An exact rectangle requires equal opposing widths. The two direct field baselines disagree by 42 mm, so no exact rectangular solution can retain both readings.",
+      "candidateMaximumMovementMm": 23.573,
+      "minimumChangeAlternativeNotApplied": "Remove only the artificial T3→D5-WCL→T0 kink by projecting D5-WCL onto the existing T3-T0 line (about 13.53 mm movement), while retaining the non-rectangular 42 mm opposing-width difference. This would not satisfy the requested rectangular WC constraint."
+    }
+  },
+  "geometry": {
+    "roomAFixedFrameNodesBeforeMm": {
+      "A2": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "A3": {
+        "x": 7730.93,
+        "y": -3819.6671
+      },
+      "A0": {
+        "x": 4480.48,
+        "y": -4166.6311
+      },
+      "A1": {
+        "x": 5792.794,
+        "y": -4132.1055
+      },
+      "A4": {
+        "x": 7728.7742,
+        "y": -4085.4964
+      },
+      "A5": {
+        "x": 9018.83,
+        "y": -4067.3916
+      },
+      "A6": {
+        "x": 8955.0803,
+        "y": 202.6055
+      },
+      "A7": {
+        "x": 4416.3424,
+        "y": 134.8739
+      },
+      "W1-AL": {
+        "x": 8997.8291,
+        "y": -2660.3373
+      },
+      "W1-AR": {
+        "x": 8976.3946,
+        "y": -1225.1364
+      },
+      "D1-AL": {
+        "x": 8428.0186,
+        "y": 194.7396
+      },
+      "D1-AR": {
+        "x": 7238.3302,
+        "y": 176.9826
+      },
+      "D2-AL": {
+        "x": 4424.547,
+        "y": -415.0653
+      },
+      "D2-AR": {
+        "x": 4440.833,
+        "y": -1507.2847
+      }
+    },
+    "roomAConstrainedNodesMm": {
+      "A2": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "A3": {
+        "x": 7730.93,
+        "y": -3819.6671
+      },
+      "A0": {
+        "x": 4480.48,
+        "y": -4166.6311
+      },
+      "A1": {
+        "x": 5783.6386,
+        "y": -4132.0432
+      },
+      "A4": {
+        "x": 7728.7742,
+        "y": -4085.4964
+      },
+      "A5": {
+        "x": 9018.83,
+        "y": -4067.3916
+      },
+      "A6": {
+        "x": 8955.0803,
+        "y": 202.6055
+      },
+      "A7": {
+        "x": 4416.3424,
+        "y": 134.8739
+      },
+      "W1-AL": {
+        "x": 8997.8291,
+        "y": -2660.3373
+      },
+      "W1-AR": {
+        "x": 8976.3946,
+        "y": -1225.1364
+      },
+      "D1-AL": {
+        "x": 8428.0186,
+        "y": 194.7396
+      },
+      "D1-AR": {
+        "x": 7238.3302,
+        "y": 176.9826
+      },
+      "D2-AL": {
+        "x": 4424.547,
+        "y": -415.0653
+      },
+      "D2-AR": {
+        "x": 4440.833,
+        "y": -1507.2847
+      }
+    },
+    "roomBWCBeforeMm": {
+      "B0": {
+        "x": 3307.32,
+        "y": 104.2
+      },
+      "D3-BR": {
+        "x": 4164.37,
+        "y": 104.2
+      },
+      "B2": {
+        "x": 4924.58,
+        "y": 1224.32
+      },
+      "B3": {
+        "x": 4874.56,
+        "y": 2440.38
+      },
+      "B4": {
+        "x": 3213.31,
+        "y": 2354.65
+      },
+      "B0.5": {
+        "x": 4154,
+        "y": 348.89
+      },
+      "B1": {
+        "x": 4977.43,
+        "y": 350.25
+      },
+      "T0": {
+        "x": 5098.14,
+        "y": 350.46
+      },
+      "T1": {
+        "x": 6740.83,
+        "y": 353.19
+      },
+      "D5-WCL": {
+        "x": 5043.77,
+        "y": 1249.71
+      },
+      "T2": {
+        "x": 6734.1,
+        "y": 1430.81
+      },
+      "T3": {
+        "x": 5049.47,
+        "y": 1422.53
+      }
+    },
+    "roomBWCConstrainedMm": {
+      "B0": {
+        "x": 3307.32,
+        "y": 104.2
+      },
+      "D3-BR": {
+        "x": 4164.37,
+        "y": 104.2
+      },
+      "B2": {
+        "x": 4930.8215,
+        "y": 1225.7257
+      },
+      "B3": {
+        "x": 4866.6186,
+        "y": 2440.8118
+      },
+      "B4": {
+        "x": 3210.5039,
+        "y": 2353.3058
+      },
+      "B0.5": {
+        "x": 4154,
+        "y": 348.89
+      },
+      "B1": {
+        "x": 4977.0088,
+        "y": 351.5981
+      },
+      "T0": {
+        "x": 5075.2855,
+        "y": 344.6846
+      },
+      "T1": {
+        "x": 6738.02,
+        "y": 362.5504
+      },
+      "D5-WCL": {
+        "x": 5065.6111,
+        "y": 1245.0595
+      },
+      "T2": {
+        "x": 6726.4785,
+        "y": 1436.687
+      },
+      "T3": {
+        "x": 5063.744,
+        "y": 1418.8211
+      }
+    },
+    "roomCUnchangedNodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "roomCUnchangedObjectNodesMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    },
+    "d2LayersUnchangedMm": {
+      "roomAClearOpeningSegmentMm": [
+        {
+          "x": 4426.9723,
+          "y": -577.7176
+        },
+        {
+          "x": 4438.4077,
+          "y": -1344.6324
+        }
+      ],
+      "roomAMeasuredCasingSegmentMm": [
+        {
+          "x": 4424.5198,
+          "y": -413.2359
+        },
+        {
+          "x": 4440.8602,
+          "y": -1509.1141
+        }
+      ],
+      "roomCStructuralOpeningAtRoomCFaceMm": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "roomCStructuralOpeningAtRoomAFaceMm": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "roomCLeafClosingPlaneMm": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ]
+    },
+    "d3LayersUnchangedMm": {
+      "outerLeft": {
+        "x": 3307.32,
+        "y": 104.2
+      },
+      "outerRight": {
+        "x": 4164.37,
+        "y": 104.2
+      },
+      "innerLeft": {
+        "x": 3387.32,
+        "y": 104.2
+      },
+      "innerRight": {
+        "x": 4099.37,
+        "y": 104.2
+      },
+      "doorLeft": {
+        "x": 3374.34,
+        "y": 0
+      },
+      "doorRight": {
+        "x": 4112.34,
+        "y": 0
+      },
+      "doorCentre": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "direction": {
+        "x": 3308.32,
+        "y": 104.2
+      },
+      "inward": {
+        "x": 3307.32,
+        "y": 103.2
+      }
+    }
+  },
+  "measurementResiduals": {
+    "roomA": [
+      {
+        "id": "BASE-A-01",
+        "beforeMm": -3.2319,
+        "afterMm": -12.3824,
+        "changeMm": -9.1505,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-02",
+        "beforeMm": -2.5806,
+        "afterMm": -3.0346,
+        "changeMm": -0.454,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-04",
+        "beforeMm": -2.162,
+        "afterMm": -2.162,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-05",
+        "beforeMm": -2.8172,
+        "afterMm": -2.8172,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-06",
+        "beforeMm": -2.789,
+        "afterMm": -2.789,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-07",
+        "beforeMm": -3.099,
+        "afterMm": -3.099,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-08",
+        "beforeMm": -1.8796,
+        "afterMm": -1.8796,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-09",
+        "beforeMm": -2.6981,
+        "afterMm": -2.6981,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-10",
+        "beforeMm": 0.0004,
+        "afterMm": 0.0004,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "BASE-A-11",
+        "beforeMm": -4.3581,
+        "afterMm": -4.3581,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-001",
+        "beforeMm": -4.4482,
+        "afterMm": -4.4482,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-002",
+        "beforeMm": 1.59,
+        "afterMm": 1.59,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-003",
+        "beforeMm": -3.377,
+        "afterMm": -3.377,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-004",
+        "beforeMm": -1.6833,
+        "afterMm": -1.6833,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-005",
+        "beforeMm": -3.4437,
+        "afterMm": -3.4437,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-006",
+        "beforeMm": 4.69,
+        "afterMm": 4.69,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-025",
+        "beforeMm": -6.4918,
+        "afterMm": -6.4918,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-026",
+        "beforeMm": -3.7118,
+        "afterMm": -3.7118,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-027",
+        "beforeMm": -1.5713,
+        "afterMm": -1.5713,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-028",
+        "beforeMm": -7.5192,
+        "afterMm": -7.5192,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-029",
+        "beforeMm": -2.1075,
+        "afterMm": -2.1075,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-030",
+        "beforeMm": 2.9308,
+        "afterMm": 2.9308,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-032",
+        "beforeMm": 8.2921,
+        "afterMm": 8.2921,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-033",
+        "beforeMm": 2.005,
+        "afterMm": 2.005,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-034",
+        "beforeMm": -5.0238,
+        "afterMm": -5.0238,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-035",
+        "beforeMm": 0.5518,
+        "afterMm": 0.5518,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-036",
+        "beforeMm": 1.8656,
+        "afterMm": 1.8656,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-037",
+        "beforeMm": 2.9808,
+        "afterMm": 2.9808,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-038",
+        "beforeMm": 12.1645,
+        "afterMm": 12.1645,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-039",
+        "beforeMm": 7.5384,
+        "afterMm": 3.3019,
+        "changeMm": -4.2364,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-040",
+        "beforeMm": -1.5045,
+        "afterMm": -4.366,
+        "changeMm": -2.8616,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-041",
+        "beforeMm": 4.8851,
+        "afterMm": 4.8851,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-042",
+        "beforeMm": 7.3292,
+        "afterMm": 7.3292,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-043",
+        "beforeMm": 8.2077,
+        "afterMm": 8.2077,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-044",
+        "beforeMm": 8.092,
+        "afterMm": 8.092,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-031",
+        "beforeMm": 4.424,
+        "afterMm": 4.424,
+        "changeMm": 0,
+        "quality": "approximate"
+      },
+      {
+        "id": "SUP-045",
+        "beforeMm": -1.4599,
+        "afterMm": -1.4599,
+        "changeMm": 0,
+        "quality": "approximate"
+      },
+      {
+        "id": "SUP-046",
+        "beforeMm": -10.7696,
+        "afterMm": -10.7696,
+        "changeMm": 0,
+        "quality": "approximate"
+      },
+      {
+        "id": "SUP-038-R1",
+        "beforeMm": 8.1645,
+        "afterMm": 8.1645,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-046-R1",
+        "beforeMm": -9.7696,
+        "afterMm": -9.7696,
+        "changeMm": 0,
+        "quality": "approximate"
+      },
+      {
+        "id": "SUP-032-R1",
+        "beforeMm": 7.2921,
+        "afterMm": 7.2921,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-039-R1",
+        "beforeMm": 5.5384,
+        "afterMm": 1.3019,
+        "changeMm": -4.2364,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-044-R1",
+        "beforeMm": 5.092,
+        "afterMm": 5.092,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-025-R1",
+        "beforeMm": -6.4918,
+        "afterMm": -6.4918,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-001-R1",
+        "beforeMm": -4.4482,
+        "afterMm": -4.4482,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-028-R1",
+        "beforeMm": -2.5192,
+        "afterMm": -2.5192,
+        "changeMm": 0,
+        "quality": "exact"
+      },
+      {
+        "id": "SUP-003-R1",
+        "beforeMm": -8.377,
+        "afterMm": -8.377,
+        "changeMm": 0,
+        "quality": "exact"
+      }
+    ],
+    "roomBWC": [
+      {
+        "id": "BASE-B-02",
+        "beforeMm": -4.0904,
+        "afterMm": -4.0904,
+        "changeMm": 0,
+        "category": "baseline"
+      },
+      {
+        "id": "BASE-B-03",
+        "beforeMm": 0.4311,
+        "afterMm": 0.0132,
+        "changeMm": -0.4179,
+        "category": "baseline"
+      },
+      {
+        "id": "D5-B-CASING-WIDTH",
+        "beforeMm": 1.6663,
+        "afterMm": 1.347,
+        "changeMm": -0.3193,
+        "category": "door-object"
+      },
+      {
+        "id": "BASE-B-05",
+        "beforeMm": -0.9117,
+        "afterMm": -1.2189,
+        "changeMm": -0.3072,
+        "category": "baseline"
+      },
+      {
+        "id": "BASE-B-06",
+        "beforeMm": -1.5394,
+        "afterMm": -6.5751,
+        "changeMm": -5.0357,
+        "category": "baseline-tile-face"
+      },
+      {
+        "id": "BASE-B-07",
+        "beforeMm": 32.4127,
+        "afterMm": 31.1886,
+        "changeMm": -1.2241,
+        "category": "approximate-range"
+      },
+      {
+        "id": "SUP-065",
+        "beforeMm": -6.6713,
+        "afterMm": -6.6713,
+        "changeMm": 0,
+        "category": "node-to-node"
+      },
+      {
+        "id": "SUP-066",
+        "beforeMm": 15.2821,
+        "afterMm": 21.2149,
+        "changeMm": 5.9328,
+        "category": "approximate"
+      },
+      {
+        "id": "SUP-067",
+        "beforeMm": 48.1794,
+        "afterMm": 44.1221,
+        "changeMm": -4.0573,
+        "category": "measured-range"
+      },
+      {
+        "id": "SUP-068",
+        "beforeMm": -15.7362,
+        "afterMm": -10.5511,
+        "changeMm": 5.1851,
+        "category": "measured-range"
+      },
+      {
+        "id": "SUP-069",
+        "beforeMm": -15.8659,
+        "afterMm": -18.0312,
+        "changeMm": -2.1653,
+        "category": "node-to-node"
+      },
+      {
+        "id": "SUP-070",
+        "beforeMm": -2.8429,
+        "afterMm": -3.286,
+        "changeMm": -0.443,
+        "category": "node-to-node"
+      },
+      {
+        "id": "SUP-071",
+        "beforeMm": 4.8756,
+        "afterMm": 10.9223,
+        "changeMm": 6.0467,
+        "category": "node-to-node"
+      },
+      {
+        "id": "BASE-WC-01",
+        "beforeMm": -0.3077,
+        "afterMm": 19.8305,
+        "changeMm": 20.1382,
+        "category": "baseline"
+      },
+      {
+        "id": "BASE-WC-02",
+        "beforeMm": -0.359,
+        "afterMm": -3.8014,
+        "changeMm": -3.4424,
+        "category": "baseline"
+      },
+      {
+        "id": "BASE-WC-03",
+        "beforeMm": -0.3497,
+        "afterMm": -22.1695,
+        "changeMm": -21.8199,
+        "category": "baseline"
+      },
+      {
+        "id": "BASE-WC-04",
+        "beforeMm": -0.086,
+        "afterMm": 0.7716,
+        "changeMm": 0.8577,
+        "category": "baseline"
+      },
+      {
+        "id": "D5-WC-CASING-WIDTH",
+        "beforeMm": 2.8921,
+        "afterMm": 2.4269,
+        "changeMm": -0.4652,
+        "category": "door-object"
+      },
+      {
+        "id": "SUP-072",
+        "beforeMm": 1.4901,
+        "afterMm": 20.6231,
+        "changeMm": 19.1331,
+        "category": "node-to-node"
+      },
+      {
+        "id": "SUP-073",
+        "beforeMm": 31.0464,
+        "afterMm": 9.6231,
+        "changeMm": -21.4233,
+        "category": "approximate"
+      },
+      {
+        "id": "SUP-079",
+        "beforeMm": 0.6041,
+        "afterMm": -4.3724,
+        "changeMm": -4.9765,
+        "category": "cross-tie"
+      }
+    ]
+  },
+  "preservation": {
+    "roomCMaximumNodeMovementMm": 0,
+    "d2RegistrationChanged": false,
+    "d3RegistrationChanged": false,
+    "roomBD3ReturnEndpointMovementMm": {
+      "D3-BR": 0,
+      "B0.5": 0
+    },
+    "cupboardGeometryChanged": false,
+    "acceptedLocalBaselinesEdited": false,
+    "globalScaleChanged": false
+  }
+}

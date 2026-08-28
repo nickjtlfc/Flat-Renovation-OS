@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1600" viewBox="0 0 1800 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Room B wall-plane / node evidence audit v0.1</title><desc id="desc">FIELD SHEET — accepted P1 layout for orientation only; no new geometry; not for setting out</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker>
+    <style>
+      .title{font:700 31px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#475569}.h{font:700 20px Arial,sans-serif;fill:#0f172a}.t{font:15px Arial,sans-serif;fill:#1e293b}.small{font:13px Arial,sans-serif;fill:#334155}.tiny{font:11px Arial,sans-serif;fill:#475569}.wall{stroke:#1e3a8a;stroke-width:9;fill:none;stroke-linecap:round;stroke-linejoin:round}.tile{stroke:#0f766e;stroke-width:11;fill:none;stroke-linecap:round}.opening{stroke:#c2410c;stroke-width:7;fill:none;stroke-dasharray:12 9}.assembly{stroke:#7c3aed;stroke-width:4;fill:none;stroke-dasharray:8 7}.dim{stroke:#475569;stroke-width:2;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.diag{stroke:#64748b;stroke-width:2;fill:none;stroke-dasharray:7 7}.suspect{stroke:#dc2626;stroke-width:3;fill:none;stroke-dasharray:9 7}.node{fill:#fff;stroke:#1d4ed8;stroke-width:4}.mixed{fill:#fff;stroke:#7c3aed;stroke-width:5}.wc{fill:#fff;stroke:#047857;stroke-width:4}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:2}.bad{fill:#fef2f2;stroke:#dc2626;stroke-width:2}.good{fill:#f0fdf4;stroke:#16a34a;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc"/><text x="55" y="58" class="title">Room B wall-plane / node evidence audit v0.1</text><text x="55" y="88" class="sub">FIELD SHEET — accepted P1 layout for orientation only; no new geometry; not for setting out</text>
+  <rect x="55" y="115" width="1080" height="1075" rx="14" class="box"/><text x="85" y="150" class="h">Main Room B evidence network</text>
+  <path d="M 196.8 205 L 531.0495000000001 205" class="opening"/><path d="M 531.0495000000001 205 L 527.0052000000001 300.4291" class="wall"/><path d="M 527.0052000000001 300.4291 L 848.1428999999999 300.9595" class="wall"/><path d="M 848.1428999999999 300.9595 L 827.5314000000001 641.8468" class="opening"/><path d="M 827.5314000000001 641.8468 L 808.0236 1116.1102" class="tile"/><path d="M 808.0236 1116.1102 L 160.1361 1082.6754999999998" class="tile"/><path d="M 160.1361 1082.6754999999998 L 196.8 205" class="wall"/>
+  <path d="M 848.1428999999999 300.9595 L 895.2198 301.0414" class="assembly"/><path d="M 895.2198 301.0414 L 874.0155000000001 651.7489" class="opening"/><path d="M 874.0155000000001 651.7489 L 876.2385 719.1487" class="wall"/>
+  <path d="M 196.8 205 L 527.0052000000001 300.4291" class="diag"/><rect x="236.9026" y="217.71455" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="331.9026" y="233.71455" class="tiny" text-anchor="middle">SUP-065 — B0→B0.5 — 888 mm</text>
+  <path d="M 527.0052000000001 300.4291 L 827.5314000000001 641.8468" class="diag"/><rect x="647.2683000000001" y="428.13795000000005" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="742.2683000000001" y="444.13795000000005" class="tiny" text-anchor="middle">SUP-068 — B0.5→B2 — 1182–1190 mm</text>
+  <path d="M 527.0052000000001 300.4291 L 808.0236 1116.1102" class="diag"/><rect x="652.5144" y="693.2696500000001" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="747.5144" y="709.2696500000001" class="tiny" text-anchor="middle">SUP-069 — B0.5→B3 — 2228 mm</text>
+  <path d="M 848.1428999999999 300.9595 L 160.1361 1082.6754999999998" class="diag"/><rect x="319.1395" y="674.8174999999999" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="414.1395" y="690.8174999999999" class="tiny" text-anchor="middle">SUP-070 — B1→B4 — 2673 mm</text>
+  <path d="M 827.5314000000001 641.8468 L 160.1361 1082.6754999999998" class="diag"/><rect x="423.83375" y="882.2611499999999" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="518.83375" y="898.2611499999999" class="tiny" text-anchor="middle">SUP-071 — B2→B4 — 2046 mm</text>
+  <path d="M 196.8 205 L 808.0236 1116.1102" class="suspect"/><rect x="397.41179999999997" y="693.5551" width="190" height="22" rx="5" fill="#f8fafc" opacity=".94"/><text x="492.41179999999997" y="709.5551" class="tiny" text-anchor="middle">SUP-067 — B0→B3 — 2755–2765 mm</text>
+  <circle cx="196.8" cy="205" r="8" class="mixed"/><circle cx="531.0495000000001" cy="205" r="8" class="node"/><circle cx="527.0052000000001" cy="300.4291" r="8" class="node"/><circle cx="848.1428999999999" cy="300.9595" r="8" class="mixed"/><circle cx="827.5314000000001" cy="641.8468" r="8" class="mixed"/><circle cx="808.0236" cy="1116.1102" r="8" class="node"/><circle cx="160.1361" cy="1082.6754999999998" r="8" class="node"/>
+  <circle cx="895.2198" cy="301.0414" r="8" class="wc"/><circle cx="874.0155000000001" cy="651.7489" r="8" class="wc"/><circle cx="876.2385" cy="719.1487" r="8" class="wc"/>
+  <text x="151.8" y="187" class="small" font-weight="700">B0 / D3-BL</text><text x="511.0495000000001" y="187" class="small" font-weight="700">D3-BR</text><text x="502.00520000000006" y="331.4291" class="small" font-weight="700">B0.5</text><text x="753.1428999999999" y="282.9595" class="small" font-weight="700">B1 / D5-BL</text><text x="707.5314000000001" y="669.8468" class="small" font-weight="700">B2 / D5-BR</text><text x="822.0236" y="1121.1102" class="small" font-weight="700">B3</text><text x="118.1361" y="1087.6754999999998" class="small" font-weight="700">B4</text><text x="910.2198" y="289.0414" class="small" font-weight="700">T0 / D5-WCR</text><text x="888.0155000000001" y="658.7489" class="small" font-weight="700">D5-WCL</text><text x="890.2385" y="726.1487" class="small" font-weight="700">T3</text>
+  <rect x="260" y="160" width="260" height="28" rx="6" fill="#fff7ed"/><text x="390" y="179" class="small" text-anchor="middle">D3 opening/casing — no wall</text>
+  <text x="560" y="288" class="small" text-anchor="middle">BASE-B-02 — D3-BR→B0.5 — 249 mm</text>
+  <text x="750" y="235" class="small" text-anchor="middle">BASE-B-03 — B0.5→B1 — 823 mm</text>
+  <text x="850" y="500" class="small" transform="rotate(93 850 500)" text-anchor="middle">D5-B-CASING-WIDTH — B1→B2 — 874 mm — OPENING</text>
+  <text x="815" y="890" class="small" transform="rotate(93 815 890)" text-anchor="middle">BASE-B-05 — B2→B3 — 1218 mm</text>
+  <text x="480" y="1115" class="small" transform="rotate(3 480 1115)" text-anchor="middle">BASE-B-06 — B3→B4 — 1665 mm — visible tile face</text>
+  <text x="155" y="730" class="small" transform="rotate(93 155 730)" text-anchor="middle">BASE-B-07 — B4→B0 — approx 2200–2220 mm — RECHECK</text>
+  <rect x="1165" y="115" width="580" height="230" rx="14" class="bad"/><text x="1195" y="153" class="h">Dominant closure conflict</text>
+  <text x="1195" y="185" class="t">Width: 857.05 + 823 = 1680.05 mm</text>
+<text x="1195" y="208" class="t">Back tile face: 1665 mm</text>
+<text x="1195" y="231" class="t">Closure: +15.05 mm  ✓ plausible finish layers</text>
+<text x="1195" y="254" class="t"></text>
+<text x="1195" y="277" class="t">Depth: 249 + 874 + 1218 = 2341 mm</text>
+<text x="1195" y="300" class="t">Left side: 2200–2220 mm</text>
+<text x="1195" y="323" class="t">Closure: +121 to +141 mm  ✕ not tile thickness</text>
+  <rect x="1165" y="370" width="580" height="220" rx="14" class="good"/><text x="1195" y="408" class="h">What already supports local orthogonality</text>
+  <text x="1195" y="440" class="t">SUP-070 expected 2673.70; observed 2673 (+0.70)</text>
+<text x="1195" y="467" class="t">SUP-065 expected 892.49; observed 888 (+4.49)</text>
+<text x="1195" y="494" class="t">SUP-068 expected 1200.50; observed 1182–1190</text>
+<text x="1195" y="521" class="t">SUP-071 expected 2062.95; observed 2046</text>
+<text x="1195" y="548" class="t">Known tile/cutaway offsets: approximately 10–20 mm</text>
+  <rect x="1165" y="615" width="580" height="205" rx="14" class="warn"/><text x="1195" y="653" class="h">3726 mm independent validation</text>
+  <text x="1195" y="686" class="t">Room C outer partition face → through D3 →</text>
+<text x="1195" y="711" class="t">landing on the B3–B4 finished back wall</text>
+<text x="1195" y="736" class="t">Measured: 3726 mm</text>
+<text x="1195" y="761" class="t">Current v0.2: 3741.07 mm; residual +15.07 mm</text>
+<text x="1195" y="786" class="t">Validates back-wall station, not squareness or corners.</text>
+  <rect x="1165" y="845" width="580" height="345" rx="14" class="box"/><text x="1195" y="883" class="h">Five minimum field rechecks</text>
+  <text x="1195" y="917" class="small">1. B0 / D3-BL → B4</text>
+<text x="1195" y="942" class="small">   BASE-B-07: approximately 2200–2220 mm</text>
+<text x="1195" y="967" class="small">2. B1 / D5-BL → B3</text>
+<text x="1195" y="992" class="small">   No direct total; chain is 874 + 1218 = 2092 mm</text>
+<text x="1195" y="1017" class="small">3. B0.5 → Marked perpendicular landing on B3–B4</text>
+<text x="1195" y="1042" class="small">   No direct named-node wall span</text>
+<text x="1195" y="1067" class="small">4. D3-BR → Marked perpendicular landing on B3–B4</text>
+<text x="1195" y="1092" class="small">   SUP-080: 2217 mm</text>
+<text x="1195" y="1117" class="small">5. B2 / D5-BR → B3</text>
+<text x="1195" y="1142" class="small">   BASE-B-05: 1218 mm</text>
+  <rect x="55" y="1220" width="1690" height="315" rx="14" class="box"/><text x="85" y="1260" class="h">Principal node physical-layer key</text>
+  <text x="85" y="1295" class="small">B0 / D3-BL — finished plaster wall endpoint + viewer-left D3 outer casing edge</text>
+<text x="85" y="1325" class="small">D3-BR — viewer-right D3 outer casing edge at start of the real 249 mm return</text>
+<text x="85" y="1355" class="small">B0.5 — finished plaster corner; no D3 casing layer reaches this point</text>
+<text x="85" y="1385" class="small">B1 / D5-BL — finished plaster wall endpoint + viewer-left Room B D5 outer casing edge</text>
+<text x="85" y="1415" class="small">B2 / D5-BR — mixed Room B outer casing / metal trim / tiled face at approx 20 mm cutaway</text>
+  <text x="930" y="1295" class="small">B3 — permanent finished tiled corner; underlying wall plane recorded about 10 mm behind</text>
+<text x="930" y="1325" class="small">B4 — permanent finished/tiled corner; BASE-B-07 access obstructed by shower screen</text>
+<text x="930" y="1355" class="small">T0 / D5-WCR — WC finished plaster / outer casing junction; distinct from B1</text>
+<text x="930" y="1385" class="small">D5-WCL — viewer-left WC outer casing edge; distinct from B2</text>
+<text x="930" y="1415" class="small">T3 — WC finished plaster return before the 173 mm wall run to D5-WCL</text>
+  <text x="75" y="1570" class="small" fill="#b91c1c">Raw observations remain immutable. Mark every laser spot, target height and material face before accepting a superseding observation.</text>
+</svg>

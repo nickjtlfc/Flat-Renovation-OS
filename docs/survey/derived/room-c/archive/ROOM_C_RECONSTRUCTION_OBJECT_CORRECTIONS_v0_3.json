@@ -1,0 +1,1636 @@
+{
+  "documentType": "derived Room C v0.3 targeted object corrections - not source evidence",
+  "version": "0.3",
+  "generatedDate": "2026-08-12",
+  "status": "proposal for human visual review; v0.2 preserved; accepted v0.1 A1 shell retained exactly",
+  "baseline": "docs/survey/derived/room-c/ROOM_C_RECONSTRUCTION_FIRST_PASS_v0_1.json",
+  "governingTopology": "Corrected D3-CL turning-corner topology from the active node map/register and accepted first-pass baseline.",
+  "objectEvidence": {
+    "source": "Room C Object Survey – Field Measurement Handover for Codex (12 August 2026), supplied in the task attachment",
+    "supersession": "The handover's stale straight D3-CL to D2-CR sentence is rejected. The corrected node register and accepted v0.1 baseline remain topology authority.",
+    "CP1": {
+      "body": {
+        "widthMm": {
+          "value": 1285,
+          "class": "direct"
+        },
+        "depthMm": {
+          "value": 518,
+          "class": "direct",
+          "supersedesMm": 523
+        },
+        "ceilingToTopMm": {
+          "value": 1261,
+          "class": "direct",
+          "axis": "vertical"
+        },
+        "bottomToFinishedFloorMm": {
+          "value": 1315,
+          "class": "direct",
+          "axis": "vertical"
+        }
+      },
+      "casing": {
+        "recorded": false
+      },
+      "interpretation": "Mid-air suspended cupboard; constant 518 mm body depth for this pass; editable object layer."
+    },
+    "CP2": {
+      "body": {
+        "widthMm": {
+          "value": 708,
+          "class": "direct"
+        },
+        "depthMm": {
+          "value": 536,
+          "class": "direct"
+        },
+        "topToFinishedFloorMm": {
+          "value": 2148,
+          "class": "direct",
+          "axis": "vertical"
+        },
+        "topToCeilingMm": {
+          "value": 450,
+          "class": "approximate",
+          "axis": "vertical"
+        }
+      },
+      "casing": {
+        "viewerLeftVerticalMm": {
+          "value": 20,
+          "class": "approximate"
+        },
+        "continuesAcrossTop": true,
+        "topThicknessMm": null
+      },
+      "removableDoor": {
+        "removableForRenovation": true,
+        "dimensionsMm": null
+      },
+      "interpretation": "Cupboard body, casing and removable door remain distinct layers."
+    },
+    "D2": {
+      "structuralWallDepthMm": {
+        "value": 250,
+        "class": "direct",
+        "axis": "plan/reveal depth"
+      },
+      "structuralOpeningWidthMm": {
+        "value": 770,
+        "class": "direct"
+      },
+      "visibleClosedLeafWidthMm": {
+        "value": 742,
+        "class": "direct"
+      },
+      "visibleClosedLeafHeightMm": {
+        "value": 1975,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "swing": "opens into Room A",
+      "casing": {
+        "evidenced": true,
+        "dimensionsMm": null
+      },
+      "viewerRightLip": {
+        "exists": true,
+        "dimensionsMm": null,
+        "importance": "minor"
+      },
+      "closingPlane": {
+        "physicalSide": "Room A side of the A-C structural wall",
+        "placementClass": "side confirmed; exact rebate/inset within Room A-side casing unmeasured",
+        "roomCSideSequence": "Room C -> deep reveal/open passage through approximately 250 mm wall -> D2 leaf/closing plane on Room A side"
+      }
+    },
+    "D3": {
+      "visibleClosedLeafWidthMm": {
+        "value": 760,
+        "class": "direct"
+      },
+      "visibleClosedLeafHeightMm": {
+        "value": 1987,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "casingLeftMm": {
+        "value": 45,
+        "class": "approximate"
+      },
+      "casingRightMm": {
+        "value": 80,
+        "class": "approximate"
+      },
+      "casingTopMm": {
+        "value": 80,
+        "class": "approximate",
+        "axis": "vertical"
+      },
+      "topCasingToCeilingMm": {
+        "value": 544,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "swing": "opens into Room C",
+      "topology": "D3-CL is the permanent turning corner and the casing endpoint directly abuts it."
+    },
+    "D4": {
+      "visibleClosedLeafWidthMm": {
+        "value": 760,
+        "class": "direct"
+      },
+      "visibleClosedLeafHeightMm": {
+        "value": 1987,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "casingLeftMm": {
+        "value": 80,
+        "class": "direct"
+      },
+      "casingRightMm": {
+        "value": 80,
+        "class": "direct"
+      },
+      "casingTopMm": {
+        "value": 80,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "topCasingToCeilingMm": {
+        "value": 567,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "swing": "opens into Room C"
+    },
+    "W2": {
+      "openingWidthMm": {
+        "value": 1269,
+        "class": "direct"
+      },
+      "openingHeightMm": {
+        "value": 1515,
+        "class": "direct",
+        "axis": "vertical"
+      },
+      "bottomOpeningToFinishedFloorMm": {
+        "value": 1060,
+        "class": "approximate",
+        "axis": "vertical"
+      },
+      "topOpeningToCeilingMm": {
+        "value": 700,
+        "class": "approximate",
+        "axis": "vertical"
+      },
+      "casingAllSidesMm": {
+        "value": 40,
+        "class": "approximate"
+      },
+      "interpretation": "Opening is retained accurately; existing assembly is deliberately low detail because replacement is anticipated."
+    },
+    "correctionHistory": [
+      {
+        "id": "RC-19-ENDPOINT-CORRECTION",
+        "correctionClass": "field transcription correction",
+        "supersededDefinition": {
+          "from": "CP2-FL",
+          "to": "PI3",
+          "measuredMm": 2206
+        },
+        "activeDefinition": {
+          "from": "CP2-FR",
+          "to": "PI3",
+          "measuredMm": 2206
+        },
+        "statement": "The earlier CP2-FL endpoint is retained only as superseded history; CP2-FR is the active physical endpoint."
+      },
+      {
+        "id": "D2-CLOSING-PLANE-CORRECTION",
+        "correctionClass": "object-layer placement correction",
+        "supersededInterpretation": "Door leaf/closing plane drawn at the Room C face of the structural wall.",
+        "activeInterpretation": "Door leaf/closing plane sits on the Room A side after the approximately 250 mm through-wall reveal."
+      }
+    ],
+    "RoomCFloorToCeiling": [
+      {
+        "station": "near D3",
+        "measuredMm": 2598,
+        "evidenceClass": "direct",
+        "axis": "vertical"
+      },
+      {
+        "station": "near D4",
+        "measuredMm": 2631,
+        "evidenceClass": "direct",
+        "axis": "vertical"
+      },
+      {
+        "station": "near CP1",
+        "measuredMm": 2596,
+        "evidenceClass": "direct",
+        "axis": "vertical"
+      },
+      {
+        "station": "near CP2",
+        "measuredMm": 2594,
+        "evidenceClass": "direct",
+        "axis": "vertical"
+      },
+      {
+        "station": "near PO2",
+        "measuredMm": 2616,
+        "evidenceClass": "direct",
+        "axis": "vertical"
+      }
+    ]
+  },
+  "layerModel": [
+    "permanent finished-wall shell",
+    "structural opening",
+    "reveal/wall depth",
+    "casing/architrave",
+    "door leaf/window",
+    "cupboard body",
+    "cupboard casing/joinery/removable door"
+  ],
+  "shell": {
+    "changedFromV01": false,
+    "statement": "No accepted first-pass shell, PO/PI partition node, or v0.2 object station moved. Corrections affect evidence interpretation and the D2 through-wall object layer only.",
+    "coordinateComparison": {
+      "C0": {
+        "baselineMm": {
+          "x": 0,
+          "y": 0
+        },
+        "updatedMm": {
+          "x": 0,
+          "y": 0
+        },
+        "movementMm": 0
+      },
+      "C1": {
+        "baselineMm": {
+          "x": 330,
+          "y": 0
+        },
+        "updatedMm": {
+          "x": 330,
+          "y": 0
+        },
+        "movementMm": 0
+      },
+      "C2": {
+        "baselineMm": {
+          "x": 1599,
+          "y": 0
+        },
+        "updatedMm": {
+          "x": 1599,
+          "y": 0
+        },
+        "movementMm": 0
+      },
+      "W2-CR": {
+        "baselineMm": {
+          "x": 327.54,
+          "y": 164.98
+        },
+        "updatedMm": {
+          "x": 327.54,
+          "y": 164.98
+        },
+        "movementMm": 0
+      },
+      "W2-CL": {
+        "baselineMm": {
+          "x": 1596.54,
+          "y": 164.98
+        },
+        "updatedMm": {
+          "x": 1596.54,
+          "y": 164.98
+        },
+        "movementMm": 0
+      },
+      "D4-CR": {
+        "baselineMm": {
+          "x": 2147,
+          "y": 0
+        },
+        "updatedMm": {
+          "x": 2147,
+          "y": 0
+        },
+        "movementMm": 0
+      },
+      "D3-CL": {
+        "baselineMm": {
+          "x": 4168.34,
+          "y": 0
+        },
+        "updatedMm": {
+          "x": 4168.34,
+          "y": 0
+        },
+        "movementMm": 0
+      },
+      "D2-CR": {
+        "baselineMm": {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        "updatedMm": {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        "movementMm": 0
+      },
+      "CP1-FL": {
+        "baselineMm": {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        "updatedMm": {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        "movementMm": 0
+      },
+      "PO1": {
+        "baselineMm": {
+          "x": 1605.69,
+          "y": -3690.92
+        },
+        "updatedMm": {
+          "x": 1605.69,
+          "y": -3690.92
+        },
+        "movementMm": 0
+      },
+      "PO2": {
+        "baselineMm": {
+          "x": 1570.95,
+          "y": -1359.61
+        },
+        "updatedMm": {
+          "x": 1570.95,
+          "y": -1359.61
+        },
+        "movementMm": 0
+      },
+      "PO3": {
+        "baselineMm": {
+          "x": 4188.6,
+          "y": -1359.61
+        },
+        "updatedMm": {
+          "x": 4188.6,
+          "y": -1359.61
+        },
+        "movementMm": 0
+      },
+      "PI1": {
+        "baselineMm": {
+          "x": 1729.33,
+          "y": -3690.92
+        },
+        "updatedMm": {
+          "x": 1729.33,
+          "y": -3690.92
+        },
+        "movementMm": 0
+      },
+      "PI2": {
+        "baselineMm": {
+          "x": 1696.53,
+          "y": -1489.16
+        },
+        "updatedMm": {
+          "x": 1696.53,
+          "y": -1489.16
+        },
+        "movementMm": 0
+      },
+      "PI3": {
+        "baselineMm": {
+          "x": 4190.53,
+          "y": -1489.16
+        },
+        "updatedMm": {
+          "x": 4190.53,
+          "y": -1489.16
+        },
+        "movementMm": 0
+      },
+      "CP2-FL": {
+        "baselineMm": {
+          "x": 3468.33,
+          "y": -3690.92
+        },
+        "updatedMm": {
+          "x": 3468.33,
+          "y": -3690.92
+        },
+        "movementMm": 0
+      },
+      "CP2-FR": {
+        "baselineMm": {
+          "x": 4223.33,
+          "y": -3690.92
+        },
+        "updatedMm": {
+          "x": 4223.33,
+          "y": -3690.92
+        },
+        "movementMm": 0
+      }
+    },
+    "changedFromV02": false,
+    "historicalObservationResiduals": [
+      {
+        "id": "RC-01",
+        "from": "D3-CL",
+        "to": "C0",
+        "measuredMm": 4185,
+        "solvedMm": 4168.34,
+        "residualMm": -16.66,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "shell closure run"
+      },
+      {
+        "id": "RC-02",
+        "from": "C0",
+        "to": "CP1-FL",
+        "measuredMm": 3705,
+        "solvedMm": 3691.32,
+        "residualMm": -13.68,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "shell closure run"
+      },
+      {
+        "id": "RC-03",
+        "from": "CP1-FL",
+        "to": "PO1",
+        "measuredMm": 1534,
+        "solvedMm": 1550.7,
+        "residualMm": 16.7,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP1 relationship"
+      },
+      {
+        "id": "RC-04",
+        "from": "CP1-FR",
+        "to": "PO1",
+        "measuredMm": 225,
+        "solvedMm": 225,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP1 relationship"
+      },
+      {
+        "id": "RC-05",
+        "from": "PO1",
+        "to": "PO2",
+        "measuredMm": 2318,
+        "solvedMm": 2331.56,
+        "residualMm": 13.56,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "outer stud-wall face"
+      },
+      {
+        "id": "RC-06",
+        "from": "PO2",
+        "to": "PO3",
+        "measuredMm": 2601,
+        "solvedMm": 2617.64,
+        "residualMm": 16.64,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "outer stud-wall face"
+      },
+      {
+        "id": "RC-07",
+        "from": "PO3",
+        "to": "D3-CL",
+        "measuredMm": 1346,
+        "solvedMm": 1359.76,
+        "residualMm": 13.76,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "A-C wall relationship"
+      },
+      {
+        "id": "RC-08",
+        "from": "D3-CL",
+        "to": "D2-CR",
+        "measuredMm": 580,
+        "solvedMm": 580,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "corrected local topology"
+      },
+      {
+        "id": "RC-09",
+        "from": "D3-CR",
+        "to": "D4-CL",
+        "measuredMm": 218,
+        "solvedMm": 218,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "wall between provisional door extents"
+      },
+      {
+        "id": "RC-10",
+        "from": "D4-CR",
+        "to": "C2",
+        "measuredMm": 548,
+        "solvedMm": 548,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "lower shell"
+      },
+      {
+        "id": "RC-11",
+        "from": "C1",
+        "to": "C0",
+        "measuredMm": 330,
+        "solvedMm": 330,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "lower shell"
+      },
+      {
+        "id": "RC-12",
+        "from": "C1",
+        "to": "W2-CR",
+        "measuredMm": 165,
+        "solvedMm": 165,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess return"
+      },
+      {
+        "id": "RC-13",
+        "from": "C2",
+        "to": "W2-CL",
+        "measuredMm": 165,
+        "solvedMm": 165,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess return"
+      },
+      {
+        "id": "RC-14",
+        "from": "C1",
+        "to": "C2",
+        "measuredMm": 1269,
+        "solvedMm": 1269,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess span relationship"
+      },
+      {
+        "id": "RC-15",
+        "from": "PO2",
+        "to": "CP1-FL",
+        "measuredMm": 2760,
+        "solvedMm": 2780.85,
+        "residualMm": 20.85,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-16",
+        "from": "PO2",
+        "to": "C0",
+        "measuredMm": 2100,
+        "solvedMm": 2077.6,
+        "residualMm": -22.4,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-17",
+        "from": "PO2",
+        "to": "D3-CL",
+        "measuredMm": 2928,
+        "solvedMm": 2931.71,
+        "residualMm": 3.71,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-18",
+        "from": "PI1",
+        "to": "CP2-FR",
+        "measuredMm": 2494,
+        "solvedMm": 2494,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner enclosure / CP2 relationship"
+      },
+      {
+        "id": "RC-19",
+        "from": "CP2-FL",
+        "to": "PI3",
+        "measuredMm": 2206,
+        "solvedMm": 2317.17,
+        "residualMm": 111.17,
+        "evidenceClass": "direct",
+        "weightingClass": "direct validation held out after contradiction review",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": false,
+        "note": "inner enclosure cross-tie",
+        "recordStatus": "superseded field transcription",
+        "supersededBy": "RC-19 CP2-FR -> PI3 = 2206 mm"
+      },
+      {
+        "id": "RC-20",
+        "from": "PI3",
+        "to": "PI2",
+        "measuredMm": 2494,
+        "solvedMm": 2494,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner stud-wall face"
+      },
+      {
+        "id": "RC-21",
+        "from": "PI2",
+        "to": "PI1",
+        "measuredMm": 2202,
+        "solvedMm": 2202,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner stud-wall face"
+      },
+      {
+        "id": "RC-22",
+        "from": "CP2-FL",
+        "to": "PI1",
+        "measuredMm": 1739,
+        "solvedMm": 1739,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP2 relationship"
+      }
+    ],
+    "activeObservationResiduals": [
+      {
+        "id": "RC-01",
+        "from": "D3-CL",
+        "to": "C0",
+        "measuredMm": 4185,
+        "solvedMm": 4168.34,
+        "residualMm": -16.66,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "shell closure run"
+      },
+      {
+        "id": "RC-02",
+        "from": "C0",
+        "to": "CP1-FL",
+        "measuredMm": 3705,
+        "solvedMm": 3691.32,
+        "residualMm": -13.68,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "shell closure run"
+      },
+      {
+        "id": "RC-03",
+        "from": "CP1-FL",
+        "to": "PO1",
+        "measuredMm": 1534,
+        "solvedMm": 1550.7,
+        "residualMm": 16.7,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP1 relationship"
+      },
+      {
+        "id": "RC-04",
+        "from": "CP1-FR",
+        "to": "PO1",
+        "measuredMm": 225,
+        "solvedMm": 225,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP1 relationship"
+      },
+      {
+        "id": "RC-05",
+        "from": "PO1",
+        "to": "PO2",
+        "measuredMm": 2318,
+        "solvedMm": 2331.56,
+        "residualMm": 13.56,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "outer stud-wall face"
+      },
+      {
+        "id": "RC-06",
+        "from": "PO2",
+        "to": "PO3",
+        "measuredMm": 2601,
+        "solvedMm": 2617.64,
+        "residualMm": 16.64,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "outer stud-wall face"
+      },
+      {
+        "id": "RC-07",
+        "from": "PO3",
+        "to": "D3-CL",
+        "measuredMm": 1346,
+        "solvedMm": 1359.76,
+        "residualMm": 13.76,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "A-C wall relationship"
+      },
+      {
+        "id": "RC-08",
+        "from": "D3-CL",
+        "to": "D2-CR",
+        "measuredMm": 580,
+        "solvedMm": 580,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "corrected local topology"
+      },
+      {
+        "id": "RC-09",
+        "from": "D3-CR",
+        "to": "D4-CL",
+        "measuredMm": 218,
+        "solvedMm": 218,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "wall between provisional door extents"
+      },
+      {
+        "id": "RC-10",
+        "from": "D4-CR",
+        "to": "C2",
+        "measuredMm": 548,
+        "solvedMm": 548,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "lower shell"
+      },
+      {
+        "id": "RC-11",
+        "from": "C1",
+        "to": "C0",
+        "measuredMm": 330,
+        "solvedMm": 330,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "lower shell"
+      },
+      {
+        "id": "RC-12",
+        "from": "C1",
+        "to": "W2-CR",
+        "measuredMm": 165,
+        "solvedMm": 165,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess return"
+      },
+      {
+        "id": "RC-13",
+        "from": "C2",
+        "to": "W2-CL",
+        "measuredMm": 165,
+        "solvedMm": 165,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess return"
+      },
+      {
+        "id": "RC-14",
+        "from": "C1",
+        "to": "C2",
+        "measuredMm": 1269,
+        "solvedMm": 1269,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "W2 recess span relationship"
+      },
+      {
+        "id": "RC-15",
+        "from": "PO2",
+        "to": "CP1-FL",
+        "measuredMm": 2760,
+        "solvedMm": 2780.85,
+        "residualMm": 20.85,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-16",
+        "from": "PO2",
+        "to": "C0",
+        "measuredMm": 2100,
+        "solvedMm": 2077.6,
+        "residualMm": -22.4,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-17",
+        "from": "PO2",
+        "to": "D3-CL",
+        "measuredMm": 2928,
+        "solvedMm": 2931.71,
+        "residualMm": 3.71,
+        "evidenceClass": "approximate-cross-check",
+        "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+        "nominalSigmaMm": 100,
+        "usedInSelectedFit": true,
+        "note": "rough supporting check"
+      },
+      {
+        "id": "RC-18",
+        "from": "PI1",
+        "to": "CP2-FR",
+        "measuredMm": 2494,
+        "solvedMm": 2494,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner enclosure / CP2 relationship"
+      },
+      {
+        "id": "RC-19",
+        "from": "CP2-FR",
+        "to": "PI3",
+        "measuredMm": 2206,
+        "solvedMm": 2202,
+        "residualMm": -4,
+        "evidenceClass": "direct",
+        "weightingClass": "direct validation retained outside the already accepted shell fit",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": false,
+        "note": "Corrected field endpoint; 2206 mm field reading preserved. Not used to re-solve the accepted shell."
+      },
+      {
+        "id": "RC-20",
+        "from": "PI3",
+        "to": "PI2",
+        "measuredMm": 2494,
+        "solvedMm": 2494,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner stud-wall face"
+      },
+      {
+        "id": "RC-21",
+        "from": "PI2",
+        "to": "PI1",
+        "measuredMm": 2202,
+        "solvedMm": 2202,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "inner stud-wall face"
+      },
+      {
+        "id": "RC-22",
+        "from": "CP2-FL",
+        "to": "PI1",
+        "measuredMm": 1739,
+        "solvedMm": 1739,
+        "residualMm": 0,
+        "evidenceClass": "direct",
+        "weightingClass": "direct / sigma 8 mm / Huber",
+        "nominalSigmaMm": 8,
+        "usedInSelectedFit": true,
+        "note": "upper shell / CP2 relationship"
+      }
+    ]
+  },
+  "planGeometry": {
+    "axes": {
+      "alongWall": {
+        "x": 1,
+        "y": 0
+      },
+      "adjoiningWall": {
+        "x": -0.01489984,
+        "y": 0.99988899
+      },
+      "structuralWallOutwardTowardRoomA": {
+        "x": 0.99988899,
+        "y": 0.01489984
+      }
+    },
+    "inheritedNodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "objectNodesMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    },
+    "updatedObjectStations": {
+      "CP1-FR": {
+        "previousV01Mm": {
+          "x": 1380.69,
+          "y": -3690.92
+        },
+        "updatedV02Mm": {
+          "x": 1339.99,
+          "y": -3690.92
+        },
+        "movementMm": 40.7,
+        "reason": "Replaced provisional CP1 width with direct 1285 mm body width; this is an object-point update, not shell movement."
+      },
+      "D4-CL": {
+        "previousV01Mm": {
+          "x": 3048.67,
+          "y": 0
+        },
+        "updatedV02Mm": {
+          "x": 3067,
+          "y": 0
+        },
+        "movementMm": 18.33,
+        "reason": "Replaced v0.1 equal-split display gauge with measured 760 + 80 + 80 mm D4 object span."
+      },
+      "D3-CR": {
+        "previousV01Mm": {
+          "x": 3266.67,
+          "y": 0
+        },
+        "updatedV02Mm": {
+          "x": 3283.34,
+          "y": 0
+        },
+        "movementMm": 16.67,
+        "reason": "Replaced v0.1 equal-split display gauge with measured 760 mm leaf plus approximate 45/80 mm casing span."
+      }
+    },
+    "D2StructuralOpeningPlacement": {
+      "anchoringAssumption": "For plan display, the viewer-right structural-opening boundary is placed at D2-CR. The casing-to-structure offset was not measured, so the opposite opening endpoint and centred 14 mm leaf clearances are inferred, not formal node replacements.",
+      "wallDepthMm": 250,
+      "openingWidthMm": 770,
+      "leafWidthMm": 742,
+      "inferredClearanceEachEndMm": 14,
+      "revealAxis": "perpendicular through-wall axis toward Room A; not part of the Room C along-wall shell chain",
+      "roomCFace": "structural opening enters the deep reveal at D2-CR",
+      "roomAFace": "742 mm leaf/closing plane shown at the Room A side of the approximately 250 mm wall",
+      "exactClosingPlaneInset": "unmeasured; Room A side is confirmed, exact rebate/inset is schematic",
+      "affectsRoomCShell": false
+    },
+    "D2LeafCorrectionHistory": {
+      "supersededV02NodesMm": {
+        "D2-LEAF-R-INFERRED": {
+          "x": 4177.19,
+          "y": -593.94
+        },
+        "D2-LEAF-L-INFERRED": {
+          "x": 4188.24,
+          "y": -1335.86
+        }
+      },
+      "activeV03NodesMm": {
+        "D2-LEAF-A-FACE-R-INFERRED": {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        "D2-LEAF-A-FACE-L-INFERRED": {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      },
+      "translationMm": 250,
+      "axis": "through-wall toward Room A",
+      "shellNodeMovementMm": 0
+    }
+  },
+  "objectPlacementChecks": [
+    {
+      "id": "OBJ-CHECK-CP1-RC04",
+      "description": "Updated CP1 body-right point to PO1 versus inherited RC-04",
+      "measuredMm": 225,
+      "solvedMm": 265.7,
+      "residualMm": 40.7,
+      "evidenceClass": "direct placement check",
+      "treatment": "validation only; shell unchanged"
+    },
+    {
+      "id": "OBJ-CHECK-D3-D4-RC09",
+      "description": "D3 outer casing to D4 outer casing wall gap versus RC-09",
+      "measuredMm": 218,
+      "solvedMm": 216.34,
+      "residualMm": -1.66,
+      "evidenceClass": "direct placement check using new casing spans",
+      "treatment": "validation only; shell unchanged"
+    },
+    {
+      "id": "OBJ-CHECK-CP2-FOOTPRINT-BALANCE",
+      "description": "Inherited CP2-FL/FR footprint span less 708 mm body and approximately 20 mm left casing",
+      "measuredMm": 755,
+      "solvedMm": 728,
+      "residualMm": -27,
+      "evidenceClass": "mixed direct / approximate interpretation check",
+      "treatment": "27 mm remains unallocated; no right casing or gap dimension invented"
+    }
+  ],
+  "verticalObservations": [
+    {
+      "id": "CP1-V01",
+      "object": "CP1",
+      "description": "ceiling to cupboard top",
+      "measuredMm": 1261,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "CP1-V02",
+      "object": "CP1",
+      "description": "cupboard bottom to finished floor",
+      "measuredMm": 1315,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "CP2-V01",
+      "object": "CP2",
+      "description": "cupboard top to finished floor",
+      "measuredMm": 2148,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "CP2-V02",
+      "object": "CP2",
+      "description": "cupboard top to ceiling",
+      "measuredMm": 450,
+      "evidenceClass": "approximate",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D2-V01",
+      "object": "D2",
+      "description": "visible closed leaf height",
+      "measuredMm": 1975,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D3-V01",
+      "object": "D3",
+      "description": "visible closed leaf height",
+      "measuredMm": 1987,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D3-V02",
+      "object": "D3",
+      "description": "top casing to ceiling",
+      "measuredMm": 544,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D3-V03",
+      "object": "D3",
+      "description": "upper casing",
+      "measuredMm": 80,
+      "evidenceClass": "approximate",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D4-V01",
+      "object": "D4",
+      "description": "visible closed leaf height",
+      "measuredMm": 1987,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D4-V02",
+      "object": "D4",
+      "description": "top casing to ceiling",
+      "measuredMm": 567,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "D4-V03",
+      "object": "D4",
+      "description": "upper casing",
+      "measuredMm": 80,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "W2-V01",
+      "object": "W2",
+      "description": "opening height",
+      "measuredMm": 1515,
+      "evidenceClass": "direct",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "W2-V02",
+      "object": "W2",
+      "description": "bottom opening to finished floor",
+      "measuredMm": 1060,
+      "evidenceClass": "approximate",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "W2-V03",
+      "object": "W2",
+      "description": "top opening to ceiling",
+      "measuredMm": 700,
+      "evidenceClass": "approximate",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "RC-FTC-D3",
+      "object": "ROOM-C",
+      "station": "near D3",
+      "description": "local finished-floor to ceiling",
+      "measuredMm": 2598,
+      "evidenceClass": "direct station-specific vertical observation",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "RC-FTC-D4",
+      "object": "ROOM-C",
+      "station": "near D4",
+      "description": "local finished-floor to ceiling",
+      "measuredMm": 2631,
+      "evidenceClass": "direct station-specific vertical observation",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "RC-FTC-CP1",
+      "object": "ROOM-C",
+      "station": "near CP1",
+      "description": "local finished-floor to ceiling",
+      "measuredMm": 2596,
+      "evidenceClass": "direct station-specific vertical observation",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "RC-FTC-CP2",
+      "object": "ROOM-C",
+      "station": "near CP2",
+      "description": "local finished-floor to ceiling",
+      "measuredMm": 2594,
+      "evidenceClass": "direct station-specific vertical observation",
+      "affectsPlanGeometry": false
+    },
+    {
+      "id": "RC-FTC-PO2",
+      "object": "ROOM-C",
+      "station": "near PO2",
+      "description": "local finished-floor to ceiling",
+      "measuredMm": 2616,
+      "evidenceClass": "direct station-specific vertical observation",
+      "affectsPlanGeometry": false
+    }
+  ],
+  "independentCeilingRelationship": {
+    "D3TopCasingToCeilingMm": 544,
+    "D4TopCasingToCeilingMm": 567,
+    "differenceMm": 23,
+    "treatment": "Preserved independently; not averaged and does not affect plan geometry."
+  },
+  "RC19Review": {
+    "correctionClass": "field transcription correction",
+    "correctionHistory": {
+      "supersededDefinition": {
+        "from": "CP2-FL",
+        "to": "PI3",
+        "measuredMm": 2206
+      },
+      "activeDefinition": {
+        "from": "CP2-FR",
+        "to": "PI3",
+        "measuredMm": 2206
+      }
+    },
+    "previousTranscriptionResult": {
+      "solvedMm": 2317.17,
+      "residualMm": 111.17
+    },
+    "correctedResult": {
+      "solvedMm": 2202,
+      "residualMm": -4
+    },
+    "signedResidualChangeMm": -115.17,
+    "absoluteResidualImprovementMm": 107.17,
+    "usedToMoveShellNodes": false,
+    "assessment": "resolved",
+    "conclusion": "The corrected CP2-FR endpoint resolves the former approximately 111 mm conflict on the fixed accepted geometry. The remaining -4.00 mm residual is within the inherited 8 mm nominal sigma and does not justify shell movement."
+  },
+  "unresolved": [
+    "D2 casing dimensions, exact Room A-side closing-plane rebate/inset, casing-to-structural-opening offset, hinge side and minor right lip dimension.",
+    "D3 and D4 hinge sides and structural-opening dimensions; only leaf/casing extents and swing destination are known.",
+    "CP1 body height and detailed joinery/casing.",
+    "CP2 top-casing thickness, right-side joinery/gap allocation, removable-door dimensions and internal construction.",
+    "W2 frame/reveal detail beyond the measured opening and approximate 40 mm casing."
+  ],
+  "predecessor": "docs/survey/derived/room-c/ROOM_C_RECONSTRUCTION_OBJECT_INTEGRATION_v0_2.json",
+  "acceptedShellBaseline": "docs/survey/derived/room-c/ROOM_C_RECONSTRUCTION_FIRST_PASS_v0_1.json",
+  "correctionScope": [
+    "RC-19 endpoint corrected from CP2-FL to CP2-FR without changing its 2206 mm field reading.",
+    "D2 leaf/closing plane moved from the Room C face to the Room A side of the 250 mm through-wall reveal.",
+    "Five station-specific Room C floor-to-ceiling observations added as non-plan vertical evidence."
+  ],
+  "floorToCeilingReview": {
+    "observations": [
+      {
+        "id": "RC-FTC-D3",
+        "object": "ROOM-C",
+        "station": "near D3",
+        "description": "local finished-floor to ceiling",
+        "measuredMm": 2598,
+        "evidenceClass": "direct station-specific vertical observation",
+        "affectsPlanGeometry": false
+      },
+      {
+        "id": "RC-FTC-D4",
+        "object": "ROOM-C",
+        "station": "near D4",
+        "description": "local finished-floor to ceiling",
+        "measuredMm": 2631,
+        "evidenceClass": "direct station-specific vertical observation",
+        "affectsPlanGeometry": false
+      },
+      {
+        "id": "RC-FTC-CP1",
+        "object": "ROOM-C",
+        "station": "near CP1",
+        "description": "local finished-floor to ceiling",
+        "measuredMm": 2596,
+        "evidenceClass": "direct station-specific vertical observation",
+        "affectsPlanGeometry": false
+      },
+      {
+        "id": "RC-FTC-CP2",
+        "object": "ROOM-C",
+        "station": "near CP2",
+        "description": "local finished-floor to ceiling",
+        "measuredMm": 2594,
+        "evidenceClass": "direct station-specific vertical observation",
+        "affectsPlanGeometry": false
+      },
+      {
+        "id": "RC-FTC-PO2",
+        "object": "ROOM-C",
+        "station": "near PO2",
+        "description": "local finished-floor to ceiling",
+        "measuredMm": 2616,
+        "evidenceClass": "direct station-specific vertical observation",
+        "affectsPlanGeometry": false
+      }
+    ],
+    "lowest": {
+      "station": "near CP2",
+      "measuredMm": 2594
+    },
+    "highest": {
+      "station": "near D4",
+      "measuredMm": 2631
+    },
+    "observedRangeMm": 37,
+    "treatment": "Retained independently; not averaged, not forced to close, and not used in the 2D shell solve.",
+    "objectVerticalComparisons": [
+      {
+        "station": "near D3",
+        "componentSumMm": 2611,
+        "localFloorToCeilingMm": 2598,
+        "differenceMm": 13,
+        "materiallyInconsistent": false,
+        "basis": "1987 leaf + approximately 80 upper casing + 544 casing-to-ceiling; small difference may include leaf/floor clearance or reference detail."
+      },
+      {
+        "station": "near D4",
+        "componentSumMm": 2634,
+        "localFloorToCeilingMm": 2631,
+        "differenceMm": 3,
+        "materiallyInconsistent": false,
+        "basis": "1987 leaf + 80 upper casing + 567 casing-to-ceiling."
+      },
+      {
+        "station": "near CP2",
+        "componentSumMm": 2598,
+        "localFloorToCeilingMm": 2594,
+        "differenceMm": 4,
+        "materiallyInconsistent": false,
+        "basis": "2148 floor-to-top + approximately 450 top-to-ceiling."
+      },
+      {
+        "station": "near CP1",
+        "knownClearancesSumMm": 2576,
+        "localFloorToCeilingMm": 2596,
+        "impliedBodyHeightMm": 20,
+        "materiallyInconsistent": true,
+        "basis": "1315 floor-to-bottom + unmeasured body height + 1261 top-to-ceiling; the 20 mm remainder is implausible for the observed cupboard body and requires field clarification."
+      },
+      {
+        "station": "W2 (not co-located with a new height station)",
+        "componentSumMm": 3275,
+        "highestNewLocalFloorToCeilingMm": 2631,
+        "excessAboveHighestLocalMm": 644,
+        "materiallyInconsistent": true,
+        "basis": "Approximately 1060 floor-to-opening + 1515 opening + approximately 700 opening-to-ceiling; retain without adjustment because station/reference semantics may differ."
+      }
+    ]
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "documentType": "GLOBAL RECONCILIATION - A/C/B/WC D3 RIGID REGISTRATION DIAGNOSTIC",
+  "version": "0.2",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres unless stated otherwise",
+  "status": "diagnostic for human review; not a final whole-flat model",
+  "scope": {
+    "completed": "Rigidly register accepted provisional Room B/WC P1 to the frozen A/C v0.2 frame through D3.",
+    "excluded": [
+      "scaling",
+      "individual node movement",
+      "deformation",
+      "D3 topology change",
+      "A/C movement",
+      "D2 change",
+      "global optimisation"
+    ]
+  },
+  "sources": {
+    "fixedACFrame": {
+      "relativePath": "docs/survey/derived/global-reconciliation/ROOM_A_C_D2_RIGID_REGISTRATION_DIAGNOSTIC_v0_2.json",
+      "sha256": "08BD3711B342156C0A6B4ABFFB7C6EB07BE0BE91DAC04C96FCC2ADCC24521C98",
+      "version": "0.2",
+      "frozen": true
+    },
+    "roomC": {
+      "relativePath": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+      "sha256": "4D36F1445E5AEBA95FAF6A1FE404E6BF81400CDDE67C22CB05386AF77A855C67",
+      "selectedSolution": "A1",
+      "fixed": true
+    },
+    "roomBWC": {
+      "relativePath": "docs/survey/derived/room-b-wc/ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1.json",
+      "sha256": "735EE4481219404B7E7C07A567CAE475C13CCC9AB3C34C40E29A7708363A3147",
+      "selectedSolution": "P1",
+      "rigidBody": true
+    },
+    "topologyPlans": [
+      "source-material/plans/2dPlan.jpeg",
+      "source-material/plans/rough-paint-sketch.jpg"
+    ]
+  },
+  "registrationDiagnostics": {
+    "axesAndTransform": {
+      "drawingConvention": "Accepted project drawing coordinates: +X right, +Y down; bearings are numeric atan2 bearings and therefore appear clockwise on the sheet. Not site north.",
+      "roomCD3Axis": {
+        "endpoints": [
+          "D3-OUTER-R",
+          "D3-OUTER-L-CORNER"
+        ],
+        "bearingDegrees": 0,
+        "widthMm": 885
+      },
+      "roomBD3Axis": {
+        "endpoints": [
+          "B0 / D3-BL",
+          "D3-BR"
+        ],
+        "bearingDegrees": 0,
+        "widthMm": 857.05
+      },
+      "angularDifferenceBeforeRegistrationDegrees": 0,
+      "rigidTransformRoomBWCToACFrame": {
+        "rotationDegrees": 0,
+        "matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "determinant": 1,
+        "reflectionIntroduced": false,
+        "translationMm": {
+          "x": 3307.32,
+          "y": 104.2
+        },
+        "scale": 1,
+        "registrationTarget": "Room B visible closed D3 face centre and axis aligned to the Room C D3 leaf centre and axis; casing endpoints and finished wall faces remain distinct."
+      }
+    },
+    "d3LayerFit": {
+      "roomBCasingWidthMm": 857.05,
+      "roomCCasingWidthMm": 885,
+      "casingWidthDifferenceRoomBMinusRoomCMm": -27.95,
+      "roomBVisibleClosedFaceWidthMm": 738,
+      "roomCLeafWidthMm": 760,
+      "leafWidthDifferenceRoomBMinusRoomCMm": -22,
+      "alignedLeafCentreMismatchMm": 0,
+      "alignedLeafEndpointOffsetsMm": [
+        11,
+        11
+      ],
+      "casingCentreMismatch": {
+        "vectorMm": {
+          "x": 10.005,
+          "y": 104.2
+        },
+        "alongD3Mm": 10.005,
+        "normalTowardRoomBMm": 104.2,
+        "euclideanMm": 104.6792
+      },
+      "casingEndpointMismatches": [
+        {
+          "roomBEndpoint": "B0 / D3-BL",
+          "roomCEndpoint": "D3-OUTER-R",
+          "vectorMm": {
+            "x": 23.98,
+            "y": 104.2
+          },
+          "alongD3Mm": 23.98,
+          "normalTowardRoomBMm": 104.2,
+          "euclideanMm": 106.9237
+        },
+        {
+          "roomBEndpoint": "D3-BR",
+          "roomCEndpoint": "D3-OUTER-L-CORNER",
+          "vectorMm": {
+            "x": -3.97,
+            "y": 104.2
+          },
+          "alongD3Mm": -3.97,
+          "normalTowardRoomBMm": 104.2,
+          "euclideanMm": 104.2756
+        }
+      ],
+      "wallPlaneResult": {
+        "separationMm": 104.2,
+        "evidenceStatus": "derived from the accepted Room B 104.195 mm casing-to-visible-face depth after shared-leaf alignment; Room C D3 reveal/wall depth is unmeasured",
+        "interpretation": "opposite finished/casing faces, not a residual to be forced to zero"
+      },
+      "dominantDifference": "opposite-face/casing depth plus a 27.95 mm outer-casing width difference; no rotation mismatch and no local topology collapse"
+    },
+    "localDirections": {
+      "d3BRToB05": {
+        "bearingDegrees": 92.426752,
+        "lengthMm": 244.9096,
+        "differenceFromRoomCSharedWallTowardBDegrees": 1.573217
+      },
+      "b05ToB1": {
+        "bearingDegrees": 0.094631,
+        "lengthMm": 823.4311,
+        "differenceFromRoomCLowerWallDegrees": 0.094631
+      },
+      "adjacentRoomCFamilies": {
+        "lowerWallBearingDegrees": 0,
+        "sharedWallTowardRoomBBearingDegrees": 90.853535
+      }
+    },
+    "thickWallHypothesis": {
+      "status": "plausibly supported, but not promoted to accepted geometry",
+      "returnStartDistanceToExtrapolatedRoomCFaceMm": 2.4174,
+      "returnEndDistanceToExtrapolatedRoomCFaceMm": 9.1412,
+      "predictedACWallDepthAtB05B1Mm": 250.0078,
+      "b05ToExtrapolatedRoomAFaceAlongWallMm": 259.1498,
+      "evidence": "The 244.91 mm D3-BR→B0.5 return lies within about 2–9 mm of the extrapolated Room C face and is only 1.57° from its direction. B0.5→B1 is within 0.10° of the Room C lower-wall family and crosses the extrapolated Room A face after about 259 mm, close to the independently observed approximately 250 mm A–C wall depth.",
+      "limitation": "D3 opposing-face depth and structural reveal are not measured; extrapolation is a diagnostic construction only."
+    },
+    "widerTopology": {
+      "roomBProjectsBelowRoomC": true,
+      "wcBelowAndRightOfACJunction": true,
+      "d3OrderingRelativeToD4AndD2": "preserved",
+      "sourcePlanUse": "2dPlan.jpeg and rough-paint-sketch.jpg used for adjacency, handedness and opening order only; no dimensions or angles derived.",
+      "assessment": "Room B projects below D3 and the WC occupies the expected area below/right of the A–C junction without moving A or C."
+    }
+  },
+  "sourceCoordinates": {
+    "roomBWCNodesLocalMm": {
+      "B0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-BR": {
+        "x": 857.05,
+        "y": 0
+      },
+      "B2": {
+        "x": 1617.26,
+        "y": 1120.12
+      },
+      "B3": {
+        "x": 1567.24,
+        "y": 2336.18
+      },
+      "B4": {
+        "x": -94.01,
+        "y": 2250.45
+      },
+      "B0.5": {
+        "x": 846.68,
+        "y": 244.69
+      },
+      "B1": {
+        "x": 1670.11,
+        "y": 246.05
+      },
+      "T0": {
+        "x": 1790.82,
+        "y": 246.26
+      },
+      "T1": {
+        "x": 3433.51,
+        "y": 248.99
+      },
+      "D5-WCL": {
+        "x": 1736.45,
+        "y": 1145.51
+      },
+      "T2": {
+        "x": 3426.78,
+        "y": 1326.61
+      },
+      "T3": {
+        "x": 1742.15,
+        "y": 1318.33
+      }
+    },
+    "roomBD3LayersLocalMm": {
+      "outerLeft": {
+        "x": 0,
+        "y": 0
+      },
+      "outerRight": {
+        "x": 857.05,
+        "y": 0
+      },
+      "innerLeft": {
+        "x": 80,
+        "y": 0
+      },
+      "innerRight": {
+        "x": 792.05,
+        "y": 0
+      },
+      "doorLeft": {
+        "x": 67.02,
+        "y": -104.2
+      },
+      "doorRight": {
+        "x": 805.02,
+        "y": -104.2
+      },
+      "doorCentre": {
+        "x": 436.02,
+        "y": -104.2
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      }
+    }
+  },
+  "placedGeometry": {
+    "roomBWCNodesGlobalMm": {
+      "B0": {
+        "x": 3307.32,
+        "y": 104.2
+      },
+      "D3-BR": {
+        "x": 4164.37,
+        "y": 104.2
+      },
+      "B2": {
+        "x": 4924.58,
+        "y": 1224.32
+      },
+      "B3": {
+        "x": 4874.56,
+        "y": 2440.38
+      },
+      "B4": {
+        "x": 3213.31,
+        "y": 2354.65
+      },
+      "B0.5": {
+        "x": 4154,
+        "y": 348.89
+      },
+      "B1": {
+        "x": 4977.43,
+        "y": 350.25
+      },
+      "T0": {
+        "x": 5098.14,
+        "y": 350.46
+      },
+      "T1": {
+        "x": 6740.83,
+        "y": 353.19
+      },
+      "D5-WCL": {
+        "x": 5043.77,
+        "y": 1249.71
+      },
+      "T2": {
+        "x": 6734.1,
+        "y": 1430.81
+      },
+      "T3": {
+        "x": 5049.47,
+        "y": 1422.53
+      }
+    },
+    "roomBD3LayersGlobalMm": {
+      "outerLeft": {
+        "x": 3307.32,
+        "y": 104.2
+      },
+      "outerRight": {
+        "x": 4164.37,
+        "y": 104.2
+      },
+      "innerLeft": {
+        "x": 3387.32,
+        "y": 104.2
+      },
+      "innerRight": {
+        "x": 4099.37,
+        "y": 104.2
+      },
+      "doorLeft": {
+        "x": 3374.34,
+        "y": 0
+      },
+      "doorRight": {
+        "x": 4112.34,
+        "y": 0
+      },
+      "doorCentre": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "direction": {
+        "x": 3308.32,
+        "y": 104.2
+      },
+      "inward": {
+        "x": 3307.32,
+        "y": 103.2
+      }
+    },
+    "fixedRoomCCupboardGeometryGlobalMm": {
+      "CP1": {
+        "sourcePlanAlias": "C1",
+        "bodyPolygon": [
+          {
+            "id": "CP1-BODY-FL",
+            "x": 54.99,
+            "y": -3690.92
+          },
+          {
+            "id": "CP1-BODY-FR",
+            "x": 1339.99,
+            "y": -3690.92
+          },
+          {
+            "id": "CP1-BODY-BR",
+            "x": 1347.71,
+            "y": -4208.86
+          },
+          {
+            "id": "CP1-BODY-BL",
+            "x": 62.71,
+            "y": -4208.86
+          }
+        ],
+        "acceptedFixedFeature": true
+      },
+      "CP2": {
+        "sourcePlanAlias": "C2",
+        "bodyPolygon": [
+          {
+            "id": "CP2-BODY-FL",
+            "x": 3488.33,
+            "y": -3690.92
+          },
+          {
+            "id": "CP2-BODY-FR",
+            "x": 4196.33,
+            "y": -3690.92
+          },
+          {
+            "id": "CP2-BODY-BR",
+            "x": 4204.32,
+            "y": -4226.86
+          },
+          {
+            "id": "CP2-BODY-BL",
+            "x": 3496.32,
+            "y": -4226.86
+          }
+        ],
+        "viewerLeftCasingFrontNode": {
+          "id": "CP2-CASING-FL",
+          "x": 3468.33,
+          "y": -3690.92
+        },
+        "viewerLeftCasingPolygon": [
+          {
+            "x": 3468.33,
+            "y": -3690.92
+          },
+          {
+            "x": 3488.33,
+            "y": -3690.92
+          },
+          {
+            "x": 3496.32,
+            "y": -4226.86
+          },
+          {
+            "x": 3476.32,
+            "y": -4226.86
+          }
+        ],
+        "acceptedFixedFeature": true
+      }
+    },
+    "thickWallHypothesisConstructionMm": {
+      "polygon": [
+        {
+          "x": 4168.34,
+          "y": 0
+        },
+        {
+          "x": 4432.69,
+          "y": -961.175
+        },
+        {
+          "x": 4413.1495,
+          "y": 349.318
+        },
+        {
+          "x": 4163.142,
+          "y": 348.9051
+        }
+      ],
+      "roomCFaceAtB05B1": {
+        "x": 4163.142,
+        "y": 348.9051
+      },
+      "roomAFaceAtB05B1": {
+        "x": 4413.1495,
+        "y": 349.318
+      },
+      "acceptedGeometry": false
+    }
+  },
+  "geometryPreservation": {
+    "roomANodeMovementMm": 0,
+    "roomCNodeMovementMm": 0,
+    "d2RegistrationChanged": false,
+    "roomBWCNodeDeformationMm": 0,
+    "roomBWCScale": 1,
+    "roomBWCMaxPairwiseDistanceResidualMm": 0,
+    "measurementsChanged": false
+  },
+  "compositionCorrection": {
+    "diagnosis": "The v0.1 combined renderer loaded the complete accepted Room C object-node set, including CP1/CP2, but its SVG composition emitted only selected shell, partition, door and window layers. No cupboard body/casing polygons or labels were written. This was an export/composition omission, not missing geometry or a transform issue.",
+    "correction": "Require the accepted CP1/CP2 object nodes and emit their body outlines, CP2 casing/joinery layer, front/door lines, top casing line and fixed-feature labels in the combined SVG.",
+    "CP1Present": true,
+    "CP1SourcePlanAliasC1": true,
+    "CP2Present": true,
+    "CP2SourcePlanAliasC2": true,
+    "allTransformsUnchangedFromV01": true,
+    "d2RegistrationUnchanged": true,
+    "d3RegistrationUnchanged": true,
+    "geometryResolved": false
+  },
+  "conclusion": {
+    "classification": "compatible with explainable opposite-face/casing differences",
+    "statement": "The accepted Room B/WC geometry joins the frozen A/C frame without rotation or deformation when the shared D3 leaf layer is registered. Remaining D3 offsets are explainable as opposite-face depth and casing-width differences. The local return orientation is compatible with, rather than contradictory to, the adjacent Room C wall families.",
+    "minimumUnimplementedLocalChange": null,
+    "unresolvedEvidence": [
+      "Exact D3 Room C-face to Room B-face finished-wall depth.",
+      "Exact structural opening/rebate offsets relative to both outer casing faces.",
+      "Whether the A–C thick wall construction physically continues to the B0.5 return, rather than merely sharing aligned finished faces."
+    ],
+    "smallestRealWorldCheck": "Measure perpendicular finished-face-to-finished-face depth through D3 at both jambs, plus the along-wall offsets from D3-BR and B0.5 to the Room A-side face/return; one square-on photograph showing D3-BR, B0.5 and the adjoining wall planes would resolve the construction interpretation."
+  }
+}

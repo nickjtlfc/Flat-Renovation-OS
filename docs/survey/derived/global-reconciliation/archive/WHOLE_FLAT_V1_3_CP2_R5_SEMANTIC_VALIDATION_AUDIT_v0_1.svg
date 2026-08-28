@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Whole-flat v1.3 CP2 R5 semantic validation audit</title>
+  <desc id="desc">Exact frozen Room C coordinates showing R5 semantic nodes, rendered CP2 body nodes, superseded doorway gauges and five validation rays. Geometry is unchanged.</desc>
+  <style>
+    .bg{fill:#f7f8fb}.panel{fill:#fff;stroke:#cad2df;stroke-width:1.5}.wall{stroke:#27374d;stroke-width:5;fill:none}.outer{stroke:#244a8f;stroke-width:3;fill:none}.body{fill:#fff1d6;stroke:#b66b00;stroke-width:2.5}.semantic{fill:#fff;stroke:#193f83;stroke-width:3}.bodyNode{fill:#f4a641;stroke:#8b4e00;stroke-width:1.5}.proxy{fill:none;stroke:#7d8796;stroke-width:2}.label{font:700 13px Arial;fill:#173b78}.bodyLabel{font:12px Arial;fill:#8b4e00}.proxyLabel{font:11px Arial;fill:#697586}.ray{stroke-width:2.2;stroke-dasharray:9 6;fill:none;opacity:.85}.rayA{stroke:#d64045}.rayB{stroke:#8f3bb8}.rayC{stroke:#2a9d8f}.rayD{stroke:#168aad}.rayE{stroke:#e76f51}.rayLabel{font:700 13px Arial;fill:#252b36;paint-order:stroke;stroke:#fff;stroke-width:4}.title{font:700 25px Arial;fill:#16253a}.sub{font:14px Arial;fill:#425066}.head{font:700 17px Arial;fill:#16253a}.text{font:13px Arial;fill:#253246}.small{font:12px Arial;fill:#526176}.warning{fill:#fff5d9;stroke:#d69e2e;stroke-width:1.3}.good{fill:#e9f7f0;stroke:#3d9872;stroke-width:1.3}.legend{font:12px Arial;fill:#253246}
+  </style>
+  <rect width="1500" height="1000" class="bg"/>
+  <text x="42" y="45" class="title">CP2 R5 semantic validation · frozen v1.3</text>
+  <text x="42" y="70" class="sub">Exact coordinate geometry · semantic references and body layers separated · no geometry movement</text>
+  <rect x="35" y="92" width="1040" height="850" rx="10" class="panel"/>
+  <rect x="1095" y="92" width="370" height="850" rx="10" class="panel"/>
+
+  <line x1="117.3" y1="80.0" x2="254.3" y2="80.0" class="wall" />
+  <line x1="254.3" y1="80.0" x2="484.3" y2="80.0" class="outer" />
+  <line x1="484.3" y1="80.0" x2="538.3" y2="80.0" class="wall" />
+  <line x1="538.3" y1="80.0" x2="759.6" y2="80.0" class="outer" />
+  <line x1="759.6" y1="80.0" x2="773.3" y2="670.5" class="wall" />
+  <line x1="149.8" y1="670.5" x2="584.6" y2="670.5" class="wall" />
+  <line x1="584.6" y1="670.5" x2="773.3" y2="670.5" class="outer" />
+  <line x1="773.3" y1="670.5" x2="775.3" y2="756.3" class="outer" />
+  <line x1="775.3" y1="756.3" x2="591.6" y2="756.3" class="outer" />
+  <polygon points="589.6,670.5 766.6,670.5 768.6,756.3 591.6,756.3" class="body"/>
+
+  <line x1="484.3" y1="80.0" x2="773.3" y2="670.5" class="ray rayA" /><text x="633.8" y="369.3" class="rayLabel">A</text>
+<line x1="484.3" y1="80.0" x2="775.3" y2="756.3" class="ray rayB" /><text x="634.8" y="412.1" class="rayLabel">B</text>
+<line x1="484.3" y1="80.0" x2="584.6" y2="670.5" class="ray rayC" /><text x="539.4" y="369.3" class="rayLabel">C</text>
+<line x1="538.3" y1="80.0" x2="584.6" y2="670.5" class="ray rayD" /><text x="566.5" y="369.3" class="rayLabel">D</text>
+<line x1="773.3" y1="670.5" x2="117.3" y2="80.0" class="ray rayE" /><text x="450.3" y="369.3" class="rayLabel">E</text>
+
+  <circle cx="117.3" cy="80.0" r="5.5" class="semantic"/><text x="109.3" y="70.0" class="label">C2</text>
+  <circle cx="484.3" cy="80.0" r="5.5" class="semantic"/><text x="474.3" y="103.0" class="label">D4-CL</text>
+  <circle cx="538.3" cy="80.0" r="5.5" class="semantic"/><text x="546.3" y="103.0" class="label">D3-CR</text>
+  <circle cx="584.6" cy="670.5" r="5.5" class="semantic"/><text x="576.6" y="660.5" class="label">CP2-FL</text>
+  <circle cx="773.3" cy="670.5" r="5.5" class="semantic"/><text x="781.3" y="660.5" class="label">CP2-FR</text>
+  <circle cx="775.3" cy="756.3" r="5.5" class="semantic"/><text x="783.3" y="774.3" class="label">CP2-CR derived</text>
+
+  <rect x="585.1" y="666.0" width="9" height="9" class="bodyNode"/><text x="597.6" y="687.5" class="bodyLabel">BODY-FL</text>
+  <rect x="762.1" y="666.0" width="9" height="9" class="bodyNode"/><text x="758.6" y="690.5" class="bodyLabel">BODY-FR</text>
+  <rect x="587.1" y="751.8" width="9" height="9" class="bodyNode"/><text x="599.6" y="774.3" class="bodyLabel">BODY-BL</text>
+  <rect x="764.1" y="751.8" width="9" height="9" class="bodyNode"/><text x="760.6" y="774.3" class="bodyLabel">BODY-BR</text>
+  <path d="M 474.7 75.0 L 484.7 85.0 M 484.7 75.0 L 474.7 85.0" class="proxy"/><text x="471.7" y="98.0" class="proxyLabel" text-anchor="end">old D4-CL</text>
+  <path d="M 529.2 75.0 L 539.2 85.0 M 539.2 75.0 L 529.2 85.0" class="proxy"/><text x="526.2" y="68.0" class="proxyLabel" text-anchor="end">old D3-CR</text>
+
+  <text x="1120" y="130" class="head">Node layers</text>
+  <circle cx="1128" cy="160" r="5.5" class="semantic"/><text x="1145" y="165" class="legend">Correct R5 semantic node</text>
+  <rect x="1123.5" y="182.5" width="9" height="9" class="bodyNode"/><text x="1145" y="192" class="legend">Rendered cupboard-body node</text>
+  <path d="M1123 213 L1133 223 M1133 213 L1123 223" class="proxy"/><text x="1145" y="222" class="legend">Superseded/proxy point</text>
+
+  <text x="1120" y="270" class="head">Five semantic rays</text>
+  <line x1="1122" y1="295" x2="1160" y2="295" class="ray rayA"/><text x="1170" y="300" class="legend">A · D4-CL → CP2-FR</text>
+  <line x1="1122" y1="325" x2="1160" y2="325" class="ray rayB"/><text x="1170" y="330" class="legend">B · D4-CL → CP2-CR</text>
+  <line x1="1122" y1="355" x2="1160" y2="355" class="ray rayC"/><text x="1170" y="360" class="legend">C · D4-CL → CP2-FL</text>
+  <line x1="1122" y1="385" x2="1160" y2="385" class="ray rayD"/><text x="1170" y="390" class="legend">D · D3-CR → CP2-FL</text>
+  <line x1="1122" y1="415" x2="1160" y2="415" class="ray rayE"/><text x="1170" y="420" class="legend">E · CP2-FR → C2</text>
+
+  <rect x="1115" y="458" width="330" height="156" rx="8" class="warning"/>
+  <text x="1132" y="487" class="head">Semantic outcome</text>
+  <text x="1132" y="516" class="text">D4/D3 gauges superseded:</text>
+  <text x="1132" y="540" class="small">D4 offset 18.33 mm · D3 offset 16.67 mm</text>
+  <text x="1132" y="568" class="text">CP2-CR recovered at</text>
+  <text x="1132" y="592" class="small">(4231.31, -4226.86) · derived, not measured</text>
+
+  <rect x="1115" y="638" width="330" height="198" rx="8" class="good"/>
+  <text x="1132" y="668" class="head">Evidence interaction</text>
+  <text x="1132" y="696" class="text">RC-18 / RC-22 exact</text>
+  <text x="1132" y="721" class="text">RC-19 residual -4.00 mm</text>
+  <text x="1132" y="746" class="text">Body 708 × 536 mm exact</text>
+  <text x="1132" y="771" class="text">Left casing ≈20 mm</text>
+  <text x="1132" y="796" class="text">Right-layer balance 27 mm unallocated</text>
+  <text x="1132" y="821" class="small">No width/depth change supported.</text>
+
+  <text x="1120" y="874" class="head">Conclusion</text>
+  <text x="1120" y="902" class="text">Localized systematic CP2 relative-</text>
+  <text x="1120" y="924" class="text">position residual · keep v1.3 frozen.</text>
+  <text x="42" y="975" class="sub">VALIDATION REVIEW REQUIRED · geometry movement 0 mm · solver not run · no v1.4</text>
+</svg>

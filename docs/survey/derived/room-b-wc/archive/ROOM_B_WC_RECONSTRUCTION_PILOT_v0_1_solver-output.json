@@ -1,0 +1,367 @@
+{
+  "outputDir": "docs/survey/derived/room-b-wc",
+  "files": [
+    "ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1.svg",
+    "ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1.json",
+    "ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1.md",
+    "ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1_solver-output.json"
+  ],
+  "selectedSolutionId": "P1",
+  "baselineStatus": {
+    "status": "accepted-provisional-working-baseline",
+    "acceptedDate": "2026-08-04",
+    "acceptedBy": "human review",
+    "geometryFrozen": true,
+    "finalOrConstructionAccurate": false,
+    "nextPhase": "independent Room C reconstruction",
+    "integrationInterfaces": [
+      "Room A -> Room C through D2",
+      "Room B/WC -> Room C through D3"
+    ],
+    "reopenOnlyFor": "global Room C integration evidence exposing a genuine network inconsistency"
+  },
+  "clearExactRmsMm": 4.759,
+  "roomBRmsMm": 6.244,
+  "wcRmsMm": 1.354,
+  "largestExactResidual": {
+    "id": "SUP-069",
+    "residualMm": -15.864
+  },
+  "correctedBaseB07": {
+    "activeRangeMm": [
+      2200,
+      2220
+    ],
+    "predictedMm": 2252.41,
+    "residualToRangeMm": 32.41,
+    "withinRange": false
+  },
+  "correctedBaseWc03": {
+    "observedMm": 1685,
+    "predictedMm": 1684.65,
+    "residualMm": -0.35
+  },
+  "correctedSup071": {
+    "from": "B2 / D5-BR",
+    "to": "B4",
+    "observedMm": 2046,
+    "predictedMm": 2050.87,
+    "residualMm": 4.87
+  },
+  "wallFaceChecks": [
+    {
+      "id": "SUP-080",
+      "observedMm": 2217,
+      "predictedMm": 2296.47,
+      "residualMm": 79.47,
+      "landingFraction": 0.49875,
+      "withinSegment": true
+    },
+    {
+      "id": "SUP-081",
+      "observedMm": 3492,
+      "predictedMm": 3460.04,
+      "residualMm": -31.96,
+      "landingFraction": 0.28589,
+      "withinSegment": true
+    }
+  ],
+  "candidateComparison": {
+    "D0": {
+      "distanceOnlyRobustCost": 3.0061,
+      "totalRobustCost": 3.0061,
+      "parallelDifferenceDegrees": 34.949,
+      "roomBRmsMm": 1.638,
+      "wcRmsMm": 1.318
+    },
+    "P1": {
+      "distanceOnlyRobustCost": 16.0249,
+      "totalRobustCost": 19.6507,
+      "parallelDifferenceDegrees": 2.954,
+      "roomBRmsMm": 6.244,
+      "wcRmsMm": 1.354
+    }
+  },
+  "wallBearingsDegrees": {
+    "D3": 0,
+    "D3Return": 92.426,
+    "B05B1": 0.095,
+    "D5RoomBFace": 93.46,
+    "B2B3": 92.355,
+    "B3B4": 182.954,
+    "B4B3": 2.954,
+    "B4B0": 272.392,
+    "B0B4": 92.392,
+    "T0T1": 0.095,
+    "T1T2": 90.358,
+    "T2T3": 180.282,
+    "T3T2": 0.282,
+    "T3D5WCL": 268.11
+  },
+  "architecturalParallelPairDifferences": [
+    {
+      "id": "PAIR-D3-B05B1",
+      "firstSegment": [
+        "B0",
+        "D3-BR"
+      ],
+      "secondSegment": [
+        "B0.5",
+        "B1"
+      ],
+      "differenceDegrees": -0.095
+    },
+    {
+      "id": "PAIR-D3-B4B3",
+      "firstSegment": [
+        "B0",
+        "D3-BR"
+      ],
+      "secondSegment": [
+        "B4",
+        "B3"
+      ],
+      "differenceDegrees": -2.954
+    },
+    {
+      "id": "PAIR-D3-T0T1",
+      "firstSegment": [
+        "B0",
+        "D3-BR"
+      ],
+      "secondSegment": [
+        "T0",
+        "T1"
+      ],
+      "differenceDegrees": -0.095
+    },
+    {
+      "id": "PAIR-D3-T3T2",
+      "firstSegment": [
+        "B0",
+        "D3-BR"
+      ],
+      "secondSegment": [
+        "T3",
+        "T2"
+      ],
+      "differenceDegrees": -0.282
+    },
+    {
+      "id": "PAIR-RETURN-B0B4",
+      "firstSegment": [
+        "D3-BR",
+        "B0.5"
+      ],
+      "secondSegment": [
+        "B0",
+        "B4"
+      ],
+      "differenceDegrees": 0.034
+    }
+  ],
+  "maximumArchitecturalFamilyDeviationDegrees": 2.954,
+  "d3VisibleClosedFace": {
+    "observedMm": 738,
+    "fittedMm": 738,
+    "physicalLeafWidthMm": null,
+    "supersededInactiveMm": 763
+  },
+  "coordinateMovementFromPreviousSelectedMm": {
+    "B0": {
+      "deltaX": 0,
+      "deltaY": 0,
+      "magnitude": 0
+    },
+    "D3-BR": {
+      "deltaX": -28.03,
+      "deltaY": 0,
+      "magnitude": 28.03
+    },
+    "B0.5": {
+      "deltaX": -6.05,
+      "deltaY": -0.86,
+      "magnitude": 6.11
+    },
+    "B1": {
+      "deltaX": -0.3,
+      "deltaY": -97.75,
+      "magnitude": 97.75
+    },
+    "B2": {
+      "deltaX": 89.58,
+      "deltaY": -87.34,
+      "magnitude": 125.11
+    },
+    "B3": {
+      "deltaX": 209.07,
+      "deltaY": -76.84,
+      "magnitude": 222.74
+    },
+    "B4": {
+      "deltaX": 193.14,
+      "deltaY": 91.79,
+      "magnitude": 213.85
+    },
+    "T0": {
+      "deltaX": -7.35,
+      "deltaY": -112.89,
+      "magnitude": 113.13
+    },
+    "T1": {
+      "deltaX": 4.4,
+      "deltaY": -306.14,
+      "magnitude": 306.18
+    },
+    "T2": {
+      "deltaX": 131.17,
+      "deltaY": -297.99,
+      "magnitude": 325.58
+    },
+    "T3": {
+      "deltaX": 118.54,
+      "deltaY": -100.12,
+      "magnitude": 155.16
+    }
+  },
+  "cornerAnglesDegrees": [
+    {
+      "id": "ANG-B-D3BR",
+      "corner": "D3-BR",
+      "angleDegrees": 87.574
+    },
+    {
+      "id": "ANG-B-B05",
+      "corner": "B0.5",
+      "angleDegrees": 87.669
+    },
+    {
+      "id": "ANG-B-B1",
+      "corner": "B1",
+      "angleDegrees": 86.635
+    },
+    {
+      "id": "ANG-B-B2",
+      "corner": "B2",
+      "angleDegrees": 178.895
+    },
+    {
+      "id": "ANG-B-B3",
+      "corner": "B3",
+      "angleDegrees": 89.401
+    },
+    {
+      "id": "ANG-B-B4",
+      "corner": "B4",
+      "angleDegrees": 90.562
+    },
+    {
+      "id": "ANG-B-B0",
+      "corner": "B0",
+      "angleDegrees": 92.392
+    },
+    {
+      "id": "ANG-WC-T0",
+      "corner": "T0",
+      "angleDegrees": 93.365
+    },
+    {
+      "id": "ANG-WC-T1",
+      "corner": "T1",
+      "angleDegrees": 89.738
+    },
+    {
+      "id": "ANG-WC-T2",
+      "corner": "T2",
+      "angleDegrees": 90.076
+    },
+    {
+      "id": "ANG-WC-T3",
+      "corner": "T3",
+      "angleDegrees": 92.171
+    },
+    {
+      "id": "ANG-WC-D5WCL",
+      "corner": "D5-WCL",
+      "angleDegrees": 174.65
+    }
+  ],
+  "d5AssemblyGapMm": 120.71,
+  "d5SharedPhysicalLeaf": {
+    "onePhysicalLeaf": true,
+    "physicalLeafWidthMm": 761,
+    "leafTopMm": {
+      "x": 1746.59,
+      "y": 304.74
+    },
+    "leafBottomMm": {
+      "x": 1718.2,
+      "y": 1065.21
+    },
+    "leafCentreMm": {
+      "x": 1732.39,
+      "y": 684.98
+    },
+    "leafBearingDegrees": 92.138,
+    "roomB": {
+      "casingWidthMm": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "visibleClosedResidualMm": -0.144,
+      "outerCasingOffsetsMm": {
+        "topFromB1": 59,
+        "bottomToB2": 80
+      },
+      "revealDepthsMm": {
+        "top": 80,
+        "bottom": 97
+      },
+      "hiddenLeafBehindStopsMm": {
+        "top": 5.035,
+        "bottom": 19.109,
+        "total": 24.144
+      }
+    },
+    "wc": {
+      "casingWidthMm": 900.901,
+      "frameOffsetsMm": {
+        "topFromT0": 61.052,
+        "bottomFromD5WCL": 79.052
+      },
+      "frameOffsetResidualsMm": {
+        "top63": -1.948,
+        "bottom81": -1.948
+      },
+      "derivedRevealDepthsMm": {
+        "top": 40.622,
+        "bottom": 23.065
+      }
+    },
+    "oppositeCasingFaceSeparationMm": 120.506
+  },
+  "roomBAreaM2": 3.6257,
+  "wcAreaM2": 1.7956,
+  "plausibilityChecks": {
+    "roomBDoesNotSelfIntersect": true,
+    "wcDoesNotSelfIntersect": true,
+    "roomBAreaPlausible": true,
+    "wcAreaPlausible": true,
+    "d5AssemblyGapPositiveAndLocal": true,
+    "interruptedWallFacesCollinearExact": true,
+    "interruptedWallNodeOrderExact": true,
+    "noWallEdgeAcrossD5": true,
+    "d3BRExplicitlyOffLowerAlignment": true,
+    "crossTieWithin25Mm": true,
+    "correctedBaseWc03Within50Mm": true,
+    "correctedBaseB07WithinWorkingSigma": true,
+    "sup080LandingOnB3B4": true,
+    "sup081LandingOnB0B4": true,
+    "softParallelSelected": true,
+    "softFamiliesReduceMaximumDeviation": true,
+    "softFamiliesDistanceCostIncreaseBelowFifteen": true,
+    "d3ObjectGeometryValid": true,
+    "d5ObjectGeometryValid": true,
+    "d5OnePhysicalLeafExact": true,
+    "d5RoomBVisibleFaceWithin5Mm": true,
+    "d5WcFrameOffsetsWithin5Mm": true
+  }
+}

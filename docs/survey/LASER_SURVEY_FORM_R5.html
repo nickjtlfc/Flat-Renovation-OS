@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R5 field survey form - Rooms B, WC and Room C</title>
+  <style>
+    @page { size: A4 landscape; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #d8dde2; color: #17212b; font-family: Arial, Helvetica, sans-serif; }
+    .page { position: relative; width: 297mm; height: 210mm; margin: 0 auto 5mm; padding: 7mm 8mm 9mm; background: #fff; page-break-after: always; overflow: hidden; }
+    .page:last-child { page-break-after: auto; }
+    .topline { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.1mm solid #17212b; padding-bottom: 1.7mm; }
+    h1 { margin: 0; font-size: 16pt; letter-spacing: .05mm; }
+    h2 { margin: 0; font-size: 10.5pt; }
+    p { margin: 1.4mm 0; }
+    .meta { text-align: right; font-size: 8pt; line-height: 1.3; font-weight: bold; }
+    .intro { margin: 4mm 0; font-size: 11pt; line-height: 1.45; max-width: 245mm; }
+    .session { display: grid; grid-template-columns: 25mm 70mm 19mm 70mm 22mm 1fr; gap: 3mm; margin: 4mm 0 6mm; align-items: end; font-size: 9pt; }
+    .write-line { min-height: 6mm; border-bottom: .3mm solid #66717c; }
+    .guide { border: .35mm solid #273746; background: #f7f9fa; padding: 4mm 5mm; width: 190mm; }
+    .guide ul { margin: 2mm 0 0 5mm; padding-left: 4mm; font-size: 10.5pt; line-height: 1.65; }
+    .general-notes { margin-top: 5mm; width: 100%; height: 68mm; border: .3mm solid #66717c; padding: 2mm; background: repeating-linear-gradient(to bottom, transparent 0, transparent 8mm, #cbd2d8 8.2mm, transparent 8.4mm); }
+    .section { margin-top: 3mm; }
+    .section-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.2mm; }
+    .section-hint { font-size: 7.4pt; color: #4f5964; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 8pt; }
+    th, td { border: .28mm solid #2b3b4b; padding: 1mm 1.2mm; vertical-align: top; overflow-wrap: anywhere; }
+    th { background: #e8edf1; font-size: 7.5pt; text-align: left; vertical-align: middle; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    .code { font-family: Consolas, "Courier New", monospace; font-weight: bold; white-space: nowrap; }
+    .planned td { height: 8.8mm; }
+    .planned .id { width: 25mm; }
+    .planned .node { width: 28mm; }
+    .planned .value { width: 26mm; }
+    .planned .notes { width: auto; }
+    .supplemental td { height: 8.1mm; padding-top: .75mm; padding-bottom: .75mm; }
+    .supplemental .id { width: 20mm; }
+    .supplemental .endpoint { width: 53mm; }
+    .supplemental .value { width: 26mm; }
+    .supplemental .notes { width: auto; }
+    .feature td { height: 16mm; }
+    .feature .id { width: 20mm; }
+    .feature .endpoints { width: 67mm; }
+    .feature .values { width: 58mm; }
+    .feature .notes { width: auto; }
+    .cupboards { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 3mm; }
+    .cupboard { border: .3mm solid #2b3b4b; min-height: 42mm; }
+    .cupboard-head { display: flex; justify-content: space-between; align-items: baseline; padding: 1.5mm 2mm; background: #e8edf1; border-bottom: .28mm solid #2b3b4b; }
+    .cupboard-head strong { font-size: 10pt; }
+    .cupboard-head span { font-size: 7.2pt; color: #4f5964; }
+    .cupboard-row { display: grid; grid-template-columns: 43mm 1fr; min-height: 12mm; border-bottom: .25mm solid #7b858e; }
+    .cupboard-row:last-child { min-height: 26mm; border-bottom: 0; }
+    .cupboard-label { padding: 1.2mm; border-right: .25mm solid #7b858e; font-size: 7.4pt; color: #4f5964; }
+    .cupboard-write { padding: 1.2mm; }
+    .footer { position: absolute; left: 8mm; right: 8mm; bottom: 3mm; display: flex; justify-content: space-between; font-size: 6.7pt; color: #4f5964; }
+    @media print { html, body { background: #fff; } .page { margin: 0; } }
+  </style>
+</head>
+<body>
+  <main id="form"></main>
+  <script>
+    "use strict";
+
+    const R = (id, from, to) => ({ id, from, to });
+    const planned = {
+      roomB: [
+        R("BASE-B-01", "B0", "D3-BL"),
+        R("BASE-B-02", "D3-BR", "B1"),
+        R("BASE-B-03", "B1", "D5-BL"),
+        R("BASE-B-04", "D5-BR", "B2"),
+        R("BASE-B-05", "B2", "B3"),
+        R("BASE-B-06", "B3", "B4"),
+        R("BASE-B-07", "B4", "B0")
+      ],
+      wc: [
+        R("BASE-WC-01", "T0", "T1"),
+        R("BASE-WC-02", "T1", "T2"),
+        R("BASE-WC-03", "T2", "T3"),
+        R("BASE-WC-04", "T3", "D5-WCL"),
+        R("BASE-WC-05", "D5-WCR", "T0")
+      ],
+      roomC: [
+        R("BASE-C-01", "CP1-FR", "PO1"),
+        R("BASE-C-02", "PI1", "CP2-FL"),
+        R("BASE-C-03", "CP2-FR", "D2-CL"),
+        R("BASE-C-04", "D2-CR", "D3-CL"),
+        R("BASE-C-05", "D3-CR", "D4-CL"),
+        R("BASE-C-06", "D4-CR", "C2"),
+        R("BASE-C-07", "C2", "W2-CL"),
+        R("BASE-C-08", "W2-CR", "C1"),
+        R("BASE-C-09", "C1", "C0"),
+        R("BASE-C-10", "C0", "CP1-FL")
+      ],
+      studWall: [
+        R("BASE-SW-01", "PO1", "PO2"),
+        R("BASE-SW-02", "PO2", "PO3"),
+        R("BASE-SW-03", "PI1", "PI2"),
+        R("BASE-SW-04", "PI2", "PI3"),
+        R("BASE-SW-05", "PO1", "PI1"),
+        R("BASE-SW-06", "PO2", "PI2"),
+        R("BASE-SW-07", "PO3", "PI3")
+      ]
+    };
+
+    const features = [
+      { id: "D2" },
+      { id: "D3" },
+      { id: "D4" },
+      { id: "D5" },
+      { id: "W2" }
+    ];
+
+    const esc = value => String(value).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+
+    function plannedTable(rows) {
+      return `<table class="planned" data-table-type="planned"><thead><tr><th class="id">ID</th><th class="node">Start node</th><th class="node">End node</th><th class="value">Value (mm)</th><th class="notes">Notes</th></tr></thead><tbody>${rows.map(row => `<tr data-row-type="planned" data-id="${esc(row.id)}"><td class="code">${esc(row.id)}</td><td class="code">${esc(row.from)}</td><td class="code">${esc(row.to)}</td><td></td><td></td></tr>`).join("")}</tbody></table>`;
+    }
+
+    function supplementalTable(start, end) {
+      const rows = Array.from({ length: end - start + 1 }, (_, index) => `SUP-${String(start + index).padStart(3, "0")}`);
+      return `<table class="supplemental" data-table-type="supplemental"><thead><tr><th class="id">ID</th><th class="endpoint">From node/point</th><th class="endpoint">To node/point</th><th class="value">Value (mm)</th><th class="notes">Notes</th></tr></thead><tbody>${rows.map(id => `<tr data-row-type="supplemental" data-id="${id}"><td class="code">${id}</td><td></td><td></td><td></td><td></td></tr>`).join("")}</tbody></table>`;
+    }
+
+    function featureTable() {
+      return `<table class="feature" data-table-type="feature"><thead><tr><th class="id">Feature ID</th><th class="endpoints">Relevant endpoint or node descriptions</th><th class="values">Measured value or values</th><th class="notes">Notes</th></tr></thead><tbody>${features.map(feature => `<tr data-row-type="feature" data-id="${feature.id}"><td class="code">${feature.id}</td><td></td><td></td><td></td></tr>`).join("")}</tbody></table>`;
+    }
+
+    function cupboardCard(id) {
+      return `<div class="cupboard" data-object="cupboard" data-id="${id}"><div class="cupboard-head"><strong>${id}</strong><span>Room C cupboard</span></div><div class="cupboard-row"><div class="cupboard-label">Related supplemental IDs</div><div class="cupboard-write"></div></div><div class="cupboard-row"><div class="cupboard-label">Plain-English notes</div><div class="cupboard-write"></div></div></div>`;
+    }
+
+    const pages = [
+      { title: "R5 field survey - Rooms B, WC and Room C", room: "FIELD FORM", cover: true },
+      { title: "Planned measurements - Room B and WC", room: "ROOM B AND WC", sections: [
+        { title: "Room B", rows: planned.roomB },
+        { title: "WC", rows: planned.wc }
+      ] },
+      { title: "Planned measurements - Room C", room: "ROOM C", sections: [
+        { title: "Permanent boundary", rows: planned.roomC },
+        { title: "Current stud wall", rows: planned.studWall }
+      ] },
+      { title: "Doors, window and cupboards", room: "ROOMS B, WC AND C", features: true }
+    ];
+
+    for (let start = 65; start <= 264; start += 20) {
+      const end = Math.min(start + 19, 264);
+      pages.push({
+        title: `Supplemental measurements SUP-${String(start).padStart(3, "0")} to SUP-${String(end).padStart(3, "0")}`,
+        room: "SUPPLEMENTAL MEASUREMENTS",
+        supplemental: { start, end }
+      });
+    }
+
+    function coverMarkup() {
+      return `<div class="session"><strong>Survey date</strong><div class="write-line"></div><strong>Surveyor</strong><div class="write-line"></div><strong>Instrument</strong><div class="write-line"></div></div><p class="intro">Compact handwritten capture sheet for the remaining shell survey. Use the wide Notes fields for photographs, uncertainty, unusual endpoints, repeat readings, obstructions, casing comments, surface descriptions and other exceptions.</p><div class="guide"><h2>Brief field guidance</h2><ul><li>Record the stated node-to-node measurements.</li><li>Add useful supplemental measurements as required.</li><li>Describe unusual endpoints clearly.</li><li>Use Notes for photographs, uncertainty and exceptions.</li><li>Do not invent concealed geometry.</li></ul></div><div class="general-notes"><h2>General field notes</h2></div>`;
+    }
+
+    function sectionsMarkup(sections) {
+      return sections.map(section => `<div class="section"><div class="section-head"><h2>${esc(section.title)}</h2><span class="section-hint">Record mm; use Notes for all context and exceptions</span></div>${plannedTable(section.rows)}</div>`).join("");
+    }
+
+    function featuresMarkup() {
+      return `<div class="section"><div class="section-head"><h2>Doors D2-D5 and window W2</h2><span class="section-hint">Use Notes for casing distinctions and exceptions</span></div>${featureTable()}</div><div class="section"><div class="section-head"><h2>Cupboards</h2><span class="section-hint">Record progressively in plain English and link any relevant SUP IDs</span></div><div class="cupboards">${cupboardCard("CP1")}${cupboardCard("CP2")}</div></div>`;
+    }
+
+    function pageMarkup(page, index) {
+      let body = "";
+      if (page.cover) body = coverMarkup();
+      else if (page.sections) body = sectionsMarkup(page.sections);
+      else if (page.features) body = featuresMarkup();
+      else if (page.supplemental) body = supplementalTable(page.supplemental.start, page.supplemental.end);
+      return `<section class="page" data-page="${index + 1}" data-room="${esc(page.room)}"><header class="topline"><h1>${esc(page.title)}</h1><div class="meta">${esc(page.room)}<br>Page ${index + 1} of ${pages.length}</div></header>${body}<footer class="footer"><span>R5 compact field measurement sheet</span><span>Record millimetres unless stated otherwise</span></footer></section>`;
+    }
+
+    const requested = Number(new URLSearchParams(location.search).get("page"));
+    document.getElementById("form").innerHTML = Number.isInteger(requested) && requested >= 1 && requested <= pages.length
+      ? pageMarkup(pages[requested - 1], requested - 1)
+      : pages.map(pageMarkup).join("");
+  </script>
+</body>
+</html>

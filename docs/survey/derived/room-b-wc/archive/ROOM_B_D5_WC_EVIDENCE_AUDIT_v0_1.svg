@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Room B D5 / WC evidence audit v0.1</title><desc id="desc">FIELD SHEET — opposite casing faces are distinct; openings are not walls; schematic, not to scale</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker>
+    <style>
+      .title{font:700 31px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#475569}.h{font:700 20px Arial,sans-serif;fill:#0f172a}.t{font:15px Arial,sans-serif;fill:#1e293b}.small{font:13px Arial,sans-serif;fill:#334155}.tiny{font:11px Arial,sans-serif;fill:#475569}.wall{stroke:#1e3a8a;stroke-width:9;fill:none;stroke-linecap:round;stroke-linejoin:round}.tile{stroke:#0f766e;stroke-width:11;fill:none;stroke-linecap:round}.opening{stroke:#c2410c;stroke-width:7;fill:none;stroke-dasharray:12 9}.assembly{stroke:#7c3aed;stroke-width:4;fill:none;stroke-dasharray:8 7}.dim{stroke:#475569;stroke-width:2;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.diag{stroke:#64748b;stroke-width:2;fill:none;stroke-dasharray:7 7}.suspect{stroke:#dc2626;stroke-width:3;fill:none;stroke-dasharray:9 7}.node{fill:#fff;stroke:#1d4ed8;stroke-width:4}.mixed{fill:#fff;stroke:#7c3aed;stroke-width:5}.wc{fill:#fff;stroke:#047857;stroke-width:4}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:2}.bad{fill:#fef2f2;stroke:#dc2626;stroke-width:2}.good{fill:#f0fdf4;stroke:#16a34a;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc"/><text x="55" y="58" class="title">Room B D5 / WC evidence audit v0.1</text><text x="55" y="88" class="sub">FIELD SHEET — opposite casing faces are distinct; openings are not walls; schematic, not to scale</text>
+  <rect x="55" y="115" width="1490" height="875" rx="14" class="box"/>
+  <path d="M 380 185 L 380 765" class="opening"/><path d="M 380 765 L 380 950" class="tile"/><path d="M 770 185 L 770 780" class="opening"/><path d="M 770 780 L 770 930" class="wall"/>
+  <path d="M 380 185 L 770 185" class="assembly"/><path d="M 380 765 L 770 780" class="assembly"/>
+  <path d="M 500 250 L 500 700" stroke="#c2410c" stroke-width="5"/><path d="M 650 245 L 650 705" stroke="#047857" stroke-width="5"/><path d="M 565 285 L 585 680" stroke="#2563eb" stroke-width="8"/>
+  <circle cx="380" cy="185" r="10" class="mixed"/><circle cx="380" cy="765" r="10" class="mixed"/><circle cx="770" cy="185" r="10" class="wc"/><circle cx="770" cy="780" r="10" class="wc"/><circle cx="770" cy="930" r="10" class="wc"/>
+  <text x="180" y="175" class="h">B1 / D5-BL</text><text x="170" y="775" class="h">B2 / D5-BR</text><text x="800" y="175" class="h">T0 / D5-WCR</text><text x="800" y="790" class="h">D5-WCL</text><text x="800" y="940" class="h">T3</text>
+  <text x="330" y="485" class="t" transform="rotate(-90 330 485)" text-anchor="middle">Room B outer casing — 874 mm — OPENING</text><text x="825" y="485" class="t" transform="rotate(90 825 485)" text-anchor="middle">WC outer casing — 898 mm — OPENING</text>
+  <text x="575" y="150" class="small" text-anchor="middle">B1↔T0 assembly depth — derived 120.7 mm — no wall</text><text x="575" y="825" class="small" text-anchor="middle">B2↔D5-WCL opposite-face separation — derived 120.5 mm</text>
+  <text x="420" y="240" class="small">59 mm to inner frame</text><text x="420" y="730" class="small">80 mm from inner frame</text><text x="680" y="240" class="small" text-anchor="end">63 mm to inner frame</text><text x="680" y="730" class="small" text-anchor="end">81 mm from D5-WCL</text>
+  <text x="575" y="520" class="t" text-anchor="middle">one shared physical leaf — approximately 761 mm</text><text x="575" y="550" class="small" text-anchor="middle">Room B reveal depths: approximately 80 / 97 mm</text>
+  <rect x="95" y="850" width="600" height="105" rx="10" class="bad"/><text x="120" y="882" class="h">B2 local material stack</text><text x="120" y="912" class="small">Outer casing + metal trim + tiled face</text>
+<text x="120" y="935" class="small">Approximately 20 mm local cutaway; not a generic wall corner</text>
+  <rect x="940" y="185" width="520" height="360" rx="12" class="warn"/><text x="970" y="225" class="h">Field checks</text>
+  <text x="970" y="260" class="t">1. B1→B3 direct total; record material contact.</text>
+<text x="970" y="290" class="t">2. Repeat BASE-B-05 B2→B3 = 1218 mm.</text>
+<text x="970" y="320" class="t">3. Measure B1↔T0 at a matched height.</text>
+<text x="970" y="350" class="t">4. Measure B2↔D5-WCL at the same height.</text>
+<text x="970" y="380" class="t">5. Photograph the B2 cutaway with a ruler in plane.</text>
+<text x="970" y="410" class="t"></text>
+<text x="970" y="440" class="t">Never identify B1 with T0 or B2 with D5-WCL.</text>
+<text x="970" y="470" class="t">Never draw a wall through either D5 opening.</text>
+  <rect x="940" y="585" width="520" height="300" rx="12" class="good"/><text x="970" y="625" class="h">BASE-B-05 meaning</text>
+  <text x="970" y="660" class="t">From: B2 / D5-BR mixed casing/tile junction</text>
+<text x="970" y="688" class="t">To: B3 finished tiled corner</text>
+<text x="970" y="716" class="t">Reading: 1218 mm; high-confidence baseline</text>
+<text x="970" y="744" class="t">Method record: 'clear baseline' only</text>
+<text x="970" y="772" class="t">Missing metadata: stance, height and exact contact faces</text>
+<text x="970" y="800" class="t">Use: local finished-face wall length</text>
+<text x="970" y="828" class="t">Do not promote it alone to structural wall plane.</text>
+  <text x="80" y="1020" class="small" fill="#b91c1c">All D5 object, casing, reveal, tile and finished-wall layers remain separate. No geometry is corrected by this audit.</text>
+</svg>

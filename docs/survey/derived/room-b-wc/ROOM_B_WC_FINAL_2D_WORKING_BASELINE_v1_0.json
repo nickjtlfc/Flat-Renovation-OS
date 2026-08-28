@@ -1,0 +1,381 @@
+{
+  "documentType": "final working 2D room-group baseline",
+  "scope": "Room B/WC",
+  "version": "1.0",
+  "generatedDate": "2026-08-13",
+  "units": "millimetres",
+  "status": "FINAL 2D WORKING SHELL — VALIDATED FOR DESIGN / 3D DEVELOPMENT",
+  "activeGenerator": "scripts/generate_final_2d_working_baselines_v1_0.mjs",
+  "provenance": {
+    "localGeometryAuthority": {
+      "file": "docs/survey/derived/room-b-wc/ROOM_B_WC_FIELD_RECONCILED_RECTANGULAR_WC_CANDIDATE_v0_3.json",
+      "sha256": "18139B9B82DC31EADA14472126153654879DA78D871C2E9FADD63E8320BADCB1"
+    },
+    "wholeFlatCompositionAuthority": {
+      "file": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_3.json",
+      "sha256": "1617D936D521259A1D73E240C42E408F0F4C5F8D4FB60E585ED755027EC50474"
+    },
+    "statement": "Accepted local v0.3 corrected orthogonal Room B and rectangular WC, with the later accepted v1.3 straight D5 leaf and cleaned doorway-layer presentation."
+  },
+  "coordinateFrame": {
+    "localDatum": "Room B v0.3 local frame; B0 = (0,0), D3 casing axis = local +x.",
+    "wholeFlatTransform": {
+      "type": "rigid translation only",
+      "rotationDegrees": 0,
+      "scale": 1,
+      "reflection": false,
+      "translationMm": {
+        "x": 3309.78,
+        "y": 103.859
+      },
+      "formula": "whole = local + translation"
+    }
+  },
+  "geometry": {
+    "nodesLocalMm": {
+      "B0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-BR": {
+        "x": 852.121,
+        "y": 0
+      },
+      "B0.5": {
+        "x": 852.121,
+        "y": 136
+      },
+      "B1": {
+        "x": 1670.063,
+        "y": 136
+      },
+      "B2": {
+        "x": 1670.063,
+        "y": 1011.666
+      },
+      "B3": {
+        "x": 1670.063,
+        "y": 2221.117
+      },
+      "B4": {
+        "x": 0,
+        "y": 2221.117
+      },
+      "T0": {
+        "x": 1790.567,
+        "y": 128.924
+      },
+      "T1": {
+        "x": 3453.255,
+        "y": 128.924
+      },
+      "T2": {
+        "x": 3453.255,
+        "y": 1203.725
+      },
+      "T3": {
+        "x": 1790.567,
+        "y": 1203.725
+      },
+      "D5-WCL": {
+        "x": 1790.567,
+        "y": 1029.816
+      }
+    },
+    "aliases": {
+      "B0": [
+        "D3-BL"
+      ],
+      "B1": [
+        "D5-BL"
+      ],
+      "B2": [
+        "D5-BR"
+      ],
+      "T0": [
+        "D5-WCR"
+      ]
+    },
+    "roomBBoundarySequence": [
+      "B0",
+      "D3-BR",
+      "B0.5",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "wcBoundarySequence": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "D5-WCL"
+    ],
+    "D3RoomB": {
+      "outerLeft": {
+        "x": 0,
+        "y": 0
+      },
+      "outerRight": {
+        "x": 852.1209999999996,
+        "y": 0
+      },
+      "innerLeft": {
+        "x": 80,
+        "y": 0
+      },
+      "innerRight": {
+        "x": 787.1209999999996,
+        "y": 0
+      },
+      "doorLeft": {
+        "x": 64.55999999999995,
+        "y": -103.859
+      },
+      "doorRight": {
+        "x": 802.56,
+        "y": -103.859
+      },
+      "doorCentre": {
+        "x": 433.55999999999995,
+        "y": -103.859
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLengthMm": 852.121,
+      "visibleClosedWidthMm": 738,
+      "physicalLeafWidthMm": null,
+      "alongAdjustmentMm": 15.44,
+      "derivedDoorFaceDepthMm": 103.859,
+      "leftInnerToDoorMm": 105,
+      "rightInnerToDoorMm": 105,
+      "geometryValid": true
+    },
+    "D5RoomB": {
+      "outerLeft": {
+        "x": 1670.0629999999996,
+        "y": 136
+      },
+      "outerRight": {
+        "x": 1670.0629999999996,
+        "y": 1011.666
+      },
+      "innerLeft": {
+        "x": 1670.0639999999999,
+        "y": 195.007
+      },
+      "innerRight": {
+        "x": 1670.0639999999999,
+        "y": 931.66
+      },
+      "visibleDoorLeft": {
+        "x": 1758.5605,
+        "y": 194.90950000000004
+      },
+      "visibleDoorRight": {
+        "x": 1758.5605,
+        "y": 931.7654999999999
+      },
+      "doorLeft": {
+        "x": 1758.721,
+        "y": 189.87100000000004
+      },
+      "doorRight": {
+        "x": 1758.721,
+        "y": 950.871
+      },
+      "doorCentre": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "direction": {
+        "x": 0,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 88.4965,
+      "rightInnerToDoorMm": 88.4965,
+      "geometryValid": true
+    },
+    "D5WC": {
+      "outerLeft": {
+        "x": 1790.5669999999996,
+        "y": 1029.816
+      },
+      "outerRight": {
+        "x": 1790.5669999999996,
+        "y": 128.92399999999998
+      },
+      "innerLeft": {
+        "x": 1790.5669999999996,
+        "y": 948.8190000000001
+      },
+      "innerRight": {
+        "x": 1790.5669999999996,
+        "y": 191.91900000000004
+      },
+      "direction": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 900.892,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 31.846,
+      "bottomDerivedRevealDepthMm": 31.846,
+      "doorLeft": {
+        "x": 1758.721,
+        "y": 950.871
+      },
+      "doorRight": {
+        "x": 1758.721,
+        "y": 189.87100000000004
+      },
+      "doorCentre": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "D5SharedPhysicalLeaf": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 1758.721,
+        "y": 189.87100000000004
+      },
+      "leafBottomMm": {
+        "x": 1758.721,
+        "y": 950.871
+      },
+      "leafCentreMm": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "leafBearingDegrees": 90,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 88.4965,
+          "bottom": 88.4965
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.0385,
+          "bottom": 19.1055,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.892,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 31.846,
+          "bottom": 31.846
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.504
+    },
+    "tileAndWallLayers": {
+      "B3ToB4": "Measured finished tile face; underlying wall plane shown 10 mm behind as approximate derived layer.",
+      "D5B2Cutaway": "Approximately 20 mm local tile/casing cutaway shown as a photo-derived secondary detail; not a shell constraint."
+    },
+    "soffit": {
+      "startPointMm": {
+        "x": 1673.766,
+        "y": 1203.633
+      },
+      "fromB2Mm": 192,
+      "fullGeometryModelled": false
+    },
+    "verticalEvidence": {
+      "roomB": {
+        "B4B0ClearAreaCeilingMm": 2281,
+        "B2D5AreaCeilingMm": 2274
+      },
+      "wc": {
+        "T0D5AreaCeilingMm": 2289,
+        "T3AreaCeilingMm": 2277
+      },
+      "doors": {
+        "D3RoomB": {
+          "doorHeightMm": 1975,
+          "casingTopFromFloorMm": 2076,
+          "casingTopToCeilingMm": 221
+        },
+        "D5RoomB": {
+          "casingHeightMm": 2157,
+          "casingTopToCeilingMm": 237,
+          "doorHeightMm": 1974
+        },
+        "D5WC": {
+          "casingHeightMm": 2057,
+          "casingTopToCeilingMm": 225
+        }
+      }
+    },
+    "sanitaryAndServiceTopology": "unchanged; no sanitary/service point was re-solved or inferred"
+  },
+  "acceptedConstraints": {
+    "D3BRToB05Mm": 136,
+    "old249MmReturn": "superseded/inactive",
+    "roomBShell": "corrected orthogonal",
+    "WC": "human-approved exact working rectangle",
+    "D5": "one clean opening with one straight 761 mm leaf at 90°"
+  },
+  "correspondence": {
+    "wholeFlatGeometryPath": "geometry.roomBWCUnchangedMm",
+    "maximumRoundTripNodeDeltaMm": 1e-12,
+    "maximumRoundTripObjectDeltaMm": 0,
+    "numericallyIdenticalAfterTransform": true,
+    "allExportedGeometryNumericallyIdenticalAfterTransform": true,
+    "laterAcceptedObjectComposition": "D5 casing positions unchanged from local v0.3; v1.3 leaf endpoints are inverse-transformed into this local package.",
+    "intentionalPresentationDifferences": [
+      "Standalone crop and room-specific labels only."
+    ]
+  },
+  "retainedUncertainties": [
+    {
+      "measuredMm": 3726,
+      "modelMm": 3684.586,
+      "residualMm": -41.414,
+      "residualPercent": -1.111,
+      "caution": "Conditional D3-normal interpretation; exact original field ray bearing and landing stations were not permanently marked."
+    },
+    "Human rectangular working shell retained despite the 1643/1685 mm opposing-width observations.",
+    "D3 opposing structural reveal and D4 structural reveal dimensions remain unmeasured.",
+    "D5 shallow high-level cover/bulkhead exact 3D extent remains unmeasured."
+  ],
+  "preservation": {
+    "geometryMovementMm": 0,
+    "solverRun": false,
+    "correctedRoomBRetained": true,
+    "rectangularWCRetained": true,
+    "straightD5LeafRetained": true
+  }
+}

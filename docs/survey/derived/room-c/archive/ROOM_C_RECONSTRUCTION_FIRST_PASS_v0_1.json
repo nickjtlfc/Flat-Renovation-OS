@@ -1,0 +1,890 @@
+{
+  "documentType": "derived Room C first-pass 2D reconstruction and residual record - not source evidence",
+  "version": "0.1",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres",
+  "status": "first-pass proposal for human visual review; not accepted geometry",
+  "scope": "Permanent finished-wall shell and current thick stud partition. Detailed D2/D3/D4/W2/CP1/CP2 object reconstruction is deferred.",
+  "authoritativeTopology": [
+    "docs/survey/NODE_REFERENCE_MAP_R5.svg",
+    "docs/survey/NODE_REFERENCE_REGISTER_R5.md"
+  ],
+  "validationEvidence": [
+    "docs/survey/PROVISIONAL_FLAT_EVIDENCE_MAP_NOTES.md",
+    "source-material/photos/RoomC/",
+    "source-material/plans/rough-paint-sketch.jpg",
+    "source-material/plans/2dPlan.jpeg"
+  ],
+  "coordinateGauge": {
+    "origin": "C0",
+    "positiveX": "C0 toward D3-CL",
+    "positiveY": "approximately into the W2 recess / down on the reconstruction sheet",
+    "siteNorth": false
+  },
+  "method": {
+    "loss": "Huber",
+    "huberThresholdStandardDeviations": 2.5,
+    "directNominalSigmaMm": 8,
+    "approximateCrossCheckSigmaMm": 100,
+    "selectedSoftAngleSigmaDegrees": 3
+  },
+  "architecturalConstraints": [
+    {
+      "id": "ARCH-01",
+      "class": "hard topology",
+      "statement": "D3-CL is the permanent finished-wall corner; D2-CR is 580 mm along the adjoining wall and is not the corner."
+    },
+    {
+      "id": "ARCH-02",
+      "class": "hard parameterisation",
+      "statement": "C0-D3-CL, CP1-FL-PO1, PO2-PO3, PI1-CP2-FR and PI2-PI3 use one continuous/parallel wall-direction family."
+    },
+    {
+      "id": "ARCH-03",
+      "class": "hard parameterisation",
+      "statement": "C0-CP1-FL, PO1-PO2, PO3-D3-CL, PI1-PI2 and the A-C wall use the adjoining wall-direction family."
+    },
+    {
+      "id": "ARCH-04",
+      "class": "soft architectural constraint",
+      "statement": "The two wall-direction families are approximately perpendicular, modelled as 90 degrees with sigma 3 degrees in A1."
+    },
+    {
+      "id": "ARCH-05",
+      "class": "hard topology",
+      "statement": "PO and PI partition faces remain distinct; the L-shaped wall is never collapsed to one line."
+    },
+    {
+      "id": "ARCH-06",
+      "class": "hard topology",
+      "statement": "C1/W2-CR and C2/W2-CL are the two 165 mm W2 recess returns; C1-C2 is their 1269 mm span relationship."
+    },
+    {
+      "id": "ARCH-07",
+      "class": "display-only null-space gauge",
+      "statement": "The unmeasured combined D4/D3 opening span is shared equally only to place provisional symbols; this does not solve either casing width."
+    }
+  ],
+  "candidates": {
+    "D1": {
+      "id": "D1",
+      "label": "distance-led diagnostic",
+      "note": "Uses every supplied distance, with approximate checks at lower weight and no right-angle prior.",
+      "objective": 14.6981,
+      "includedAngleDegrees": 98.8495,
+      "usedDirectRmsMm": 8.703,
+      "approximateCrossCheckRmsMm": 151.791,
+      "largestResidual": {
+        "id": "RC-17",
+        "residualMm": -169.69,
+        "usedInFit": true
+      },
+      "residuals": [
+        {
+          "id": "RC-01",
+          "measuredMm": 4185,
+          "solvedMm": 4168.62,
+          "residualMm": -16.38,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-02",
+          "measuredMm": 3705,
+          "solvedMm": 3691.57,
+          "residualMm": -13.43,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-03",
+          "measuredMm": 1534,
+          "solvedMm": 1550.29,
+          "residualMm": 16.29,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-04",
+          "measuredMm": 225,
+          "solvedMm": 225,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-05",
+          "measuredMm": 2318,
+          "solvedMm": 2332.29,
+          "residualMm": 14.29,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-06",
+          "measuredMm": 2601,
+          "solvedMm": 2618.33,
+          "residualMm": 17.33,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-07",
+          "measuredMm": 1346,
+          "solvedMm": 1359.28,
+          "residualMm": 13.28,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-08",
+          "measuredMm": 580,
+          "solvedMm": 580,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-09",
+          "measuredMm": 218,
+          "solvedMm": 218,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-10",
+          "measuredMm": 548,
+          "solvedMm": 548,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-11",
+          "measuredMm": 330,
+          "solvedMm": 330,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-12",
+          "measuredMm": 165,
+          "solvedMm": 165,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-13",
+          "measuredMm": 165,
+          "solvedMm": 165,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-14",
+          "measuredMm": 1269,
+          "solvedMm": 1269,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-15",
+          "measuredMm": 2760,
+          "solvedMm": 2594.32,
+          "residualMm": -165.68,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-16",
+          "measuredMm": 2100,
+          "solvedMm": 2213.46,
+          "residualMm": 113.46,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-17",
+          "measuredMm": 2928,
+          "solvedMm": 2758.31,
+          "residualMm": -169.69,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-18",
+          "measuredMm": 2494,
+          "solvedMm": 2493.55,
+          "residualMm": -0.45,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-19",
+          "measuredMm": 2206,
+          "solvedMm": 2210.77,
+          "residualMm": 4.77,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-20",
+          "measuredMm": 2494,
+          "solvedMm": 2493.55,
+          "residualMm": -0.45,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-21",
+          "measuredMm": 2202,
+          "solvedMm": 2197.51,
+          "residualMm": -4.49,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-22",
+          "measuredMm": 1739,
+          "solvedMm": 1739.9,
+          "residualMm": 0.9,
+          "usedInFit": true
+        }
+      ]
+    },
+    "A1": {
+      "id": "A1",
+      "label": "architecture-informed first pass",
+      "note": "Holds RC-19 out after contradiction review; uses all other distances, low-weight approximate checks and a soft 90 degree wall-family relationship.",
+      "objective": 10.9762,
+      "includedAngleDegrees": 90.8536,
+      "usedDirectRmsMm": 8.799,
+      "approximateCrossCheckRmsMm": 17.797,
+      "largestResidual": {
+        "id": "RC-19",
+        "residualMm": 111.17,
+        "usedInFit": false
+      },
+      "residuals": [
+        {
+          "id": "RC-01",
+          "measuredMm": 4185,
+          "solvedMm": 4168.34,
+          "residualMm": -16.66,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-02",
+          "measuredMm": 3705,
+          "solvedMm": 3691.32,
+          "residualMm": -13.68,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-03",
+          "measuredMm": 1534,
+          "solvedMm": 1550.7,
+          "residualMm": 16.7,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-04",
+          "measuredMm": 225,
+          "solvedMm": 225,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-05",
+          "measuredMm": 2318,
+          "solvedMm": 2331.56,
+          "residualMm": 13.56,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-06",
+          "measuredMm": 2601,
+          "solvedMm": 2617.64,
+          "residualMm": 16.64,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-07",
+          "measuredMm": 1346,
+          "solvedMm": 1359.76,
+          "residualMm": 13.76,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-08",
+          "measuredMm": 580,
+          "solvedMm": 580,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-09",
+          "measuredMm": 218,
+          "solvedMm": 218,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-10",
+          "measuredMm": 548,
+          "solvedMm": 548,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-11",
+          "measuredMm": 330,
+          "solvedMm": 330,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-12",
+          "measuredMm": 165,
+          "solvedMm": 165,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-13",
+          "measuredMm": 165,
+          "solvedMm": 165,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-14",
+          "measuredMm": 1269,
+          "solvedMm": 1269,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-15",
+          "measuredMm": 2760,
+          "solvedMm": 2780.85,
+          "residualMm": 20.85,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-16",
+          "measuredMm": 2100,
+          "solvedMm": 2077.6,
+          "residualMm": -22.4,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-17",
+          "measuredMm": 2928,
+          "solvedMm": 2931.71,
+          "residualMm": 3.71,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-18",
+          "measuredMm": 2494,
+          "solvedMm": 2494,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-19",
+          "measuredMm": 2206,
+          "solvedMm": 2317.17,
+          "residualMm": 111.17,
+          "usedInFit": false
+        },
+        {
+          "id": "RC-20",
+          "measuredMm": 2494,
+          "solvedMm": 2494,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-21",
+          "measuredMm": 2202,
+          "solvedMm": 2202,
+          "residualMm": 0,
+          "usedInFit": true
+        },
+        {
+          "id": "RC-22",
+          "measuredMm": 1739,
+          "solvedMm": 1739,
+          "residualMm": 0,
+          "usedInFit": true
+        }
+      ]
+    }
+  },
+  "selection": {
+    "selectedSolutionId": "A1",
+    "reason": "A1 preserves the measured topology, the three approximate cross-checks and the broadly rectilinear architectural/photo evidence. D1 reduces RC-19 but produces a visibly skewed 99-degree wall-family relationship and worsens every approximate cross-check.",
+    "contradiction": {
+      "observationId": "RC-19",
+      "impliedAngleDegreesIfInnerOppositeRunsAreParallel": 99.563,
+      "selectedAngleDegrees": 90.854,
+      "selectedResidualMm": 111.17,
+      "treatment": "Held out of A1 after contradiction review; retained and reported as a direct validation observation.",
+      "reason": "RC-18/20/21/22 plus the registered parallel/continuous wall relationships make RC-19 imply about 99.6 degrees. RC-15/16/17 independently imply about 90-93 degrees, and the plan/photo topology is broadly rectilinear."
+    },
+    "secondaryClosureTensions": [
+      {
+        "id": "CLOSURE-H",
+        "relationship": "RC-01 versus RC-03 + RC-06",
+        "directMm": 4185,
+        "componentSumMm": 4135,
+        "mismatchMm": 50,
+        "interpretation": "The continuous/parallel lower, upper and outer-partition runs do not close by 50 mm. No single contributing observation can be isolated from this network alone."
+      },
+      {
+        "id": "CLOSURE-V",
+        "relationship": "RC-02 versus RC-05 + RC-07",
+        "directMm": 3705,
+        "componentSumMm": 3664,
+        "mismatchMm": 41,
+        "interpretation": "The continuous/parallel side and adjoining-wall runs do not close by 41 mm. No single contributing observation can be isolated from this network alone."
+      }
+    ]
+  },
+  "selectedGeometry": {
+    "axes": {
+      "lowerAndUpperDirection": {
+        "x": 1,
+        "y": 0
+      },
+      "adjoiningAndReturnDirection": {
+        "x": -0.01489749,
+        "y": 0.99988903
+      },
+      "includedAngleDegrees": 90.8536
+    },
+    "nodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0,
+        "status": "solved or directly derived first-pass node"
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0,
+        "status": "solved or directly derived first-pass node"
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16,
+        "status": "solved or directly derived first-pass node"
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16,
+        "status": "solved or directly derived first-pass node"
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92,
+        "status": "solved or directly derived first-pass node"
+      },
+      "C1": {
+        "x": 330,
+        "y": 0,
+        "status": "solved or directly derived first-pass node"
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0,
+        "status": "solved or directly derived first-pass node"
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98,
+        "status": "solved or directly derived first-pass node"
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98,
+        "status": "solved or directly derived first-pass node"
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0,
+        "status": "solved or directly derived first-pass node"
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0,
+        "status": "provisional display station; absolute station underdetermined"
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0,
+        "status": "provisional display station; absolute station underdetermined"
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94,
+        "status": "solved or directly derived first-pass node"
+      }
+    },
+    "permanentEnvelopeSequence": [
+      "C0",
+      "CP1-FL",
+      "PO1",
+      "PI1",
+      "CP2-FR",
+      "D3-CL",
+      "C0"
+    ],
+    "currentStudPartitionOuterFace": [
+      "PO1",
+      "PO2",
+      "PO3"
+    ],
+    "currentStudPartitionInnerFace": [
+      "PI1",
+      "PI2",
+      "PI3"
+    ],
+    "currentStudPartitionPolygon": [
+      "PO1",
+      "PO2",
+      "PO3",
+      "PI3",
+      "PI2",
+      "PI1"
+    ],
+    "derivedPartitionFaceSeparationsMm": {
+      "atTopJunctionAlongUpperWall": 123.64,
+      "atACWallJunctionAlongAdjoiningWall": 129.56,
+      "note": "Derived from differences between fitted PO and PI face runs; not direct thickness readings and not a uniform construction-thickness claim."
+    },
+    "outlineMetrics": {
+      "lowerC0ToD3CornerMm": 4168.34,
+      "leftC0ToCP1FlMm": 3691.32,
+      "envelopeAreaExcludingCupboardDepthsM2": 15.385,
+      "partitionPlanAreaM2": 0.6113,
+      "warning": "The envelope area excludes unmeasured CP1/CP2 rear depths and is not an accepted Room C floor area."
+    },
+    "unresolvedObjects": {
+      "D2": "D2-CR is fixed; D2-CL, casing/opening width, reveal and swing are not solved.",
+      "D3": "D3-CL is fixed at the permanent corner; D3-CR absolute station and detailed casing/opening geometry are provisional.",
+      "D4": "D4-CR is locally fixed from C2; D4-CL absolute station and detailed casing/opening geometry are provisional.",
+      "W2": "The two 165 mm returns and 1269 mm C1-C2 relationship are used; detailed casing/reveal/opening geometry is deferred.",
+      "CP1": "Front relationship CP1-FL/CP1-FR/PO1 is represented; rear depth and full footprint are not solved.",
+      "CP2": "Front relationship PI1/CP2-FL/CP2-FR is represented; rear depth and full footprint are not solved."
+    }
+  },
+  "observationResiduals": [
+    {
+      "id": "RC-01",
+      "from": "D3-CL",
+      "to": "C0",
+      "measuredMm": 4185,
+      "solvedMm": 4168.34,
+      "residualMm": -16.66,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "shell closure run"
+    },
+    {
+      "id": "RC-02",
+      "from": "C0",
+      "to": "CP1-FL",
+      "measuredMm": 3705,
+      "solvedMm": 3691.32,
+      "residualMm": -13.68,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "shell closure run"
+    },
+    {
+      "id": "RC-03",
+      "from": "CP1-FL",
+      "to": "PO1",
+      "measuredMm": 1534,
+      "solvedMm": 1550.7,
+      "residualMm": 16.7,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "upper shell / CP1 relationship"
+    },
+    {
+      "id": "RC-04",
+      "from": "CP1-FR",
+      "to": "PO1",
+      "measuredMm": 225,
+      "solvedMm": 225,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "upper shell / CP1 relationship"
+    },
+    {
+      "id": "RC-05",
+      "from": "PO1",
+      "to": "PO2",
+      "measuredMm": 2318,
+      "solvedMm": 2331.56,
+      "residualMm": 13.56,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "outer stud-wall face"
+    },
+    {
+      "id": "RC-06",
+      "from": "PO2",
+      "to": "PO3",
+      "measuredMm": 2601,
+      "solvedMm": 2617.64,
+      "residualMm": 16.64,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "outer stud-wall face"
+    },
+    {
+      "id": "RC-07",
+      "from": "PO3",
+      "to": "D3-CL",
+      "measuredMm": 1346,
+      "solvedMm": 1359.76,
+      "residualMm": 13.76,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "A-C wall relationship"
+    },
+    {
+      "id": "RC-08",
+      "from": "D3-CL",
+      "to": "D2-CR",
+      "measuredMm": 580,
+      "solvedMm": 580,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "corrected local topology"
+    },
+    {
+      "id": "RC-09",
+      "from": "D3-CR",
+      "to": "D4-CL",
+      "measuredMm": 218,
+      "solvedMm": 218,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "wall between provisional door extents"
+    },
+    {
+      "id": "RC-10",
+      "from": "D4-CR",
+      "to": "C2",
+      "measuredMm": 548,
+      "solvedMm": 548,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "lower shell"
+    },
+    {
+      "id": "RC-11",
+      "from": "C1",
+      "to": "C0",
+      "measuredMm": 330,
+      "solvedMm": 330,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "lower shell"
+    },
+    {
+      "id": "RC-12",
+      "from": "C1",
+      "to": "W2-CR",
+      "measuredMm": 165,
+      "solvedMm": 165,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "W2 recess return"
+    },
+    {
+      "id": "RC-13",
+      "from": "C2",
+      "to": "W2-CL",
+      "measuredMm": 165,
+      "solvedMm": 165,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "W2 recess return"
+    },
+    {
+      "id": "RC-14",
+      "from": "C1",
+      "to": "C2",
+      "measuredMm": 1269,
+      "solvedMm": 1269,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "W2 recess span relationship"
+    },
+    {
+      "id": "RC-15",
+      "from": "PO2",
+      "to": "CP1-FL",
+      "measuredMm": 2760,
+      "solvedMm": 2780.85,
+      "residualMm": 20.85,
+      "evidenceClass": "approximate-cross-check",
+      "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+      "nominalSigmaMm": 100,
+      "usedInSelectedFit": true,
+      "note": "rough supporting check"
+    },
+    {
+      "id": "RC-16",
+      "from": "PO2",
+      "to": "C0",
+      "measuredMm": 2100,
+      "solvedMm": 2077.6,
+      "residualMm": -22.4,
+      "evidenceClass": "approximate-cross-check",
+      "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+      "nominalSigmaMm": 100,
+      "usedInSelectedFit": true,
+      "note": "rough supporting check"
+    },
+    {
+      "id": "RC-17",
+      "from": "PO2",
+      "to": "D3-CL",
+      "measuredMm": 2928,
+      "solvedMm": 2931.71,
+      "residualMm": 3.71,
+      "evidenceClass": "approximate-cross-check",
+      "weightingClass": "low-weight approximate / sigma 100 mm / Huber",
+      "nominalSigmaMm": 100,
+      "usedInSelectedFit": true,
+      "note": "rough supporting check"
+    },
+    {
+      "id": "RC-18",
+      "from": "PI1",
+      "to": "CP2-FR",
+      "measuredMm": 2494,
+      "solvedMm": 2494,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "inner enclosure / CP2 relationship"
+    },
+    {
+      "id": "RC-19",
+      "from": "CP2-FL",
+      "to": "PI3",
+      "measuredMm": 2206,
+      "solvedMm": 2317.17,
+      "residualMm": 111.17,
+      "evidenceClass": "direct",
+      "weightingClass": "direct validation held out after contradiction review",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": false,
+      "note": "inner enclosure cross-tie"
+    },
+    {
+      "id": "RC-20",
+      "from": "PI3",
+      "to": "PI2",
+      "measuredMm": 2494,
+      "solvedMm": 2494,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "inner stud-wall face"
+    },
+    {
+      "id": "RC-21",
+      "from": "PI2",
+      "to": "PI1",
+      "measuredMm": 2202,
+      "solvedMm": 2202,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "inner stud-wall face"
+    },
+    {
+      "id": "RC-22",
+      "from": "CP2-FL",
+      "to": "PI1",
+      "measuredMm": 1739,
+      "solvedMm": 1739,
+      "residualMm": 0,
+      "evidenceClass": "direct",
+      "weightingClass": "direct / sigma 8 mm / Huber",
+      "nominalSigmaMm": 8,
+      "usedInSelectedFit": true,
+      "note": "upper shell / CP2 relationship"
+    }
+  ]
+}

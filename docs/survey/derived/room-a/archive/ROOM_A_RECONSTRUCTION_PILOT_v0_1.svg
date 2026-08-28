@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title description">
+<title id="title">Room A selected reconstruction</title>
+<desc id="description">Selected S3 angle-informed Room A geometry with fitted bearings, practical angle observations, clear opening widths, and separately drawn casing front faces.</desc>
+<style>.bg{fill:#f7f6f2}.panel{fill:#fff;stroke:#ccc}.wall{stroke:#222;stroke-width:7}.opening-reference{stroke:#1293a3;stroke-width:3;stroke-dasharray:7 5}.opening-clear{stroke:#1468a8;stroke-width:11}.casing{stroke:#d07a18;stroke-width:8}.casing-approx{stroke:#d07a18;stroke-width:8;stroke-dasharray:9 5}.casing-link{stroke:#d07a18;stroke-width:2;stroke-dasharray:4 4}.node{fill:#fff;stroke:#222;stroke-width:2}.title{font:700 28px Arial;fill:#222}.head{font:700 17px Arial;fill:#222}.body{font:14px Arial;fill:#333}.small{font:12px Arial;fill:#555}.object-label{font:700 12px Arial;fill:#333;paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}.object-note{font:11px Arial;fill:#76511f;paint-order:stroke;stroke:#fff;stroke-width:4px}.angle{font:700 12px Arial;fill:#9a5600}.good{fill:#197047;font-weight:700}.rule{stroke:#ddd}</style>
+<rect width="1600" height="1050" class="bg"/>
+<text x="50" y="48" class="title" text-anchor="start">ROOM A — SELECTED RECONSTRUCTION</text>
+<text x="50" y="76" class="body" text-anchor="start">Selected S3: Distance with repeats and soft angles — soft angles, not exact right angles</text>
+<rect x="45" y="105" width="930" height="880" rx="8" class="panel"/><rect x="995" y="105" width="560" height="880" rx="8" class="panel"/>
+<line x1="80" y1="150" x2="299.7" y2="152.2" class="wall"/>
+<line x1="299.7" y1="152.2" x2="297.7" y2="199.3" class="wall"/>
+<line x1="297.7" y1="199.3" x2="624.9" y2="199.3" class="wall"/>
+<line x1="624.9" y1="199.3" x2="623.8" y2="154.8" class="wall"/>
+<line x1="623.8" y1="154.8" x2="839.7" y2="154.4" class="wall"/>
+<line x1="839.7" y1="154.4" x2="840" y2="389.9" class="wall"/>
+<line x1="840.3" y1="630.1" x2="840.6" y2="869.1" class="wall"/>
+<line x1="840.6" y1="869.1" x2="752.4" y2="869.2" class="wall"/>
+<line x1="553.2" y1="869.4" x2="80.9" y2="870" class="wall"/>
+<line x1="80.9" y1="870" x2="80.8" y2="777.9" class="wall"/>
+<line x1="80.5" y1="595.1" x2="80" y2="150" class="wall"/>
+<line x1="840" y1="389.9" x2="840.3" y2="630.1" class="opening-reference"/>
+<line x1="813.7" y1="390.4" x2="815" y2="629.7" class="casing"/>
+<line x1="840" y1="389.9" x2="813.7" y2="390.4" class="casing-link"/>
+<line x1="840.3" y1="630.1" x2="815" y2="629.7" class="casing-link"/>
+<line x1="840.1" y1="424.1" x2="840.3" y2="595.9" class="opening-clear"/>
+<text x="562.2" y="500" class="object-label" text-anchor="start">W1  opening 1026 · casing 1430</text>
+<text x="562.2" y="515" class="object-note" text-anchor="start">measured casing + offsets; opening is recorded window width</text>
+<line x1="752.4" y1="869.2" x2="553.2" y2="869.4" class="opening-reference"/>
+<line x1="753.5" y1="864" x2="552" y2="864.2" class="casing"/>
+<line x1="752.4" y1="869.2" x2="753.5" y2="864" class="casing-link"/>
+<line x1="553.2" y1="869.4" x2="552" y2="864.2" class="casing-link"/>
+<line x1="718.1" y1="869.2" x2="587.4" y2="869.4" class="opening-clear"/>
+<text x="527.8" y="801.3" class="object-label" text-anchor="start">D1  clear 781 · casing 1204</text>
+<text x="527.8" y="816.3" class="object-note" text-anchor="start">measured casing; 31 projection</text>
+<line x1="80.8" y1="777.9" x2="80.5" y2="595.1" class="opening-reference"/>
+<line x1="87" y1="778.2" x2="86.7" y2="594.8" class="casing-approx"/>
+<line x1="80.8" y1="777.9" x2="87" y2="778.2" class="casing-link"/>
+<line x1="80.5" y1="595.1" x2="86.7" y2="594.8" class="casing-link"/>
+<line x1="80.7" y1="750.7" x2="80.6" y2="622.4" class="opening-clear"/>
+<text x="108.6" y="678.5" class="object-label" text-anchor="start">D2  clear 767 · casing 1096</text>
+<text x="108.6" y="693.5" class="object-note" text-anchor="start">casing width measured; face position approx (max 37)</text>
+<circle cx="297.7" cy="199.3" r="6" class="node"/>
+<text x="287.7" y="224.3" class="head" text-anchor="start">A2</text>
+<circle cx="624.9" cy="199.3" r="6" class="node"/>
+<text x="614.9" y="224.3" class="head" text-anchor="start">A3</text>
+<circle cx="80" cy="150" r="6" class="node"/>
+<text x="48" y="138" class="head" text-anchor="start">A0</text>
+<circle cx="299.7" cy="152.2" r="6" class="node"/>
+<text x="287.7" y="134.2" class="head" text-anchor="start">A1</text>
+<circle cx="623.8" cy="154.8" r="6" class="node"/>
+<text x="613.8" y="136.8" class="head" text-anchor="start">A4</text>
+<circle cx="839.7" cy="154.4" r="6" class="node"/>
+<text x="834.7" y="136.4" class="head" text-anchor="start">A5</text>
+<circle cx="840.6" cy="869.1" r="6" class="node"/>
+<text x="852.6" y="887.1" class="head" text-anchor="start">A6</text>
+<circle cx="80.9" cy="870" r="6" class="node"/>
+<text x="52.9" y="890" class="head" text-anchor="start">A7</text>
+<circle cx="840" cy="389.9" r="4" class="node"/>
+<text x="848" y="381.9" class="small" text-anchor="start">W1-AL</text>
+<circle cx="840.3" cy="630.1" r="4" class="node"/>
+<text x="848.3" y="622.1" class="small" text-anchor="start">W1-AR</text>
+<circle cx="752.4" cy="869.2" r="4" class="node"/>
+<text x="760.4" y="861.2" class="small" text-anchor="start">D1-AL</text>
+<circle cx="553.2" cy="869.4" r="4" class="node"/>
+<text x="561.2" y="861.4" class="small" text-anchor="start">D1-AR</text>
+<circle cx="80.8" cy="777.9" r="4" class="node"/>
+<text x="88.8" y="769.9" class="small" text-anchor="start">D2-AL</text>
+<circle cx="80.5" cy="595.1" r="4" class="node"/>
+<text x="88.5" y="587.1" class="small" text-anchor="start">D2-AR</text>
+<text x="94" y="130" class="angle" text-anchor="start">field ~91° / fit 89.3°</text>
+<text x="313.7" y="132.2" class="angle" text-anchor="start">field ~90° / fit 88.1°</text>
+<text x="637.8" y="134.8" class="angle" text-anchor="start">field ~89° / fit 88.7°</text>
+<text x="853.7" y="134.4" class="angle" text-anchor="start">field ~90° / fit 89.9°</text>
+<text x="854.6" y="849.1" class="angle" text-anchor="start">field ~90° / fit 90°</text>
+<text x="94.9" y="850" class="angle" text-anchor="start">field ~89° / fit 90°</text>
+<text x="1025" y="145" class="head" text-anchor="start">SELECTION</text>
+<text x="1025" y="175" class="good" text-anchor="start">S3: ANGLE-INFORMED</text>
+<text x="1025" y="199" class="body" text-anchor="start">Distance RMS 5.101 mm</text>
+<text x="1025" y="219" class="body" text-anchor="start">Largest exact: SUP-038 +12.17 mm</text>
+<text x="1025" y="239" class="body" text-anchor="start">Finished-wall area 18.8986 m²</text>
+<line x1="1025" y1="273" x2="1525" y2="273" class="rule"/>
+<text x="1025" y="303" class="head" text-anchor="start">SELECTED RETURN BEARINGS</text>
+<text x="1025" y="331" class="body" text-anchor="start">A1→A2: 92.461°</text>
+<text x="1025" y="353" class="body" text-anchor="start">A4→A3: 88.612°</text>
+<text x="1025" y="375" class="body" text-anchor="start">Absolute difference: 3.849°</text>
+<text x="1025" y="393" class="small" text-anchor="start">Convention: solver +X; not site north</text>
+<line x1="1025" y1="429" x2="1525" y2="429" class="rule"/>
+<text x="1025" y="459" class="head" text-anchor="start">THREE-SOLUTION COMPARISON</text>
+<text x="1025" y="487" class="body" text-anchor="start">S1 RMS 4.835 mm · return Δ 5.365°</text>
+<text x="1025" y="510" class="body" text-anchor="start">S2 RMS 5.119 mm · return Δ 4.717°</text>
+<text x="1025" y="533" class="body" text-anchor="start">S3 RMS 5.101 mm · return Δ 3.849°</text>
+<text x="1025" y="568" class="head" text-anchor="start">FIELD ANGLES (OBSERVED → FITTED)</text>
+<text x="1025" y="595" class="body" text-anchor="start">A0: ~91° → 89.35°</text>
+<text x="1025" y="616" class="body" text-anchor="start">A1: ~90° → 88.12°</text>
+<text x="1025" y="637" class="body" text-anchor="start">A4: ~89° → 88.73°</text>
+<text x="1025" y="658" class="body" text-anchor="start">A5: ~90° → 89.95°</text>
+<text x="1025" y="679" class="body" text-anchor="start">A6: ~90° → 90°</text>
+<text x="1025" y="700" class="body" text-anchor="start">A7: ~89° → 90°</text>
+<text x="1025" y="735" class="small" text-anchor="start">Repeat treatment: separate weighted readings</text>
+<text x="1025" y="753" class="small" text-anchor="start">SUP-028 repeat lower confidence (σ 24 mm)</text>
+<text x="1025" y="771" class="small" text-anchor="start">No direct angle observations at A2 or A3</text>
+<text x="1025" y="810" class="head" text-anchor="start">OPENING / CASING LEGEND</text>
+<line x1="1025" y1="838" x2="1063" y2="838" class="wall"/>
+<text x="1075" y="842" class="small" text-anchor="start">finished wall</text>
+<line x1="1025" y1="863" x2="1063" y2="863" class="opening-clear"/>
+<text x="1075" y="867" class="small" text-anchor="start">clear / recorded opening width</text>
+<line x1="1025" y1="888" x2="1063" y2="888" class="casing"/>
+<text x="1075" y="892" class="small" text-anchor="start">measured casing front-face extent</text>
+<line x1="1025" y1="913" x2="1063" y2="913" class="casing-approx"/>
+<text x="1075" y="917" class="small" text-anchor="start">measured casing width; approximate face position</text>
+<line x1="1025" y1="938" x2="1063" y2="938" class="opening-reference"/>
+<text x="1075" y="942" class="small" text-anchor="start">wall-plane node span (not clear width)</text>
+<text x="65" y="1020" class="small" text-anchor="start">Source: docs/survey/ROOM_A_EVIDENCE_v1_1.md · selected geometry is derived, not source evidence</text>
+</svg>

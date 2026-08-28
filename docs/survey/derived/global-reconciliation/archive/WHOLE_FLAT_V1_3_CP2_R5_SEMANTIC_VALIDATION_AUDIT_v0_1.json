@@ -1,0 +1,506 @@
+{
+  "artifact": "WHOLE_FLAT_V1_3_CP2_R5_SEMANTIC_VALIDATION_AUDIT_v0_1",
+  "version": "0.1",
+  "generatedBy": "scripts/generate_whole_flat_v1_3_cp2_r5_semantic_validation_audit_v0_1.mjs",
+  "scope": "Targeted R5 semantic/node-mapping and CP2 validation audit of frozen v1.3; analysis only.",
+  "sources": {
+    "frozen": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_3.json",
+    "acceptedRoomC": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+    "nodeMap": "docs/survey/NODE_REFERENCE_MAP_R5.svg",
+    "nodeRegister": "docs/survey/NODE_REFERENCE_REGISTER_R5.md",
+    "objectSchedule": "docs/survey/OBJECT_SCHEDULES_R5.md",
+    "migration": "docs/survey/NODE_MIGRATION_R4_TO_R5.md",
+    "integrationScript": "scripts/integrate_room_c_objects_v0_2.mjs"
+  },
+  "sourceHashesSha256": {
+    "frozen": "1617d936d521259a1d73e240c42e408f0f4c5f8d4fb60e585ed755027ec50474",
+    "acceptedRoomC": "4d36f1445e5aeba95faf6a1fe404e6bf81400cdde67c22cb05386af77a855c67",
+    "nodeMap": "05a9c07729b972f8c33670d58af7da117fb928f83a0fad0d6d5f7b701bf326f7",
+    "nodeRegister": "18d0c75fca2d85a748323dd143dac3b4dd578aebb55645b50179f1637f82d52f",
+    "objectSchedule": "90256beaa2c5961f3119209cfb87c07f7fd464679eb9e5cc1d7e416653be7cb8",
+    "migration": "07be079063e96e2c9c010a478b7b182a6a7c8f5f0dabf64c431af513ed691f0e",
+    "integrationScript": "b9571d470811f3807a7d200b8ec0c853f90f55037d8ffd3e639d061e8f9b7207"
+  },
+  "frozenIntegrity": {
+    "version": "1.3",
+    "frozenForNextStage": true,
+    "sourceSha256": "1617d936d521259a1d73e240c42e408f0f4c5f8d4fb60e585ed755027ec50474",
+    "geometryMovementMm": 0,
+    "solverRun": false,
+    "v14Created": false
+  },
+  "semanticMappings": {
+    "D4-CL": {
+      "r5Meaning": "Viewer-left outer casing edge while standing in Room C facing D4.",
+      "frozenInstantiation": "roomCUnchangedObjectNodesMm.D4-OUTER-L",
+      "coordinateMm": {
+        "x": 3067,
+        "y": 0
+      },
+      "confusedAlternative": {
+        "id": "roomCUnchangedNodesMm.D4-CL",
+        "coordinateMm": {
+          "x": 3048.67,
+          "y": 0
+        },
+        "offsetMm": 18.33,
+        "status": "superseded provisional equal-split display gauge"
+      }
+    },
+    "D3-CR": {
+      "r5Meaning": "Viewer-right outer casing edge while standing in Room C facing D3.",
+      "frozenInstantiation": "roomCUnchangedObjectNodesMm.D3-OUTER-R",
+      "coordinateMm": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "confusedAlternative": {
+        "id": "roomCUnchangedNodesMm.D3-CR",
+        "coordinateMm": {
+          "x": 3266.67,
+          "y": 0
+        },
+        "offsetMm": 16.67,
+        "status": "superseded provisional equal-split display gauge"
+      }
+    },
+    "CP2-FL": {
+      "r5Meaning": "Viewer-left identifiable front outer footprint corner of CP2.",
+      "frozenInstantiation": "roomCUnchangedNodesMm.CP2-FL (coincident with CP2-CASING-FL)",
+      "coordinateMm": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "confusedAlternative": {
+        "id": "CP2-BODY-FL",
+        "coordinateMm": {
+          "x": 3488.33,
+          "y": -3690.92
+        },
+        "offsetMm": 20,
+        "status": "rendered cupboard-body edge, not footprint"
+      }
+    },
+    "CP2-FR": {
+      "r5Meaning": "Viewer-right identifiable front outer footprint corner of CP2 at the structural wall.",
+      "frozenInstantiation": "roomCUnchangedNodesMm.CP2-FR",
+      "coordinateMm": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "confusedAlternative": {
+        "id": "CP2-BODY-FR",
+        "coordinateMm": {
+          "x": 4196.33,
+          "y": -3690.92
+        },
+        "offsetMm": 27,
+        "status": "rendered cupboard-body edge, not footprint"
+      }
+    },
+    "CP2-CR": {
+      "r5Meaning": "Viewer-right rear casing/footprint corner on the A-C structural wall.",
+      "frozenInstantiation": null,
+      "recoveredAs": "derived semantic reference from accepted geometry: intersection of CP2-FR→D3-CL structural-wall line with CP2-BODY-BL→CP2-BODY-BR rear plane",
+      "coordinateMm": {
+        "x": 4231.315,
+        "y": -4226.86
+      },
+      "derivationCrossCheckMm": {
+        "depthVectorMethod": {
+          "x": 4231.32,
+          "y": -4226.86
+        },
+        "differenceBetweenMethodsMm": 0.005178
+      },
+      "confusedAlternative": {
+        "id": "CP2-BODY-BR",
+        "coordinateMm": {
+          "x": 4204.32,
+          "y": -4226.86
+        },
+        "offsetMm": 26.995,
+        "status": "rendered cupboard-body edge, not footprint"
+      },
+      "evidenceStatus": "not a new measured node; right-side layer allocation remains unmeasured"
+    },
+    "C2": {
+      "r5Meaning": "Permanent Room C upper/inner return associated with the W2 recess / D4 side.",
+      "frozenInstantiation": "roomCUnchangedNodesMm.C2",
+      "coordinateMm": {
+        "x": 1599,
+        "y": 0
+      },
+      "confusedAlternative": {
+        "id": "legacy source-plan cupboard label C2",
+        "coordinateMm": null,
+        "offsetMm": null,
+        "status": "object alias for CP2, not the R5 permanent node C2"
+      }
+    }
+  },
+  "literalStartAlternatives": [
+    {
+      "id": "D4-CL",
+      "provisionalFrozenCoordinate": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "correctR5Coordinate": {
+        "x": 3067,
+        "y": 0
+      },
+      "offsetMm": 18.33,
+      "decision": "Use D4-OUTER-L: the accepted integration says it replaced the v0.1 equal-split display gauge with the measured 760 + 80 + 80 mm casing/leaf span."
+    },
+    {
+      "id": "D3-CR",
+      "provisionalFrozenCoordinate": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "correctR5Coordinate": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "offsetMm": 16.67,
+      "decision": "Use D3-OUTER-R: the accepted integration says it replaced the v0.1 equal-split display gauge with the measured leaf plus approximate casing span."
+    }
+  ],
+  "cp2CRDerivation": {
+    "status": "uniquely recovered derived semantic reference from accepted geometry",
+    "structuralWall": {
+      "through": [
+        "CP2-FR",
+        "D3-CL"
+      ],
+      "pointsMm": [
+        {
+          "x": 4223.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4168.34,
+          "y": 0
+        }
+      ]
+    },
+    "rearPlane": {
+      "through": [
+        "CP2-BODY-BL",
+        "CP2-BODY-BR"
+      ],
+      "pointsMm": [
+        {
+          "x": 3496.32,
+          "y": -4226.86
+        },
+        {
+          "x": 4204.32,
+          "y": -4226.86
+        }
+      ]
+    },
+    "resultMm": {
+      "x": 4231.315,
+      "y": -4226.86
+    },
+    "depthVectorCrossCheckMm": {
+      "x": 4231.32,
+      "y": -4226.86
+    },
+    "methodDifferenceMm": 0.005178,
+    "caution": "The 27 mm body-to-footprint balance remains an unknown right-side layer composition; this derivation locates the R5 outer reference but does not measure that composition."
+  },
+  "fieldChecks": [
+    {
+      "id": "A",
+      "from": "D4-CL",
+      "to": "CP2-FR",
+      "field": {
+        "kind": "approximate range",
+        "rangeMm": [
+          3800,
+          3814
+        ]
+      },
+      "modelV13Mm": 3867.815,
+      "residualToLowerMm": 67.815,
+      "residualToUpperMm": 53.815,
+      "residualPercentToLower": 1.785,
+      "residualPercentToUpper": 1.411,
+      "insideObservedRange": false,
+      "direction": "model longer",
+      "assessment": "Investigate — outside range"
+    },
+    {
+      "id": "B",
+      "from": "D4-CL",
+      "to": "CP2-CR",
+      "field": {
+        "kind": "approximate range",
+        "rangeMm": [
+          4310,
+          4330
+        ]
+      },
+      "modelV13Mm": 4384.287,
+      "residualToLowerMm": 74.287,
+      "residualToUpperMm": 54.287,
+      "residualPercentToLower": 1.724,
+      "residualPercentToUpper": 1.254,
+      "insideObservedRange": false,
+      "direction": "model longer",
+      "assessment": "Investigate — outside range"
+    },
+    {
+      "id": "C",
+      "from": "D4-CL",
+      "to": "CP2-FL",
+      "field": {
+        "kind": "approximate scalar",
+        "valueMm": 3680
+      },
+      "modelV13Mm": 3712.675,
+      "residualMm": 32.675,
+      "residualPercent": 0.888,
+      "direction": "model longer",
+      "assessment": "Good / likely acceptable"
+    },
+    {
+      "id": "D",
+      "from": "D3-CR",
+      "to": "CP2-FL",
+      "field": {
+        "kind": "approximate scalar",
+        "valueMm": 3660
+      },
+      "modelV13Mm": 3695.553,
+      "residualMm": 35.553,
+      "residualPercent": 0.971,
+      "direction": "model longer",
+      "assessment": "Good / likely acceptable"
+    },
+    {
+      "id": "E",
+      "from": "CP2-FR",
+      "to": "C2",
+      "field": {
+        "kind": "approximate range",
+        "rangeMm": [
+          4470,
+          4520
+        ]
+      },
+      "modelV13Mm": 4528.797,
+      "residualToLowerMm": 58.797,
+      "residualToUpperMm": 8.797,
+      "residualPercentToLower": 1.315,
+      "residualPercentToUpper": 0.195,
+      "insideObservedRange": false,
+      "direction": "model longer",
+      "assessment": "Review — outside range"
+    }
+  ],
+  "proxyComparisons": [
+    {
+      "id": "A",
+      "oldStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "oldTarget": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "correctStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "correctTarget": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "startCoordinateOffsetMm": 0,
+      "targetCoordinateOffsetMm": 27,
+      "oldPredictedMm": 3859.829,
+      "correctedPredictedMm": 3867.815,
+      "correctedMinusOldMm": 7.986,
+      "apparentModelLongDiscrepancyExplainedMm": -7.986,
+      "note": "Prior audit used the body front-right target. Correct R5 footprint semantics lengthen the ray; they explain none of the model-long result."
+    },
+    {
+      "id": "B",
+      "oldStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "oldTarget": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "correctStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "correctTarget": {
+        "x": 4231.315,
+        "y": -4226.86
+      },
+      "startCoordinateOffsetMm": 0,
+      "targetCoordinateOffsetMm": 26.995,
+      "oldPredictedMm": 4377.196,
+      "correctedPredictedMm": 4384.287,
+      "correctedMinusOldMm": 7.092,
+      "apparentModelLongDiscrepancyExplainedMm": -7.092,
+      "note": "Prior audit used CP2-BODY-BR as an unqualified rear proxy. The recovered R5 rear footprint point is about 27 mm away and lengthens the ray."
+    },
+    {
+      "id": "C",
+      "oldStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "oldTarget": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "correctStart": {
+        "x": 3067,
+        "y": 0
+      },
+      "correctTarget": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "startCoordinateOffsetMm": 0,
+      "targetCoordinateOffsetMm": 20,
+      "oldPredictedMm": 3714.89,
+      "correctedPredictedMm": 3712.675,
+      "correctedMinusOldMm": -2.215,
+      "apparentModelLongDiscrepancyExplainedMm": 2.215,
+      "note": "Body-left is 20 mm inside the explicit outer-footprint node; correct semantics shorten this diagonal slightly."
+    },
+    {
+      "id": "D",
+      "oldStart": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "oldTarget": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "correctStart": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "correctTarget": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "startCoordinateOffsetMm": 0,
+      "targetCoordinateOffsetMm": 20,
+      "oldPredictedMm": 3696.608,
+      "correctedPredictedMm": 3695.553,
+      "correctedMinusOldMm": -1.055,
+      "apparentModelLongDiscrepancyExplainedMm": 1.055,
+      "note": "Correct D3 casing station is retained; using the footprint rather than body-left shortens this diagonal slightly."
+    },
+    {
+      "id": "E",
+      "oldStart": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "oldTarget": {
+        "x": 1599,
+        "y": 0
+      },
+      "correctStart": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "correctTarget": {
+        "x": 1599,
+        "y": 0
+      },
+      "startCoordinateOffsetMm": 27,
+      "targetCoordinateOffsetMm": 0,
+      "oldPredictedMm": 4513.204,
+      "correctedPredictedMm": 4528.797,
+      "correctedMinusOldMm": 15.592,
+      "apparentModelLongDiscrepancyExplainedMm": -15.592,
+      "note": "The R5 footprint point, not the body point, is the field endpoint; correct semantics lengthen this check."
+    }
+  ],
+  "supportingEvidence": {
+    "RC-18": {
+      "from": "PI1",
+      "to": "CP2-FR",
+      "measuredMm": 2494,
+      "modelV13Mm": 2494,
+      "residualMm": 0,
+      "role": "direct constraint used in accepted Room C fit"
+    },
+    "RC-19": {
+      "from": "CP2-FR",
+      "to": "PI3",
+      "measuredMm": 2206,
+      "modelV13Mm": 2202.004,
+      "residualMm": -3.996,
+      "role": "corrected endpoint; direct validation retained outside accepted fit"
+    },
+    "RC-22": {
+      "from": "CP2-FL",
+      "to": "PI1",
+      "measuredMm": 1739,
+      "modelV13Mm": 1739,
+      "residualMm": 0,
+      "role": "direct constraint used in accepted Room C fit"
+    },
+    "cp2BodyWidth": {
+      "measuredMm": 708,
+      "modelV13Mm": 708,
+      "evidenceClass": "direct"
+    },
+    "cp2BodyDepth": {
+      "measuredMm": 536,
+      "modelV13Mm": 536,
+      "evidenceClass": "direct"
+    },
+    "cp2LeftCasing": {
+      "observedMm": 20,
+      "modelV13Mm": 20,
+      "evidenceClass": "approximate"
+    },
+    "footprintBalance": {
+      "outerFrontSpanMm": 755,
+      "bodyWidthMm": 708,
+      "knownLeftCasingMm": 20,
+      "unallocatedMm": 27,
+      "treatment": "Still unallocated by physical layer. The CP2-CR derivation locates the outer rear reference geometrically but does not convert the 27 mm into a measured right casing or gap."
+    }
+  },
+  "patternAnalysis": {
+    "rightRayModelDifferenceMm": 516.472,
+    "observedRightRayDifferenceAdmissibleMm": [
+      496,
+      530
+    ],
+    "leftRayModelDifferenceMm": 17.122,
+    "observedLeftRayDifferenceMm": 20,
+    "endpointLayerMismatch": "Resolved semantically but does not explain the model-long right rays; correct endpoints increase A by 7.986 mm and B by 7.092 mm relative to prior body proxies.",
+    "wholeCP2Translation": "All five rays are model-long, so a common movement toward the doorway/recess reference cluster is directionally possible. No vector is estimated: approximate/ranged readings have no authoritative point values, and moving CP2 would violate exact RC-18/RC-22 and near-exact RC-19 unless adjoining accepted geometry also changed.",
+    "widthDepth": "No direct evidence of body width/depth error. Width 708 mm and depth 536 mm reproduce exactly; the A-to-B modeled increment is inside the interval permitted by the two observed ranges.",
+    "d4D3Mapping": "Resolved. D4-OUTER-L and D3-OUTER-R are the accepted R5 casing stations. Checks C and D agree to within 1%, and their modeled difference is within 2.878 mm of the observed approximate difference."
+  },
+  "diagnosis": {
+    "classNumber": 3,
+    "classification": "systematic CP2 relative-position discrepancy",
+    "qualifier": "Low-to-medium-confidence, localized outer-footprint/right-station discrepancy; not a demonstrated whole-object translation or body width/depth failure."
+  },
+  "requiredAction": "Keep v1.3 frozen. Human-review and accept the resolved node mapping plus the localized CP2 outer-footprint residual flag; carry CP2-CR as a derived semantic reference in validation records. Existing expanded evidence is sufficient, so no new physical measurement or solve is requested.",
+  "final2DConsequence": "No change to the recommendation to keep v1.3 frozen. No geometry has moved and no v1.4 is created.",
+  "stopGate": "VALIDATION REVIEW REQUIRED"
+}

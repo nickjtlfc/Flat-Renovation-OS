@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-350 -803.859 4153.255 3674.976" role="img" aria-labelledby="title desc">
+  <title id="title">ROOM B / WC · FINAL 2D WORKING BASELINE v1.0</title>
+  <desc id="desc">Corrected 136 mm return · orthogonal Room B · rectangular WC · straight D5 leaf. Exact accepted geometry; standalone presentation only.</desc>
+  <style>
+    .bg{fill:#f8fafc}.room{fill:#eff6ff;stroke:none}.roomAlt{fill:#ecfdf5;stroke:none}.wc{fill:#f0fdfa;stroke:none}.wall{stroke:#1e3a8a;stroke-width:30;stroke-linecap:round}.window{stroke:#0284c7;stroke-width:30}.casing{stroke:#d97706;stroke-width:24}.opening{stroke:#a21caf;stroke-width:18}.reveal{stroke:#0891b2;stroke-width:12}.leaf{stroke:#111827;stroke-width:16}.cup{fill:#fef3c7;stroke:#a16207;stroke-width:14}.partition{fill:#f3e8ff;fill-opacity:.48;stroke:#a855f7;stroke-width:12;stroke-dasharray:28 18}.node{fill:#fff;stroke:#334155;stroke-width:7}.title{font:bold 58px Arial;fill:#9f1239}.sub{font:34px Arial;fill:#334155}.roomLabel{font:bold 88px Arial;fill:#17324d}.nodeLabel{font:26px Arial;fill:#334155}.objectLabel{font:bold 34px Arial;fill:#7c2d12}.note{font:29px Arial;fill:#334155}.gate{font:bold 32px Arial;fill:#9f1239}
+  </style>
+  <rect x="-350" y="-803.859" width="4153.255" height="3674.976" class="bg"/>
+  <polygon points="0,0 852.121,0 852.121,136 1670.063,136 1670.063,1011.666 1670.063,2221.117 0,2221.117" class="roomAlt"/>
+<polygon points="1790.567,128.924 3453.255,128.924 3453.255,1203.725 1790.567,1203.725 1790.567,1029.816" class="wc"/>
+  
+  
+  <line x1="852.121" y1="0" x2="852.121" y2="136" class="wall"/>
+<line x1="852.121" y1="136" x2="1670.063" y2="136" class="wall"/>
+<line x1="1670.063" y1="1011.666" x2="1670.063" y2="2221.117" class="wall"/>
+<line x1="1670.063" y1="2221.117" x2="0" y2="2221.117" class="wall"/>
+<line x1="0" y1="2221.117" x2="0" y2="0" class="wall"/>
+<line x1="1790.567" y1="128.924" x2="3453.255" y2="128.924" class="wall"/>
+<line x1="3453.255" y1="128.924" x2="3453.255" y2="1203.725" class="wall"/>
+<line x1="3453.255" y1="1203.725" x2="1790.567" y2="1203.725" class="wall"/>
+<line x1="1790.567" y1="1203.725" x2="1790.567" y2="1029.816" class="wall"/>
+  
+  <line x1="0" y1="0" x2="852.1209999999996" y2="0" class="casing"/>
+<line x1="1670.0629999999996" y1="136" x2="1670.0629999999996" y2="1011.666" class="casing"/>
+<line x1="1790.5669999999996" y1="128.92399999999998" x2="1790.5669999999996" y2="1029.816" class="casing"/>
+  
+  <line x1="1670.0639999999999" y1="195.007" x2="1758.5605" y2="194.90950000000004" class="reveal"/>
+<line x1="1670.0639999999999" y1="931.66" x2="1758.5605" y2="931.7654999999999" class="reveal"/>
+<line x1="1790.5669999999996" y1="191.91900000000004" x2="1758.721" y2="189.87100000000004" class="reveal"/>
+<line x1="1790.5669999999996" y1="948.8190000000001" x2="1758.721" y2="950.871" class="reveal"/>
+  <line x1="64.55999999999995" y1="-103.859" x2="802.56" y2="-103.859" class="leaf"/>
+<line x1="1758.721" y1="189.87100000000004" x2="1758.721" y2="950.871" class="leaf"/>
+  <circle cx="0" cy="0" r="23" class="node"/><text x="34" y="-30" class="nodeLabel">B0</text>
+<circle cx="852.121" cy="0" r="23" class="node"/><text x="886.121" y="-30" class="nodeLabel">D3-BR</text>
+<circle cx="852.121" cy="136" r="23" class="node"/><text x="886.121" y="106" class="nodeLabel">B0.5</text>
+<circle cx="1670.063" cy="136" r="23" class="node"/><text x="1704.063" y="106" class="nodeLabel">B1</text>
+<circle cx="1670.063" cy="1011.666" r="23" class="node"/><text x="1704.063" y="981.666" class="nodeLabel">B2</text>
+<circle cx="1670.063" cy="2221.117" r="23" class="node"/><text x="1704.063" y="2191.117" class="nodeLabel">B3</text>
+<circle cx="0" cy="2221.117" r="23" class="node"/><text x="34" y="2191.117" class="nodeLabel">B4</text>
+<circle cx="1790.567" cy="128.924" r="23" class="node"/><text x="1824.567" y="98.924" class="nodeLabel">T0</text>
+<circle cx="3453.255" cy="128.924" r="23" class="node"/><text x="3487.255" y="98.924" class="nodeLabel">T1</text>
+<circle cx="3453.255" cy="1203.725" r="23" class="node"/><text x="3487.255" y="1173.725" class="nodeLabel">T2</text>
+<circle cx="1790.567" cy="1203.725" r="23" class="node"/><text x="1824.567" y="1173.725" class="nodeLabel">T3</text>
+<circle cx="1790.567" cy="1029.816" r="23" class="node"/><text x="1824.567" y="999.816" class="nodeLabel">D5-WCL</text>
+  <text x="-250" y="-698.859" class="title">ROOM B / WC · FINAL 2D WORKING BASELINE v1.0</text>
+  <text x="-250" y="-643.859" class="sub">Corrected 136 mm return · orthogonal Room B · rectangular WC · straight D5 leaf</text>
+  <text x="350" y="1300" class="roomLabel">ROOM B</text>
+<text x="2350" y="800" class="roomLabel">WC</text>
+<text x="920" y="70" class="note">136 mm return</text>
+<text x="1780" y="680" class="objectLabel">D5 · one straight 761 mm leaf</text>
+  <text x="-250" y="2706.117" class="note">Whole-flat transform: translate (+3309.78, +103.859) mm · rotation 0° · scale 1</text>
+<text x="-250" y="2748.117" class="note">Geometry movement during promotion: 0 mm</text>
+  <text x="-250" y="2836.117" class="gate">FINAL 2D PROMOTION — HUMAN REVIEW REQUIRED</text>
+</svg>

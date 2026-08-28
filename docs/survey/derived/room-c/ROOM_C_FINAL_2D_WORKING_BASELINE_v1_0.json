@@ -1,0 +1,490 @@
+{
+  "documentType": "final working 2D room baseline",
+  "scope": "Room C",
+  "version": "1.0",
+  "generatedDate": "2026-08-13",
+  "units": "millimetres",
+  "status": "FINAL 2D WORKING SHELL — VALIDATED FOR DESIGN / 3D DEVELOPMENT",
+  "activeGenerator": "scripts/generate_final_2d_working_baselines_v1_0.mjs",
+  "provenance": {
+    "acceptedGeometryAuthority": {
+      "file": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+      "sha256": "4D36F1445E5AEBA95FAF6A1FE404E6BF81400CDDE67C22CB05386AF77A855C67"
+    },
+    "wholeFlatCompositionAuthority": {
+      "file": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_3.json",
+      "sha256": "1617D936D521259A1D73E240C42E408F0F4C5F8D4FB60E585ED755027EC50474"
+    },
+    "semanticValidation": {
+      "file": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_V1_3_CP2_R5_SEMANTIC_VALIDATION_AUDIT_v0_1.json",
+      "sha256": "0F4C99BAB10C650ABEE84F5C65271BE88A1A8C95091BE80A19BD15558AC88951"
+    },
+    "statement": "Accepted Room C v1.0 shell and object nodes are unchanged; successor export promotes the accepted continuous host wall, fixed cupboards, removable partition and final doorway presentation."
+  },
+  "coordinateFrame": {
+    "localDatum": "Accepted Room C frame with C0 = (0,0); this is also the whole-flat datum.",
+    "wholeFlatTransform": {
+      "type": "rigid translation only",
+      "rotationDegrees": 0,
+      "scale": 1,
+      "reflection": false,
+      "translationMm": {
+        "x": 0,
+        "y": 0
+      },
+      "formula": "whole = local + translation"
+    }
+  },
+  "geometry": {
+    "nodesLocalMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "objectNodesLocalMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    },
+    "permanentBoundary": {
+      "upperHostWall": [
+        "C0",
+        "CP1-FL",
+        "PI1",
+        "CP2-FL",
+        "CP2-FR",
+        "D3-CL"
+      ],
+      "explanation": "Continuous permanent upper host-wall topology is retained through the removable-partition junction; CP1/CP2 and partition are separate layers.",
+      "lowerRuns": [
+        [
+          "C0",
+          "C1",
+          "W2-CR"
+        ],
+        [
+          "W2-CL",
+          "C2",
+          "D4-CR"
+        ],
+        [
+          "D4-CL",
+          "D3-CR"
+        ],
+        [
+          "D3-CL",
+          "D2-CR"
+        ]
+      ]
+    },
+    "cupboards": {
+      "CP1": [
+        "CP1-BODY-FL",
+        "CP1-BODY-FR",
+        "CP1-BODY-BR",
+        "CP1-BODY-BL"
+      ],
+      "CP2Body": [
+        "CP2-BODY-FL",
+        "CP2-BODY-FR",
+        "CP2-BODY-BR",
+        "CP2-BODY-BL"
+      ],
+      "CP2LeftCasing": [
+        "CP2-CASING-FL",
+        "CP2-BODY-FL",
+        "CP2-BODY-BL"
+      ],
+      "status": "fixed cupboard/recess geometry; not optional furniture"
+    },
+    "removablePartitionSequence": [
+      "PO1",
+      "PO2",
+      "PO3",
+      "PI3",
+      "PI2",
+      "PI1"
+    ],
+    "doors": {
+      "D2": {
+        "swingDestination": "Room A",
+        "hingeSide": "left-hand side when viewed from Room A; global south/page-bottom endpoint of the accepted 742 mm leaf",
+        "opening": {
+          "roomCFace": [
+            {
+              "x": 4176.98,
+              "y": -579.94
+            },
+            {
+              "x": 4188.45,
+              "y": -1349.85
+            }
+          ],
+          "roomAFace": [
+            {
+              "x": 4426.95,
+              "y": -576.22
+            },
+            {
+              "x": 4438.43,
+              "y": -1346.13
+            }
+          ],
+          "structuralWidthMm": 770
+        },
+        "casing": {
+          "roomAMeasured": [
+            {
+              "x": 4432.6967,
+              "y": -413.175
+            },
+            {
+              "x": 4432.6833,
+              "y": -1509.175
+            }
+          ],
+          "frontFaceWidthMm": 1096
+        },
+        "reveal": {
+          "observedApproximateDepthMm": 250,
+          "centreSeparationMm": 250.0027
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 4427.16,
+              "y": -590.22
+            },
+            {
+              "x": 4438.21,
+              "y": -1332.14
+            }
+          ],
+          "widthMm": 742,
+          "closingPlane": "fixed Room A side from accepted Room C baseline"
+        },
+        "viewingRoom": "Room A",
+        "hingeEvidence": "authoritative human confirmation for v1.2",
+        "hingeGlobalPointMm": {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        "swingDepiction": "742 mm leaf and swing arc into Room A"
+      },
+      "D3": {
+        "swingDestination": "Room C",
+        "hingeSide": "photographically identified at the east end of the global leaf segment (viewer-right from Room B); not a measured hinge node",
+        "opening": {
+          "structuralRevealStatus": "unmeasured"
+        },
+        "casing": {
+          "roomCEndpoints": [
+            {
+              "x": 3283.34,
+              "y": 0
+            },
+            {
+              "x": 4168.34,
+              "y": 0
+            }
+          ],
+          "roomBEndpoints": [
+            {
+              "x": 3309.78,
+              "y": 103.859
+            },
+            {
+              "x": 4161.901,
+              "y": 103.859
+            }
+          ],
+          "roomCWidthMm": 885,
+          "roomBWidthMm": 852.121
+        },
+        "reveal": {
+          "derivedOpposingFaceSeparationMm": 103.859,
+          "status": "derived registration layer, not measured wall thickness"
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 3363.34,
+              "y": 0
+            },
+            {
+              "x": 4123.34,
+              "y": 0
+            }
+          ],
+          "widthMm": 760
+        },
+        "viewingRoom": "Room B",
+        "swingDepiction": "760 mm leaf and photo-supported swing arc into Room C"
+      },
+      "D4": {
+        "swingDestination": "Room C",
+        "hingeSide": "left-hand side when viewed from Room C; global east/page-right endpoint of the accepted 760 mm leaf",
+        "opening": {
+          "structuralRevealStatus": "unmeasured"
+        },
+        "casing": {
+          "endpoints": [
+            {
+              "x": 2147,
+              "y": 0
+            },
+            {
+              "x": 3067,
+              "y": 0
+            }
+          ],
+          "widthMm": 920
+        },
+        "reveal": {
+          "status": "unmeasured"
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 2227,
+              "y": 0
+            },
+            {
+              "x": 2987,
+              "y": 0
+            }
+          ],
+          "widthMm": 760
+        },
+        "viewingRoom": "Room C",
+        "hingeEvidence": "authoritative human confirmation for v1.2",
+        "hingeGlobalPointMm": {
+          "x": 2987,
+          "y": 0
+        },
+        "swingDepiction": "760 mm leaf and swing arc into Room C"
+      }
+    },
+    "derivedSemanticReferences": {
+      "CP2-CR": {
+        "r5Meaning": "Viewer-right rear casing/footprint corner on the A-C structural wall.",
+        "frozenInstantiation": null,
+        "recoveredAs": "derived semantic reference from accepted geometry: intersection of CP2-FR→D3-CL structural-wall line with CP2-BODY-BL→CP2-BODY-BR rear plane",
+        "coordinateMm": {
+          "x": 4231.315,
+          "y": -4226.86
+        },
+        "derivationCrossCheckMm": {
+          "depthVectorMethod": {
+            "x": 4231.32,
+            "y": -4226.86
+          },
+          "differenceBetweenMethodsMm": 0.005178
+        },
+        "confusedAlternative": {
+          "id": "CP2-BODY-BR",
+          "coordinateMm": {
+            "x": 4204.32,
+            "y": -4226.86
+          },
+          "offsetMm": 26.995,
+          "status": "rendered cupboard-body edge, not footprint"
+        },
+        "evidenceStatus": "not a new measured node; right-side layer allocation remains unmeasured",
+        "placementStatus": "validation/reference metadata only; not added to frozen plan-node geometry"
+      }
+    }
+  },
+  "correspondence": {
+    "wholeFlatNodesPath": "geometry.roomCUnchangedNodesMm",
+    "wholeFlatObjectNodesPath": "geometry.roomCUnchangedObjectNodesMm",
+    "nodeGeometryByteEquivalentToAcceptedV10": true,
+    "objectGeometryByteEquivalentToAcceptedV10": true,
+    "maximumRoundTripNodeDeltaMm": 0,
+    "maximumRoundTripObjectDeltaMm": 0,
+    "numericallyIdenticalAfterTransform": true,
+    "allExportedGeometryNumericallyIdenticalAfterTransform": true,
+    "intentionalPresentationDifferences": [
+      "Promoted standalone drawing explicitly shows the continuous upper host wall, CP1/CP2, removable partition and accepted D2/D3/D4 layers together."
+    ]
+  },
+  "retainedUncertainties": [
+    "Local RC-04 object-layer conflict remains; do not distort the shell to remove it.",
+    "Body width/depth and direct Room C relationships remain strong. The outer-right footprint/casing station retains the localized uncertainty identified by the R5 semantic audit; CP2 is not moved.",
+    "D3 opposing structural reveal and D4 structural reveal dimensions remain unmeasured.",
+    "The accepted approximately 0.855 degree D2 A-side casing versus Room C opening-layer difference remains documented."
+  ],
+  "preservation": {
+    "geometryMovementMm": 0,
+    "solverRun": false,
+    "topWallRetained": true,
+    "partitionRetained": true,
+    "cupboardsRetained": true
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "documentType": "first 3D construction-shell vertical model",
+  "version": "0.1",
+  "units": "millimetres",
+  "status": "working model for human visual review",
+  "coordinateConvention": {
+    "sourceHorizontalAxes": "Promoted 2D x/y are retained without rotation or reflection.",
+    "sceneAxes": "source x -> scene X; elevation -> scene Y; source y -> scene Z",
+    "sourceOrigin": "Room C C0 = (0, 0) mm; finished floor level = elevation 0 mm",
+    "renderUnits": "metres",
+    "conversion": "1 source millimetre = 0.001 render metre"
+  },
+  "renderConventions": {
+    "wallVisualThicknessMm": 80,
+    "floorVisualThicknessMm": 40,
+    "ceilingVisualThicknessMm": 30,
+    "doorLeafVisualThicknessMm": 40,
+    "windowVisualThicknessMm": 24,
+    "windowFrameRailMm": 40,
+    "doorCasingVisualDepthMm": 110,
+    "doorRevealVisualThicknessMm": 18,
+    "cupboardPanelThicknessMm": 20,
+    "classificationNote": "Visual thicknesses are renderer conventions, not claims about concealed structural build-up."
+  },
+  "roomCeilings": {
+    "RoomA": {
+      "modelHeightMm": 3167,
+      "modelStatus": "temporary flat working plane at one measured station",
+      "selectedEvidence": "SUP-054, finished floor to ceiling at W1-AR area = 3167 mm",
+      "allMeasuredStationRangeMm": [3122, 3169],
+      "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+    },
+    "RoomB": {
+      "modelHeightMm": 2281,
+      "modelStatus": "temporary flat general ceiling; stair soffit deliberately omitted",
+      "selectedEvidence": "SUP-075, finished floor to ceiling at B4-B0 clear wall area = 2281 mm",
+      "otherMeasuredStationMm": 2274,
+      "source": "docs/survey/ROOM_B_EVIDENCE_v1.md"
+    },
+    "WC": {
+      "modelHeightMm": 2289,
+      "modelStatus": "temporary flat working plane at one measured station",
+      "selectedEvidence": "SUP-077, finished floor to ceiling at T0/D5-WCR area = 2289 mm",
+      "otherMeasuredStationMm": 2277,
+      "source": "docs/survey/ROOM_WC_EVIDENCE_v1.md"
+    },
+    "RoomC": {
+      "modelHeightMm": 2631,
+      "modelStatus": "temporary flat working plane at the measured D4/W2 high station",
+      "selectedEvidence": "D4 floor-to-ceiling = 2631 mm; corrected W2 chain also totals approximately 2631 mm",
+      "allMeasuredStationRangeMm": [2594, 2631],
+      "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    }
+  },
+  "doors": {
+    "D1": {
+      "openingHeightMm": 2030,
+      "leafHeightMm": 2030,
+      "leafHeightStatus": "temporary proxy because the physical leaf height was not separately measured",
+      "casingTopMm": 2321,
+      "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+    },
+    "D2": {
+      "openingHeightMm": 1975,
+      "leafHeightMm": 1975,
+      "openingHeightStatus": "temporary 4 mm accommodation of the measured Room C leaf; Room A clear opening is 1971 mm",
+      "casingTopMm": 2140,
+      "roomACasingProjectionMm": 37,
+      "roomCCasingStatus": "exact Room C casing/rebate extent remains unmeasured; render the measured opening and through-reveal without invented trim",
+      "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md and accepted Room C vertical evidence"
+    },
+    "D3": {
+      "openingHeightMm": 1987,
+      "leafHeightMm": 1987,
+      "casingTopMm": 2067,
+      "roomBCasingTopMm": 2076,
+      "casingTopStatus": "derived as measured leaf height plus approximately 80 mm upper casing",
+      "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    },
+    "D4": {
+      "openingHeightMm": 1987,
+      "leafHeightMm": 1987,
+      "casingTopMm": 2067,
+      "casingTopStatus": "derived as measured leaf height plus 80 mm upper casing",
+      "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    },
+    "D5": {
+      "openingHeightMm": 1974,
+      "leafHeightMm": 1974,
+      "roomBCasingTopMm": 2157,
+      "wcCasingTopMm": 2064,
+      "wcCasingAboveDoorTopMm": 90,
+      "wcCasingProjectionMm": 30,
+      "wcObservedCasingTopToCeilingMm": 226,
+      "wcSelectedCeilingModelClearanceMm": 225,
+      "wcVerticalClosureNote": "The direct 90 mm casing-above-door observation places the casing top at 2064 mm from the existing 1974 mm opening/leaf datum. The selected flat WC ceiling is 2289 mm, so rendered clearance is 225 mm; the direct local clearance observation is 226 mm, a retained 1 mm field/model closure difference.",
+      "source": "docs/survey/ROOM_B_EVIDENCE_v1.md and docs/survey/ROOM_WC_EVIDENCE_v1.md"
+    }
+  },
+  "windows": {
+    "W1": {
+      "sillMm": 986,
+      "headMm": 2873,
+      "openingHeightMm": 1887,
+      "verticalPlacementStatus": "temporary: recorded 1887 mm window height is placed with its head at the recorded 2873 mm outer-casing top because no sill datum was recorded",
+      "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+    },
+    "W2": {
+      "sillMm": 1040,
+      "headMm": 2556,
+      "openingHeightMm": 1516,
+      "verticalPlacementStatus": "existing approximate sill/overall-height datums retained; direct 2026-08-14 field observation confirms a permanent upper wall strip",
+      "observedUpperWallStripHeightMm": 72,
+      "observedUpperWallStripStatus": "direct field observation, approximate; supersedes the earlier provisional approximately 70 mm description and the active approximate 75 mm top-clearance interpretation",
+      "selectedCeilingModelClosureMm": 75,
+      "fieldModelClosureDifferenceMm": 3,
+      "closureNote": "The protected 2556 mm W2 top and 2631 mm Room C working ceiling produce a 75 mm generated band. The new approximate 72 mm field observation is retained with a 3 mm closure difference; neither protected datum is moved in the explicit upper/lower wall-infill completion.",
+      "source": "2026-08-14 human field observation and photograph; prior vertical provenance in docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    }
+  },
+  "cupboards": {
+    "CP1": {
+      "bodyBaseMm": 1315,
+      "bodyHeightMm": 1261,
+      "topTrimHeightMm": 30,
+      "topTrimStatus": "lower bound of the observed approximately 30-40 mm range",
+      "lowerServiceEnclosure": {
+        "panelBaseMm": 0,
+        "panelTopMm": 1315,
+        "panelDepthMm": 10,
+        "accessAssemblyWidthMm": 722,
+        "accessLeafWidthMm": 560,
+        "accessHeightMm": 772,
+        "leftCasingWidthMm": 80,
+        "rightCasingWidthMm": 80,
+        "topCasingPresent": false,
+        "cp1FLToLeftOuterCasingMm": 535,
+        "po1ToRightOuterCasingMm": 243,
+        "placementControl": "left outer casing station measured 535 mm from CP1-FL; the 722 mm assembly width is retained, producing a model-implied 293.7 mm right-side offset from PO1",
+        "conflictingRightStationStatus": "the earlier 243 mm PO1-to-right-outer-casing observation remains unresolved local field evidence pending the next Room C / CP1 / partition investigation",
+        "lipHeightMm": 50,
+        "lipProjectionMm": 60,
+        "waterInletReferenceHeightMm": 150,
+        "waterInletVisualDiameterMm": 18,
+        "waterInletLocationStatus": "approximate right-hand service-area reference only; diameter is a visual convention and detailed routing/fittings are not inferred",
+        "existingConditionStatus": "existing joinery/service enclosure",
+        "futureDesignNote": "The lower CP1 enclosure/front panel is a possible future alteration or removal area during design exploration, potentially exposing/opening the service area; retain it in the current existing-condition shell.",
+        "source": "2026-08-15 human field dimensions and 2026-08-14 photographs"
+      },
+      "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    },
+    "CP2": {
+      "bodyBaseMm": 0,
+      "bodyTopMm": 2148,
+      "bodyBaseStatus": "temporary assumption: fixed body extends to finished floor because its lower datum/body height was not measured",
+      "upperClosureTopMm": 2631,
+      "upperClosureStatus": "temporary simple enclosed casing/build-up from the measured 2148 mm cupboard top to the selected 2631 mm Room C working ceiling; exact top-casing thickness and internal composition remain unmeasured",
+      "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+    }
+  },
+  "removablePartition": {
+    "baseMm": 0,
+    "topMm": 2631,
+    "heightStatus": "temporary full-height representation; no separate partition-top datum was located",
+    "classification": "existing-removable"
+  },
+  "deferredFeatures": [
+    {
+      "id": "ROOM-B-SOFFIT",
+      "status": "intentionally omitted from first 3D shell",
+      "statement": "Room B is temporarily represented with a flat ceiling at 2281 mm. The recorded soffit presence and 192 mm start-location observation remain evidence for a later dedicated modelling task."
+    },
+    {
+      "id": "D5-HIGH-LEVEL-BULKHEAD",
+      "status": "omitted because exact 3D extent is unmeasured"
+    }
+  ]
+}

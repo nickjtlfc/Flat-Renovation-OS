@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400" role="img" aria-labelledby="title desc">
+  <title id="title">R5 node reference map for human review</title>
+  <desc id="desc">A not-to-scale node-reference map showing permanent corner nodes, object outer-casing and footprint nodes, paired face nodes for the current demolishable Room C stud wall, and a compact vertical-reference convention. It annotates the human-observed 580 mm Room C relationship from the D3-CL turning corner to D2-CR but creates no derived shell geometry.</desc>
+  <defs>
+    <style>
+      .page{fill:#fff;stroke:#0f172a;stroke-width:4}
+      .panel{fill:#f8fafc;stroke:#94a3b8;stroke-width:3}
+      .panelA{fill:#f0f9ff;stroke:#7dd3fc;stroke-width:3}
+      .panelC{fill:#fff7ed;stroke:#fdba74;stroke-width:3}
+      .panelB{fill:#f0fdf4;stroke:#86efac;stroke-width:3}
+      .title{font:700 42px Arial,sans-serif;fill:#0f172a}
+      .subtitle{font:22px Arial,sans-serif;fill:#334155}
+      .warning{font:700 24px Arial,sans-serif;fill:#9f1239}
+      .head{font:700 30px Arial,sans-serif;fill:#0f172a}
+      .subhead{font:700 23px Arial,sans-serif;fill:#0f172a}
+      .body{font:20px Arial,sans-serif;fill:#1f2937}
+      .small{font:18px Arial,sans-serif;fill:#334155}
+      .tiny{font:18px Arial,sans-serif;fill:#475569}
+      .room{font:700 30px Arial,sans-serif;fill:#0f172a;text-anchor:middle}
+      .shell{fill:none;stroke:#1e293b;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter}
+      .struct{fill:none;stroke:#b91c1c;stroke-width:16}
+      .opening{stroke:#0f766e;stroke-width:12}
+      .window{stroke:#0284c7;stroke-width:14}
+      .cupboard{fill:#fef3c7;stroke:#a16207;stroke-width:4}
+      .studOverview{fill:none;stroke:#9333ea;stroke-width:16;stroke-linecap:square;stroke-linejoin:miter}
+      .studWall{fill:#f3e8ff;stroke:#7e22ce;stroke-width:4;stroke-linejoin:miter}
+      .studThickness{stroke:#7e22ce;stroke-width:3;stroke-dasharray:7 5}
+      .perm{fill:#fff;stroke:#0f172a;stroke-width:4}
+      .object{fill:#fffbeb;stroke:#d97706;stroke-width:4}
+      .studNode{fill:#faf5ff;stroke:#7e22ce;stroke-width:4}
+      .nodeLabel{font:700 22px Arial,sans-serif;fill:#0f172a}
+      .objectLabel{font:700 22px Arial,sans-serif;fill:#9a3412}
+      .studLabel{font:700 20px Arial,sans-serif;fill:#7e22ce}
+      .leader{fill:none;stroke:#64748b;stroke-width:2}
+      .assemblyFill{fill:#ede9fe;stroke:none}
+      .assemblyGap{fill:none;stroke:#7c3aed;stroke-width:4;stroke-dasharray:9 6}
+      .callout{fill:#fff;stroke:#64748b;stroke-width:2}
+      .review{fill:#fff7ed;stroke:#d97706;stroke-width:3}
+      .keyline{stroke:#cbd5e1;stroke-width:2}
+    </style>
+    <g id="permNode"><circle r="11" class="perm"/></g>
+    <g id="objectNode"><path d="M0 -13 L13 0 L0 13 L-13 0 Z" class="object"/></g>
+    <g id="studNode"><rect x="-11" y="-11" width="22" height="22" class="studNode"/></g>
+  </defs>
+
+  <rect x="18" y="18" width="1764" height="2364" rx="12" class="page"/>
+  <text x="70" y="78" class="title">NODE REFERENCE MAP — NOT TO SCALE</text>
+  <text x="70" y="116" class="subtitle">R5 active field reference • reference language only • no SVG distance, angle, proportion or drawn wall thickness is geometry</text>
+  <rect x="65" y="140" width="1670" height="72" rx="10" fill="#fff1f2" stroke="#be123c" stroke-width="3"/>
+  <text x="92" y="172" class="warning">LEFT / RIGHT: stand in the named room or area and face the door, window or cupboard.</text>
+  <text x="92" y="199" class="small">Object nodes mark the outermost visible casing/architrave or external footprint — never the clear opening, leaf, shelf or hidden construction.</text>
+
+  <!-- Whole-flat topology overview: deliberately simple and free of measurement arrows. -->
+  <rect x="65" y="235" width="1670" height="500" rx="12" class="panel"/>
+  <text x="92" y="278" class="head">1 · Whole-flat topology overview</text>
+  <g transform="translate(145 300) scale(.5)">
+    <rect x="80" y="185" width="170" height="100" class="cupboard"/>
+    <rect x="470" y="215" width="140" height="70" class="cupboard"/>
+    <path d="M80 590 V185 H250 V285 H470 V215 H730 V260 H950 V215 H1110 M1110 215 V350 M1110 465 V590 H1040 M970 590 H610 M510 590 H410 M350 590 H260 V610 M105 610 V590 H80" class="shell"/>
+    <path d="M610 215 V520 M610 550 V590" class="struct"/>
+    <path d="M490 590 V865 H780 V735 H910 V590 M780 590 V620 M780 685 V735" class="shell"/>
+    <path d="M280 285 V467 H610" class="studOverview"/>
+    <line x1="1110" y1="350" x2="1110" y2="465" class="window"/>
+    <line x1="105" y1="610" x2="260" y2="610" class="window"/>
+    <line x1="970" y1="590" x2="1040" y2="590" class="opening"/>
+    <line x1="610" y1="520" x2="610" y2="550" class="opening"/>
+    <line x1="510" y1="590" x2="610" y2="590" class="opening"/>
+    <line x1="350" y1="590" x2="410" y2="590" class="opening"/>
+    <line x1="780" y1="620" x2="780" y2="685" class="opening"/>
+    <text x="835" y="405" class="room">ROOM A</text>
+    <text x="190" y="405" class="room">ROOM C</text>
+    <text x="630" y="765" class="room">ROOM B</text>
+    <text x="850" y="655" class="room">WC</text>
+    <text x="165" y="245" class="subhead" text-anchor="middle">CP1</text>
+    <text x="540" y="260" class="subhead" text-anchor="middle">CP2</text>
+    <text x="1005" y="575" class="subhead" text-anchor="middle">D1</text>
+    <text x="640" y="548" class="subhead">D2</text>
+    <text x="550" y="555" class="subhead" text-anchor="middle">D3</text>
+    <text x="380" y="555" class="subhead" text-anchor="middle">D4</text>
+    <text x="815" y="660" class="subhead">D5</text>
+    <text x="1080" y="420" class="subhead" text-anchor="end">W1</text>
+    <text x="180" y="650" class="subhead" text-anchor="middle">W2</text>
+  </g>
+  <g transform="translate(1110 330)">
+    <use href="#permNode" x="0" y="0"/><text x="28" y="7" class="body">Permanent point node</text>
+    <use href="#objectNode" x="0" y="58"/><text x="28" y="65" class="body">Object edge / footprint node</text>
+    <use href="#studNode" x="0" y="116"/><text x="28" y="123" class="body">Current stud-wall face node</text>
+    <text x="0" y="184" class="small">Overview preserves R4 conceptual topology.</text>
+    <text x="0" y="214" class="small">Detailed panels define the proposed node language.</text>
+    <text x="0" y="244" class="small">No comprehensive measurement paths are shown.</text>
+    <text x="0" y="274" class="small">Wall-plane readings need no predeclared map reference.</text>
+  </g>
+
+  <!-- Room A detail. -->
+  <rect x="65" y="765" width="780" height="620" rx="12" class="panelA"/>
+  <text x="92" y="808" class="head">2 · Room A node panel</text>
+  <g>
+    <path d="M145 920 H305 V980 H545 V920 H730" class="shell"/>
+    <path d="M730 920 V1025 M730 1140 V1260 H635 M555 1260 H145 V1160 M145 1095 V920" class="shell"/>
+    <line x1="730" y1="1025" x2="730" y2="1140" class="window"/>
+    <line x1="555" y1="1260" x2="635" y2="1260" class="opening"/>
+    <line x1="145" y1="1095" x2="145" y2="1160" class="opening"/>
+    <path d="M145 920 V1095 M145 1160 V1260" class="struct"/>
+
+    <use href="#permNode" x="145" y="920"/><text x="162" y="911" class="nodeLabel">A0</text>
+    <use href="#permNode" x="305" y="920"/><text x="305" y="896" class="nodeLabel" text-anchor="middle">A1</text>
+    <use href="#permNode" x="305" y="980"/><text x="305" y="1012" class="nodeLabel" text-anchor="middle">A2</text>
+    <use href="#permNode" x="545" y="980"/><text x="545" y="1012" class="nodeLabel" text-anchor="middle">A3</text>
+    <use href="#permNode" x="545" y="920"/><text x="545" y="896" class="nodeLabel" text-anchor="middle">A4</text>
+    <use href="#permNode" x="730" y="920"/><text x="746" y="912" class="nodeLabel">A5</text>
+    <use href="#permNode" x="730" y="1260"/><text x="746" y="1268" class="nodeLabel">A6</text>
+    <use href="#permNode" x="145" y="1260"/><text x="116" y="1292" class="nodeLabel">A7</text>
+
+    <use href="#objectNode" x="730" y="1025"/><path d="M718 1010 L675 985" class="leader"/><text x="585" y="982" class="objectLabel">W1-AL (nearest A5)</text>
+    <use href="#objectNode" x="730" y="1140"/><path d="M718 1150 L665 1172" class="leader"/><text x="565" y="1180" class="objectLabel">W1-AR (nearest A6)</text>
+    <use href="#objectNode" x="635" y="1260"/><text x="635" y="1233" class="objectLabel" text-anchor="middle">D1-AL</text>
+    <use href="#objectNode" x="555" y="1260"/><text x="555" y="1302" class="objectLabel" text-anchor="middle">D1-AR</text>
+    <use href="#objectNode" x="145" y="1160"/><path d="M128 1160 L98 1180" class="leader"/><text x="88" y="1210" class="objectLabel">D2-AL</text>
+    <use href="#objectNode" x="145" y="1095"/><path d="M128 1095 L98 1075" class="leader"/><text x="88" y="1063" class="objectLabel">D2-AR</text>
+
+    <rect x="265" y="1055" width="330" height="105" rx="8" class="callout"/>
+    <text x="430" y="1090" class="room">ROOM A</text>
+    <text x="285" y="1125" class="small">Visible sequence: A5 → W1-AL → W1-AR → A6</text>
+  </g>
+
+  <!-- Room C detail. -->
+  <rect x="875" y="765" width="860" height="920" rx="12" class="panelC"/>
+  <text x="902" y="808" class="head">3 · Room C node panel</text>
+  <text x="902" y="839" class="tiny">Cupboard/W2 nodes remain provisional; D3-CL turn and 580 mm to D2-CR are human-observed.</text>
+  <g>
+    <!-- Conceptual shell follows the same stepped cupboard/top-wall sequence as the whole-flat overview. -->
+    <path d="M940 1450 V880 H1120 V1020 H1148 M1176 1020 H1320 V920 H1540" class="shell"/>
+    <path d="M940 1450 H980 V1485 M1160 1485 V1450 H1245 M1325 1450 H1420" class="shell"/>
+    <path d="M1540 920 V1320 M1540 1370 V1450" class="struct"/>
+    <line x1="980" y1="1485" x2="1160" y2="1485" class="window"/>
+    <line x1="1245" y1="1450" x2="1325" y2="1450" class="opening"/>
+    <line x1="1420" y1="1450" x2="1540" y2="1450" class="opening"/>
+    <line x1="1540" y1="1320" x2="1540" y2="1370" class="opening"/>
+
+    <rect x="940" y="880" width="180" height="140" class="cupboard"/>
+    <rect x="1320" y="920" width="220" height="100" class="cupboard"/>
+    <text x="1030" y="955" class="subhead" text-anchor="middle">CP1</text>
+    <text x="1430" y="980" class="subhead" text-anchor="middle">CP2</text>
+
+    <!-- Cupboard nodes are embedded in, rather than floating above, the stepped top boundary. -->
+    <use href="#objectNode" x="940" y="880"/><text x="950" y="866" class="objectLabel">CP1-CL</text>
+    <use href="#objectNode" x="1120" y="880"/><text x="1140" y="866" class="objectLabel">CP1-CR</text>
+    <use href="#objectNode" x="940" y="1020"/><text x="940" y="1052" class="objectLabel" text-anchor="middle">CP1-FL</text>
+    <use href="#objectNode" x="1120" y="1020"/><text x="1105" y="1052" class="objectLabel" text-anchor="middle">CP1-FR</text>
+    <use href="#objectNode" x="1320" y="920"/><text x="1300" y="904" class="objectLabel" text-anchor="end">CP2-CL</text>
+    <use href="#objectNode" x="1540" y="920"/><text x="1520" y="904" class="objectLabel" text-anchor="end">CP2-CR</text>
+    <use href="#objectNode" x="1320" y="1020"/><text x="1300" y="1050" class="objectLabel" text-anchor="end">CP2-FL</text>
+    <use href="#objectNode" x="1540" y="1020"/><text x="1520" y="1050" class="objectLabel" text-anchor="end">CP2-FR</text>
+
+    <!-- Compact generic Room C sequence begins after the cupboard-integrated upper boundary. -->
+    <use href="#permNode" x="940" y="1450"/><text x="912" y="1460" class="nodeLabel" text-anchor="end">C0</text>
+    <use href="#permNode" x="980" y="1450"/><text x="980" y="1418" class="nodeLabel" text-anchor="middle">C1</text>
+    <use href="#permNode" x="1160" y="1450"/><text x="1160" y="1424" class="nodeLabel" text-anchor="middle">C2</text>
+
+    <!-- Explicit window mapping. -->
+    <use href="#objectNode" x="980" y="1485"/><path d="M980 1500 V1540" class="leader"/><text x="980" y="1565" class="objectLabel" text-anchor="middle">W2-CR</text>
+    <text x="980" y="1590" class="tiny" text-anchor="middle">(R4 C8)</text>
+    <use href="#objectNode" x="1160" y="1485"/><path d="M1160 1500 V1540" class="leader"/><text x="1160" y="1565" class="objectLabel" text-anchor="middle">W2-CL</text>
+    <text x="1160" y="1590" class="tiny" text-anchor="middle">(R4 C9)</text>
+
+    <!-- Door nodes and corrected D2-to-D3 relationship: the permanent wall turns at D3-CL; D2-CR is 580 mm along the adjoining wall. -->
+    <use href="#objectNode" x="1245" y="1450"/><text x="1245" y="1422" class="objectLabel" text-anchor="middle">D4-CR</text>
+    <use href="#objectNode" x="1325" y="1450"/><text x="1325" y="1485" class="objectLabel" text-anchor="middle">D4-CL</text>
+    <use href="#objectNode" x="1420" y="1450"/><text x="1420" y="1422" class="objectLabel" text-anchor="middle">D3-CR</text>
+    <use href="#objectNode" x="1540" y="1450"/><path d="M1545 1463 L1580 1500" class="leader"/><text x="1705" y="1510" class="objectLabel" text-anchor="end">D3-CL</text>
+    <text x="1705" y="1536" class="tiny" text-anchor="end">casing edge at permanent corner</text>
+    <use href="#objectNode" x="1540" y="1320"/><text x="1520" y="1302" class="objectLabel" text-anchor="end">D2-CL</text>
+    <use href="#objectNode" x="1540" y="1370"/><text x="1560" y="1360" class="objectLabel">D2-CR</text>
+    <text x="1510" y="1372" class="nodeLabel" text-anchor="end">wall turns at D3-CL; continues upward</text>
+    <text x="1510" y="1398" class="tiny" text-anchor="end">D3-CL → D2-CR · observed 580 mm · not to scale</text>
+
+    <!-- Current demolishable stud wall: paired nodes preserve both measurable faces and wall thickness. -->
+    <path d="M1148 1020 H1176 V1260 H1540 V1288 H1148 Z" class="studWall"/>
+    <line x1="1148" y1="1288" x2="1176" y2="1260" class="studThickness"/>
+
+    <use href="#studNode" x="1148" y="1020"/><path d="M1135 1025 L1085 1080" class="leader"/><text x="1078" y="1092" class="studLabel" text-anchor="end">PO1</text>
+    <use href="#studNode" x="1176" y="1020"/><path d="M1188 1025 L1225 1070" class="leader"/><text x="1232" y="1082" class="studLabel">PI1</text>
+    <use href="#studNode" x="1148" y="1288"/><text x="1128" y="1322" class="studLabel" text-anchor="end">PO2</text>
+    <use href="#studNode" x="1176" y="1260"/><text x="1192" y="1248" class="studLabel">PI2</text>
+    <use href="#studNode" x="1540" y="1288"/><text x="1558" y="1315" class="studLabel">PO3</text>
+    <use href="#studNode" x="1540" y="1260"/><text x="1558" y="1248" class="studLabel">PI3</text>
+
+    <text x="1355" y="1208" class="studLabel" text-anchor="middle">current bedroom stud wall · thickness shown</text>
+    <text x="1355" y="1235" class="tiny" text-anchor="middle">outer: open Room C side · inner: current bedroom side</text>
+
+    <text x="1240" y="1175" class="room">ROOM C</text>
+  </g>
+
+  <!-- Room B and WC detail. -->
+  <!-- Direction evidence: Family A = B0-B4 // D3-BR-B0.5. Family B = D3 // B0.5-B1 // T0-T1 // B4-B3 // T3-T2. The families turn at B0.5; SUP-080 is validation only. -->
+  <rect x="65" y="1415" width="780" height="500" rx="12" class="panelB"/>
+  <text x="92" y="1458" class="head">4 · Room B / WC node panel</text>
+  <text x="92" y="1488" class="tiny">Family A: B0-B4 // return · Family B: D3 // B0.5-B1 // T0-T1 // opposite walls · D5 gap has no wall</text>
+  <g>
+    <!-- Room B measured sequence: B0/D3-BL → D3-BR → B0.5 → B1/D5-BL → B2/D5-BR → B3 → B4. -->
+    <!-- D3 ends at D3-BR. D3-BR->B0.5 is a shell return, not D3 casing. -->
+    <!-- B0.5->B1 and T0->T1 are collinear wall segments interrupted by the D5 assembly. -->
+    <rect x="555" y="1580" width="35" height="150" class="assemblyFill"/>
+    <path d="M360 1540 V1580 H555 M555 1730 L565 1840 H240 V1540" class="shell"/>
+    <line x1="240" y1="1540" x2="360" y2="1540" class="opening"/>
+    <line x1="555" y1="1580" x2="555" y2="1730" class="opening"/>
+
+    <!-- WC measured sequence; B1 and T0 are separate opposite-face nodes on the same straight alignment. -->
+    <path d="M590 1580 H775 V1750 H605 L590 1730" class="shell"/>
+    <line x1="590" y1="1730" x2="590" y2="1580" class="opening"/>
+    <line x1="555" y1="1580" x2="590" y2="1580" class="assemblyGap"/>
+    <line x1="555" y1="1730" x2="590" y2="1730" class="assemblyGap"/>
+
+    <use href="#permNode" x="240" y="1540"/><text x="225" y="1512" class="nodeLabel" text-anchor="middle">B0 / D3-BL</text>
+    <use href="#objectNode" x="360" y="1540"/><text x="360" y="1512" class="objectLabel" text-anchor="middle">D3-BR</text>
+    <use href="#permNode" x="360" y="1580"/><text x="348" y="1615" class="nodeLabel" text-anchor="end">B0.5</text>
+    <text x="375" y="1567" class="tiny">249 return</text>
+    <use href="#permNode" x="555" y="1580"/><path d="M540 1578 L512 1558" class="leader"/><text x="500" y="1552" class="nodeLabel" text-anchor="end">B1 / D5-BL</text>
+    <use href="#permNode" x="555" y="1730"/><path d="M540 1735 L505 1752" class="leader"/><text x="493" y="1762" class="nodeLabel" text-anchor="end">B2 / D5-BR</text>
+    <use href="#permNode" x="565" y="1840"/><text x="585" y="1868" class="nodeLabel">B3</text>
+    <use href="#permNode" x="240" y="1840"/><text x="240" y="1872" class="nodeLabel" text-anchor="middle">B4</text>
+
+    <use href="#permNode" x="590" y="1580"/><path d="M605 1578 L635 1558" class="leader"/><text x="647" y="1552" class="nodeLabel">T0 / D5-WCR</text>
+    <use href="#permNode" x="775" y="1580"/><text x="792" y="1590" class="nodeLabel">T1</text>
+    <use href="#permNode" x="775" y="1750"/><text x="792" y="1760" class="nodeLabel">T2</text>
+    <use href="#permNode" x="605" y="1750"/><text x="620" y="1780" class="nodeLabel">T3</text>
+    <use href="#objectNode" x="590" y="1730"/><path d="M605 1730 L650 1712" class="leader"/><text x="662" y="1708" class="objectLabel">D5-WCL</text>
+    <text x="573" y="1655" class="small" text-anchor="middle" transform="rotate(90 573 1655)">D5 assembly · no wall</text>
+
+    <text x="385" y="1800" class="room">ROOM B</text>
+    <text x="675" y="1675" class="room">WC</text>
+  </g>
+
+  <!-- Legends and vertical convention. -->
+  <rect x="65" y="1945" width="545" height="390" rx="12" class="panel"/>
+  <text x="92" y="1988" class="head">5 · Reference-type key</text>
+  <use href="#permNode" x="115" y="2040"/><text x="150" y="2047" class="body">Permanent corner / wall return</text>
+  <use href="#objectNode" x="115" y="2100"/><text x="150" y="2107" class="body">Outermost visible object edge</text>
+  <use href="#studNode" x="115" y="2160"/><text x="150" y="2167" class="body">Current stud-wall face node (PO / PI)</text>
+  <text x="92" y="2225" class="small">Wall-plane readings may be described directly later;</text>
+  <text x="92" y="2255" class="small">they do not need predeclared face references.</text>
+  <text x="92" y="2300" class="small">Paired points distinguish the two measurable stud-wall faces.</text>
+
+  <rect x="630" y="1945" width="520" height="390" rx="12" class="panel"/>
+  <text x="657" y="1988" class="head">6 · Object suffix key</text>
+  <text x="657" y="2035" class="body"><tspan font-weight="700">A / B / C / WC</tspan> — viewing room or area</text>
+  <text x="657" y="2080" class="body"><tspan font-weight="700">L / R</tspan> — viewer's left / right</text>
+  <text x="657" y="2125" class="body"><tspan font-weight="700">CL / CR</tspan> — casing-left / casing-right</text>
+  <text x="657" y="2170" class="body"><tspan font-weight="700">FL / FR</tspan> — front footprint-left / right</text>
+  <text x="657" y="2225" class="small">Doors: outermost visible casing/architrave.</text>
+  <text x="657" y="2255" class="small">Windows: outer visible casing/opening edge.</text>
+  <text x="657" y="2285" class="small">Cupboards: external plan footprint only.</text>
+
+  <rect x="1170" y="1945" width="565" height="390" rx="12" class="panel"/>
+  <text x="1197" y="1988" class="head">7 · Vertical-reference convention</text>
+  <text x="1197" y="2035" class="body"><tspan font-weight="700">{object-face}-UOC</tspan> — upper outer casing</text>
+  <text x="1197" y="2075" class="body"><tspan font-weight="700">{object-face}-CLG</tspan> — ceiling datum above it</text>
+  <text x="1197" y="2115" class="small">Later vertical: UOC ↔ CLG for each measured face.</text>
+  <text x="1197" y="2160" class="body"><tspan font-weight="700">W#-SILL / W#-FFL</tspan> — sill and floor below</text>
+  <text x="1197" y="2200" class="body"><tspan font-weight="700">CP1-BASE / CP1-FFL</tspan> — lower casing/base and floor</text>
+  <text x="1197" y="2250" class="small">These are elevation datums, not plan-position nodes.</text>
+  <text x="1197" y="2280" class="small">Exact ceiling/floor station must be recorded in the field.</text>
+
+  <text x="70" y="2370" class="tiny">ACTIVE R5 FIELD REFERENCE — CURRENT STUD WALL CORRECTED — NO DRAWN DISTANCE, ANGLE, PROPORTION OR THICKNESS IS A MEASUREMENT.</text>
+</svg>

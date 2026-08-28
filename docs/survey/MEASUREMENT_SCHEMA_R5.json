@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flat-renovation-os.local/schemas/measurement-schema-r5.json",
+  "title": "Flat Renovation OS R5 measurement input",
+  "description": "A simple exchange schema for baseline, structured-object and free-form measured-survey observations. Reference strings are deliberately not restricted to formal node IDs.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "measurements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "R5"
+    },
+    "survey_session": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/measurement"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "measurement": {
+      "type": "object",
+      "required": [
+        "measurement_id",
+        "measurement_class",
+        "from_reference",
+        "to_reference",
+        "value_mm",
+        "status",
+        "source_type"
+      ],
+      "properties": {
+        "measurement_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "measurement_class": {
+          "enum": [
+            "boundary",
+            "object",
+            "vertical",
+            "diagonal",
+            "overall_span",
+            "supplemental",
+            "deferred"
+          ]
+        },
+        "from_reference": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal node/object ID or a repeatable plain-English physical reference."
+        },
+        "to_reference": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Formal node/object ID or a repeatable plain-English physical reference."
+        },
+        "value_mm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0,
+          "description": "Null when blocked, deferred or not yet measured."
+        },
+        "height_or_datum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "through_or_route": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "measured",
+            "blocked",
+            "deferred",
+            "ambiguous",
+            "contradictory",
+            "reviewed",
+            "superseded"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "photo_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_page": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ]
+        },
+        "source_type": {
+          "enum": [
+            "baseline_template",
+            "supplemental_entry",
+            "object_schedule",
+            "field_form",
+            "photograph",
+            "plan",
+            "transcript",
+            "other"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    {
+      "schema_version": "R5",
+      "survey_session": null,
+      "measurements": [
+        {
+          "measurement_id": "SUP-065",
+          "measurement_class": "overall_span",
+          "from_reference": "A5–A6 wall",
+          "to_reference": "C5–C6 wall",
+          "value_mm": null,
+          "height_or_datum": "same nominated height at both ends",
+          "through_or_route": "through open D2",
+          "status": "planned",
+          "note": "Plain-English references are intentionally permitted.",
+          "photo_reference": null,
+          "source_page": null,
+          "source_type": "supplemental_entry"
+        }
+      ]
+    }
+  ]
+}

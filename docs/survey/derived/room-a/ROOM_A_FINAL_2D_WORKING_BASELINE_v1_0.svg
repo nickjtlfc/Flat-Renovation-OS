@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-355.7487000000001 -5001.9830999999995 5245.0205 5651.9830999999995" role="img" aria-labelledby="title desc">
+  <title id="title">ROOM A · FINAL 2D WORKING BASELINE v1.0</title>
+  <desc id="desc">Accepted constrained shape and approved global orientation retained · local datum A7. Exact accepted geometry; standalone presentation only.</desc>
+  <style>
+    .bg{fill:#f8fafc}.room{fill:#eff6ff;stroke:none}.roomAlt{fill:#ecfdf5;stroke:none}.wc{fill:#f0fdfa;stroke:none}.wall{stroke:#1e3a8a;stroke-width:30;stroke-linecap:round}.window{stroke:#0284c7;stroke-width:30}.casing{stroke:#d97706;stroke-width:24}.opening{stroke:#a21caf;stroke-width:18}.reveal{stroke:#0891b2;stroke-width:12}.leaf{stroke:#111827;stroke-width:16}.cup{fill:#fef3c7;stroke:#a16207;stroke-width:14}.partition{fill:#f3e8ff;fill-opacity:.48;stroke:#a855f7;stroke-width:12;stroke-dasharray:28 18}.node{fill:#fff;stroke:#334155;stroke-width:7}.title{font:bold 58px Arial;fill:#9f1239}.sub{font:34px Arial;fill:#334155}.roomLabel{font:bold 88px Arial;fill:#17324d}.nodeLabel{font:26px Arial;fill:#334155}.objectLabel{font:bold 34px Arial;fill:#7c2d12}.note{font:29px Arial;fill:#334155}.gate{font:bold 32px Arial;fill:#9f1239}
+  </style>
+  <rect x="-355.7487000000001" y="-5001.9830999999995" width="5245.0205" height="5651.9830999999995" class="bg"/>
+  <polygon points="-0.0536999999994805,-4301.9830999999995 1300.5654000000004,-4300.4272 1300.2129999999997,-4005.8975 3255.2115999999996,-4003.5588000000002 3249.0895,-4269.3264 4539.2717999999995,-4270.4729 4539.243299999999,0 0,0" class="room"/>
+  
+  
+  <line x1="-0.0536999999994805" y1="-4301.9830999999995" x2="1300.5654000000004" y2="-4300.4272" class="wall"/>
+<line x1="1300.5654000000004" y1="-4300.4272" x2="1300.2129999999997" y2="-4005.8975" class="wall"/>
+<line x1="1300.2129999999997" y1="-4005.8975" x2="3255.2115999999996" y2="-4003.5588000000002" class="wall"/>
+<line x1="3255.2115999999996" y1="-4003.5588000000002" x2="3249.0895" y2="-4269.3264" class="wall"/>
+<line x1="3249.0895" y1="-4269.3264" x2="4539.2717999999995" y2="-4270.4729" class="wall"/>
+<line x1="4539.2717999999995" y1="-4270.4729" x2="4539.2684" y2="-2863.2619" class="wall"/>
+<line x1="4539.2514" y1="-1427.9009999999998" x2="4539.243299999999" y2="0" class="wall"/>
+<line x1="4539.243299999999" y1="0" x2="4012.1228999999994" y2="-0.0005999999999914962" class="wall"/>
+<line x1="2822.3019999999997" y1="-0.00380000000001246" x2="0" y2="0" class="wall"/>
+<line x1="0" y1="0" x2="-0.0020999999997002305" y2="-550.0004" class="wall"/>
+<line x1="-0.015300000000024738" y1="-1642.3411999999998" x2="-0.0536999999994805" y2="-4301.9830999999995" class="wall"/>
+  <line x1="4539.2684" y1="-2863.2619" x2="4539.2514" y2="-1427.9009999999998" class="window"/>
+  <line x1="2815.2124999999996" y1="-31.0038" x2="4019.2125000000005" y2="-31.000600000000006" class="casing"/>
+<line x1="-0.001999999999497959" y1="-548.1708" x2="-0.01540000000022701" y2="-1644.1707999999999" class="casing"/>
+  <line x1="3026.7124999999996" y1="-0.003299999999995862" x2="3807.7123999999994" y2="-0.0011000000000080945" class="opening"/>
+<line x1="-5.748700000000099" y1="-711.2158000000001" x2="5.731300000000374" y2="-1481.1258" class="opening"/>
+  
+  <line x1="3026.7124999999996" y1="-0.003299999999995862" x2="3807.7123999999994" y2="-0.0011000000000080945" class="leaf"/>
+<line x1="-5.538700000000063" y1="-725.2158000000001" x2="5.511300000000119" y2="-1467.1358" class="leaf"/>
+  <circle cx="1300.2129999999997" cy="-4005.8975" r="23" class="node"/><text x="1334.2129999999997" y="-4035.8975" class="nodeLabel">A2</text>
+<circle cx="3255.2115999999996" cy="-4003.5588000000002" r="23" class="node"/><text x="3289.2115999999996" y="-4033.5588000000002" class="nodeLabel">A3</text>
+<circle cx="-0.0536999999994805" cy="-4301.9830999999995" r="23" class="node"/><text x="33.94630000000052" y="-4331.9830999999995" class="nodeLabel">A0</text>
+<circle cx="1300.5654000000004" cy="-4300.4272" r="23" class="node"/><text x="1334.5654000000004" y="-4330.4272" class="nodeLabel">A1</text>
+<circle cx="3249.0895" cy="-4269.3264" r="23" class="node"/><text x="3283.0895" y="-4299.3264" class="nodeLabel">A4</text>
+<circle cx="4539.2717999999995" cy="-4270.4729" r="23" class="node"/><text x="4573.2717999999995" y="-4300.4729" class="nodeLabel">A5</text>
+<circle cx="4539.243299999999" cy="0" r="23" class="node"/><text x="4573.243299999999" y="-30" class="nodeLabel">A6</text>
+<circle cx="0" cy="0" r="23" class="node"/><text x="34" y="-30" class="nodeLabel">A7</text>
+<circle cx="4539.2684" cy="-2863.2619" r="23" class="node"/><text x="4573.2684" y="-2893.2619" class="nodeLabel">W1-AL</text>
+<circle cx="4539.2514" cy="-1427.9009999999998" r="23" class="node"/><text x="4573.2514" y="-1457.9009999999998" class="nodeLabel">W1-AR</text>
+<circle cx="4012.1228999999994" cy="-0.0005999999999914962" r="23" class="node"/><text x="4046.1228999999994" y="-30.00059999999999" class="nodeLabel">D1-AL</text>
+<circle cx="2822.3019999999997" cy="-0.00380000000001246" r="23" class="node"/><text x="2856.3019999999997" y="-30.003800000000012" class="nodeLabel">D1-AR</text>
+<circle cx="-0.0020999999997002305" cy="-550.0004" r="23" class="node"/><text x="33.9979000000003" y="-580.0004" class="nodeLabel">D2-AL</text>
+<circle cx="-0.015300000000024738" cy="-1642.3411999999998" r="23" class="node"/><text x="33.984699999999975" y="-1672.3411999999998" class="nodeLabel">D2-AR</text>
+  <text x="-255.7487000000001" y="-4896.9830999999995" class="title">ROOM A · FINAL 2D WORKING BASELINE v1.0</text>
+  <text x="-255.7487000000001" y="-4841.9830999999995" class="sub">Accepted constrained shape and approved global orientation retained · local datum A7</text>
+  <text x="500" y="-2100" class="roomLabel">ROOM A</text>
+<text x="4139.2684" y="-2145.5814499999997" class="objectLabel">W1</text>
+<text x="3417.2124499999995" y="170" class="objectLabel">D1 · swings into A</text>
+<text x="-900" y="-1096.1707999999999" class="objectLabel">D2 · swings into A</text>
+  <text x="-255.7487000000001" y="485" class="note">Whole-flat transform: translate (+4432.6987, +134.9958) mm · rotation 0° · scale 1</text>
+<text x="-255.7487000000001" y="527" class="note">Geometry movement during promotion: 0 mm</text>
+  <text x="-255.7487000000001" y="615" class="gate">FINAL 2D PROMOTION — HUMAN REVIEW REQUIRED</text>
+</svg>

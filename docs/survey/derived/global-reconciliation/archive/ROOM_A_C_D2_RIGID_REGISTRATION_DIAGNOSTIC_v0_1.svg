@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1300" viewBox="0 0 1900 1300" role="img" aria-labelledby="title desc">
+  <title id="title">Room A to Room C D2 rigid registration diagnostic</title>
+  <desc id="desc">Fixed accepted Room C with rigidly transformed Room A. D2 clear and structural openings are centreline-aligned across an approximately 250 mm wall; casing faces remain distinct.</desc>
+  <defs><style>
+    .page{fill:#fff;stroke:#0f172a;stroke-width:3}.panel{fill:#f8fafc;stroke:#94a3b8;stroke-width:2}.title{font:700 31px Arial,sans-serif;fill:#0f172a}.sub{font:17px Arial,sans-serif;fill:#334155}.warn{font:700 17px Arial,sans-serif;fill:#9f1239}.roomA{fill:#fff7ed;stroke:#c2410c;stroke-width:2}.roomC{fill:#eff6ff;stroke:#1d4ed8;stroke-width:2}.wallA{stroke:#c2410c;stroke-width:7}.wallC{stroke:#1e3a8a;stroke-width:7}.wallBand{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.openingCut{fill:#fff;stroke:#0f766e;stroke-width:2}.partition{fill:#e9d5ff;stroke:#7e22ce;stroke-width:3}.openingA{stroke:#2563eb;stroke-width:9}.casingA{stroke:#d97706;stroke-width:8;stroke-dasharray:9 5}.openingC{stroke:#0f766e;stroke-width:11}.leaf{stroke:#166534;stroke-width:7}.window{stroke:#0284c7;stroke-width:9}.door{stroke:#d97706;stroke-width:10}.cup{fill:#fef3c7;stroke:#a16207;stroke-width:2}.node{fill:#fff;stroke:#0f172a;stroke-width:2}.nodeA{fill:#fff7ed;stroke:#c2410c;stroke-width:2}.nodeC{fill:#eff6ff;stroke:#1d4ed8;stroke-width:2}.partitionNode{fill:#faf5ff;stroke:#7e22ce;stroke-width:2}.label{font:700 12px Arial,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.labelA{font:700 12px Arial,sans-serif;fill:#9a3412;paint-order:stroke;stroke:#fff;stroke-width:4px}.labelC{font:700 12px Arial,sans-serif;fill:#1e3a8a;paint-order:stroke;stroke:#fff;stroke-width:4px}.roomLabel{font:700 21px Arial,sans-serif}.sideHead{font:700 20px Arial,sans-serif;fill:#0f172a}.side{font:15px Arial,sans-serif;fill:#1f2937}.small{font:13px Arial,sans-serif;fill:#475569}.good{fill:#166534;font-weight:700}.construction{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6}.dimension{stroke:#be123c;stroke-width:2;marker-start:url(#arrowBack);marker-end:url(#arrow)}.callout{fill:#fff7ed;stroke:#d97706;stroke-width:2}
+  </style><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#be123c"/></marker><marker id="arrowBack" markerWidth="7" markerHeight="7" refX="1" refY="3.5" orient="auto"><path d="M7 0 L0 3.5 L7 7 Z" fill="#be123c"/></marker></defs>
+  <rect x="12" y="12" width="1876" height="1276" rx="12" class="page"/>
+  <text x="48" y="58" class="title">GLOBAL RECONCILIATION · A/C D2 RIGID REGISTRATION DIAGNOSTIC</text>
+  <text x="48" y="89" class="sub">Room C fixed · Room A rigid transform only · no scale · no node deformation · residual convention model minus evidence</text>
+  <text x="48" y="120" class="warn">HUMAN REVIEW ONLY — NOT FINAL WHOLE-FLAT GEOMETRY — ROOM B/WC AND D3 EXCLUDED</text>
+  <rect x="30" y="150" width="1460" height="1100" rx="10" class="panel"/><rect x="1510" y="150" width="360" height="1100" rx="10" class="panel"/>
+
+  <polygon points="101.1,258.4 109.2,797.7 718.2,797.7 710.2,258.4" class="roomC"/><polygon points="755.8,867.2 947.5,862.2 945.1,821.1 1230.7,816.5 1230.4,855.4 1418.9,852.7 1409.5,228.8 746.4,238.7" class="roomA"/><polygon points="718.2,797.7 710.2,258.4 746.7,257.9 754.7,797.2" class="wallBand"/><polygon points="713.1,455.7 711.4,343.2 748,342.6 749.6,455.1" class="openingCut"/><polygon points="335.7,797.7 330.7,457.1 713.1,457.1 713.4,476 349,476 353.8,797.7" class="partition"/>
+
+  <line x1="101.1" y1="258.4" x2="109.2" y2="797.7" class="wallC"/><line x1="109.2" y1="797.7" x2="335.7" y2="797.7" class="wallC"/><line x1="353.8" y1="797.7" x2="607.9" y2="797.7" class="wallC"/><line x1="718.2" y1="797.7" x2="710.2" y2="258.4" class="wallC"/>
+  <line x1="101.1" y1="258.4" x2="149.4" y2="258.4" class="wallC"/><line x1="149.4" y1="258.4" x2="149" y2="234.3" class="wallC"/><line x1="334.4" y1="234.3" x2="334.8" y2="258.4" class="wallC"/><line x1="334.8" y1="258.4" x2="414.8" y2="258.4" class="wallC"/>
+  <line x1="149" y1="234.3" x2="334.4" y2="234.3" class="window"/><line x1="414.8" y1="258.4" x2="549.3" y2="258.4" class="door"/><line x1="549.3" y1="258.4" x2="580.9" y2="258.4" class="wallC"/><line x1="580.9" y1="258.4" x2="710.2" y2="258.4" class="door"/>
+  <polygon points="109.2,797.7 296.9,797.7 298,873.4 110.3,873.4" class="cup"/><polygon points="610.8,797.7 714.3,797.7 715.4,876 612,876" class="cup"/>
+
+  <line x1="755.8" y1="867.2" x2="947.5" y2="862.2" class="wallA"/><line x1="947.5" y1="862.2" x2="945.1" y2="821.1" class="wallA"/><line x1="945.1" y1="821.1" x2="1230.7" y2="816.5" class="wallA"/><line x1="1230.7" y1="816.5" x2="1230.4" y2="855.4" class="wallA"/><line x1="1230.4" y1="855.4" x2="1418.9" y2="852.7" class="wallA"/>
+  <line x1="1418.9" y1="852.7" x2="1415.8" y2="647.1" class="wallA"/><line x1="1412.7" y1="437.4" x2="1409.5" y2="228.8" class="wallA"/><line x1="1409.5" y1="228.8" x2="1332.5" y2="230" class="wallA"/><line x1="1158.7" y1="232.6" x2="746.4" y2="238.7" class="wallA"/><line x1="746.4" y1="238.7" x2="747.6" y2="319.1" class="wallA"/><line x1="750" y1="478.7" x2="755.8" y2="867.2" class="wallA"/>
+  <line x1="1415.8" y1="647.1" x2="1412.7" y2="437.4" class="openingA"/><line x1="1332.5" y1="230" x2="1158.7" y2="232.6" class="openingA"/>
+
+  <line x1="711.4" y1="343.2" x2="713.1" y2="455.7" class="openingC"/><line x1="748" y1="342.6" x2="749.6" y2="455.1" class="openingC"/><line x1="748" y1="344.7" x2="749.6" y2="453.1" class="leaf"/><line x1="748" y1="342.8" x2="749.6" y2="454.9" class="openingA"/><line x1="747.6" y1="318.8" x2="750" y2="478.9" class="casingA"/>
+  <line x1="712.3" y1="399.4" x2="748.8" y2="398.9" class="dimension"/><line x1="748" y1="342.8" x2="748" y2="342.6" class="construction"/><line x1="749.6" y1="454.9" x2="749.6" y2="455.1" class="construction"/>
+
+  <circle cx="710.2" cy="258.4" r="5" class="nodeC"/><circle cx="711.4" cy="343.2" r="5" class="nodeC"/><circle cx="335.7" cy="797.7" r="4" class="partitionNode"/><circle cx="330.7" cy="457.1" r="4" class="partitionNode"/><circle cx="713.1" cy="457.1" r="4" class="partitionNode"/><circle cx="353.8" cy="797.7" r="4" class="partitionNode"/><circle cx="349" cy="476" r="4" class="partitionNode"/><circle cx="713.4" cy="476" r="4" class="partitionNode"/><circle cx="755.8" cy="867.2" r="4" class="nodeA"/><circle cx="947.5" cy="862.2" r="4" class="nodeA"/><circle cx="945.1" cy="821.1" r="4" class="nodeA"/><circle cx="1230.7" cy="816.5" r="4" class="nodeA"/><circle cx="1230.4" cy="855.4" r="4" class="nodeA"/><circle cx="1418.9" cy="852.7" r="4" class="nodeA"/><circle cx="1409.5" cy="228.8" r="4" class="nodeA"/><circle cx="746.4" cy="238.7" r="4" class="nodeA"/><circle cx="1415.8" cy="647.1" r="3" class="nodeA"/><circle cx="1412.7" cy="437.4" r="3" class="nodeA"/><circle cx="1332.5" cy="230" r="3" class="nodeA"/><circle cx="1158.7" cy="232.6" r="3" class="nodeA"/><circle cx="747.6" cy="319.1" r="3" class="nodeA"/><circle cx="750" cy="478.7" r="3" class="nodeA"/>
+  <text x="702.2" y="280.4" class="labelC" text-anchor="end">D3-CL · corner</text><text x="704.4" y="335.2" class="labelC" text-anchor="end">D2-CR</text><text x="720.1" y="474.1" class="labelC" text-anchor="start">PO3</text><text x="720.4" y="468" class="labelC" text-anchor="start">PI3</text>
+  <text x="755.6" y="336.1" class="labelA" text-anchor="start">D2-AL</text><text x="758" y="470.7" class="labelA" text-anchor="start">D2-AR</text><text x="762.8" y="859.2" class="labelA" text-anchor="start">A0</text><text x="753.4" y="255.7" class="labelA" text-anchor="start">A7</text><text x="938.1" y="838.1" class="labelA" text-anchor="end">A2</text><text x="1237.7" y="833.5" class="labelA" text-anchor="start">A3</text>
+  <text x="720.5" y="389.1" class="label" text-anchor="end">~250 mm through-wall</text><text x="731.9" y="488.3" class="label" text-anchor="middle">D2 shared assembly</text>
+  <text x="405.7" y="528.1" class="roomLabel" fill="#1e3a8a" text-anchor="middle">ROOM C · FIXED FRAME</text>
+  <text x="988.5" y="550.4" class="roomLabel" fill="#9a3412" text-anchor="middle">ROOM A · RIGIDLY PLACED</text>
+
+  <text x="1540" y="195" class="sideHead">D2 registration</text>
+  <text x="1540" y="226" class="side">A clear opening: <tspan font-weight="700">767 mm</tspan></text>
+  <text x="1540" y="252" class="side">C structural opening: <tspan font-weight="700">770 mm</tspan></text>
+  <text x="1540" y="278" class="side">Width difference: <tspan class="good">3 mm</tspan></text>
+  <text x="1540" y="316" class="sideHead">Rigid transform</text>
+  <text x="1540" y="347" class="side">Rotation: <tspan font-weight="700">0.923502°</tspan></text>
+  <text x="1540" y="373" class="side">Translation X: <tspan font-weight="700">5776.18 mm</tspan></text>
+  <text x="1540" y="399" class="side">Translation Y: <tspan font-weight="700">-3851.18 mm</tspan></text>
+  <text x="1540" y="425" class="side">Scale: <tspan font-weight="700">1.000000</tspan></text>
+  <text x="1540" y="463" class="sideHead">Axes · local +X gauge</text>
+  <text x="1540" y="494" class="small">A AL→AR: 269.930763°</text>
+  <text x="1540" y="518" class="small">C A-face R→L: 270.854265°</text>
+  <text x="1540" y="542" class="small">Opposite-face handedness reversed</text>
+  <text x="1540" y="580" class="sideHead">Layer result</text>
+  <text x="1540" y="611" class="side">Wall-face depth: <tspan class="good">250 mm</tspan></text>
+  <text x="1540" y="637" class="side">Clear end offsets: <tspan class="good">1.50 / 1.50 mm</tspan></text>
+  <text x="1540" y="663" class="small">A casing span model 1092.34</text>
+  <text x="1540" y="687" class="small">A measured casing width 1096</text>
+  <text x="1540" y="711" class="small">C leaf 742 · A clear 767</text>
+  <rect x="1530" y="750" width="320" height="150" rx="8" class="callout"/>
+  <text x="1550" y="784" class="sideHead">Assessment</text>
+  <text x="1550" y="817" class="side"><tspan class="good">Compatible</tspan> with small,</text>
+  <text x="1550" y="843" class="side">explainable face/casing differences.</text>
+  <text x="1550" y="871" class="small">No shell error indicated.</text>
+  <text x="1540" y="938" class="sideHead">Layer key</text>
+  <line x1="1540" y1="970" x2="1580" y2="970" class="wallC"/><text x="1595" y="976" class="small">Room C shell</text>
+  <line x1="1540" y1="1000" x2="1580" y2="1000" class="wallA"/><text x="1595" y="1006" class="small">Room A shell</text>
+  <rect x="1540" y="1020" width="40" height="20" class="wallBand"/><text x="1595" y="1036" class="small">A–C wall body</text>
+  <line x1="1540" y1="1065" x2="1580" y2="1065" class="openingC"/><text x="1595" y="1071" class="small">C structural opening</text>
+  <line x1="1540" y1="1095" x2="1580" y2="1095" class="openingA"/><text x="1595" y="1101" class="small">A clear opening</text>
+  <line x1="1540" y1="1125" x2="1580" y2="1125" class="casingA"/><text x="1595" y="1131" class="small">A outer casing</text>
+  <line x1="1540" y1="1155" x2="1580" y2="1155" class="leaf"/><text x="1595" y="1161" class="small">closing leaf</text>
+  <text x="1540" y="1203" class="small">Room C coordinates fixed.</text>
+  <text x="1540" y="1227" class="small">Room A pairwise distances preserved.</text>
+</svg>

@@ -1,0 +1,4060 @@
+{
+  "documentType": "derived joint Room B/WC pilot reconstruction, evidence and residual record - not source evidence",
+  "version": "0.1",
+  "generatedDate": "2026-08-04",
+  "units": "millimetres",
+  "baselineStatus": {
+    "status": "accepted-provisional-working-baseline",
+    "acceptedDate": "2026-08-04",
+    "acceptedBy": "human review",
+    "geometryFrozen": true,
+    "finalOrConstructionAccurate": false,
+    "nextPhase": "independent Room C reconstruction",
+    "integrationInterfaces": [
+      "Room A -> Room C through D2",
+      "Room B/WC -> Room C through D3"
+    ],
+    "reopenOnlyFor": "global Room C integration evidence exposing a genuine network inconsistency"
+  },
+  "authoritativeEvidence": [
+    "docs/survey/ROOM_B_WC_RECONSTRUCTION_BRIEF_v1.md",
+    "docs/survey/ROOM_B_EVIDENCE_v1.md",
+    "docs/survey/ROOM_WC_EVIDENCE_v1.md",
+    "docs/survey/ROOM_B_WC_NODE_REFERENCE_ADDENDUM_v1.md"
+  ],
+  "photographicEvidence": {
+    "annotatedFolder": "source-material/photos/RoomB-WC-Survey/",
+    "annotatedFilesInspected": [
+      "BASE-B-01.jpeg",
+      "BASE-B-02.jpeg",
+      "BASE-B-03.jpeg",
+      "BASE-B-04.jpeg",
+      "BASE-WC-05.jpeg",
+      "D3-ROOM-B.jpeg",
+      "D5-ROOM-B.jpeg",
+      "D5-WC.jpeg",
+      "D5-ROOM-B-20MM-CUTAWAY-TILES&DOOR.jpeg",
+      "ROOMB-D3BR-RELATIONTOB0,5ANDB1WALL.jpeg"
+    ],
+    "generalRoomBAndWCFolder": "source-material/photos/RoomB/",
+    "contextualPlan": "source-material/plans/2dPlan.jpeg"
+  },
+  "coordinateGauge": {
+    "B0": [
+      0,
+      0
+    ],
+    "D3BR": "constrained to +X with fitted distance",
+    "note": "Gauge only; axes are not site north."
+  },
+  "fittingMethod": {
+    "method": "Robust weighted nonlinear least squares using finite-difference Levenberg-Marquardt and Huber loss",
+    "exactRightAnglesImposed": false,
+    "candidateFits": [
+      "D0: corrected distance network without directional residuals",
+      "P1: the same distance network plus two strong soft wall-direction families, each evaluated at 1.1 degree sigma"
+    ],
+    "directionalScope": "No right angle or exact parallelism is imposed. Family A strongly and softly relates D3-BR->B0.5 to B0->B4. Family B strongly and softly relates D3, B0.5->B1/T0->T1, B4->B3 and T3->T2. B0.5-B1/T0-T1 collinearity remains exact topology evidence.",
+    "ranges": "Interval residual: zero anywhere inside the stated range; penalty only outside the range.",
+    "topology": "Typed physical sequence: B0/D3-BL ->[D3 opening/casing]-> D3-BR ->[249 mm wall return]-> B0.5 ->[Room B wall]-> B1/D5-BL ->[D5 assembly interruption, no wall]-> T0/D5-WCR ->[WC wall on the same alignment]-> T1. D3-BR is explicitly not collinear with the B0.5-B1/T0-T1 alignment.",
+    "d5": "D5 is one shared 761 mm physical leaf. The Room B 737 mm observation is its exposed closed-face portion between frame stops, not a second leaf. Room B and WC outer casing, inner casing/frame and reveal layers remain separate around the single centreline and orientation.",
+    "activeEvidenceTreatment": "No active observation is excluded. Corrected BASE-WC-03 = 1685 mm, corrected SUP-071 = B2/D5-BR to B4 = 2046 mm, and corrected BASE-B-07 = 2200-2220 mm are active.",
+    "wallFaceChecks": "SUP-080 uses an explicit perpendicular landing on B3-B4 at reduced weight. SUP-081 assumes the 50% point of T1-T2 and a perpendicular landing on B0-B4 at low weight; it remains a broad validation because neither endpoint was physically marked."
+  },
+  "evidenceCorrections": {
+    "baseB07": {
+      "activeReading": "B4 -> B0 / D3-BL = approximately 2200-2220 mm",
+      "provenance": "2026-08-04 authoritative field recheck",
+      "supersededInactiveReading": "B4 -> B0 = approximately 2010-2030 mm",
+      "treatment": "2200-2220 mm is active; 2010-2030 mm is retained only as an erroneous inactive range in correction history."
+    },
+    "baseWc03": {
+      "activeReading": "T2 -> T3 = 1685 mm",
+      "provenance": "authoritative field recheck",
+      "supersededInactiveReading": "T2 -> T3 = 690 mm",
+      "treatment": "1685 mm is active; 690 mm is retained only as an erroneous inactive value in correction history."
+    },
+    "sup071": {
+      "activeReading": "B2 / D5-BR -> B4 = 2046 mm",
+      "provenance": "authoritative field recheck correcting endpoint and value",
+      "supersededInactiveReading": "B1 / D5-BR -> B4 = 2014 mm",
+      "treatment": "Corrected B2-to-B4 reading is active at high confidence; the superseded record is history only."
+    },
+    "d5FieldRecheck": {
+      "activeRoomB": "59 mm B1-to-inner-casing, 80 mm opposite inner-casing-to-B2, approximately 80/97 mm perpendicular reveal depths, approximately 737 mm visible closed face, 761 mm full physical leaf",
+      "activeWC": "63 mm T0-to-inner-casing and 81 mm D5-WCL-to-inner-casing/door reference; T3-to-D5-WCL remains 173 mm wall",
+      "supersededOrDifferentLayerReadings": "Room B 63/65 and 81; WC 83 and 52",
+      "treatment": "Superseded values are history only. WC 83/52 remain inactive because their exact frame/stop layers differ or are unconfirmed."
+    },
+    "d3FieldRecheck": {
+      "activeReading": "Room B visible closed D3 face = 738 mm",
+      "provenance": "authoritative final D3 field remeasurement",
+      "supersededInactiveReading": "D3 door face = 763 mm",
+      "treatment": "738 mm is the exposed closed-face width. The full physical D3 leaf width remains unresolved; 763 mm is correction history only and is not averaged into the active object geometry."
+    }
+  },
+  "topologyCorrection": {
+    "controllingHumanEvidence": "D3 is the upper horizontal span ending at D3-BR. A 249 mm return drops to B0.5. B0.5->B1 and T0->T1 form the separate lower straight alignment interrupted by D5; D3-BR is not on that line and B1->T0 contains no wall.",
+    "confirmingPhotograph": "source-material/photos/RoomB-WC-Survey/ROOMB-D3BR-RELATIONTOB0,5ANDB1WALL.jpeg",
+    "supersededImplementationDifference": "The previous regeneration called all four nodes one continuous physical wall alignment and rendered B1->T0 with the derived-wall class. That incorrectly represented the D5 interruption as wall geometry and did not type the D3-BR->B0.5 edge explicitly as a shell return.",
+    "previousSelectedMetrics": {
+      "roomBClearExactRmsMm": 3.573,
+      "wcClearExactRmsMm": 0.545,
+      "sup079ResidualMm": 0,
+      "d5ReportedDoorFaceNormalSeparationMm": 125.76,
+      "largestExactResidual": {
+        "id": "SUP-070",
+        "residualMm": -9.061
+      },
+      "baseWc03PredictedMm": 1702.43,
+      "baseWc03ResidualMm": 1012.43
+    }
+  },
+  "observations": {
+    "distance": [
+      {
+        "id": "BASE-B-02",
+        "type": "distance",
+        "from": "D3-BR",
+        "to": "B0.5",
+        "reading": {
+          "valueMm": 249
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "BASE-B-03",
+        "type": "distance",
+        "from": "B0.5",
+        "to": "B1",
+        "reading": {
+          "valueMm": 823
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "D5-B-CASING-WIDTH",
+        "type": "distance",
+        "from": "B1",
+        "to": "B2",
+        "reading": {
+          "valueMm": 874
+        },
+        "sigmaMm": 5,
+        "category": "door-object",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Room B outer casing face"
+      },
+      {
+        "id": "BASE-B-05",
+        "type": "distance",
+        "from": "B2",
+        "to": "B3",
+        "reading": {
+          "valueMm": 1218
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "BASE-B-06",
+        "type": "distance",
+        "from": "B3",
+        "to": "B4",
+        "reading": {
+          "valueMm": 1665
+        },
+        "sigmaMm": 7,
+        "category": "baseline-tile-face",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Visible finished tile face; underlying wall plane is approximately 10 mm behind"
+      },
+      {
+        "id": "BASE-B-07",
+        "type": "distance",
+        "from": "B4",
+        "to": "B0",
+        "reading": {
+          "minMm": 2200,
+          "maxMm": 2220
+        },
+        "sigmaMm": 35,
+        "category": "approximate-range",
+        "confidence": "low",
+        "exactEndpoint": true,
+        "note": "Authoritative field recheck; supersedes inactive 2010-2030 mm range. Shower-screen-obstructed direct shot"
+      },
+      {
+        "id": "SUP-065",
+        "type": "distance",
+        "from": "B0",
+        "to": "B0.5",
+        "reading": {
+          "valueMm": 888
+        },
+        "sigmaMm": 7,
+        "category": "node-to-node",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-066",
+        "type": "distance",
+        "from": "B0",
+        "to": "B2",
+        "reading": {
+          "valueMm": 1952
+        },
+        "sigmaMm": 30,
+        "category": "approximate",
+        "confidence": "low",
+        "exactEndpoint": true,
+        "note": "Difficult laser shot"
+      },
+      {
+        "id": "SUP-067",
+        "type": "distance",
+        "from": "B0",
+        "to": "B3",
+        "reading": {
+          "minMm": 2755,
+          "maxMm": 2765
+        },
+        "sigmaMm": 12,
+        "category": "measured-range",
+        "confidence": "medium",
+        "exactEndpoint": true,
+        "note": "Human-confirmed range"
+      },
+      {
+        "id": "SUP-068",
+        "type": "distance",
+        "from": "B0.5",
+        "to": "B2",
+        "reading": {
+          "minMm": 1182,
+          "maxMm": 1190
+        },
+        "sigmaMm": 12,
+        "category": "measured-range",
+        "confidence": "medium",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-069",
+        "type": "distance",
+        "from": "B0.5",
+        "to": "B3",
+        "reading": {
+          "valueMm": 2228
+        },
+        "sigmaMm": 8,
+        "category": "node-to-node",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-070",
+        "type": "distance",
+        "from": "B1",
+        "to": "B4",
+        "reading": {
+          "valueMm": 2673
+        },
+        "sigmaMm": 8,
+        "category": "node-to-node",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-071",
+        "type": "distance",
+        "from": "B2",
+        "to": "B4",
+        "reading": {
+          "valueMm": 2046
+        },
+        "sigmaMm": 8,
+        "category": "node-to-node",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Authoritative field recheck corrected both the endpoint and value from the superseded inactive B1 / D5-BR -> B4 = 2014 record"
+      },
+      {
+        "id": "BASE-WC-01",
+        "type": "distance",
+        "from": "T0",
+        "to": "T1",
+        "reading": {
+          "valueMm": 1643
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "BASE-WC-02",
+        "type": "distance",
+        "from": "T1",
+        "to": "T2",
+        "reading": {
+          "valueMm": 1078
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "BASE-WC-03",
+        "type": "distance",
+        "from": "T2",
+        "to": "T3",
+        "reading": {
+          "valueMm": 1685
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Authoritative field recheck; supersedes the inactive erroneous raw value of 690 mm"
+      },
+      {
+        "id": "BASE-WC-04",
+        "type": "distance",
+        "from": "T3",
+        "to": "D5-WCL",
+        "reading": {
+          "valueMm": 173
+        },
+        "sigmaMm": 4,
+        "category": "baseline",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Authoritative WC-side endpoint clarification; supersedes inactive 171 mm value and is a finished-wall segment, not casing"
+      },
+      {
+        "id": "D5-WC-CASING-WIDTH",
+        "type": "distance",
+        "from": "D5-WCL",
+        "to": "T0",
+        "reading": {
+          "valueMm": 898
+        },
+        "sigmaMm": 5,
+        "category": "door-object",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-072",
+        "type": "distance",
+        "from": "T0",
+        "to": "T2",
+        "reading": {
+          "valueMm": 1959
+        },
+        "sigmaMm": 8,
+        "category": "node-to-node",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-073",
+        "type": "distance",
+        "from": "T1",
+        "to": "T3",
+        "reading": {
+          "valueMm": 1970
+        },
+        "sigmaMm": 35,
+        "category": "approximate",
+        "confidence": "low",
+        "exactEndpoint": true,
+        "note": ""
+      },
+      {
+        "id": "SUP-079",
+        "type": "distance",
+        "from": "B0",
+        "to": "T2",
+        "reading": {
+          "valueMm": 3674
+        },
+        "sigmaMm": 12,
+        "category": "cross-tie",
+        "confidence": "high",
+        "exactEndpoint": true,
+        "note": "Only direct Room B-to-WC cross-tie"
+      }
+    ],
+    "relations": [
+      {
+        "id": "D5-B-VISIBLE-CLOSED-LEAF",
+        "type": "derived-relation",
+        "measuredMm": 737,
+        "sigmaMm": 4,
+        "category": "door-object-reconciliation",
+        "confidence": "approximate-field-recheck",
+        "note": "Visible exposed portion of the one 761 mm physical leaf when closed and viewed from Room B"
+      },
+      {
+        "id": "D5-WC-T0-FRAME-63",
+        "type": "derived-relation",
+        "measuredMm": 63,
+        "sigmaMm": 4,
+        "category": "door-object-reconciliation",
+        "confidence": "fresh-field-recheck",
+        "note": "T0 / D5-WCR to the WC inner-casing edge along the WC casing datum"
+      },
+      {
+        "id": "D5-WC-D5WCL-FRAME-81",
+        "type": "derived-relation",
+        "measuredMm": 81,
+        "sigmaMm": 4,
+        "category": "door-object-reconciliation",
+        "confidence": "fresh-field-recheck",
+        "note": "D5-WCL to the WC inner-casing/door-edge reference along the WC casing datum"
+      }
+    ],
+    "wallFaceChecks": [
+      {
+        "id": "SUP-080",
+        "type": "derived-wall-span",
+        "measuredMm": 2217,
+        "sigmaMm": 30,
+        "category": "wall-to-wall-check",
+        "confidence": "medium",
+        "startDescription": "D3-BR",
+        "landingWall": [
+          "B3",
+          "B4"
+        ],
+        "note": "Field recheck; endpoint represented as the perpendicular landing on the B3-B4 finished wall segment"
+      },
+      {
+        "id": "SUP-081",
+        "type": "derived-wall-span",
+        "measuredMm": 3492,
+        "sigmaMm": 90,
+        "category": "broad-wall-to-wall-check",
+        "confidence": "low",
+        "startDescription": "Assumed 50% point on T1-T2",
+        "landingWall": [
+          "B0",
+          "B4"
+        ],
+        "note": "Field recheck with two unmarked general wall-face endpoints; midpoint and perpendicular landing are explicit modelling assumptions"
+      }
+    ],
+    "architecturalParallelChecks": [
+      {
+        "id": "PAR-A-RETURN-B0B4",
+        "type": "soft-parallel",
+        "firstSegment": [
+          "D3-BR",
+          "B0.5"
+        ],
+        "secondSegment": [
+          "B0",
+          "B4"
+        ],
+        "targetDifferenceDegrees": 0,
+        "sigmaDegrees": 1.1,
+        "confidence": "authoritative-human-and-photo-observation",
+        "note": "Family A: the D3-BR to B0.5 return is approximately parallel to B0-B4 and terminates at B0.5"
+      },
+      {
+        "id": "PAR-B-D3-B05B1",
+        "type": "soft-parallel",
+        "firstSegment": [
+          "B0",
+          "D3-BR"
+        ],
+        "secondSegment": [
+          "B0.5",
+          "B1"
+        ],
+        "targetDifferenceDegrees": 0,
+        "sigmaDegrees": 1.1,
+        "confidence": "authoritative-human-and-photo-observation",
+        "note": "Family B: the D3 doorway/casing span is very closely parallel to the B0.5-B1 / T0-T1 interrupted wall alignment"
+      },
+      {
+        "id": "PAR-B-D3-B4B3",
+        "type": "soft-parallel",
+        "firstSegment": [
+          "B0",
+          "D3-BR"
+        ],
+        "secondSegment": [
+          "B4",
+          "B3"
+        ],
+        "targetDifferenceDegrees": 0,
+        "sigmaDegrees": 1.1,
+        "confidence": "authoritative-human-and-photo-observation",
+        "note": "Family B: the D3 doorway/casing span is very closely parallel to B4-B3"
+      },
+      {
+        "id": "PAR-B-D3-T3T2",
+        "type": "soft-parallel",
+        "firstSegment": [
+          "B0",
+          "D3-BR"
+        ],
+        "secondSegment": [
+          "T3",
+          "T2"
+        ],
+        "targetDifferenceDegrees": 0,
+        "sigmaDegrees": 1.1,
+        "confidence": "authoritative-human-and-photo-observation",
+        "note": "Family B: the D3 doorway/casing span is very closely parallel to T3-T2; B0.5-B1 and T0-T1 are already exactly collinear topology"
+      }
+    ],
+    "cornerAngleValidationOnly": [
+      {
+        "id": "ANG-B-D3BR",
+        "room": "Room B",
+        "previous": "B0",
+        "corner": "D3-BR",
+        "next": "B0.5",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B05",
+        "room": "Room B",
+        "previous": "D3-BR",
+        "corner": "B0.5",
+        "next": "B1",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B1",
+        "room": "Room B",
+        "previous": "B0.5",
+        "corner": "B1",
+        "next": "B2",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B2",
+        "room": "Room B",
+        "previous": "B1",
+        "corner": "B2",
+        "next": "B3",
+        "targetDegrees": 180,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B3",
+        "room": "Room B",
+        "previous": "B2",
+        "corner": "B3",
+        "next": "B4",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B4",
+        "room": "Room B",
+        "previous": "B3",
+        "corner": "B4",
+        "next": "B0",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-B-B0",
+        "room": "Room B",
+        "previous": "B4",
+        "corner": "B0",
+        "next": "D3-BR",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-WC-T0",
+        "room": "WC",
+        "previous": "D5-WCL",
+        "corner": "T0",
+        "next": "T1",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-WC-T1",
+        "room": "WC",
+        "previous": "T0",
+        "corner": "T1",
+        "next": "T2",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-WC-T2",
+        "room": "WC",
+        "previous": "T1",
+        "corner": "T2",
+        "next": "T3",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-WC-T3",
+        "room": "WC",
+        "previous": "T2",
+        "corner": "T3",
+        "next": "D5-WCL",
+        "targetDegrees": 90,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      },
+      {
+        "id": "ANG-WC-D5WCL",
+        "room": "WC",
+        "previous": "T3",
+        "corner": "D5-WCL",
+        "next": "T0",
+        "targetDegrees": 180,
+        "sigmaDegrees": 6,
+        "confidence": "soft-human-observation"
+      }
+    ],
+    "zeroLengthAliases": [
+      {
+        "id": "BASE-B-01",
+        "aliases": [
+          "B0",
+          "D3-BL"
+        ],
+        "distanceMm": 0
+      },
+      {
+        "id": "BASE-B-04",
+        "aliases": [
+          "B2",
+          "D5-BR"
+        ],
+        "distanceMm": 0
+      },
+      {
+        "id": "BASE-WC-05",
+        "aliases": [
+          "T0",
+          "D5-WCR"
+        ],
+        "distanceMm": 0
+      },
+      {
+        "id": "BASE-B-03-alias",
+        "aliases": [
+          "B1",
+          "D5-BL"
+        ],
+        "distanceMm": 0
+      }
+    ]
+  },
+  "solutions": {
+    "D0": {
+      "id": "D0",
+      "label": "Corrected distance-only fit",
+      "excludedObservationIds": [],
+      "clearExactRmsMm": 1.472,
+      "roomBClearExactRmsMm": 1.638,
+      "wcClearExactRmsMm": 1.318,
+      "largestExactDistanceResidual": {
+        "id": "SUP-070",
+        "residualMm": -3.076
+      },
+      "roomBAreaM2": 3.6057,
+      "wcAreaM2": 1.7886,
+      "distanceOnlyRobustCost": 3.0061,
+      "totalRobustCost": 3.0061,
+      "softParallelChiSquare": 1100.9582,
+      "parallelDifferenceDegrees": 34.949,
+      "wallBearingsDegrees": {
+        "D3": 0,
+        "D3Return": 60.96,
+        "B05B1": 5.349,
+        "D5RoomBFace": 97.832,
+        "B2B3": 96.386,
+        "B3B4": 187.181,
+        "B4B3": 7.181,
+        "B4B0": 275.909,
+        "B0B4": 95.909,
+        "T0T1": 5.349,
+        "T1T2": 95.613,
+        "T2T3": 185.527,
+        "T3T2": 5.527,
+        "T3D5WCL": 277.978
+      },
+      "coordinatesMm": {
+        "B0": {
+          "x": 0,
+          "y": 0
+        },
+        "D3-BR": {
+          "x": 742.27,
+          "y": 0
+        },
+        "B2": {
+          "x": 1563.25,
+          "y": 1160.88
+        },
+        "B3": {
+          "x": 1427.81,
+          "y": 2370.95
+        },
+        "B4": {
+          "x": -223.86,
+          "y": 2162.84
+        },
+        "B0.5": {
+          "x": 862.65,
+          "y": 216.82
+        },
+        "B1": {
+          "x": 1682.54,
+          "y": 293.58
+        },
+        "T0": {
+          "x": 1809.89,
+          "y": 305.51
+        },
+        "T1": {
+          "x": 3445.41,
+          "y": 458.63
+        },
+        "D5-WCL": {
+          "x": 1687.15,
+          "y": 1197.89
+        },
+        "T2": {
+          "x": 3340,
+          "y": 1531.25
+        },
+        "T3": {
+          "x": 1663.17,
+          "y": 1369
+        }
+      },
+      "distanceResiduals": [
+        {
+          "id": "BASE-B-02",
+          "from": "D3-BR",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 249
+          },
+          "predictedMm": 248,
+          "residualToReadingOrRangeMm": -1,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-03",
+          "from": "B0.5",
+          "to": "B1",
+          "readingMm": {
+            "valueMm": 823
+          },
+          "predictedMm": 823.47,
+          "residualToReadingOrRangeMm": 0.47,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "D5-B-CASING-WIDTH",
+          "from": "B1",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 874
+          },
+          "predictedMm": 875.46,
+          "residualToReadingOrRangeMm": 1.46,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Room B outer casing face"
+        },
+        {
+          "id": "BASE-B-05",
+          "from": "B2",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 1218
+          },
+          "predictedMm": 1217.63,
+          "residualToReadingOrRangeMm": -0.37,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-06",
+          "from": "B3",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 1665
+          },
+          "predictedMm": 1664.73,
+          "residualToReadingOrRangeMm": -0.27,
+          "sigmaMm": 7,
+          "category": "baseline-tile-face",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Visible finished tile face; underlying wall plane is approximately 10 mm behind"
+        },
+        {
+          "id": "BASE-B-07",
+          "from": "B4",
+          "to": "B0",
+          "readingMm": {
+            "minMm": 2200,
+            "maxMm": 2220
+          },
+          "predictedMm": 2174.4,
+          "residualToReadingOrRangeMm": -25.6,
+          "sigmaMm": 35,
+          "category": "approximate-range",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck; supersedes inactive 2010-2030 mm range. Shower-screen-obstructed direct shot"
+        },
+        {
+          "id": "SUP-065",
+          "from": "B0",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 888
+          },
+          "predictedMm": 889.48,
+          "residualToReadingOrRangeMm": 1.48,
+          "sigmaMm": 7,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-066",
+          "from": "B0",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 1952
+          },
+          "predictedMm": 1947.15,
+          "residualToReadingOrRangeMm": -4.85,
+          "sigmaMm": 30,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Difficult laser shot"
+        },
+        {
+          "id": "SUP-067",
+          "from": "B0",
+          "to": "B3",
+          "readingMm": {
+            "minMm": 2755,
+            "maxMm": 2765
+          },
+          "predictedMm": 2767.68,
+          "residualToReadingOrRangeMm": 2.68,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Human-confirmed range"
+        },
+        {
+          "id": "SUP-068",
+          "from": "B0.5",
+          "to": "B2",
+          "readingMm": {
+            "minMm": 1182,
+            "maxMm": 1190
+          },
+          "predictedMm": 1175.62,
+          "residualToReadingOrRangeMm": -6.38,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-069",
+          "from": "B0.5",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 2228
+          },
+          "predictedMm": 2227.03,
+          "residualToReadingOrRangeMm": -0.97,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-070",
+          "from": "B1",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2673
+          },
+          "predictedMm": 2669.92,
+          "residualToReadingOrRangeMm": -3.08,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-071",
+          "from": "B2",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2046
+          },
+          "predictedMm": 2048.82,
+          "residualToReadingOrRangeMm": 2.82,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck corrected both the endpoint and value from the superseded inactive B1 / D5-BR -> B4 = 2014 record"
+        },
+        {
+          "id": "BASE-WC-01",
+          "from": "T0",
+          "to": "T1",
+          "readingMm": {
+            "valueMm": 1643
+          },
+          "predictedMm": 1642.67,
+          "residualToReadingOrRangeMm": -0.33,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-02",
+          "from": "T1",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1078
+          },
+          "predictedMm": 1077.78,
+          "residualToReadingOrRangeMm": -0.22,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-03",
+          "from": "T2",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1685
+          },
+          "predictedMm": 1684.67,
+          "residualToReadingOrRangeMm": -0.33,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck; supersedes the inactive erroneous raw value of 690 mm"
+        },
+        {
+          "id": "BASE-WC-04",
+          "from": "T3",
+          "to": "D5-WCL",
+          "readingMm": {
+            "valueMm": 173
+          },
+          "predictedMm": 172.78,
+          "residualToReadingOrRangeMm": -0.22,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative WC-side endpoint clarification; supersedes inactive 171 mm value and is a finished-wall segment, not casing"
+        },
+        {
+          "id": "D5-WC-CASING-WIDTH",
+          "from": "D5-WCL",
+          "to": "T0",
+          "readingMm": {
+            "valueMm": 898
+          },
+          "predictedMm": 900.79,
+          "residualToReadingOrRangeMm": 2.79,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-072",
+          "from": "T0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1959
+          },
+          "predictedMm": 1960.53,
+          "residualToReadingOrRangeMm": 1.53,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-073",
+          "from": "T1",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1970
+          },
+          "predictedMm": 2001.29,
+          "residualToReadingOrRangeMm": 31.29,
+          "sigmaMm": 35,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-079",
+          "from": "B0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 3674
+          },
+          "predictedMm": 3674.28,
+          "residualToReadingOrRangeMm": 0.28,
+          "sigmaMm": 12,
+          "category": "cross-tie",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Only direct Room B-to-WC cross-tie"
+        }
+      ],
+      "relationResiduals": [
+        {
+          "id": "D5-B-VISIBLE-CLOSED-LEAF",
+          "measuredMm": 737,
+          "predictedMm": 736.66,
+          "residualMm": -0.34,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "Visible exposed portion of the one 761 mm physical leaf when closed and viewed from Room B"
+        },
+        {
+          "id": "D5-WC-T0-FRAME-63",
+          "measuredMm": 63,
+          "predictedMm": 61,
+          "residualMm": -2,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "T0 / D5-WCR to the WC inner-casing edge along the WC casing datum"
+        },
+        {
+          "id": "D5-WC-D5WCL-FRAME-81",
+          "measuredMm": 81,
+          "predictedMm": 79,
+          "residualMm": -2,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "D5-WCL to the WC inner-casing/door-edge reference along the WC casing datum"
+        }
+      ],
+      "wallSpanResiduals": [
+        {
+          "id": "SUP-080",
+          "measuredMm": 2217,
+          "predictedMm": 2266.65,
+          "residualMm": 49.65,
+          "sigmaMm": 30,
+          "confidence": "medium",
+          "startDescription": "D3-BR",
+          "startPointMm": {
+            "x": 742.27,
+            "y": 0
+          },
+          "landingWall": [
+            "B3",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": 458.92,
+            "y": 2248.87
+          },
+          "landingFraction": 0.58661,
+          "withinSegment": true,
+          "note": "Field recheck; endpoint represented as the perpendicular landing on the B3-B4 finished wall segment"
+        },
+        {
+          "id": "SUP-081",
+          "measuredMm": 3492,
+          "predictedMm": 3477.11,
+          "residualMm": -14.89,
+          "sigmaMm": 90,
+          "confidence": "low",
+          "startDescription": "Assumed 50% point on T1-T2",
+          "startPointMm": {
+            "x": 3392.71,
+            "y": 994.94
+          },
+          "startFraction": 0.5,
+          "landingWall": [
+            "B0",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": -65.93,
+            "y": 636.96
+          },
+          "landingFraction": 0.2945,
+          "withinSegment": true,
+          "note": "Field recheck with two unmarked general wall-face endpoints; midpoint and perpendicular landing are explicit modelling assumptions"
+        }
+      ],
+      "angularResiduals": [
+        {
+          "id": "ANG-B-D3BR",
+          "room": "Room B",
+          "corner": "D3-BR",
+          "previous": "B0",
+          "next": "B0.5",
+          "targetDegrees": 90,
+          "predictedDegrees": 119.04,
+          "residualDegrees": 29.04,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B05",
+          "room": "Room B",
+          "corner": "B0.5",
+          "previous": "D3-BR",
+          "next": "B1",
+          "targetDegrees": 90,
+          "predictedDegrees": 124.389,
+          "residualDegrees": 34.389,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B1",
+          "room": "Room B",
+          "corner": "B1",
+          "previous": "B0.5",
+          "next": "B2",
+          "targetDegrees": 90,
+          "predictedDegrees": 87.517,
+          "residualDegrees": -2.483,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B2",
+          "room": "Room B",
+          "corner": "B2",
+          "previous": "B1",
+          "next": "B3",
+          "targetDegrees": 180,
+          "predictedDegrees": 178.555,
+          "residualDegrees": -1.445,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B3",
+          "room": "Room B",
+          "corner": "B3",
+          "previous": "B2",
+          "next": "B4",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.205,
+          "residualDegrees": -0.795,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B4",
+          "room": "Room B",
+          "corner": "B4",
+          "previous": "B3",
+          "next": "B0",
+          "targetDegrees": 90,
+          "predictedDegrees": 91.272,
+          "residualDegrees": 1.272,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B0",
+          "room": "Room B",
+          "corner": "B0",
+          "previous": "B4",
+          "next": "D3-BR",
+          "targetDegrees": 90,
+          "predictedDegrees": 95.909,
+          "residualDegrees": 5.909,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T0",
+          "room": "WC",
+          "corner": "T0",
+          "previous": "D5-WCL",
+          "next": "T1",
+          "targetDegrees": 90,
+          "predictedDegrees": 92.483,
+          "residualDegrees": 2.483,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T1",
+          "room": "WC",
+          "corner": "T1",
+          "previous": "T0",
+          "next": "T2",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.736,
+          "residualDegrees": -0.264,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T2",
+          "room": "WC",
+          "corner": "T2",
+          "previous": "T1",
+          "next": "T3",
+          "targetDegrees": 90,
+          "predictedDegrees": 90.086,
+          "residualDegrees": 0.086,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T3",
+          "room": "WC",
+          "corner": "T3",
+          "previous": "T2",
+          "next": "D5-WCL",
+          "targetDegrees": 90,
+          "predictedDegrees": 87.548,
+          "residualDegrees": -2.452,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-D5WCL",
+          "room": "WC",
+          "corner": "D5-WCL",
+          "previous": "T3",
+          "next": "T0",
+          "targetDegrees": 180,
+          "predictedDegrees": 179.853,
+          "residualDegrees": -0.147,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        }
+      ],
+      "architecturalParallelResiduals": [
+        {
+          "id": "PAR-A-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -34.949,
+          "residualDegrees": -34.949,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family A: the D3-BR to B0.5 return is approximately parallel to B0-B4 and terminates at B0.5"
+        },
+        {
+          "id": "PAR-B-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -5.349,
+          "residualDegrees": -5.349,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to the B0.5-B1 / T0-T1 interrupted wall alignment"
+        },
+        {
+          "id": "PAR-B-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -7.181,
+          "residualDegrees": -7.181,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to B4-B3"
+        },
+        {
+          "id": "PAR-B-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -5.527,
+          "residualDegrees": -5.527,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to T3-T2; B0.5-B1 and T0-T1 are already exactly collinear topology"
+        }
+      ],
+      "reportedArchitecturalPairDifferences": [
+        {
+          "id": "PAIR-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 5.349,
+          "differenceDegrees": -5.349
+        },
+        {
+          "id": "PAIR-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 7.181,
+          "differenceDegrees": -7.181
+        },
+        {
+          "id": "PAIR-D3-T0T1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T0",
+            "T1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 5.349,
+          "differenceDegrees": -5.349
+        },
+        {
+          "id": "PAIR-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 5.527,
+          "differenceDegrees": -5.527
+        },
+        {
+          "id": "PAIR-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "firstBearingDegrees": 60.96,
+          "secondBearingDegrees": 95.909,
+          "differenceDegrees": -34.949
+        }
+      ],
+      "d5AssemblyGapMm": 127.91,
+      "d5SharedPhysicalLeaf": {
+        "onePhysicalLeaf": true,
+        "physicalLeafWidthMm": 761,
+        "leafTopMm": {
+          "x": 1754.15,
+          "y": 359.41
+        },
+        "leafBottomMm": {
+          "x": 1667.89,
+          "y": 1115.5
+        },
+        "leafCentreMm": {
+          "x": 1711.02,
+          "y": 737.46
+        },
+        "leafBearingDegrees": 96.509,
+        "roomB": {
+          "casingWidthMm": 875.465,
+          "visibleClosedWidthMm": 736.661,
+          "visibleClosedResidualMm": -0.339,
+          "outerCasingOffsetsMm": {
+            "topFromB1": 59,
+            "bottomToB2": 80
+          },
+          "revealDepthsMm": {
+            "top": 80,
+            "bottom": 97
+          },
+          "hiddenLeafBehindStopsMm": {
+            "top": 3.547,
+            "bottom": 20.792,
+            "total": 24.339
+          }
+        },
+        "wc": {
+          "casingWidthMm": 900.788,
+          "frameOffsetsMm": {
+            "topFromT0": 60.995,
+            "bottomFromD5WCL": 78.995
+          },
+          "frameOffsetResidualsMm": {
+            "top63": -2.005,
+            "bottom81": -2.005
+          },
+          "derivedRevealDepthsMm": {
+            "top": 47.874,
+            "bottom": 30.313
+          }
+        },
+        "oppositeCasingFaceSeparationMm": 127.793
+      },
+      "interruptedWallAlignment": {
+        "roomBWallSegment": [
+          "B0.5",
+          "B1"
+        ],
+        "d5AssemblyInterruption": [
+          "B1",
+          "T0"
+        ],
+        "wcWallSegment": [
+          "T0",
+          "T1"
+        ],
+        "direction": [
+          0.99564576,
+          0.09321756
+        ],
+        "b1PerpendicularDeviationMm": 0,
+        "t0PerpendicularDeviationMm": 0,
+        "t1PerpendicularDeviationMm": 0,
+        "orderedDistancesFromB05Mm": [
+          0,
+          823.47,
+          951.383,
+          2594.053
+        ],
+        "wallExistsAcrossB1T0": false,
+        "d3BRPerpendicularDistanceMm": 204.655,
+        "d3BRIsCollinear": false,
+        "d3SpanParallelToAlignedWalls": false,
+        "b05IsBelowD3BRInGauge": true
+      }
+    },
+    "P1": {
+      "id": "P1",
+      "label": "Accepted provisional baseline with two strong soft wall-direction families",
+      "excludedObservationIds": [],
+      "clearExactRmsMm": 4.759,
+      "roomBClearExactRmsMm": 6.244,
+      "wcClearExactRmsMm": 1.354,
+      "largestExactDistanceResidual": {
+        "id": "SUP-069",
+        "residualMm": -15.864
+      },
+      "roomBAreaM2": 3.6257,
+      "wcAreaM2": 1.7956,
+      "distanceOnlyRobustCost": 16.0249,
+      "totalRobustCost": 19.6507,
+      "softParallelChiSquare": 7.286,
+      "parallelDifferenceDegrees": 2.954,
+      "wallBearingsDegrees": {
+        "D3": 0,
+        "D3Return": 92.426,
+        "B05B1": 0.095,
+        "D5RoomBFace": 93.46,
+        "B2B3": 92.355,
+        "B3B4": 182.954,
+        "B4B3": 2.954,
+        "B4B0": 272.392,
+        "B0B4": 92.392,
+        "T0T1": 0.095,
+        "T1T2": 90.358,
+        "T2T3": 180.282,
+        "T3T2": 0.282,
+        "T3D5WCL": 268.11
+      },
+      "coordinatesMm": {
+        "B0": {
+          "x": 0,
+          "y": 0
+        },
+        "D3-BR": {
+          "x": 857.05,
+          "y": 0
+        },
+        "B2": {
+          "x": 1617.26,
+          "y": 1120.12
+        },
+        "B3": {
+          "x": 1567.24,
+          "y": 2336.18
+        },
+        "B4": {
+          "x": -94.01,
+          "y": 2250.45
+        },
+        "B0.5": {
+          "x": 846.68,
+          "y": 244.69
+        },
+        "B1": {
+          "x": 1670.11,
+          "y": 246.05
+        },
+        "T0": {
+          "x": 1790.82,
+          "y": 246.26
+        },
+        "T1": {
+          "x": 3433.51,
+          "y": 248.99
+        },
+        "D5-WCL": {
+          "x": 1736.45,
+          "y": 1145.51
+        },
+        "T2": {
+          "x": 3426.78,
+          "y": 1326.61
+        },
+        "T3": {
+          "x": 1742.15,
+          "y": 1318.33
+        }
+      },
+      "distanceResiduals": [
+        {
+          "id": "BASE-B-02",
+          "from": "D3-BR",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 249
+          },
+          "predictedMm": 244.9,
+          "residualToReadingOrRangeMm": -4.1,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-03",
+          "from": "B0.5",
+          "to": "B1",
+          "readingMm": {
+            "valueMm": 823
+          },
+          "predictedMm": 823.42,
+          "residualToReadingOrRangeMm": 0.42,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "D5-B-CASING-WIDTH",
+          "from": "B1",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 874
+          },
+          "predictedMm": 875.66,
+          "residualToReadingOrRangeMm": 1.66,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Room B outer casing face"
+        },
+        {
+          "id": "BASE-B-05",
+          "from": "B2",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 1218
+          },
+          "predictedMm": 1217.09,
+          "residualToReadingOrRangeMm": -0.91,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-06",
+          "from": "B3",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 1665
+          },
+          "predictedMm": 1663.46,
+          "residualToReadingOrRangeMm": -1.54,
+          "sigmaMm": 7,
+          "category": "baseline-tile-face",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Visible finished tile face; underlying wall plane is approximately 10 mm behind"
+        },
+        {
+          "id": "BASE-B-07",
+          "from": "B4",
+          "to": "B0",
+          "readingMm": {
+            "minMm": 2200,
+            "maxMm": 2220
+          },
+          "predictedMm": 2252.41,
+          "residualToReadingOrRangeMm": 32.41,
+          "sigmaMm": 35,
+          "category": "approximate-range",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck; supersedes inactive 2010-2030 mm range. Shower-screen-obstructed direct shot"
+        },
+        {
+          "id": "SUP-065",
+          "from": "B0",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 888
+          },
+          "predictedMm": 881.33,
+          "residualToReadingOrRangeMm": -6.67,
+          "sigmaMm": 7,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-066",
+          "from": "B0",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 1952
+          },
+          "predictedMm": 1967.28,
+          "residualToReadingOrRangeMm": 15.28,
+          "sigmaMm": 30,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Difficult laser shot"
+        },
+        {
+          "id": "SUP-067",
+          "from": "B0",
+          "to": "B3",
+          "readingMm": {
+            "minMm": 2755,
+            "maxMm": 2765
+          },
+          "predictedMm": 2813.18,
+          "residualToReadingOrRangeMm": 48.18,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Human-confirmed range"
+        },
+        {
+          "id": "SUP-068",
+          "from": "B0.5",
+          "to": "B2",
+          "readingMm": {
+            "minMm": 1182,
+            "maxMm": 1190
+          },
+          "predictedMm": 1166.26,
+          "residualToReadingOrRangeMm": -15.74,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-069",
+          "from": "B0.5",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 2228
+          },
+          "predictedMm": 2212.14,
+          "residualToReadingOrRangeMm": -15.86,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-070",
+          "from": "B1",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2673
+          },
+          "predictedMm": 2670.15,
+          "residualToReadingOrRangeMm": -2.85,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-071",
+          "from": "B2",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2046
+          },
+          "predictedMm": 2050.87,
+          "residualToReadingOrRangeMm": 4.87,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck corrected both the endpoint and value from the superseded inactive B1 / D5-BR -> B4 = 2014 record"
+        },
+        {
+          "id": "BASE-WC-01",
+          "from": "T0",
+          "to": "T1",
+          "readingMm": {
+            "valueMm": 1643
+          },
+          "predictedMm": 1642.69,
+          "residualToReadingOrRangeMm": -0.31,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-02",
+          "from": "T1",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1078
+          },
+          "predictedMm": 1077.65,
+          "residualToReadingOrRangeMm": -0.35,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-03",
+          "from": "T2",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1685
+          },
+          "predictedMm": 1684.65,
+          "residualToReadingOrRangeMm": -0.35,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck; supersedes the inactive erroneous raw value of 690 mm"
+        },
+        {
+          "id": "BASE-WC-04",
+          "from": "T3",
+          "to": "D5-WCL",
+          "readingMm": {
+            "valueMm": 173
+          },
+          "predictedMm": 172.91,
+          "residualToReadingOrRangeMm": -0.09,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative WC-side endpoint clarification; supersedes inactive 171 mm value and is a finished-wall segment, not casing"
+        },
+        {
+          "id": "D5-WC-CASING-WIDTH",
+          "from": "D5-WCL",
+          "to": "T0",
+          "readingMm": {
+            "valueMm": 898
+          },
+          "predictedMm": 900.9,
+          "residualToReadingOrRangeMm": 2.9,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-072",
+          "from": "T0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1959
+          },
+          "predictedMm": 1960.5,
+          "residualToReadingOrRangeMm": 1.5,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-073",
+          "from": "T1",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1970
+          },
+          "predictedMm": 2001.05,
+          "residualToReadingOrRangeMm": 31.05,
+          "sigmaMm": 35,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-079",
+          "from": "B0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 3674
+          },
+          "predictedMm": 3674.61,
+          "residualToReadingOrRangeMm": 0.61,
+          "sigmaMm": 12,
+          "category": "cross-tie",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Only direct Room B-to-WC cross-tie"
+        }
+      ],
+      "relationResiduals": [
+        {
+          "id": "D5-B-VISIBLE-CLOSED-LEAF",
+          "measuredMm": 737,
+          "predictedMm": 736.86,
+          "residualMm": -0.14,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "Visible exposed portion of the one 761 mm physical leaf when closed and viewed from Room B"
+        },
+        {
+          "id": "D5-WC-T0-FRAME-63",
+          "measuredMm": 63,
+          "predictedMm": 61.05,
+          "residualMm": -1.95,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "T0 / D5-WCR to the WC inner-casing edge along the WC casing datum"
+        },
+        {
+          "id": "D5-WC-D5WCL-FRAME-81",
+          "measuredMm": 81,
+          "predictedMm": 79.05,
+          "residualMm": -1.95,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "D5-WCL to the WC inner-casing/door-edge reference along the WC casing datum"
+        }
+      ],
+      "wallSpanResiduals": [
+        {
+          "id": "SUP-080",
+          "measuredMm": 2217,
+          "predictedMm": 2296.47,
+          "residualMm": 79.47,
+          "sigmaMm": 30,
+          "confidence": "medium",
+          "startDescription": "D3-BR",
+          "startPointMm": {
+            "x": 857.05,
+            "y": 0
+          },
+          "landingWall": [
+            "B3",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": 738.7,
+            "y": 2293.42
+          },
+          "landingFraction": 0.49875,
+          "withinSegment": true,
+          "note": "Field recheck; endpoint represented as the perpendicular landing on the B3-B4 finished wall segment"
+        },
+        {
+          "id": "SUP-081",
+          "measuredMm": 3492,
+          "predictedMm": 3460.04,
+          "residualMm": -31.96,
+          "sigmaMm": 90,
+          "confidence": "low",
+          "startDescription": "Assumed 50% point on T1-T2",
+          "startPointMm": {
+            "x": 3430.15,
+            "y": 787.8
+          },
+          "startFraction": 0.5,
+          "landingWall": [
+            "B0",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": -26.88,
+            "y": 643.39
+          },
+          "landingFraction": 0.28589,
+          "withinSegment": true,
+          "note": "Field recheck with two unmarked general wall-face endpoints; midpoint and perpendicular landing are explicit modelling assumptions"
+        }
+      ],
+      "angularResiduals": [
+        {
+          "id": "ANG-B-D3BR",
+          "room": "Room B",
+          "corner": "D3-BR",
+          "previous": "B0",
+          "next": "B0.5",
+          "targetDegrees": 90,
+          "predictedDegrees": 87.574,
+          "residualDegrees": -2.426,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B05",
+          "room": "Room B",
+          "corner": "B0.5",
+          "previous": "D3-BR",
+          "next": "B1",
+          "targetDegrees": 90,
+          "predictedDegrees": 87.669,
+          "residualDegrees": -2.331,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B1",
+          "room": "Room B",
+          "corner": "B1",
+          "previous": "B0.5",
+          "next": "B2",
+          "targetDegrees": 90,
+          "predictedDegrees": 86.635,
+          "residualDegrees": -3.365,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B2",
+          "room": "Room B",
+          "corner": "B2",
+          "previous": "B1",
+          "next": "B3",
+          "targetDegrees": 180,
+          "predictedDegrees": 178.895,
+          "residualDegrees": -1.105,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B3",
+          "room": "Room B",
+          "corner": "B3",
+          "previous": "B2",
+          "next": "B4",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.401,
+          "residualDegrees": -0.599,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B4",
+          "room": "Room B",
+          "corner": "B4",
+          "previous": "B3",
+          "next": "B0",
+          "targetDegrees": 90,
+          "predictedDegrees": 90.562,
+          "residualDegrees": 0.562,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B0",
+          "room": "Room B",
+          "corner": "B0",
+          "previous": "B4",
+          "next": "D3-BR",
+          "targetDegrees": 90,
+          "predictedDegrees": 92.392,
+          "residualDegrees": 2.392,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T0",
+          "room": "WC",
+          "corner": "T0",
+          "previous": "D5-WCL",
+          "next": "T1",
+          "targetDegrees": 90,
+          "predictedDegrees": 93.365,
+          "residualDegrees": 3.365,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T1",
+          "room": "WC",
+          "corner": "T1",
+          "previous": "T0",
+          "next": "T2",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.738,
+          "residualDegrees": -0.262,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T2",
+          "room": "WC",
+          "corner": "T2",
+          "previous": "T1",
+          "next": "T3",
+          "targetDegrees": 90,
+          "predictedDegrees": 90.076,
+          "residualDegrees": 0.076,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T3",
+          "room": "WC",
+          "corner": "T3",
+          "previous": "T2",
+          "next": "D5-WCL",
+          "targetDegrees": 90,
+          "predictedDegrees": 92.171,
+          "residualDegrees": 2.171,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-D5WCL",
+          "room": "WC",
+          "corner": "D5-WCL",
+          "previous": "T3",
+          "next": "T0",
+          "targetDegrees": 180,
+          "predictedDegrees": 174.65,
+          "residualDegrees": -5.35,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        }
+      ],
+      "architecturalParallelResiduals": [
+        {
+          "id": "PAR-A-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": 0.034,
+          "residualDegrees": 0.034,
+          "sigmaDegrees": 1.1,
+          "usedInFit": true,
+          "note": "Family A: the D3-BR to B0.5 return is approximately parallel to B0-B4 and terminates at B0.5"
+        },
+        {
+          "id": "PAR-B-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -0.095,
+          "residualDegrees": -0.095,
+          "sigmaDegrees": 1.1,
+          "usedInFit": true,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to the B0.5-B1 / T0-T1 interrupted wall alignment"
+        },
+        {
+          "id": "PAR-B-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -2.954,
+          "residualDegrees": -2.954,
+          "sigmaDegrees": 1.1,
+          "usedInFit": true,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to B4-B3"
+        },
+        {
+          "id": "PAR-B-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -0.282,
+          "residualDegrees": -0.282,
+          "sigmaDegrees": 1.1,
+          "usedInFit": true,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to T3-T2; B0.5-B1 and T0-T1 are already exactly collinear topology"
+        }
+      ],
+      "reportedArchitecturalPairDifferences": [
+        {
+          "id": "PAIR-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0.095,
+          "differenceDegrees": -0.095
+        },
+        {
+          "id": "PAIR-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 2.954,
+          "differenceDegrees": -2.954
+        },
+        {
+          "id": "PAIR-D3-T0T1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T0",
+            "T1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0.095,
+          "differenceDegrees": -0.095
+        },
+        {
+          "id": "PAIR-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0.282,
+          "differenceDegrees": -0.282
+        },
+        {
+          "id": "PAIR-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "firstBearingDegrees": 92.426,
+          "secondBearingDegrees": 92.392,
+          "differenceDegrees": 0.034
+        }
+      ],
+      "d5AssemblyGapMm": 120.71,
+      "d5SharedPhysicalLeaf": {
+        "onePhysicalLeaf": true,
+        "physicalLeafWidthMm": 761,
+        "leafTopMm": {
+          "x": 1746.59,
+          "y": 304.74
+        },
+        "leafBottomMm": {
+          "x": 1718.2,
+          "y": 1065.21
+        },
+        "leafCentreMm": {
+          "x": 1732.39,
+          "y": 684.98
+        },
+        "leafBearingDegrees": 92.138,
+        "roomB": {
+          "casingWidthMm": 875.66,
+          "visibleClosedWidthMm": 736.856,
+          "visibleClosedResidualMm": -0.144,
+          "outerCasingOffsetsMm": {
+            "topFromB1": 59,
+            "bottomToB2": 80
+          },
+          "revealDepthsMm": {
+            "top": 80,
+            "bottom": 97
+          },
+          "hiddenLeafBehindStopsMm": {
+            "top": 5.035,
+            "bottom": 19.109,
+            "total": 24.144
+          }
+        },
+        "wc": {
+          "casingWidthMm": 900.901,
+          "frameOffsetsMm": {
+            "topFromT0": 61.052,
+            "bottomFromD5WCL": 79.052
+          },
+          "frameOffsetResidualsMm": {
+            "top63": -1.948,
+            "bottom81": -1.948
+          },
+          "derivedRevealDepthsMm": {
+            "top": 40.622,
+            "bottom": 23.065
+          }
+        },
+        "oppositeCasingFaceSeparationMm": 120.506
+      },
+      "interruptedWallAlignment": {
+        "roomBWallSegment": [
+          "B0.5",
+          "B1"
+        ],
+        "d5AssemblyInterruption": [
+          "B1",
+          "T0"
+        ],
+        "wcWallSegment": [
+          "T0",
+          "T1"
+        ],
+        "direction": [
+          0.99999862,
+          0.00166242
+        ],
+        "b1PerpendicularDeviationMm": 0,
+        "t0PerpendicularDeviationMm": 0,
+        "t1PerpendicularDeviationMm": 0,
+        "orderedDistancesFromB05Mm": [
+          0,
+          823.425,
+          944.139,
+          2586.829
+        ],
+        "wallExistsAcrossB1T0": false,
+        "d3BRPerpendicularDistanceMm": 244.702,
+        "d3BRIsCollinear": false,
+        "d3SpanParallelToAlignedWalls": false,
+        "b05IsBelowD3BRInGauge": true
+      }
+    },
+    "A2": {
+      "id": "A2",
+      "label": "Fresh diagnostic with complete human-confirmed architectural constraints",
+      "excludedObservationIds": [],
+      "clearExactRmsMm": 7.994,
+      "roomBClearExactRmsMm": 10.602,
+      "wcClearExactRmsMm": 1.328,
+      "largestExactDistanceResidual": {
+        "id": "SUP-069",
+        "residualMm": -28.009
+      },
+      "roomBAreaM2": 3.6108,
+      "wcAreaM2": 1.7977,
+      "distanceOnlyRobustCost": 15.4408,
+      "totalRobustCost": 15.4408,
+      "softParallelChiSquare": 14.3664,
+      "parallelDifferenceDegrees": 4.164,
+      "wallBearingsDegrees": {
+        "D3": 0,
+        "D3Return": 93.19,
+        "B05B1": 0,
+        "D5RoomBFace": 93.686,
+        "B2B3": 93.686,
+        "B3B4": 184.164,
+        "B4B3": 4.164,
+        "B4B0": 273.19,
+        "B0B4": 93.19,
+        "T0T1": 0,
+        "T1T2": 90.262,
+        "T2T3": 180.218,
+        "T3T2": 0.218,
+        "T3D5WCL": 266.337
+      },
+      "coordinatesMm": {
+        "B0": {
+          "x": 0,
+          "y": 0
+        },
+        "D3-BR": {
+          "x": 860.5,
+          "y": 0
+        },
+        "B2": {
+          "x": 1614.75,
+          "y": 1117.41
+        },
+        "B3": {
+          "x": 1536.34,
+          "y": 2334.36
+        },
+        "B4": {
+          "x": -123.38,
+          "y": 2213.54
+        },
+        "B0.5": {
+          "x": 846.83,
+          "y": 245.22
+        },
+        "B1": {
+          "x": 1670.94,
+          "y": 245.22
+        },
+        "T0": {
+          "x": 1790.25,
+          "y": 245.22
+        },
+        "T1": {
+          "x": 3432.93,
+          "y": 245.22
+        },
+        "D5-WCL": {
+          "x": 1732.33,
+          "y": 1144.15
+        },
+        "T2": {
+          "x": 3428.01,
+          "y": 1322.98
+        },
+        "T3": {
+          "x": 1743.37,
+          "y": 1316.58
+        }
+      },
+      "distanceResiduals": [
+        {
+          "id": "BASE-B-02",
+          "from": "D3-BR",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 249
+          },
+          "predictedMm": 245.6,
+          "residualToReadingOrRangeMm": -3.4,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-03",
+          "from": "B0.5",
+          "to": "B1",
+          "readingMm": {
+            "valueMm": 823
+          },
+          "predictedMm": 824.11,
+          "residualToReadingOrRangeMm": 1.11,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "D5-B-CASING-WIDTH",
+          "from": "B1",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 874
+          },
+          "predictedMm": 874,
+          "residualToReadingOrRangeMm": 0,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Room B outer casing face"
+        },
+        {
+          "id": "BASE-B-05",
+          "from": "B2",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 1218
+          },
+          "predictedMm": 1219.48,
+          "residualToReadingOrRangeMm": 1.48,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-B-06",
+          "from": "B3",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 1665
+          },
+          "predictedMm": 1664.12,
+          "residualToReadingOrRangeMm": -0.88,
+          "sigmaMm": 7,
+          "category": "baseline-tile-face",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Visible finished tile face; underlying wall plane is approximately 10 mm behind"
+        },
+        {
+          "id": "BASE-B-07",
+          "from": "B4",
+          "to": "B0",
+          "readingMm": {
+            "minMm": 2200,
+            "maxMm": 2220
+          },
+          "predictedMm": 2216.98,
+          "residualToReadingOrRangeMm": 0,
+          "sigmaMm": 35,
+          "category": "approximate-range",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": true,
+          "note": "Authoritative field recheck; supersedes inactive 2010-2030 mm range. Shower-screen-obstructed direct shot"
+        },
+        {
+          "id": "SUP-065",
+          "from": "B0",
+          "to": "B0.5",
+          "readingMm": {
+            "valueMm": 888
+          },
+          "predictedMm": 881.62,
+          "residualToReadingOrRangeMm": -6.38,
+          "sigmaMm": 7,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-066",
+          "from": "B0",
+          "to": "B2",
+          "readingMm": {
+            "valueMm": 1952
+          },
+          "predictedMm": 1963.67,
+          "residualToReadingOrRangeMm": 11.67,
+          "sigmaMm": 30,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Difficult laser shot"
+        },
+        {
+          "id": "SUP-067",
+          "from": "B0",
+          "to": "B3",
+          "readingMm": {
+            "minMm": 2755,
+            "maxMm": 2765
+          },
+          "predictedMm": 2794.57,
+          "residualToReadingOrRangeMm": 29.57,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Human-confirmed range"
+        },
+        {
+          "id": "SUP-068",
+          "from": "B0.5",
+          "to": "B2",
+          "readingMm": {
+            "minMm": 1182,
+            "maxMm": 1190
+          },
+          "predictedMm": 1162.07,
+          "residualToReadingOrRangeMm": -19.93,
+          "sigmaMm": 12,
+          "category": "measured-range",
+          "confidence": "medium",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-069",
+          "from": "B0.5",
+          "to": "B3",
+          "readingMm": {
+            "valueMm": 2228
+          },
+          "predictedMm": 2199.99,
+          "residualToReadingOrRangeMm": -28.01,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-070",
+          "from": "B1",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2673
+          },
+          "predictedMm": 2663.44,
+          "residualToReadingOrRangeMm": -9.56,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-071",
+          "from": "B2",
+          "to": "B4",
+          "readingMm": {
+            "valueMm": 2046
+          },
+          "predictedMm": 2054.9,
+          "residualToReadingOrRangeMm": 8.9,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck corrected both the endpoint and value from the superseded inactive B1 / D5-BR -> B4 = 2014 record"
+        },
+        {
+          "id": "BASE-WC-01",
+          "from": "T0",
+          "to": "T1",
+          "readingMm": {
+            "valueMm": 1643
+          },
+          "predictedMm": 1642.69,
+          "residualToReadingOrRangeMm": -0.31,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-02",
+          "from": "T1",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1078
+          },
+          "predictedMm": 1077.77,
+          "residualToReadingOrRangeMm": -0.23,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "BASE-WC-03",
+          "from": "T2",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1685
+          },
+          "predictedMm": 1684.65,
+          "residualToReadingOrRangeMm": -0.35,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative field recheck; supersedes the inactive erroneous raw value of 690 mm"
+        },
+        {
+          "id": "BASE-WC-04",
+          "from": "T3",
+          "to": "D5-WCL",
+          "readingMm": {
+            "valueMm": 173
+          },
+          "predictedMm": 172.78,
+          "residualToReadingOrRangeMm": -0.22,
+          "sigmaMm": 4,
+          "category": "baseline",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Authoritative WC-side endpoint clarification; supersedes inactive 171 mm value and is a finished-wall segment, not casing"
+        },
+        {
+          "id": "D5-WC-CASING-WIDTH",
+          "from": "D5-WCL",
+          "to": "T0",
+          "readingMm": {
+            "valueMm": 898
+          },
+          "predictedMm": 900.79,
+          "residualToReadingOrRangeMm": 2.79,
+          "sigmaMm": 5,
+          "category": "door-object",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-072",
+          "from": "T0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 1959
+          },
+          "predictedMm": 1960.57,
+          "residualToReadingOrRangeMm": 1.57,
+          "sigmaMm": 8,
+          "category": "node-to-node",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-073",
+          "from": "T1",
+          "to": "T3",
+          "readingMm": {
+            "valueMm": 1970
+          },
+          "predictedMm": 2000.61,
+          "residualToReadingOrRangeMm": 30.61,
+          "sigmaMm": 35,
+          "category": "approximate",
+          "confidence": "low",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": ""
+        },
+        {
+          "id": "SUP-079",
+          "from": "B0",
+          "to": "T2",
+          "readingMm": {
+            "valueMm": 3674
+          },
+          "predictedMm": 3674.44,
+          "residualToReadingOrRangeMm": 0.44,
+          "sigmaMm": 12,
+          "category": "cross-tie",
+          "confidence": "high",
+          "usedInFit": true,
+          "withinRange": false,
+          "note": "Only direct Room B-to-WC cross-tie"
+        }
+      ],
+      "relationResiduals": [
+        {
+          "id": "D5-B-VISIBLE-CLOSED-LEAF",
+          "measuredMm": 737,
+          "predictedMm": 735.2,
+          "residualMm": -1.8,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "Visible exposed portion of the one 761 mm physical leaf when closed and viewed from Room B"
+        },
+        {
+          "id": "D5-WC-T0-FRAME-63",
+          "measuredMm": 63,
+          "predictedMm": 61,
+          "residualMm": -2,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "T0 / D5-WCR to the WC inner-casing edge along the WC casing datum"
+        },
+        {
+          "id": "D5-WC-D5WCL-FRAME-81",
+          "measuredMm": 81,
+          "predictedMm": 79,
+          "residualMm": -2,
+          "sigmaMm": 4,
+          "category": "door-object-reconciliation",
+          "note": "D5-WCL to the WC inner-casing/door-edge reference along the WC casing datum"
+        }
+      ],
+      "wallSpanResiduals": [
+        {
+          "id": "SUP-080",
+          "measuredMm": 2217,
+          "predictedMm": 2279.13,
+          "residualMm": 62.13,
+          "sigmaMm": 30,
+          "confidence": "medium",
+          "startDescription": "D3-BR",
+          "startPointMm": {
+            "x": 860.5,
+            "y": 0
+          },
+          "landingWall": [
+            "B3",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": 695.02,
+            "y": 2273.12
+          },
+          "landingFraction": 0.5069,
+          "withinSegment": true,
+          "note": "Field recheck; endpoint represented as the perpendicular landing on the B3-B4 finished wall segment"
+        },
+        {
+          "id": "SUP-081",
+          "measuredMm": 3492,
+          "predictedMm": 3468.79,
+          "residualMm": -23.21,
+          "sigmaMm": 90,
+          "confidence": "low",
+          "startDescription": "Assumed 50% point on T1-T2",
+          "startPointMm": {
+            "x": 3430.47,
+            "y": 784.1
+          },
+          "startFraction": 0.5,
+          "landingWall": [
+            "B0",
+            "B4"
+          ],
+          "landingPointMm": {
+            "x": -32.95,
+            "y": 591.05
+          },
+          "landingFraction": 0.26701,
+          "withinSegment": true,
+          "note": "Field recheck with two unmarked general wall-face endpoints; midpoint and perpendicular landing are explicit modelling assumptions"
+        }
+      ],
+      "angularResiduals": [
+        {
+          "id": "ANG-B-D3BR",
+          "room": "Room B",
+          "corner": "D3-BR",
+          "previous": "B0",
+          "next": "B0.5",
+          "targetDegrees": 90,
+          "predictedDegrees": 86.81,
+          "residualDegrees": -3.19,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B05",
+          "room": "Room B",
+          "corner": "B0.5",
+          "previous": "D3-BR",
+          "next": "B1",
+          "targetDegrees": 90,
+          "predictedDegrees": 86.81,
+          "residualDegrees": -3.19,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B1",
+          "room": "Room B",
+          "corner": "B1",
+          "previous": "B0.5",
+          "next": "B2",
+          "targetDegrees": 90,
+          "predictedDegrees": 86.314,
+          "residualDegrees": -3.686,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B2",
+          "room": "Room B",
+          "corner": "B2",
+          "previous": "B1",
+          "next": "B3",
+          "targetDegrees": 180,
+          "predictedDegrees": 180,
+          "residualDegrees": 0,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B3",
+          "room": "Room B",
+          "corner": "B3",
+          "previous": "B2",
+          "next": "B4",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.523,
+          "residualDegrees": -0.477,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B4",
+          "room": "Room B",
+          "corner": "B4",
+          "previous": "B3",
+          "next": "B0",
+          "targetDegrees": 90,
+          "predictedDegrees": 90.973,
+          "residualDegrees": 0.973,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-B-B0",
+          "room": "Room B",
+          "corner": "B0",
+          "previous": "B4",
+          "next": "D3-BR",
+          "targetDegrees": 90,
+          "predictedDegrees": 93.19,
+          "residualDegrees": 3.19,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T0",
+          "room": "WC",
+          "corner": "T0",
+          "previous": "D5-WCL",
+          "next": "T1",
+          "targetDegrees": 90,
+          "predictedDegrees": 93.686,
+          "residualDegrees": 3.686,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T1",
+          "room": "WC",
+          "corner": "T1",
+          "previous": "T0",
+          "next": "T2",
+          "targetDegrees": 90,
+          "predictedDegrees": 89.738,
+          "residualDegrees": -0.262,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T2",
+          "room": "WC",
+          "corner": "T2",
+          "previous": "T1",
+          "next": "T3",
+          "targetDegrees": 90,
+          "predictedDegrees": 90.044,
+          "residualDegrees": 0.044,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-T3",
+          "room": "WC",
+          "corner": "T3",
+          "previous": "T2",
+          "next": "D5-WCL",
+          "targetDegrees": 90,
+          "predictedDegrees": 93.881,
+          "residualDegrees": 3.881,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        },
+        {
+          "id": "ANG-WC-D5WCL",
+          "room": "WC",
+          "corner": "D5-WCL",
+          "previous": "T3",
+          "next": "T0",
+          "targetDegrees": 180,
+          "predictedDegrees": 172.65,
+          "residualDegrees": -7.35,
+          "sigmaDegrees": 6,
+          "usedInFit": false
+        }
+      ],
+      "architecturalParallelResiduals": [
+        {
+          "id": "PAR-A-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": 0,
+          "residualDegrees": 0,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family A: the D3-BR to B0.5 return is approximately parallel to B0-B4 and terminates at B0.5"
+        },
+        {
+          "id": "PAR-B-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": 0,
+          "residualDegrees": 0,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to the B0.5-B1 / T0-T1 interrupted wall alignment"
+        },
+        {
+          "id": "PAR-B-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -4.164,
+          "residualDegrees": -4.164,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to B4-B3"
+        },
+        {
+          "id": "PAR-B-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "targetDifferenceDegrees": 0,
+          "predictedDifferenceDegrees": -0.218,
+          "residualDegrees": -0.218,
+          "sigmaDegrees": 1.1,
+          "usedInFit": false,
+          "note": "Family B: the D3 doorway/casing span is very closely parallel to T3-T2; B0.5-B1 and T0-T1 are already exactly collinear topology"
+        }
+      ],
+      "reportedArchitecturalPairDifferences": [
+        {
+          "id": "PAIR-D3-B05B1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B0.5",
+            "B1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0,
+          "differenceDegrees": 0
+        },
+        {
+          "id": "PAIR-D3-B4B3",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "B4",
+            "B3"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 4.164,
+          "differenceDegrees": -4.164
+        },
+        {
+          "id": "PAIR-D3-T0T1",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T0",
+            "T1"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0,
+          "differenceDegrees": 0
+        },
+        {
+          "id": "PAIR-D3-T3T2",
+          "firstSegment": [
+            "B0",
+            "D3-BR"
+          ],
+          "secondSegment": [
+            "T3",
+            "T2"
+          ],
+          "firstBearingDegrees": 0,
+          "secondBearingDegrees": 0.218,
+          "differenceDegrees": -0.218
+        },
+        {
+          "id": "PAIR-RETURN-B0B4",
+          "firstSegment": [
+            "D3-BR",
+            "B0.5"
+          ],
+          "secondSegment": [
+            "B0",
+            "B4"
+          ],
+          "firstBearingDegrees": 93.19,
+          "secondBearingDegrees": 93.19,
+          "differenceDegrees": 0
+        }
+      ],
+      "d5AssemblyGapMm": 119.31,
+      "d5SharedPhysicalLeaf": {
+        "onePhysicalLeaf": true,
+        "physicalLeafWidthMm": 761,
+        "leafTopMm": {
+          "x": 1747.22,
+          "y": 303.57
+        },
+        "leafBottomMm": {
+          "x": 1715.86,
+          "y": 1063.93
+        },
+        "leafCentreMm": {
+          "x": 1731.54,
+          "y": 683.75
+        },
+        "leafBearingDegrees": 92.361,
+        "roomB": {
+          "casingWidthMm": 874,
+          "visibleClosedWidthMm": 735.197,
+          "visibleClosedResidualMm": -1.803,
+          "outerCasingOffsetsMm": {
+            "topFromB1": 59,
+            "bottomToB2": 80
+          },
+          "revealDepthsMm": {
+            "top": 80,
+            "bottom": 97
+          },
+          "hiddenLeafBehindStopsMm": {
+            "top": 5.674,
+            "bottom": 20.13,
+            "total": 25.803
+          }
+        },
+        "wc": {
+          "casingWidthMm": 900.793,
+          "frameOffsetsMm": {
+            "topFromT0": 60.998,
+            "bottomFromD5WCL": 78.998
+          },
+          "frameOffsetResidualsMm": {
+            "top63": -2.002,
+            "bottom81": -2.002
+          },
+          "derivedRevealDepthsMm": {
+            "top": 39.192,
+            "bottom": 21.595
+          }
+        },
+        "oppositeCasingFaceSeparationMm": 119.061
+      },
+      "interruptedWallAlignment": {
+        "roomBWallSegment": [
+          "B0.5",
+          "B1"
+        ],
+        "d5AssemblyInterruption": [
+          "B1",
+          "T0"
+        ],
+        "wcWallSegment": [
+          "T0",
+          "T1"
+        ],
+        "direction": [
+          1,
+          0
+        ],
+        "b1PerpendicularDeviationMm": 0,
+        "t0PerpendicularDeviationMm": 0,
+        "t1PerpendicularDeviationMm": 0,
+        "orderedDistancesFromB05Mm": [
+          0,
+          824.111,
+          943.418,
+          2586.105
+        ],
+        "wallExistsAcrossB1T0": false,
+        "d3BRPerpendicularDistanceMm": 245.219,
+        "d3BRIsCollinear": false,
+        "d3SpanParallelToAlignedWalls": true,
+        "b05IsBelowD3BRInGauge": true
+      }
+    }
+  },
+  "selection": {
+    "selectedSolutionId": "P1",
+    "reason": "Human review accepted P1 as the provisional Room B/WC working baseline. It reduces the maximum deviation within the two observed wall-direction families from 34.949 to 2.954 degrees while preserving the corrected shell topology and one-leaf D5 plausibility checks.",
+    "plausibilityChecks": {
+      "roomBDoesNotSelfIntersect": true,
+      "wcDoesNotSelfIntersect": true,
+      "roomBAreaPlausible": true,
+      "wcAreaPlausible": true,
+      "d5AssemblyGapPositiveAndLocal": true,
+      "interruptedWallFacesCollinearExact": true,
+      "interruptedWallNodeOrderExact": true,
+      "noWallEdgeAcrossD5": true,
+      "d3BRExplicitlyOffLowerAlignment": true,
+      "crossTieWithin25Mm": true,
+      "correctedBaseWc03Within50Mm": true,
+      "correctedBaseB07WithinWorkingSigma": true,
+      "sup080LandingOnB3B4": true,
+      "sup081LandingOnB0B4": true,
+      "softParallelSelected": true,
+      "softFamiliesReduceMaximumDeviation": true,
+      "softFamiliesDistanceCostIncreaseBelowFifteen": true,
+      "d3ObjectGeometryValid": true,
+      "d5ObjectGeometryValid": true,
+      "d5OnePhysicalLeafExact": true,
+      "d5RoomBVisibleFaceWithin5Mm": true,
+      "d5WcFrameOffsetsWithin5Mm": true
+    }
+  },
+  "selectedGeometry": {
+    "nodesMm": {
+      "B0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-BR": {
+        "x": 857.05,
+        "y": 0
+      },
+      "B2": {
+        "x": 1617.26,
+        "y": 1120.12
+      },
+      "B3": {
+        "x": 1567.24,
+        "y": 2336.18
+      },
+      "B4": {
+        "x": -94.01,
+        "y": 2250.45
+      },
+      "B0.5": {
+        "x": 846.68,
+        "y": 244.69
+      },
+      "B1": {
+        "x": 1670.11,
+        "y": 246.05
+      },
+      "T0": {
+        "x": 1790.82,
+        "y": 246.26
+      },
+      "T1": {
+        "x": 3433.51,
+        "y": 248.99
+      },
+      "D5-WCL": {
+        "x": 1736.45,
+        "y": 1145.51
+      },
+      "T2": {
+        "x": 3426.78,
+        "y": 1326.61
+      },
+      "T3": {
+        "x": 1742.15,
+        "y": 1318.33
+      }
+    },
+    "aliases": {
+      "B0": [
+        "D3-BL"
+      ],
+      "B1": [
+        "D5-BL"
+      ],
+      "B2": [
+        "D5-BR"
+      ],
+      "T0": [
+        "D5-WCR"
+      ]
+    },
+    "roomBBoundarySequence": [
+      "B0",
+      "D3-BR",
+      "B0.5",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "wcBoundarySequence": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "D5-WCL"
+    ],
+    "areasM2": {
+      "roomB": 3.6257,
+      "wc": 1.7956
+    },
+    "D3RoomB": {
+      "outerLeft": {
+        "x": 0,
+        "y": 0
+      },
+      "outerRight": {
+        "x": 857.05,
+        "y": 0
+      },
+      "innerLeft": {
+        "x": 80,
+        "y": 0
+      },
+      "innerRight": {
+        "x": 792.05,
+        "y": 0
+      },
+      "doorLeft": {
+        "x": 67.02,
+        "y": -104.2
+      },
+      "doorRight": {
+        "x": 805.02,
+        "y": -104.2
+      },
+      "doorCentre": {
+        "x": 436.02,
+        "y": -104.2
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 857.05,
+      "visibleClosedWidthMm": 738,
+      "physicalLeafWidthMm": null,
+      "alongAdjustmentMm": -12.975,
+      "derivedDoorFaceDepthMm": 104.195,
+      "leftInnerToDoorMm": 105,
+      "rightInnerToDoorMm": 105,
+      "geometryValid": true
+    },
+    "D5RoomB": {
+      "outerLeft": {
+        "x": 1670.11,
+        "y": 246.05
+      },
+      "outerRight": {
+        "x": 1617.26,
+        "y": 1120.12
+      },
+      "innerLeft": {
+        "x": 1666.55,
+        "y": 304.95
+      },
+      "innerRight": {
+        "x": 1622.09,
+        "y": 1040.26
+      },
+      "visibleDoorLeft": {
+        "x": 1746.4,
+        "y": 309.78
+      },
+      "visibleDoorRight": {
+        "x": 1718.91,
+        "y": 1046.12
+      },
+      "doorLeft": {
+        "x": 1746.59,
+        "y": 304.74
+      },
+      "doorRight": {
+        "x": 1718.2,
+        "y": 1065.21
+      },
+      "doorCentre": {
+        "x": 1732.39,
+        "y": 684.98
+      },
+      "direction": {
+        "x": -0.06,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0.06
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 80,
+      "rightInnerToDoorMm": 97,
+      "geometryValid": true
+    },
+    "D5WC": {
+      "outerLeft": {
+        "x": 1736.45,
+        "y": 1145.51
+      },
+      "outerRight": {
+        "x": 1790.82,
+        "y": 246.26
+      },
+      "innerLeft": {
+        "x": 1741.34,
+        "y": 1064.66
+      },
+      "innerRight": {
+        "x": 1787.02,
+        "y": 309.14
+      },
+      "direction": {
+        "x": 0.06,
+        "y": -1
+      },
+      "casingLength": 900.901,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 40.622,
+      "bottomDerivedRevealDepthMm": 23.065,
+      "doorLeft": {
+        "x": 1718.2,
+        "y": 1065.21
+      },
+      "doorRight": {
+        "x": 1746.59,
+        "y": 304.74
+      },
+      "doorCentre": {
+        "x": 1732.39,
+        "y": 684.98
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "D5SharedPhysicalLeaf": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 1746.59,
+        "y": 304.74
+      },
+      "leafBottomMm": {
+        "x": 1718.2,
+        "y": 1065.21
+      },
+      "leafCentreMm": {
+        "x": 1732.39,
+        "y": 684.98
+      },
+      "leafBearingDegrees": 92.138,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 80,
+          "bottom": 97
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.035,
+          "bottom": 19.109,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.901,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 40.622,
+          "bottom": 23.065
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.506
+    },
+    "jointTransitionSequence": [
+      "B0 / D3-BL",
+      "D3-BR",
+      "B0.5",
+      "B1 / D5-BL",
+      "T0 / D5-WCR",
+      "T1"
+    ],
+    "topologyEdges": [
+      {
+        "from": "B0 / D3-BL",
+        "to": "D3-BR",
+        "physicalType": "upper horizontal D3 opening/casing",
+        "isWall": false,
+        "derivedMm": 857.05
+      },
+      {
+        "from": "D3-BR",
+        "to": "B0.5",
+        "physicalType": "short Room B wall return",
+        "isWall": true,
+        "measuredMm": 249
+      },
+      {
+        "from": "B0.5",
+        "to": "B1 / D5-BL",
+        "physicalType": "Room B finished wall",
+        "isWall": true,
+        "measuredMm": 823
+      },
+      {
+        "from": "B1 / D5-BL",
+        "to": "T0 / D5-WCR",
+        "physicalType": "D5 doorway/wall assembly interruption",
+        "isWall": false,
+        "derivedMm": 120.71
+      },
+      {
+        "from": "T0 / D5-WCR",
+        "to": "T1",
+        "physicalType": "WC finished wall",
+        "isWall": true,
+        "measuredMm": 1643
+      }
+    ],
+    "D5AssemblyGapMm": 120.71,
+    "D5OppositeCasingFaceSeparationMm": 120.51,
+    "interruptedWallAlignment": {
+      "roomBWallSegment": [
+        "B0.5",
+        "B1"
+      ],
+      "d5AssemblyInterruption": [
+        "B1",
+        "T0"
+      ],
+      "wcWallSegment": [
+        "T0",
+        "T1"
+      ],
+      "direction": [
+        0.99999862,
+        0.00166242
+      ],
+      "b1PerpendicularDeviationMm": 0,
+      "t0PerpendicularDeviationMm": 0,
+      "t1PerpendicularDeviationMm": 0,
+      "orderedDistancesFromB05Mm": [
+        0,
+        823.425,
+        944.139,
+        2586.829
+      ],
+      "wallExistsAcrossB1T0": false,
+      "d3BRPerpendicularDistanceMm": 244.702,
+      "d3BRIsCollinear": false,
+      "d3SpanParallelToAlignedWalls": false,
+      "b05IsBelowD3BRInGauge": true
+    },
+    "wallBearingsDegrees": {
+      "D3": 0,
+      "D3Return": 92.426,
+      "B05B1": 0.095,
+      "D5RoomBFace": 93.46,
+      "B2B3": 92.355,
+      "B3B4": 182.954,
+      "B4B3": 2.954,
+      "B4B0": 272.392,
+      "B0B4": 92.392,
+      "T0T1": 0.095,
+      "T1T2": 90.358,
+      "T2T3": 180.282,
+      "T3T2": 0.282,
+      "T3D5WCL": 268.11
+    },
+    "cornerAnglesDegrees": [
+      {
+        "id": "ANG-B-D3BR",
+        "room": "Room B",
+        "corner": "D3-BR",
+        "angleDegrees": 87.574
+      },
+      {
+        "id": "ANG-B-B05",
+        "room": "Room B",
+        "corner": "B0.5",
+        "angleDegrees": 87.669
+      },
+      {
+        "id": "ANG-B-B1",
+        "room": "Room B",
+        "corner": "B1",
+        "angleDegrees": 86.635
+      },
+      {
+        "id": "ANG-B-B2",
+        "room": "Room B",
+        "corner": "B2",
+        "angleDegrees": 178.895
+      },
+      {
+        "id": "ANG-B-B3",
+        "room": "Room B",
+        "corner": "B3",
+        "angleDegrees": 89.401
+      },
+      {
+        "id": "ANG-B-B4",
+        "room": "Room B",
+        "corner": "B4",
+        "angleDegrees": 90.562
+      },
+      {
+        "id": "ANG-B-B0",
+        "room": "Room B",
+        "corner": "B0",
+        "angleDegrees": 92.392
+      },
+      {
+        "id": "ANG-WC-T0",
+        "room": "WC",
+        "corner": "T0",
+        "angleDegrees": 93.365
+      },
+      {
+        "id": "ANG-WC-T1",
+        "room": "WC",
+        "corner": "T1",
+        "angleDegrees": 89.738
+      },
+      {
+        "id": "ANG-WC-T2",
+        "room": "WC",
+        "corner": "T2",
+        "angleDegrees": 90.076
+      },
+      {
+        "id": "ANG-WC-T3",
+        "room": "WC",
+        "corner": "T3",
+        "angleDegrees": 92.171
+      },
+      {
+        "id": "ANG-WC-D5WCL",
+        "room": "WC",
+        "corner": "D5-WCL",
+        "angleDegrees": 174.65
+      }
+    ],
+    "coordinateMovementFromPreviousSelectedMm": {
+      "B0": {
+        "previous": {
+          "x": 0,
+          "y": 0
+        },
+        "corrected": {
+          "x": 0,
+          "y": 0
+        },
+        "delta": {
+          "x": 0,
+          "y": 0
+        },
+        "magnitudeMm": 0
+      },
+      "D3-BR": {
+        "previous": {
+          "x": 885.08,
+          "y": 0
+        },
+        "corrected": {
+          "x": 857.05,
+          "y": 0
+        },
+        "delta": {
+          "x": -28.03,
+          "y": 0
+        },
+        "magnitudeMm": 28.03
+      },
+      "B0.5": {
+        "previous": {
+          "x": 852.73,
+          "y": 245.55
+        },
+        "corrected": {
+          "x": 846.68,
+          "y": 244.69
+        },
+        "delta": {
+          "x": -6.05,
+          "y": -0.86
+        },
+        "magnitudeMm": 6.11
+      },
+      "B1": {
+        "previous": {
+          "x": 1670.41,
+          "y": 343.8
+        },
+        "corrected": {
+          "x": 1670.11,
+          "y": 246.05
+        },
+        "delta": {
+          "x": -0.3,
+          "y": -97.75
+        },
+        "magnitudeMm": 97.75
+      },
+      "B2": {
+        "previous": {
+          "x": 1527.68,
+          "y": 1207.46
+        },
+        "corrected": {
+          "x": 1617.26,
+          "y": 1120.12
+        },
+        "delta": {
+          "x": 89.58,
+          "y": -87.34
+        },
+        "magnitudeMm": 125.11
+      },
+      "B3": {
+        "previous": {
+          "x": 1358.17,
+          "y": 2413.02
+        },
+        "corrected": {
+          "x": 1567.24,
+          "y": 2336.18
+        },
+        "delta": {
+          "x": 209.07,
+          "y": -76.84
+        },
+        "magnitudeMm": 222.74
+      },
+      "B4": {
+        "previous": {
+          "x": -287.15,
+          "y": 2158.66
+        },
+        "corrected": {
+          "x": -94.01,
+          "y": 2250.45
+        },
+        "delta": {
+          "x": 193.14,
+          "y": 91.79
+        },
+        "magnitudeMm": 213.85
+      },
+      "T0": {
+        "previous": {
+          "x": 1798.17,
+          "y": 359.15
+        },
+        "corrected": {
+          "x": 1790.82,
+          "y": 246.26
+        },
+        "delta": {
+          "x": -7.35,
+          "y": -112.89
+        },
+        "magnitudeMm": 113.13
+      },
+      "T1": {
+        "previous": {
+          "x": 3429.11,
+          "y": 555.13
+        },
+        "corrected": {
+          "x": 3433.51,
+          "y": 248.99
+        },
+        "delta": {
+          "x": 4.4,
+          "y": -306.14
+        },
+        "magnitudeMm": 306.18
+      },
+      "T2": {
+        "previous": {
+          "x": 3295.61,
+          "y": 1624.6
+        },
+        "corrected": {
+          "x": 3426.78,
+          "y": 1326.61
+        },
+        "delta": {
+          "x": 131.17,
+          "y": -297.99
+        },
+        "magnitudeMm": 325.58
+      },
+      "T3": {
+        "previous": {
+          "x": 1623.61,
+          "y": 1418.45
+        },
+        "corrected": {
+          "x": 1742.15,
+          "y": 1318.33
+        },
+        "delta": {
+          "x": 118.54,
+          "y": -100.12
+        },
+        "magnitudeMm": 155.16
+      }
+    },
+    "wallFaceChecks": [
+      {
+        "id": "SUP-080",
+        "measuredMm": 2217,
+        "predictedMm": 2296.47,
+        "residualMm": 79.47,
+        "sigmaMm": 30,
+        "confidence": "medium",
+        "startDescription": "D3-BR",
+        "startPointMm": {
+          "x": 857.05,
+          "y": 0
+        },
+        "landingWall": [
+          "B3",
+          "B4"
+        ],
+        "landingPointMm": {
+          "x": 738.7,
+          "y": 2293.42
+        },
+        "landingFraction": 0.49875,
+        "withinSegment": true,
+        "note": "Field recheck; endpoint represented as the perpendicular landing on the B3-B4 finished wall segment"
+      },
+      {
+        "id": "SUP-081",
+        "measuredMm": 3492,
+        "predictedMm": 3460.04,
+        "residualMm": -31.96,
+        "sigmaMm": 90,
+        "confidence": "low",
+        "startDescription": "Assumed 50% point on T1-T2",
+        "startPointMm": {
+          "x": 3430.15,
+          "y": 787.8
+        },
+        "startFraction": 0.5,
+        "landingWall": [
+          "B0",
+          "B4"
+        ],
+        "landingPointMm": {
+          "x": -26.88,
+          "y": 643.39
+        },
+        "landingFraction": 0.28589,
+        "withinSegment": true,
+        "note": "Field recheck with two unmarked general wall-face endpoints; midpoint and perpendicular landing are explicit modelling assumptions"
+      }
+    ],
+    "tileAndWallLayers": {
+      "B3ToB4": "Measured finished tile face; underlying wall plane shown 10 mm behind as approximate derived layer.",
+      "D5B2Cutaway": "Approximately 20 mm local tile/casing cutaway shown as a photo-derived secondary detail; not a shell constraint."
+    },
+    "soffit": {
+      "startPointMm": {
+        "x": 1609.37,
+        "y": 1311.96
+      },
+      "fromB2Mm": 192,
+      "fullGeometryModelled": false
+    },
+    "verticalEvidence": {
+      "roomB": {
+        "B4B0ClearAreaCeilingMm": 2281,
+        "B2D5AreaCeilingMm": 2274
+      },
+      "wc": {
+        "T0D5AreaCeilingMm": 2289,
+        "T3AreaCeilingMm": 2277
+      },
+      "doors": {
+        "D3RoomB": {
+          "doorHeightMm": 1975,
+          "casingTopFromFloorMm": 2076,
+          "casingTopToCeilingMm": 221
+        },
+        "D5RoomB": {
+          "casingHeightMm": 2157,
+          "casingTopToCeilingMm": 237,
+          "doorHeightMm": 1974
+        },
+        "D5WC": {
+          "casingHeightMm": 2057,
+          "casingTopToCeilingMm": 225
+        }
+      }
+    }
+  },
+  "suitabilityForLater3D": {
+    "status": "accepted provisional input for Room C integration",
+    "statement": "Human review accepts this 2D shell and one-leaf D5 object as the current Room B/WC working baseline, not as final or construction-accurate geometry. Preserve it without isolated marginal optimisation; revisit only if D3 closure during Room C integration exposes a genuine network inconsistency."
+  }
+}

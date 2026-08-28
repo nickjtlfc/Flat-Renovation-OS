@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1200" viewBox="0 0 1900 1200" role="img" aria-labelledby="title description">
+<title id="title">Joint Room B and WC selected reconstruction</title>
+<desc id="description">Derived weighted 2D reconstruction showing D3 ending at D3-BR, the separate D3-BR to B0.5 wall return, collinear Room B and WC wall segments interrupted by the D5 assembly, residuals, confidence classes, scale and SUP-079.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0 L0 4 L8 8" fill="none" stroke="#64748b" stroke-width="1.2"/></marker></defs>
+<style>
+    .bg{fill:#f5f4ef}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:1.5}.room-b-fill{fill:#dbeafe;fill-opacity:.55}.wc-fill{fill:#dcfce7;fill-opacity:.65}
+    .wall{stroke:#1f2937;stroke-width:8;stroke-linecap:round}.wall-return{stroke:#334155;stroke-width:8;stroke-linecap:round}.wall-derived{stroke:#6b7280;stroke-width:3;stroke-dasharray:7 5}.tile-face{stroke:#0891b2;stroke-width:9;stroke-linecap:round}.opening-ref{stroke:#0f766e;stroke-width:2.5;stroke-dasharray:8 5}
+    .assembly-fill{fill:#ede9fe;fill-opacity:.8;stroke:none}.assembly-depth{stroke:#7c3aed;stroke-width:3;stroke-dasharray:7 5}
+    .outer-casing{stroke:#d97706;stroke-width:8;stroke-linecap:round}.inner-casing{stroke:#f59e0b;stroke-width:4}.door-face{stroke:#2563eb;stroke-width:10;stroke-linecap:round}.door-depth{stroke:#7c3aed;stroke-width:2;stroke-dasharray:5 4}
+    .tie{stroke:#7c3aed;stroke-width:2.5;stroke-dasharray:11 7}.wall-check{stroke:#0f766e;stroke-width:2.2;stroke-dasharray:5 5}.soffit{stroke:#9333ea;stroke-width:4;stroke-dasharray:4 4}.cutaway{stroke:#db2777;stroke-width:4;stroke-dasharray:3 3}
+    .node{fill:#fff;stroke:#111827;stroke-width:2}.object-node{fill:#fff7ed;stroke:#d97706;stroke-width:2}.title{font:700 28px Arial,sans-serif;fill:#111827}.subtitle{font:14px Arial,sans-serif;fill:#475569}.head{font:700 17px Arial,sans-serif;fill:#111827}.body{font:14px Arial,sans-serif;fill:#334155}.small{font:12px Arial,sans-serif;fill:#475569}
+    .label{font:700 13px Arial,sans-serif;fill:#111827;paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}.alias{font:11px Arial,sans-serif;fill:#92400e;paint-order:stroke;stroke:#fff;stroke-width:4px}.object-label{font:700 12px Arial,sans-serif;fill:#1e40af;paint-order:stroke;stroke:#fff;stroke-width:5px}.note{font:11px Arial,sans-serif;fill:#7e22ce;paint-order:stroke;stroke:#fff;stroke-width:4px}
+    .dimension,.dimension-medium,.dimension-low{stroke:#64748b;stroke-width:1.3;fill:none}.dimension-medium{stroke-dasharray:6 4}.dimension-low{stroke-dasharray:2 4}.extension{stroke:#94a3b8;stroke-width:1}.dimension-label{font:11px Arial,sans-serif;fill:#334155;paint-order:stroke;stroke:#fff;stroke-width:4px}.good{fill:#15803d;font-weight:700}.warn{fill:#b45309;font-weight:700}.bad{fill:#b91c1c;font-weight:700}.rule{stroke:#e2e8f0}.legend-line{stroke-width:6}.room-name{font:700 23px Arial,sans-serif;fill:#334155;opacity:.7}.scale{stroke:#111827;stroke-width:5}
+  </style>
+<rect width="1900" height="1200" class="bg"/>
+<text x="50" y="48" class="title" text-anchor="start">ROOM B + WC — SELECTED JOINT RECONSTRUCTION</text>
+<text x="50" y="76" class="subtitle" text-anchor="start">Derived 2D geometry · authoritative local D3 double-turn · D5 gap has no wall · full soffit omitted</text>
+<rect x="45" y="105" width="1210" height="1010" rx="10" class="panel"/>
+<rect x="1280" y="105" width="575" height="1010" rx="10" class="panel"/>
+<polygon points="182.9,234.9 422.6,234.9 419.7,303.4 650.1,303.8 635.3,548.3 621.3,888.5 156.5,864.6" class="room-b-fill"/>
+<polygon points="683.9,303.8 1143.5,304.6 1141.6,606.1 670.3,603.8 668.7,555.4" class="wc-fill"/>
+<polygon points="650.1,303.8 635.3,548.3 668.7,555.4 683.9,303.8" class="assembly-fill"/>
+<line x1="422.6" y1="234.9" x2="419.7" y2="303.4" class="wall-return" />
+<line x1="419.7" y1="303.4" x2="650.1" y2="303.8" class="wall" />
+<line x1="635.3" y1="548.3" x2="621.3" y2="888.5" class="wall" />
+<line x1="621.3" y1="888.5" x2="156.5" y2="864.6" class="wall" />
+<line x1="156.5" y1="864.6" x2="182.9" y2="234.9" class="wall" />
+<line x1="683.9" y1="303.8" x2="1143.5" y2="304.6" class="wall" />
+<line x1="1143.5" y1="304.6" x2="1141.6" y2="606.1" class="wall" />
+<line x1="1141.6" y1="606.1" x2="670.3" y2="603.8" class="wall" />
+<line x1="670.3" y1="603.8" x2="668.7" y2="555.4" class="wall" />
+<line x1="650.1" y1="303.8" x2="683.9" y2="303.8" class="assembly-depth" />
+<line x1="635.3" y1="548.3" x2="668.7" y2="555.4" class="assembly-depth" />
+<line x1="182.9" y1="234.9" x2="422.6" y2="234.9" class="opening-ref" />
+<line x1="650.1" y1="303.8" x2="635.3" y2="548.3" class="opening-ref" />
+<line x1="668.7" y1="555.4" x2="683.9" y2="303.8" class="opening-ref" />
+<line x1="635.3" y1="548.3" x2="621.3" y2="888.5" class="tile-face" />
+<line x1="621.3" y1="888.5" x2="156.5" y2="864.6" class="tile-face" />
+<line x1="621.2" y1="891.3" x2="156.4" y2="867.4" class="wall-derived" />
+<line x1="182.9" y1="234.9" x2="422.6" y2="234.9" class="outer-casing" />
+<line x1="182.9" y1="234.9" x2="205.2" y2="234.9" class="inner-casing" />
+<line x1="422.6" y1="234.9" x2="404.4" y2="234.9" class="inner-casing" />
+<line x1="205.2" y1="234.9" x2="201.6" y2="205.8" class="inner-casing" />
+<line x1="404.4" y1="234.9" x2="408.1" y2="205.8" class="inner-casing" />
+<line x1="201.6" y1="205.8" x2="408.1" y2="205.8" class="door-face" />
+<line x1="650.1" y1="303.8" x2="635.3" y2="548.3" class="outer-casing" />
+<line x1="650.1" y1="303.8" x2="649.1" y2="320.3" class="inner-casing" />
+<line x1="635.3" y1="548.3" x2="636.7" y2="526" class="inner-casing" />
+<line x1="649.1" y1="320.3" x2="671.4" y2="321.6" class="inner-casing" />
+<line x1="636.7" y1="526" x2="663.8" y2="527.6" class="inner-casing" />
+<line x1="668.7" y1="555.4" x2="683.9" y2="303.8" class="outer-casing" />
+<line x1="668.7" y1="555.4" x2="670" y2="532.8" class="inner-casing" />
+<line x1="683.9" y1="303.8" x2="682.8" y2="321.4" class="inner-casing" />
+<line x1="682.8" y1="321.4" x2="671.5" y2="320.2" class="door-depth" />
+<line x1="670" y1="532.8" x2="663.6" y2="533" class="door-depth" />
+<line x1="671.5" y1="320.2" x2="663.6" y2="533" class="door-face" />
+<circle cx="671.4" cy="321.6" r="5" class="object-node"/>
+<circle cx="663.8" cy="527.6" r="5" class="object-node"/>
+<line x1="650.5" y1="320.8" x2="642.8" y2="526.8" class="dimension-medium" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="671.4" y1="321.6" x2="650.5" y2="320.8" class="extension"/>
+<line x1="663.8" y1="527.6" x2="642.8" y2="526.8" class="extension"/>
+<text x="646.6" y="417.8" class="dimension-label" text-anchor="middle">Room B visible ~737 · fit 736.9</text>
+<line x1="636.2" y1="533" x2="641.8" y2="533.3" class="cutaway" />
+<text x="651.8" y="537.3" class="note" text-anchor="start">~20 mm local tile/casing cutaway</text>
+<line x1="182.9" y1="234.9" x2="1141.6" y2="606.1" class="tie" />
+<text x="670.2" y="411.5" class="note" text-anchor="start">SUP-079 3674 / fit 3674.6 (+0.6)</text>
+<line x1="422.6" y1="234.9" x2="389.5" y2="876.6" class="wall-check" />
+<text x="414.1" y="547.8" class="note" text-anchor="start">SUP-080 2217 / fit 2296.5 (+79.5)</text>
+<line x1="1142.5" y1="455.3" x2="175.3" y2="414.9" class="wall-check" />
+<text x="666.9" y="449.1" class="note" text-anchor="start">SUP-081 3492 / fit 3460 (-32)</text>
+<circle cx="633.1" cy="602" r="9" fill="#fff" class="soffit"/>
+<text x="645.1" y="592" class="note" text-anchor="start">soffit starts 192 mm from B2</text>
+<text x="645.1" y="608" class="small" text-anchor="start">full profile unresolved / not modelled</text>
+<line x1="449.2" y1="236.1" x2="446.3" y2="304.5" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="422.6" y1="234.9" x2="449.2" y2="236.1" class="extension"/>
+<line x1="419.7" y1="303.4" x2="446.3" y2="304.5" class="extension"/>
+<text x="447.7" y="264.3" class="dimension-label" text-anchor="middle">BASE-B-02 249 · fit 244.9</text>
+<line x1="419.7" y1="331.4" x2="650.1" y2="331.8" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="419.7" y1="303.4" x2="419.7" y2="331.4" class="extension"/>
+<line x1="650.1" y1="303.8" x2="650.1" y2="331.8" class="extension"/>
+<text x="534.9" y="325.6" class="dimension-label" text-anchor="middle">BASE-B-03 823 · fit 823.4</text>
+<line x1="687.8" y1="306.1" x2="673" y2="550.6" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="650.1" y1="303.8" x2="687.8" y2="306.1" class="extension"/>
+<line x1="635.3" y1="548.3" x2="673" y2="550.6" class="extension"/>
+<text x="680.4" y="422.3" class="dimension-label" text-anchor="middle">D5-B casing 874 · fit 875.7</text>
+<line x1="664.7" y1="549.5" x2="650.7" y2="889.7" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="635.3" y1="548.3" x2="664.7" y2="549.5" class="extension"/>
+<line x1="621.3" y1="888.5" x2="650.7" y2="889.7" class="extension"/>
+<text x="657.7" y="713.6" class="dimension-label" text-anchor="middle">BASE-B-05 1218 · fit 1217.1</text>
+<line x1="619.7" y1="920.7" x2="154.9" y2="896.7" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="621.3" y1="888.5" x2="619.7" y2="920.7" class="extension"/>
+<line x1="156.5" y1="864.6" x2="154.9" y2="896.7" class="extension"/>
+<text x="387.3" y="902.7" class="dimension-label" text-anchor="middle">tile face 1665 · fit 1663.5</text>
+<line x1="128.6" y1="863.4" x2="154.9" y2="233.8" class="dimension-low" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="156.5" y1="864.6" x2="128.6" y2="863.4" class="extension"/>
+<line x1="182.9" y1="234.9" x2="154.9" y2="233.8" class="extension"/>
+<text x="141.7" y="542.6" class="dimension-label" text-anchor="middle">BASE-B-07 2200-2220 · fit 2252.4</text>
+<line x1="683.8" y1="333.2" x2="1143.4" y2="334" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="683.9" y1="303.8" x2="683.8" y2="333.2" class="extension"/>
+<line x1="1143.5" y1="304.6" x2="1143.4" y2="334" class="extension"/>
+<text x="913.6" y="327.6" class="dimension-label" text-anchor="middle">WC 1643 · fit 1642.7</text>
+<line x1="1116.9" y1="304.4" x2="1115" y2="605.9" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="1143.5" y1="304.6" x2="1116.9" y2="304.4" class="extension"/>
+<line x1="1141.6" y1="606.1" x2="1115" y2="605.9" class="extension"/>
+<text x="1115.9" y="449.2" class="dimension-label" text-anchor="middle">WC 1078 · fit 1077.6</text>
+<line x1="1141.7" y1="578.1" x2="670.4" y2="575.8" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="1141.6" y1="606.1" x2="1141.7" y2="578.1" class="extension"/>
+<line x1="670.3" y1="603.8" x2="670.4" y2="575.8" class="extension"/>
+<text x="906" y="571" class="dimension-label" text-anchor="middle">BASE-WC-03 1685 · fit 1684.7</text>
+<line x1="691.2" y1="603.1" x2="689.6" y2="554.7" class="dimension" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="670.3" y1="603.8" x2="691.2" y2="603.1" class="extension"/>
+<line x1="668.7" y1="555.4" x2="689.6" y2="554.7" class="extension"/>
+<text x="690.4" y="572.9" class="dimension-label" text-anchor="middle">WC wall 173 · fit 172.9</text>
+<circle cx="182.9" cy="234.9" r="6" class="node"/>
+<text x="152.9" y="218.9" class="label" text-anchor="start">B0</text>
+<circle cx="422.6" cy="234.9" r="6" class="node"/>
+<text x="414.6" y="262.9" class="label" text-anchor="start">D3-BR</text>
+<circle cx="419.7" cy="303.4" r="6" class="node"/>
+<text x="407.7" y="333.4" class="label" text-anchor="start">B0.5</text>
+<circle cx="650.1" cy="303.8" r="6" class="node"/>
+<text x="615.1" y="285.8" class="label" text-anchor="start">B1</text>
+<circle cx="635.3" cy="548.3" r="6" class="node"/>
+<text x="595.3" y="583.3" class="label" text-anchor="start">B2</text>
+<circle cx="621.3" cy="888.5" r="6" class="node"/>
+<text x="606.3" y="922.5" class="label" text-anchor="start">B3</text>
+<circle cx="156.5" cy="864.6" r="6" class="node"/>
+<text x="122.5" y="890.6" class="label" text-anchor="start">B4</text>
+<circle cx="683.9" cy="303.8" r="6" class="node"/>
+<text x="695.9" y="287.8" class="label" text-anchor="start">T0</text>
+<circle cx="1143.5" cy="304.6" r="6" class="node"/>
+<text x="1155.5" y="289.6" class="label" text-anchor="start">T1</text>
+<circle cx="1141.6" cy="606.1" r="6" class="node"/>
+<text x="1153.6" y="636.1" class="label" text-anchor="start">T2</text>
+<circle cx="670.3" cy="603.8" r="6" class="node"/>
+<text x="646.3" y="637.8" class="label" text-anchor="start">T3</text>
+<circle cx="668.7" cy="555.4" r="6" class="node"/>
+<text x="680.7" y="583.4" class="label" text-anchor="start">D5-WCL</text>
+<text x="148.9" y="200.9" class="alias" text-anchor="start">= D3-BL</text>
+<text x="592.1" y="268.8" class="alias" text-anchor="start">= D5-BL</text>
+<text x="573.3" y="601.3" class="alias" text-anchor="start">= D5-BR</text>
+<text x="695.9" y="268.8" class="alias" text-anchor="start">= D5-WCR</text>
+<text x="456.2" y="251.2" class="note" text-anchor="start">D3 ends at D3-BR · 249 wall return</text>
+<text x="388.9" y="846.5" class="room-name" text-anchor="middle">ROOM B</text>
+<text x="1042.5" y="455.3" class="room-name" text-anchor="middle">WC</text>
+<text x="304.8" y="190.8" class="object-label" text-anchor="middle">D3 visible closed face 738</text>
+<text x="679.5" y="411.6" class="object-label" text-anchor="start">D5 shared physical leaf 761</text>
+<line x1="120" y1="1067" x2="399.8" y2="1067" class="scale"/>
+<line x1="120" y1="1059" x2="120" y2="1075" class="scale"/>
+<line x1="399.8" y1="1059" x2="399.8" y2="1075" class="scale"/>
+<text x="120" y="1054" class="small" text-anchor="middle">0</text>
+<text x="399.8" y="1054" class="small" text-anchor="middle">1 m</text>
+<text x="1310" y="145" class="head" text-anchor="start">SELECTED SOLUTION</text>
+<text x="1310" y="173" class="good" text-anchor="start">ACCEPTED PROVISIONAL P1 · ROOM C INPUT</text>
+<text x="1310" y="196" class="body" text-anchor="start">Clear exact RMS 4.759 mm</text>
+<text x="1310" y="216" class="body" text-anchor="start">Room B 6.244 · WC 1.354 mm RMS</text>
+<text x="1310" y="236" class="small" text-anchor="start">D0 cost 3.01 · max family Δ 34.9°</text>
+<text x="1310" y="254" class="small" text-anchor="start">P1 distance cost 16.02 · max family Δ 3°</text>
+<text x="1310" y="272" class="body" text-anchor="start">Largest exact SUP-069 -15.86 mm</text>
+<text x="1310" y="292" class="body" text-anchor="start">Areas B 3.626 m² · WC 1.796 m²</text>
+<text x="1310" y="312" class="body" text-anchor="start">Derived B1→T0 D5 assembly gap 120.7 mm</text>
+<text x="1310" y="332" class="good" text-anchor="start">B0.5→B1 / T0→T1 wall collinearity: exact</text>
+<text x="1310" y="352" class="good" text-anchor="start">No physical wall edge across B1→T0</text>
+<text x="1310" y="386" class="good" text-anchor="start">D3-BR off lower alignment: 244.7 mm</text>
+<line x1="1310" y1="406" x2="1825" y2="406" class="rule"/>
+<text x="1310" y="434" class="head" text-anchor="start">AUTHORITATIVE FIELD RECHECKS</text>
+<text x="1310" y="461" class="good" text-anchor="start">BASE-WC-03 1685 · fit 1684.7 (-0.3)</text>
+<text x="1310" y="481" class="good" text-anchor="start">SUP-071 B2→B4 2046 · fit 2050.9 (+4.9)</text>
+<text x="1310" y="501" class="body" text-anchor="start">SUP-080 2217 · fit 2296.5 (+79.5)</text>
+<text x="1310" y="521" class="body" text-anchor="start">SUP-081 3492 · fit 3460 (-32)</text>
+<text x="1310" y="541" class="warn" text-anchor="start">SUP-081 endpoints remain validation-grade</text>
+<text x="1310" y="573" class="good" text-anchor="start">D5 one leaf 761 · bearing 92.14°</text>
+<text x="1310" y="593" class="good" text-anchor="start">Room B visible ~737 · fit 736.9 (-0.1)</text>
+<text x="1310" y="613" class="good" text-anchor="start">WC frame 63/81 · fit 61.1/79.1</text>
+<line x1="1310" y1="637" x2="1825" y2="637" class="rule"/>
+<text x="1310" y="665" class="head" text-anchor="start">LARGEST ACTIVE RESIDUALS</text>
+<text x="1310" y="692" class="warn" text-anchor="start">SUP-073: +31 mm · low</text>
+<text x="1310" y="713" class="body" text-anchor="start">SUP-069: -15.9 mm · high</text>
+<text x="1310" y="734" class="body" text-anchor="start">SUP-066: +15.3 mm · low</text>
+<text x="1310" y="755" class="body" text-anchor="start">SUP-065: -6.7 mm · high</text>
+<text x="1310" y="788" class="head" text-anchor="start">RANGES</text>
+<text x="1310" y="814" class="body" text-anchor="start">BASE-B-07: 2200-2220 → 2252.4 (+32.4)</text>
+<text x="1310" y="835" class="body" text-anchor="start">SUP-067: 2755-2765 → 2813.2 (+48.2)</text>
+<text x="1310" y="856" class="body" text-anchor="start">SUP-068: 1182-1190 → 1166.3 (-15.7)</text>
+<line x1="1310" y1="889" x2="1825" y2="889" class="rule"/>
+<text x="1310" y="917" class="head" text-anchor="start">LAYER / CONFIDENCE LEGEND</text>
+<line x1="1310" y1="939" x2="1350" y2="939" class="wall"/>
+<text x="1362" y="943" class="small" text-anchor="start">finished wall plane</text>
+<line x1="1310" y1="956" x2="1350" y2="956" class="wall-return"/>
+<text x="1362" y="960" class="small" text-anchor="start">D3-BR→B0.5 shell return</text>
+<line x1="1310" y1="973" x2="1350" y2="973" class="assembly-depth"/>
+<text x="1362" y="977" class="small" text-anchor="start">D5 assembly interruption / no wall</text>
+<line x1="1310" y1="990" x2="1350" y2="990" class="tile-face"/>
+<text x="1362" y="994" class="small" text-anchor="start">measured finished tile face</text>
+<line x1="1310" y1="1007" x2="1350" y2="1007" class="wall-derived"/>
+<text x="1362" y="1011" class="small" text-anchor="start">derived underlying wall plane</text>
+<line x1="1310" y1="1024" x2="1350" y2="1024" class="outer-casing"/>
+<text x="1362" y="1028" class="small" text-anchor="start">outer casing face</text>
+<line x1="1310" y1="1041" x2="1350" y2="1041" class="inner-casing"/>
+<text x="1362" y="1045" class="small" text-anchor="start">inner casing / frame stop / reveal</text>
+<line x1="1310" y1="1058" x2="1350" y2="1058" class="door-face"/>
+<text x="1362" y="1062" class="small" text-anchor="start">one physical door leaf</text>
+<line x1="1310" y1="1075" x2="1350" y2="1075" class="door-depth"/>
+<text x="1362" y="1079" class="small" text-anchor="start">derived WC reveal relation</text>
+<line x1="1310" y1="1092" x2="1350" y2="1092" class="tie"/>
+<text x="1362" y="1096" class="small" text-anchor="start">SUP-079 node cross-tie</text>
+<line x1="1310" y1="1109" x2="1350" y2="1109" class="wall-check"/>
+<text x="1362" y="1113" class="small" text-anchor="start">SUP-080/081 wall-face checks</text>
+<line x1="1310" y1="1126" x2="1350" y2="1126" class="cutaway"/>
+<text x="1362" y="1130" class="small" text-anchor="start">approx local D5 cutaway</text>
+<text x="1310" y="1152" class="small" text-anchor="start">Solid dimension = high confidence</text>
+<text x="1310" y="1170" class="small" text-anchor="start">Dashed = range / interpreted · dotted = low</text>
+<text x="65" y="1160" class="small" text-anchor="start">Derived artefact — source evidence remains the Room B/WC Markdown packs and annotated survey photographs</text>
+<text x="1835" y="1160" class="small" text-anchor="end">Generated 2026-08-04</text>
+</svg>

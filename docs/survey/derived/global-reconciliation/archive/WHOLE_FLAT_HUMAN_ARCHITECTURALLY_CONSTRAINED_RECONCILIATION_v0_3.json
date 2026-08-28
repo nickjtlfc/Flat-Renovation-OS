@@ -1,0 +1,854 @@
+{
+  "documentType": "whole-flat human architecturally constrained reconciliation with field-reconciled Room B/WC rigidly registered through D3",
+  "version": "0.3",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres",
+  "status": "candidate - HUMAN REVIEW REQUIRED",
+  "sources": {
+    "fixedGlobalFrame": {
+      "file": "WHOLE_FLAT_HUMAN_ARCHITECTURALLY_CONSTRAINED_RECONCILIATION_v0_2.json",
+      "sha256": "90CB1A8CF1316D0728A6BB76AB95F4EA3CDC1F6F5E8DB20933B6521E4DB2D9C2",
+      "use": "Room A, Room C, D2 and all Room C objects copied unchanged"
+    },
+    "correctedLocal": {
+      "file": "../room-b-wc/ROOM_B_WC_FIELD_RECONCILED_CANDIDATE_v0_2.json",
+      "sha256": "4F24ED32E6EABEE244DBD99C21211167BE500E3AEB22106A2859AD360458D41B",
+      "use": "Room B/WC geometry; rigid registration only"
+    }
+  },
+  "registration": {
+    "method": "Rigidly align corrected Room B visible closed D3 face centre and axis to fixed Room C D3 leaf centre and axis; scale 1, no reflection, no deformation.",
+    "roomBD3Axis": {
+      "bearingDegrees": 0,
+      "outerCasingWidthMm": 852.121
+    },
+    "roomCD3Axis": {
+      "bearingDegrees": 0,
+      "outerCasingWidthMm": 885
+    },
+    "requiredRotationDegrees": 0,
+    "requiredTranslationMm": {
+      "x": 3309.78,
+      "y": 103.859
+    },
+    "scale": 1,
+    "reflection": false,
+    "sharedLeafCentre": {
+      "targetRoomC": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "placedRoomB": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "mismatchMm": 0
+    },
+    "layerChecks": {
+      "roomBVisibleClosedFaceWidthMm": 738,
+      "roomCLeafWidthMm": 760,
+      "leafWidthDifferenceRoomBMinusRoomCMm": -22,
+      "roomBOuterCasingWidthMm": 852.121,
+      "roomCOuterCasingWidthMm": 885,
+      "casingWidthDifferenceRoomBMinusRoomCMm": -32.879,
+      "casingCentreOffsetMm": {
+        "alongD3": 10.0005,
+        "towardRoomB": 103.859
+      },
+      "casingEndpointOffsetsMm": {
+        "B0RelativeToRoomCOuterRight": {
+          "x": 26.44,
+          "y": 103.859
+        },
+        "D3BRRelativeToRoomCOuterLeftCorner": {
+          "x": -6.439,
+          "y": 103.859
+        }
+      },
+      "opposingFaceSeparationMm": 103.859,
+      "opposingFaceEvidenceStatus": "Derived from corrected Room B casing-to-visible-face construction; Room C D3 reveal/depth remains unmeasured."
+    },
+    "resultingB05": {
+      "x": 4161.901,
+      "y": 239.859
+    },
+    "rigidInvariantMaximumPairwiseChangeMm": 0
+  },
+  "thickACWallHypothesis": {
+    "status": "not supported by the corrected return alone; remains unresolved pending opposing-face/reveal measurements",
+    "reassessedFromCorrectedGeometry": true,
+    "correctedReturnLengthMm": 136,
+    "returnBearingDegrees": 90,
+    "roomCExtrapolatedFaceTowardBBearingDegrees": 90.853535,
+    "directionDifferenceDegrees": 0.853535,
+    "returnStartDistanceToExtrapolatedRoomCFaceMm": 4.8912,
+    "returnEndDistanceToExtrapolatedRoomCFaceMm": 2.8652,
+    "b05ToExtrapolatedRoomAFaceAlongWallMm": 252.8806,
+    "predictedACWallDepthAtB05B1Mm": 250.015,
+    "assessment": "The corrected return remains directionally compatible with the Room C face family, and the extrapolated A/C face band remains a diagnostic coincidence. However, the old 244.9 mm return was a material part of the prior plausibility argument. At 136 mm that evidence no longer establishes where the thick construction terminates. The continuation is therefore unresolved, not accepted geometry."
+  },
+  "globalValidation": {
+    "span9019": {
+      "measuredMm": 9019,
+      "previousModelMm": 8957.1387,
+      "correctedModelMm": 8957.1387,
+      "previousResidualMm": -61.8613,
+      "correctedResidualMm": -61.8613,
+      "unchanged": true
+    },
+    "span3726": {
+      "measuredMm": 3726,
+      "previousModelMm": 3741.0698,
+      "correctedModelMm": 3684.586,
+      "previousResidualMm": 15.0698,
+      "correctedResidualMm": -41.414,
+      "changeInModelMm": -56.4838,
+      "assessment": "worse absolute agreement; retained as independent validation, not fitted"
+    }
+  },
+  "geometry": {
+    "roomAUnchangedMm": {
+      "A2": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "A3": {
+        "x": 7730.93,
+        "y": -3819.6671
+      },
+      "A0": {
+        "x": 4480.48,
+        "y": -4166.6311
+      },
+      "A1": {
+        "x": 5780.9311,
+        "y": -4145.6684
+      },
+      "A4": {
+        "x": 7728.7742,
+        "y": -4085.4964
+      },
+      "A5": {
+        "x": 9018.83,
+        "y": -4067.3916
+      },
+      "A6": {
+        "x": 8955.0803,
+        "y": 202.6055
+      },
+      "A7": {
+        "x": 4416.3424,
+        "y": 134.8739
+      },
+      "W1-AL": {
+        "x": 8997.8291,
+        "y": -2660.3373
+      },
+      "W1-AR": {
+        "x": 8976.3946,
+        "y": -1225.1364
+      },
+      "D1-AL": {
+        "x": 8428.0186,
+        "y": 194.7396
+      },
+      "D1-AR": {
+        "x": 7238.3302,
+        "y": 176.9826
+      },
+      "D2-AL": {
+        "x": 4424.547,
+        "y": -415.0653
+      },
+      "D2-AR": {
+        "x": 4440.833,
+        "y": -1507.2847
+      }
+    },
+    "roomCUnchangedNodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "roomCUnchangedObjectNodesMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    },
+    "d2LayersUnchangedMm": {
+      "roomAClearOpeningSegmentMm": [
+        {
+          "x": 4426.9723,
+          "y": -577.7176
+        },
+        {
+          "x": 4438.4077,
+          "y": -1344.6324
+        }
+      ],
+      "roomAMeasuredCasingSegmentMm": [
+        {
+          "x": 4424.5198,
+          "y": -413.2359
+        },
+        {
+          "x": 4440.8602,
+          "y": -1509.1141
+        }
+      ],
+      "roomCStructuralOpeningAtRoomCFaceMm": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "roomCStructuralOpeningAtRoomAFaceMm": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "roomCLeafClosingPlaneMm": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ]
+    },
+    "roomBWCCorrectedRegisteredMm": {
+      "B0": {
+        "x": 3309.78,
+        "y": 103.859
+      },
+      "D3-BR": {
+        "x": 4161.901,
+        "y": 103.859
+      },
+      "B0.5": {
+        "x": 4161.901,
+        "y": 239.859
+      },
+      "B1": {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      "B2": {
+        "x": 4979.843,
+        "y": 1115.525
+      },
+      "B3": {
+        "x": 4979.843,
+        "y": 2324.976
+      },
+      "B4": {
+        "x": 3309.78,
+        "y": 2324.976
+      },
+      "T0": {
+        "x": 5100.346,
+        "y": 232.783
+      },
+      "T1": {
+        "x": 6740.206,
+        "y": 136.365
+      },
+      "T2": {
+        "x": 6798.527,
+        "y": 1212.427
+      },
+      "T3": {
+        "x": 5116.468,
+        "y": 1305.836
+      },
+      "D5-WCL": {
+        "x": 5100.348,
+        "y": 1133.675
+      }
+    },
+    "roomBD3CorrectedRegisteredMm": {
+      "outerLeft": {
+        "x": 3309.78,
+        "y": 103.859
+      },
+      "outerRight": {
+        "x": 4161.901,
+        "y": 103.859
+      },
+      "innerLeft": {
+        "x": 3389.78,
+        "y": 103.859
+      },
+      "innerRight": {
+        "x": 4096.901,
+        "y": 103.859
+      },
+      "doorLeft": {
+        "x": 3374.34,
+        "y": 0
+      },
+      "doorRight": {
+        "x": 4112.34,
+        "y": 0
+      },
+      "doorCentre": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLengthMm": 852.121,
+      "visibleClosedWidthMm": 738,
+      "physicalLeafWidthMm": null,
+      "alongAdjustmentMm": 15.44,
+      "derivedDoorFaceDepthMm": 103.859,
+      "leftInnerToDoorMm": 105,
+      "rightInnerToDoorMm": 105,
+      "geometryValid": true
+    },
+    "roomBD5CorrectedRegisteredMm": {
+      "outerLeft": {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      "outerRight": {
+        "x": 4979.843,
+        "y": 1115.525
+      },
+      "innerLeft": {
+        "x": 4979.844,
+        "y": 298.866
+      },
+      "innerRight": {
+        "x": 4979.844,
+        "y": 1035.519
+      },
+      "visibleDoorLeft": {
+        "x": 5059.84,
+        "y": 298.868
+      },
+      "visibleDoorRight": {
+        "x": 5076.841,
+        "y": 1035.525
+      },
+      "doorLeft": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "doorRight": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "direction": {
+        "x": 0,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 80,
+      "rightInnerToDoorMm": 97,
+      "geometryValid": true
+    },
+    "wcD5CorrectedRegisteredMm": {
+      "outerLeft": {
+        "x": 5100.348,
+        "y": 1133.675
+      },
+      "outerRight": {
+        "x": 5100.346,
+        "y": 232.783
+      },
+      "innerLeft": {
+        "x": 5100.35,
+        "y": 1052.678
+      },
+      "innerRight": {
+        "x": 5100.348,
+        "y": 295.778
+      },
+      "direction": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 900.901,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 40.622,
+      "bottomDerivedRevealDepthMm": 23.065,
+      "doorLeft": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "doorRight": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "d5SharedPhysicalLeafRegisteredMm": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "leafBottomMm": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "leafCentreMm": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "leafBearingDegrees": 88.678,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 80,
+          "bottom": 97
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.035,
+          "bottom": 19.109,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.901,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 40.622,
+          "bottom": 23.065
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.506
+    },
+    "diagnosticOnly": {
+      "roomCFaceAtB05B1": {
+        "x": 4164.7666,
+        "y": 239.859
+      },
+      "roomAFaceAtB05B1": {
+        "x": 4414.7816,
+        "y": 239.859
+      },
+      "acceptedGeometry": false
+    }
+  },
+  "movementFromGlobalV02": {
+    "roomBWCNodes": {
+      "B0": {
+        "previous": {
+          "x": 3307.32,
+          "y": 104.2
+        },
+        "corrected": {
+          "x": 3309.78,
+          "y": 103.859
+        },
+        "deltaMm": {
+          "x": 2.46,
+          "y": -0.341
+        },
+        "magnitudeMm": 2.4835
+      },
+      "D3-BR": {
+        "previous": {
+          "x": 4164.37,
+          "y": 104.2
+        },
+        "corrected": {
+          "x": 4161.901,
+          "y": 103.859
+        },
+        "deltaMm": {
+          "x": -2.469,
+          "y": -0.341
+        },
+        "magnitudeMm": 2.4924
+      },
+      "B0.5": {
+        "previous": {
+          "x": 4154,
+          "y": 348.89
+        },
+        "corrected": {
+          "x": 4161.901,
+          "y": 239.859
+        },
+        "deltaMm": {
+          "x": 7.901,
+          "y": -109.031
+        },
+        "magnitudeMm": 109.3169
+      },
+      "B1": {
+        "previous": {
+          "x": 4977.0088,
+          "y": 351.5981
+        },
+        "corrected": {
+          "x": 4979.843,
+          "y": 239.859
+        },
+        "deltaMm": {
+          "x": 2.8342,
+          "y": -111.7391
+        },
+        "magnitudeMm": 111.775
+      },
+      "B2": {
+        "previous": {
+          "x": 4930.8215,
+          "y": 1225.7257
+        },
+        "corrected": {
+          "x": 4979.843,
+          "y": 1115.525
+        },
+        "deltaMm": {
+          "x": 49.0215,
+          "y": -110.2007
+        },
+        "magnitudeMm": 120.6122
+      },
+      "B3": {
+        "previous": {
+          "x": 4866.6186,
+          "y": 2440.8118
+        },
+        "corrected": {
+          "x": 4979.843,
+          "y": 2324.976
+        },
+        "deltaMm": {
+          "x": 113.2244,
+          "y": -115.8358
+        },
+        "magnitudeMm": 161.9805
+      },
+      "B4": {
+        "previous": {
+          "x": 3188.5427,
+          "y": 2352.1454
+        },
+        "corrected": {
+          "x": 3309.78,
+          "y": 2324.976
+        },
+        "deltaMm": {
+          "x": 121.2373,
+          "y": -27.1694
+        },
+        "magnitudeMm": 124.2444
+      },
+      "T0": {
+        "previous": {
+          "x": 5075.2855,
+          "y": 344.6846
+        },
+        "corrected": {
+          "x": 5100.346,
+          "y": 232.783
+        },
+        "deltaMm": {
+          "x": 25.0605,
+          "y": -111.9016
+        },
+        "magnitudeMm": 114.6734
+      },
+      "T1": {
+        "previous": {
+          "x": 6738.02,
+          "y": 362.5504
+        },
+        "corrected": {
+          "x": 6740.206,
+          "y": 136.365
+        },
+        "deltaMm": {
+          "x": 2.186,
+          "y": -226.1854
+        },
+        "magnitudeMm": 226.196
+      },
+      "T2": {
+        "previous": {
+          "x": 6726.4785,
+          "y": 1436.687
+        },
+        "corrected": {
+          "x": 6798.527,
+          "y": 1212.427
+        },
+        "deltaMm": {
+          "x": 72.0485,
+          "y": -224.26
+        },
+        "magnitudeMm": 235.5494
+      },
+      "T3": {
+        "previous": {
+          "x": 5063.744,
+          "y": 1418.8211
+        },
+        "corrected": {
+          "x": 5116.468,
+          "y": 1305.836
+        },
+        "deltaMm": {
+          "x": 52.724,
+          "y": -112.9851
+        },
+        "magnitudeMm": 124.6814
+      },
+      "D5-WCL": {
+        "previous": {
+          "x": 5065.6111,
+          "y": 1245.0595
+        },
+        "corrected": {
+          "x": 5100.348,
+          "y": 1133.675
+        },
+        "deltaMm": {
+          "x": 34.7369,
+          "y": -111.3845
+        },
+        "magnitudeMm": 116.6754
+      }
+    }
+  },
+  "preservation": {
+    "priorGlobalFilesOverwritten": false,
+    "localV01Overwritten": false,
+    "localV02DeformedDuringRegistration": false,
+    "roomAMaximumMovementMm": 0,
+    "roomCMaximumMovementMm": 0,
+    "d2RegistrationChanged": false,
+    "roomCObjectsChanged": false,
+    "cupboardGeometryChanged": false,
+    "cp1Present": true,
+    "cp2Present": true,
+    "roomBLocalCandidateRigidlyRegistered": true,
+    "d3TopologyChanged": false,
+    "d3RegistrationRecomputedFromCorrectedLocalCandidate": true,
+    "globalSolvePerformed": false,
+    "finalShellPromoted": false,
+    "modelling3DStarted": false
+  },
+  "unresolved": [
+    "Exact Room C-to-Room B finished-face depth/reveal through D3",
+    "Physical termination of the thick A-C wall near D3",
+    "The corrected 3726 validation residual of -41.414 mm"
+  ]
+}

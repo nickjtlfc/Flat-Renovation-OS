@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-450 -4700 10600 7900" role="img" aria-labelledby="title desc">
+<title id="title">Whole-flat v1.3 existing validation audit v0.1</title>
+<desc id="desc">Focused read-only validation overlay on frozen v1.3 geometry. Shows principal independent spans and local CP1/CP2 outliers. Schematic, not to scale for measurement.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7c2d12"/></marker></defs>
+<style>
+.bg{fill:#f8fafc}.roomA{fill:#fff7ed;stroke:#c2410c}.roomC{fill:#eff6ff;stroke:#1e3a8a}.roomB{fill:#ecfdf5;stroke:#047857}.wc{fill:#f0fdfa;stroke:#0f766e}.roomA,.roomC,.roomB,.wc{stroke-width:18}.cup{fill:#fef3c7;stroke:#a16207;stroke-width:14}.global{stroke:#2563eb}.conditional{stroke:#7c3aed}.pass{stroke:#059669}.cp2{stroke:#dc2626}.cp1{stroke:#e11d48}.global,.conditional,.pass,.cp2,.cp1{fill:none;stroke-width:24;stroke-dasharray:44 24}.node{fill:#fff;stroke:#111827;stroke-width:8}.title{font:bold 76px Arial;fill:#0f172a}.subtitle{font:42px Arial;fill:#334155}.label{font:bold 42px Arial;fill:#172554}.small{font:34px Arial;fill:#334155}.warn{font:bold 36px Arial;fill:#991b1b}.legend{fill:#fff;stroke:#cbd5e1;stroke-width:8}
+</style>
+<rect x="-450" y="-4700" width="10600" height="7900" class="bg"/>
+<polygon points="0,0 54.99,-3690.92 4223.33,-3690.92 4168.34,0" class="roomC"/>
+<polygon points="4432.645,-4166.9873 5733.2641,-4165.4314 5732.9117,-3870.9017 7687.9103,-3868.563 7681.7882,-4134.3306 8971.9705,-4135.4771 8971.942,134.9958 4432.6987,134.9958" class="roomA"/>
+<polygon points="3309.78,103.859 4161.901,103.859 4161.901,239.859 4979.843,239.859 4979.843,1115.525 4979.843,2324.976 3309.78,2324.976" class="roomB"/>
+<polygon points="5100.347,232.783 6763.035,232.783 6763.035,1307.584 5100.347,1307.584" class="wc"/>
+<polygon points="54.99,-3690.92 1339.99,-3690.92 1347.71,-4208.86 62.71,-4208.86" class="cup"/>
+<polygon points="3488.33,-3690.92 4196.33,-3690.92 4204.32,-4226.86 3496.32,-4226.86" class="cup"/>
+<line x1="15.299683999267472" y1="-1026.912341636253" x2="8971.948864735372" y2="-893.6240730000394" class="global"/><line x1="3743.34" y1="-1359.61" x2="3743.34" y2="2324.976" class="conditional"/><line x1="3067" y1="0" x2="8971.9705" y2="-4135.4771" class="pass"/>
+<line x1="3067" y1="0" x2="4196.33" y2="-3690.92" class="cp2"/><line x1="3067" y1="0" x2="4204.32" y2="-4226.86" class="cp2"/>
+<line x1="1339.99" y1="-3690.92" x2="1605.69" y2="-3690.92" class="cp1"/>
+<circle cx="3067" cy="0" r="18" class="node"/><circle cx="4196.33" cy="-3690.92" r="18" class="node"/><circle cx="4204.32" cy="-4226.86" r="18" class="node"/><circle cx="1339.99" cy="-3690.92" r="18" class="node"/><circle cx="1605.69" cy="-3690.92" r="18" class="node"/>
+<text x="50" y="-4500" class="title">v1.3 EXISTING VALIDATION AUDIT · GEOMETRY FROZEN</text>
+<text x="50" y="-4415" class="subtitle">Focused rays only · model-minus-measurement · schematic / do not scale drawing</text>
+<text x="4533.624274367319" y="-995.2682073181461" class="label">9019 model 8957.64 · -61.36 mm</text>
+<text x="3783.34" y="447.6830000000001" class="label">3726 model 3684.59 · -41.41 mm</text>
+<text x="6059.48525" y="-2107.73855" class="label">D4→A5 7212–7236 · model 7209.08</text>
+<text x="2731.665" y="-1890.46" class="warn">CP2 front · +45.83…+59.83</text>
+<text x="2585.66" y="-2043.4299999999998" class="warn">CP2 rear proxy · +47.20…+67.20</text>
+<text x="1512.8400000000001" y="-3720.92" class="warn">CP1 RC-04 +40.70</text>
+<rect x="5200" y="2100" width="4450" height="850" rx="35" class="legend"/>
+<text x="5350" y="2260" class="label">Assessment: VALIDATED WITH MINOR LOCAL ISSUES</text>
+<text x="5350" y="2370" class="small">Blue A↔C: Good · purple C↔B: Review (conditional ray)</text>
+<text x="5350" y="2470" class="small">Green D4→A5: compatible · red D4→CP2: coherent model-long pattern</text>
+<text x="5350" y="2570" class="small">CP2-CR absent; rear line uses CP2-BODY-BR proxy</text>
+<text x="5350" y="2670" class="small">CP1 RC-04 conflict is known object-layer evidence</text>
+<text x="5350" y="2800" class="warn">NO GEOMETRY CHANGE · VALIDATION REVIEW REQUIRED</text>
+</svg>

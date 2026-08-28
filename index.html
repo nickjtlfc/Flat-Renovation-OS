@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deterministic first 3D construction shell for the Flat Renovation OS." />
+    <title>Flat Renovation OS · First 3D Shell</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="viewer" aria-label="Interactive 3D apartment shell"></canvas>
+      <aside class="panel" aria-label="Viewer controls and model status">
+        <p class="eyebrow">Flat Renovation OS</p>
+        <h1>First 3D construction shell</h1>
+        <p class="intro">Existing empty apartment shell generated from the promoted final 2D model.</p>
+
+        <div class="controls">
+          <button id="reset-camera" type="button">Reset view</button>
+          <label><input id="toggle-ceilings" type="checkbox" /> Show ceilings</label>
+          <label><input id="toggle-removable" type="checkbox" checked /> Show removable partition</label>
+        </div>
+
+        <section class="survey-controls" aria-labelledby="survey-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Survey / Validation</p>
+              <h2 id="survey-heading">Measure and trace</h2>
+            </div>
+            <span class="unit-pill">mm</span>
+          </div>
+          <fieldset class="room-filters">
+            <legend>Visible node rooms</legend>
+            <label><input data-room-filter="ROOM-A" type="checkbox" /> Room A</label>
+            <label><input data-room-filter="ROOM-B" type="checkbox" /> Room B</label>
+            <label><input data-room-filter="WC" type="checkbox" /> WC</label>
+            <label><input data-room-filter="ROOM-C" type="checkbox" checked /> Room C</label>
+          </fieldset>
+
+          <fieldset class="measurement-modes">
+            <legend>Measurement mode</legend>
+            <label><input name="measurement-mode" value="node" type="radio" checked /> Node → node</label>
+            <label><input name="measurement-mode" value="free" type="radio" /> Free → free</label>
+            <label><input name="measurement-mode" value="mixed" type="radio" /> Mixed</label>
+          </fieldset>
+
+          <div class="snap-control">
+            <label><input id="toggle-snap" type="checkbox" checked /> Snap surface hits to nearby nodes</label>
+            <span>75 mm radius</span>
+          </div>
+
+          <div class="exact-node-picker">
+            <label for="exact-node-select">Use an exact known node as the next point</label>
+            <div>
+              <select id="exact-node-select"></select>
+              <button id="use-exact-node" type="button">Use node</button>
+            </div>
+          </div>
+
+          <button id="toggle-tape" class="tape-button" type="button" aria-pressed="false">Start measuring</button>
+          <p id="tape-status" class="tool-status">Choose a mode, then start measuring.</p>
+
+          <article id="selected-measurement" class="selected-measurement" hidden>
+            <div class="selected-title"><strong id="selected-id"></strong><span id="selected-field-id"></span></div>
+            <div class="endpoint-summary"><span>Start</span><strong id="selected-start-id"></strong><p id="selected-start-description"></p></div>
+            <div class="endpoint-summary"><span>End</span><strong id="selected-end-id"></strong><p id="selected-end-description"></p></div>
+            <div class="model-result"><span>Model horizontal</span><strong id="selected-model-distance"></strong></div>
+            <label class="real-world-entry">Real-world reading <span><input id="selected-real-world" type="number" min="0" step="1" inputmode="decimal" placeholder="e.g. 4221" /> mm</span></label>
+            <div id="selected-difference" class="difference-result pending">Difference pending</div>
+            <label class="field-status-label">Field status
+              <select id="selected-field-status">
+                <option value="virtual">Virtual check only</option>
+                <option value="required">Field check required</option>
+                <option value="completed">Field check completed</option>
+                <option value="investigate">Needs investigation</option>
+              </select>
+            </label>
+            <details class="measurement-advanced">
+              <summary>Advanced details</summary>
+              <dl id="selected-advanced-details"></dl>
+            </details>
+          </article>
+
+          <details id="repo-measurement-summary" class="overlay-summary" hidden>
+            <summary>Mapped repository observations</summary>
+            <div id="repo-measurement-items"></div>
+          </details>
+
+          <details class="advanced-controls">
+            <summary>Advanced display</summary>
+            <div class="toggle-grid">
+              <label><input id="toggle-all-node-labels" type="checkbox" /> Show all node labels</label>
+              <label><input id="toggle-repo-measurements" type="checkbox" /> Show repo measurements</label>
+              <label><input id="toggle-measurement-labels" type="checkbox" checked /> Show tape labels</label>
+              <label><input id="toggle-assumptions" type="checkbox" /> Show assumptions</label>
+            </div>
+            <div id="assumption-panel" class="assumption-panel" hidden></div>
+          </details>
+
+          <div class="saved-heading">
+            <h3>Virtual checks</h3>
+            <button id="clear-measurements" class="quiet-button" type="button" disabled>Clear all</button>
+          </div>
+          <div id="measurement-list" class="measurement-list">
+            <p class="empty-state">No virtual measurements yet.</p>
+          </div>
+          <div class="report-actions">
+            <button id="copy-report" type="button">Export / Copy all results</button>
+            <span id="copy-status" aria-live="polite"></span>
+          </div>
+          <details class="report-details">
+            <summary>View exported text</summary>
+            <textarea id="report-output" aria-label="Generated validation report" readonly spellcheck="false"></textarea>
+          </details>
+        </section>
+
+        <dl class="status-list">
+          <div><dt>Navigation</dt><dd>Orbit · pan · zoom</dd></div>
+          <div><dt>Source</dt><dd>Final 2D working shell v1.0</dd></div>
+          <div><dt>Units</dt><dd>Source mm · render m</dd></div>
+          <div><dt>Model</dt><dd id="model-status">Loading…</dd></div>
+        </dl>
+
+        <div class="legend" aria-label="Model legend">
+          <span><i class="swatch permanent"></i> Existing permanent</span>
+          <span><i class="swatch removable"></i> Existing removable</span>
+          <span><i class="swatch door"></i> Doors</span>
+          <span><i class="swatch window"></i> Windows</span>
+          <span><i class="swatch cupboard"></i> Fixed cupboards</span>
+          <span><i class="swatch repo-measurement"></i> Field observation</span>
+          <span><i class="swatch virtual-measurement"></i> Virtual check</span>
+        </div>
+
+        <p class="notice">Room B soffit intentionally deferred; Room B is shown with a temporary flat ceiling.</p>
+      </aside>
+      <div id="error" class="error" role="alert" hidden></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

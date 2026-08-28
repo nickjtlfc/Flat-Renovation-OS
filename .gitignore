@@ -1,0 +1,19 @@
+# Temporary files
+tmp/
+~$*.docx
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+dist/
+
+# Logs
+*.log
+# Large source walkthrough videos
+source-material/videos/*.mp4

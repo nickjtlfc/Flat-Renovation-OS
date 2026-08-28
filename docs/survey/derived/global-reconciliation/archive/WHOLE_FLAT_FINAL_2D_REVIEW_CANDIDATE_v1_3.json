@@ -1,0 +1,1936 @@
+{
+  "documentType": "pre-final whole-flat 2D field-validation candidate; doorway junctions human-reviewed; derived layer, not source evidence or construction geometry",
+  "version": "1.3",
+  "generatedDate": "2026-08-13",
+  "units": "millimetres",
+  "status": "PRE-FINAL 2D FIELD-VALIDATION CANDIDATE — HUMAN REVIEW REQUIRED",
+  "provenance": {
+    "predecessor": {
+      "file": "WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_2.json",
+      "sha256": "32E9341E5D36E9B73B8FEE4BB76BD7AF4735E39FFF6BE0E2B797B0E0ED846B53",
+      "svgFile": "WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_2.svg",
+      "svgSha256": "420E71D8B7719793B45CC2AF97C92E696191746D1A9219771DF4E6EEDE60085E",
+      "use": "accepted v1.2 shell, registrations, hinge sides and swing directions"
+    },
+    "inheritedHistory": {
+      "predecessor": {
+        "file": "WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_1.json",
+        "sha256": "F3F4589974E83569554A47BCDB229688F1974C1273BC7333B8421F7ABA2D49D2",
+        "svgFile": "WHOLE_FLAT_FINAL_2D_REVIEW_CANDIDATE_v1_1.svg",
+        "svgSha256": "98E79A154FBAD08C17B0B8EF3D99CDBCA83D2EB7923E562D4D1B2C0D167E5BE6",
+        "use": "human-approved-in-principle v1.1 geometry, including the Room A rigid orientation"
+      },
+      "inheritedMeasurementAndReconciliationHistory": {
+        "predecessor": {
+          "file": "WHOLE_FLAT_PREFERRED_PROVISIONAL_WORKING_SHELL_v1_0.json",
+          "sha256": "CA77C4AC52F10627214F443EA542AFB53C0C457ACDE44502424FFE8178F16760",
+          "use": "fixed preferred v1.0 whole-flat geometry and registrations"
+        },
+        "roomAEvidence": {
+          "file": "docs/survey/derived/room-a/ROOM_A_RECONSTRUCTION_PILOT_v0_1.json",
+          "sha256": "91E6D48F3DBA7BDDC42A07CC4BD39E253974BECF1EB8B61FF895A401729F8C51",
+          "use": "D1 object dimensions and Room A solved node geometry"
+        },
+        "roomCAcceptedBaseline": {
+          "file": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+          "sha256": "4D36F1445E5AEBA95FAF6A1FE404E6BF81400CDDE67C22CB05386AF77A855C67",
+          "use": "accepted fixed Room C shell, cupboards, partition and D2/D3/D4 object layers"
+        },
+        "sourcePlansReviewed": [
+          {
+            "file": "source-material/plans/2dPlan.jpeg",
+            "use": "topology and room/door relationships only; no dimensions derived"
+          },
+          {
+            "file": "source-material/plans/rough-paint-sketch.jpg",
+            "use": "topology and room/door relationships only; sketch leaf strokes are not hinge evidence"
+          }
+        ],
+        "photographsReviewed": [
+          {
+            "file": "source-material/photos/RoomC/RoomC-EastWall.jpeg",
+            "use": "Room C fixed cupboards/wall context; no dimensions derived"
+          },
+          {
+            "file": "source-material/photos/RoomC/RoomC-EastWall-Cupboard1.jpeg",
+            "use": "Room C fixed cupboard/wall context; no dimensions derived"
+          },
+          {
+            "file": "source-material/photos/RoomC/RoomC-NorthWall.jpeg",
+            "use": "Room C wall/cupboard context; no dimensions derived"
+          },
+          {
+            "file": "source-material/photos/RoomC/RoomC-South&WestWalls.jpeg",
+            "use": "door context only; D1/D2/D4 hinge mapping not promoted from this non-explicit view"
+          },
+          {
+            "file": "source-material/photos/RoomB-WC-Survey/D3-ROOM-B.jpeg",
+            "sha256": "9FFAE8BEE44A664CB10488A44BE67DEC29A1F5F926F88FEB6A54F4BA5A23B140",
+            "use": "D3 Room B face; hinge/latch relationship only"
+          },
+          {
+            "file": "source-material/photos/RoomB-WC-Survey/D5-ROOM-B.jpeg",
+            "sha256": "4338BFAB3670EC6B8A63D11832741769A1206618846BDE91B7222F15C267C25D",
+            "use": "D5 Room B face; hinge/latch relationship only"
+          },
+          {
+            "file": "source-material/photos/RoomB-WC-Survey/D5-WC.jpeg",
+            "sha256": "59E52F82AAE0D302647C2E25A09AD9DA8D164BBD6594BAD2E8B32FB3D49BD7FC",
+            "use": "D5 WC face; corroborates the same physical hinge side"
+          }
+        ],
+        "rawEvidenceDeleted": false,
+        "predecessorOverwritten": false
+      },
+      "humanEvidenceAdded": [
+        "D1 opens into Room A; hinge right when viewed from Room A",
+        "D2 opens into Room A; hinge left when viewed from Room A",
+        "D4 opens into Room C; hinge left when viewed from Room C"
+      ],
+      "rawEvidenceDeleted": false,
+      "predecessorOverwritten": false
+    },
+    "humanEvidenceAdded": "D5 physical leaf/door plane is straight and flush through the Room B/WC doorway rather than diagonally cut through the wall assembly.",
+    "rawEvidenceDeleted": false,
+    "predecessorOverwritten": false
+  },
+  "topRoomCWall": {
+    "status": "restored as continuous permanent host wall in the drawing composition",
+    "compositionOnly": true,
+    "continuousSegment": {
+      "from": "CP1-FL",
+      "to": "CP2-FL",
+      "endpointsMm": [
+        {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        {
+          "x": 3468.33,
+          "y": -3690.92
+        }
+      ]
+    },
+    "predecessorVisibleSplit": [
+      {
+        "from": "CP1-FL",
+        "to": "PO1"
+      },
+      {
+        "from": "PI1",
+        "to": "CP2-FL"
+      }
+    ],
+    "diagnosis": "The predecessor renderer terminated the host-wall strokes at the two partition-face nodes PO1 and PI1, leaving a 123.64 mm visual gap. The accepted permanent host wall is continuous behind the removable partition junction.",
+    "nodeMovementMm": 0,
+    "partitionTreatment": "unchanged geometry; drawn as a lighter subordinate overlay while the permanent wall remains continuous"
+  },
+  "roomAOrientationReview": {
+    "candidateApplied": true,
+    "transformType": "single rigid rotation only; no scale, shear, deformation or solve",
+    "rotationDegrees": -0.854961637,
+    "pivot": {
+      "definition": "midpoint of the existing Room A measured D2 casing segment",
+      "coordinateMm": {
+        "x": 4432.69,
+        "y": -961.175
+      }
+    },
+    "target": "A7-A6 principal lower Room A wall made parallel to fixed WC T0-T1 and fixed Room C horizontal families",
+    "wallFamilies": [
+      {
+        "id": "A-lower-principal",
+        "room": "Room A",
+        "nodes": [
+          "A7",
+          "A6"
+        ],
+        "beforeDegrees": 0.854962,
+        "afterDegrees": 0,
+        "target": "WC T0-T1 horizontal family"
+      },
+      {
+        "id": "A-upper-opening-side",
+        "room": "Room A",
+        "nodes": [
+          "A2",
+          "A3"
+        ],
+        "beforeDegrees": 0.923501,
+        "afterDegrees": 0.068541,
+        "target": "diagnostic only; not independently altered"
+      },
+      {
+        "id": "A-C-side",
+        "room": "Room A",
+        "nodes": [
+          "A7",
+          "A0"
+        ],
+        "beforeDegrees": -89.145754,
+        "afterDegrees": -90.000716,
+        "target": "near perpendicular to Room C horizontal family"
+      },
+      {
+        "id": "WC-horizontal",
+        "room": "WC",
+        "nodes": [
+          "T0",
+          "T1"
+        ],
+        "beforeDegrees": 0,
+        "afterDegrees": 0,
+        "target": "fixed reference family"
+      },
+      {
+        "id": "WC-vertical",
+        "room": "WC",
+        "nodes": [
+          "T0",
+          "T3"
+        ],
+        "beforeDegrees": 90,
+        "afterDegrees": 90,
+        "target": "fixed reference family"
+      },
+      {
+        "id": "C-lower",
+        "room": "Room C",
+        "nodes": [
+          "C0",
+          "D3-CL"
+        ],
+        "beforeDegrees": 0,
+        "afterDegrees": 0,
+        "target": "fixed horizontal family"
+      },
+      {
+        "id": "C-upper-host-wall",
+        "room": "Room C",
+        "nodes": [
+          "CP1-FL",
+          "CP2-FL"
+        ],
+        "beforeDegrees": 0,
+        "afterDegrees": 0,
+        "target": "fixed horizontal family"
+      },
+      {
+        "id": "C-D2-side",
+        "room": "Room C",
+        "nodes": [
+          "D3-CL",
+          "D2-CR"
+        ],
+        "beforeDegrees": -89.146465,
+        "afterDegrees": -89.146465,
+        "target": "fixed D2 adjoining wall"
+      }
+    ],
+    "roomCRelationship": {
+      "sharedRoomASide": "A7-A0",
+      "relevantFixedRoomCFamily": "C0-D3-CL (parallel to CP1-FL-CP2-FL)",
+      "roomASideDirectionBeforeDegrees": -89.145754,
+      "roomASideDirectionAfterDegrees": -90.000716,
+      "roomCFamilyDirectionDegrees": 0,
+      "includedAngleBeforeDegrees": 89.145754,
+      "includedAngleAfterDegrees": 89.999284,
+      "departureFromSquareBeforeDegrees": 0.854246,
+      "departureFromSquareAfterDegrees": 0.000716
+    },
+    "movementByNodeMm": {
+      "A2": {
+        "before": {
+          "x": 5776.184,
+          "y": -3851.1767
+        },
+        "after": {
+          "x": 5732.9117,
+          "y": -3870.9017
+        },
+        "deltaMm": {
+          "x": -43.2723,
+          "y": -19.725
+        },
+        "magnitudeMm": 47.5559
+      },
+      "A3": {
+        "before": {
+          "x": 7730.93,
+          "y": -3819.6671
+        },
+        "after": {
+          "x": 7687.9103,
+          "y": -3868.563
+        },
+        "deltaMm": {
+          "x": -43.0197,
+          "y": -48.8959
+        },
+        "magnitudeMm": 65.1268
+      },
+      "A0": {
+        "before": {
+          "x": 4480.48,
+          "y": -4166.6311
+        },
+        "after": {
+          "x": 4432.645,
+          "y": -4166.9873
+        },
+        "deltaMm": {
+          "x": -47.835,
+          "y": -0.3562
+        },
+        "magnitudeMm": 47.8363
+      },
+      "A1": {
+        "before": {
+          "x": 5780.9311,
+          "y": -4145.6684
+        },
+        "after": {
+          "x": 5733.2641,
+          "y": -4165.4314
+        },
+        "deltaMm": {
+          "x": -47.667,
+          "y": -19.763
+        },
+        "magnitudeMm": 51.6015
+      },
+      "A4": {
+        "before": {
+          "x": 7728.7742,
+          "y": -4085.4964
+        },
+        "after": {
+          "x": 7681.7882,
+          "y": -4134.3306
+        },
+        "deltaMm": {
+          "x": -46.986,
+          "y": -48.8342
+        },
+        "magnitudeMm": 67.7677
+      },
+      "A5": {
+        "before": {
+          "x": 9018.83,
+          "y": -4067.3916
+        },
+        "after": {
+          "x": 8971.9705,
+          "y": -4135.4771
+        },
+        "deltaMm": {
+          "x": -46.8595,
+          "y": -68.0855
+        },
+        "magnitudeMm": 82.6526
+      },
+      "A6": {
+        "before": {
+          "x": 8955.0803,
+          "y": 202.6055
+        },
+        "after": {
+          "x": 8971.942,
+          "y": 134.9958
+        },
+        "deltaMm": {
+          "x": 16.8617,
+          "y": -67.6097
+        },
+        "magnitudeMm": 69.6806
+      },
+      "A7": {
+        "before": {
+          "x": 4416.3424,
+          "y": 134.8739
+        },
+        "after": {
+          "x": 4432.6987,
+          "y": 134.9958
+        },
+        "deltaMm": {
+          "x": 16.3563,
+          "y": 0.1219
+        },
+        "magnitudeMm": 16.3568
+      },
+      "W1-AL": {
+        "before": {
+          "x": 8997.8291,
+          "y": -2660.3373
+        },
+        "after": {
+          "x": 8971.9671,
+          "y": -2728.2661
+        },
+        "deltaMm": {
+          "x": -25.862,
+          "y": -67.9288
+        },
+        "magnitudeMm": 72.6854
+      },
+      "W1-AR": {
+        "before": {
+          "x": 8976.3946,
+          "y": -1225.1364
+        },
+        "after": {
+          "x": 8971.9501,
+          "y": -1292.9052
+        },
+        "deltaMm": {
+          "x": -4.4445,
+          "y": -67.7688
+        },
+        "magnitudeMm": 67.9144
+      },
+      "D1-AL": {
+        "before": {
+          "x": 8428.0186,
+          "y": 194.7396
+        },
+        "after": {
+          "x": 8444.8216,
+          "y": 134.9952
+        },
+        "deltaMm": {
+          "x": 16.803,
+          "y": -59.7444
+        },
+        "magnitudeMm": 62.0623
+      },
+      "D1-AR": {
+        "before": {
+          "x": 7238.3302,
+          "y": 176.9826
+        },
+        "after": {
+          "x": 7255.0007,
+          "y": 134.992
+        },
+        "deltaMm": {
+          "x": 16.6705,
+          "y": -41.9906
+        },
+        "magnitudeMm": 45.1787
+      },
+      "D2-AL": {
+        "before": {
+          "x": 4424.547,
+          "y": -415.0653
+        },
+        "after": {
+          "x": 4432.6966,
+          "y": -415.0046
+        },
+        "deltaMm": {
+          "x": 8.1496,
+          "y": 0.0607
+        },
+        "magnitudeMm": 8.1498
+      },
+      "D2-AR": {
+        "before": {
+          "x": 4440.833,
+          "y": -1507.2847
+        },
+        "after": {
+          "x": 4432.6834,
+          "y": -1507.3454
+        },
+        "deltaMm": {
+          "x": -8.1496,
+          "y": -0.0607
+        },
+        "magnitudeMm": 8.1498
+      }
+    },
+    "maximumMovementMm": {
+      "node": "A5",
+      "magnitudeMm": 82.6526
+    },
+    "rigidPairwiseMaximumChangeMm": 0.000098602,
+    "assessment": "Adopted for human review: the principal family becomes square to WC and Room C; the upper A2-A3 evidence-fit segment retains a small 0.068539 degree angle because Room A was not deformed."
+  },
+  "d2Review": {
+    "physicalRegistrationAnchorChanged": false,
+    "anchorMovementMm": 0,
+    "fixedRoomCOpeningAndLeafChanged": false,
+    "rotatedRoomALayers": [
+      "roomAClearOpeningSegmentMm",
+      "roomAMeasuredCasingSegmentMm"
+    ],
+    "roomACasingEndpointMovementMm": [
+      8.1771,
+      8.1771
+    ],
+    "roomAClearOpeningEndpointMovementMm": [
+      5.7225,
+      5.7225
+    ],
+    "roomACasingAngleBeforeDegrees": -89.145738,
+    "roomACasingAngleAfterDegrees": 89.999299,
+    "fixedRoomCOpeningAngleDegrees": -89.145735,
+    "opposingFaceAngularDifferenceBeforeDegrees": 0.000003,
+    "opposingFaceAngularDifferenceAfterDegrees": 0.854965,
+    "approximateThroughWallDepthPreservedAtCentreMm": 250.0027,
+    "assessment": "The shared centre and approximate face depth remain coherent. The rigid Room A correction leaves a 0.855 degree angular difference between the rotated Room A casing and fixed Room C opening/leaf layers; this is retained for human review rather than forcing either room."
+  },
+  "doors": {
+    "visualConvention": {
+      "wallOpening": "magenta",
+      "casing": "ochre",
+      "reveal": "cyan",
+      "visibleLeaf": "black",
+      "swingDestination": "dashed red arrow",
+      "hingePolicy": "All five hinge sides are now supported by human confirmation or the previously accepted photographic evidence; all five swing arcs are shown."
+    },
+    "layers": {
+      "D1": {
+        "swingDestination": "Room A",
+        "hingeSide": "right-hand side when viewed from Room A; global west/page-left endpoint of the schematic clear-opening proxy",
+        "opening": {
+          "clearWidthMm": 781,
+          "endpoints": [
+            {
+              "x": 7459.4112,
+              "y": 134.9925
+            },
+            {
+              "x": 8240.4111,
+              "y": 134.9947
+            }
+          ],
+          "placement": "schematic centred reference; lateral leaf/lining placement is not surveyed"
+        },
+        "casing": {
+          "frontFaceWidthMm": 1204,
+          "projectionMm": 31,
+          "endpoints": [
+            {
+              "x": 7247.9112,
+              "y": 103.992
+            },
+            {
+              "x": 8451.9112,
+              "y": 103.9952
+            }
+          ],
+          "placement": "schematic centred reference derived from measured width/projection; not a plan node"
+        },
+        "reveal": {
+          "status": "31 mm casing projection shown; through-wall reveal not surveyed"
+        },
+        "leaf": {
+          "widthStatus": "not separately measured; 781 mm clear-opening reference shown as leaf proxy"
+        },
+        "viewingRoom": "Room A",
+        "hingeEvidence": "authoritative human confirmation for v1.2",
+        "hingeGlobalPointMm": {
+          "x": 7459.4112,
+          "y": 134.9925
+        },
+        "swingDepiction": "arc into Room A; radius uses the recorded 781 mm clear-opening proxy because a separate leaf width is not measured"
+      },
+      "D2": {
+        "swingDestination": "Room A",
+        "hingeSide": "left-hand side when viewed from Room A; global south/page-bottom endpoint of the accepted 742 mm leaf",
+        "opening": {
+          "roomCFace": [
+            {
+              "x": 4176.98,
+              "y": -579.94
+            },
+            {
+              "x": 4188.45,
+              "y": -1349.85
+            }
+          ],
+          "roomAFace": [
+            {
+              "x": 4426.95,
+              "y": -576.22
+            },
+            {
+              "x": 4438.43,
+              "y": -1346.13
+            }
+          ],
+          "structuralWidthMm": 770
+        },
+        "casing": {
+          "roomAMeasured": [
+            {
+              "x": 4432.6967,
+              "y": -413.175
+            },
+            {
+              "x": 4432.6833,
+              "y": -1509.175
+            }
+          ],
+          "frontFaceWidthMm": 1096
+        },
+        "reveal": {
+          "observedApproximateDepthMm": 250,
+          "centreSeparationMm": 250.0027
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 4427.16,
+              "y": -590.22
+            },
+            {
+              "x": 4438.21,
+              "y": -1332.14
+            }
+          ],
+          "widthMm": 742,
+          "closingPlane": "fixed Room A side from accepted Room C baseline"
+        },
+        "viewingRoom": "Room A",
+        "hingeEvidence": "authoritative human confirmation for v1.2",
+        "hingeGlobalPointMm": {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        "swingDepiction": "742 mm leaf and swing arc into Room A"
+      },
+      "D3": {
+        "swingDestination": "Room C",
+        "hingeSide": "photographically identified at the east end of the global leaf segment (viewer-right from Room B); not a measured hinge node",
+        "opening": {
+          "structuralRevealStatus": "unmeasured"
+        },
+        "casing": {
+          "roomCEndpoints": [
+            {
+              "x": 3283.34,
+              "y": 0
+            },
+            {
+              "x": 4168.34,
+              "y": 0
+            }
+          ],
+          "roomBEndpoints": [
+            {
+              "x": 3309.78,
+              "y": 103.859
+            },
+            {
+              "x": 4161.901,
+              "y": 103.859
+            }
+          ],
+          "roomCWidthMm": 885,
+          "roomBWidthMm": 852.121
+        },
+        "reveal": {
+          "derivedOpposingFaceSeparationMm": 103.859,
+          "status": "derived registration layer, not measured wall thickness"
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 3363.34,
+              "y": 0
+            },
+            {
+              "x": 4123.34,
+              "y": 0
+            }
+          ],
+          "widthMm": 760
+        },
+        "viewingRoom": "Room B",
+        "swingDepiction": "760 mm leaf and photo-supported swing arc into Room C"
+      },
+      "D4": {
+        "swingDestination": "Room C",
+        "hingeSide": "left-hand side when viewed from Room C; global east/page-right endpoint of the accepted 760 mm leaf",
+        "opening": {
+          "structuralRevealStatus": "unmeasured"
+        },
+        "casing": {
+          "endpoints": [
+            {
+              "x": 2147,
+              "y": 0
+            },
+            {
+              "x": 3067,
+              "y": 0
+            }
+          ],
+          "widthMm": 920
+        },
+        "reveal": {
+          "status": "unmeasured"
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 2227,
+              "y": 0
+            },
+            {
+              "x": 2987,
+              "y": 0
+            }
+          ],
+          "widthMm": 760
+        },
+        "viewingRoom": "Room C",
+        "hingeEvidence": "authoritative human confirmation for v1.2",
+        "hingeGlobalPointMm": {
+          "x": 2987,
+          "y": 0
+        },
+        "swingDepiction": "760 mm leaf and swing arc into Room C"
+      },
+      "D5": {
+        "swingDestination": "WC",
+        "hingeSide": "photographically corroborated at the north/top end of the global leaf segment (viewer-left from Room B; viewer-right from WC); not a measured hinge node",
+        "opening": {
+          "topology": "one opening; no wall across Room B/WC assembly gap"
+        },
+        "casing": {
+          "roomBEndpoints": [
+            {
+              "x": 4979.843,
+              "y": 239.859
+            },
+            {
+              "x": 4979.843,
+              "y": 1115.525
+            }
+          ],
+          "wcEndpoints": [
+            {
+              "x": 5100.347,
+              "y": 1133.675
+            },
+            {
+              "x": 5100.347,
+              "y": 232.783
+            }
+          ],
+          "roomBWidthMm": 875.66,
+          "wcWidthMm": 900.892
+        },
+        "reveal": {
+          "opposingCasingFaceSeparationMm": 120.504,
+          "roomBDerivedFaceDepthMm": 88.5
+        },
+        "leaf": {
+          "endpoints": [
+            {
+              "x": 5068.501,
+              "y": 293.73
+            },
+            {
+              "x": 5068.501,
+              "y": 1054.73
+            }
+          ],
+          "widthMm": 761,
+          "status": "one shared physical leaf",
+          "bearingDegrees": 90,
+          "alignment": "straightened about the preserved leaf centre to the 90 degree Room B/WC doorway family"
+        },
+        "viewingRoom": "Room B and WC opposing faces",
+        "swingDepiction": "761 mm straight physical leaf and accepted swing arc into WC"
+      }
+    }
+  },
+  "validations": {
+    "A_D2_C_9019": {
+      "measuredMm": 9019,
+      "definition": "Fixed D2 normal through the fixed D2 A-face centre, intersecting C0-CP1-FL and the Room A A5-A6 far wall.",
+      "modelBeforeMm": 8957.1387,
+      "modelAfterMm": 8957.6409,
+      "residualBeforeMm": -61.8613,
+      "residualAfterMm": -61.3591,
+      "absoluteResidualImprovementMm": 0.5021,
+      "v11ModelMm": 8957.6409,
+      "v12ModelMm": 8957.6409,
+      "v11ResidualMm": -61.3591,
+      "v12ResidualMm": -61.3591,
+      "changeMm": 0,
+      "unchangedByV12": true,
+      "v13ModelMm": 8957.6409,
+      "v13ResidualMm": -61.3591,
+      "unchangedByV13": true
+    },
+    "C_partition_D3_B_3726": {
+      "measuredMm": 3726,
+      "currentPreferredD3NormalModelMm": 3684.586,
+      "residualMm": -41.414,
+      "definition": "D3-normal line through the fixed shared leaf centre, from the Room C outer removable-stud-partition face PO2-PO3 to the Room B B3-B4 finished tile face.",
+      "pointsMm": {
+        "startOnRoomCOuterFace": {
+          "x": 3743.34,
+          "y": -1359.61
+        },
+        "d3Crossing": {
+          "x": 3743.34,
+          "y": 0
+        },
+        "endOnRoomBFinishedTileFace": {
+          "x": 3743.34,
+          "y": 2324.976
+        }
+      },
+      "faceAudit": {
+        "roomCSelectedFace": {
+          "nodes": [
+            "PO2",
+            "PO3"
+          ],
+          "type": "accepted outer face of current removable stud partition",
+          "modelY": -1359.61,
+          "sameNamedPhysicalLayerAsFieldDescription": true
+        },
+        "roomCInnerFaceAlternative": {
+          "nodes": [
+            "PI2",
+            "PI3"
+          ],
+          "modelMm": 3814.136,
+          "residualMm": 88.136,
+          "assessment": "wrong named face for the field description and substantially worse"
+        },
+        "roomBSelectedFace": {
+          "nodes": [
+            "B3",
+            "B4"
+          ],
+          "type": "measured finished tile face",
+          "modelY": 2324.976,
+          "sameNamedPhysicalLayerAsFieldDescription": true
+        },
+        "roomBUnderlyingWallAlternative": {
+          "offsetBehindTileMm": 10,
+          "modelMm": 3694.586,
+          "residualMm": -31.414,
+          "assessment": "supported approximate layer, but explains only about 10 mm"
+        },
+        "casingRevealEffect": "None on the wall-to-wall span once start/end faces and ray are fixed; casing/reveal controls the doorway layers, not these wall intersections.",
+        "landingPositionEffect": "None for a perpendicular line between the currently parallel PO2-PO3 and B3-B4 faces; it matters only if the physical laser ray was oblique."
+      },
+      "directionAudit": {
+        "modelAssumption": "perpendicular D3 normal through the shared leaf centre",
+        "fieldRayPreciselyMarked": false,
+        "unresolved": "The evidence describes a straight ray through D3 but does not preserve marked start/end stations or an independently surveyed bearing.",
+        "illustrativeObliqueRayToEqual3726": {
+          "acceptedGeometry": false,
+          "angleFromD3NormalDegrees": 8.550527,
+          "horizontalOffsetAcrossSpanMm": 553.9874,
+          "startMm": {
+            "x": 3538.919,
+            "y": -1359.61
+          },
+          "d3CrossingMm": {
+            "x": 3743.34,
+            "y": 0
+          },
+          "endMm": {
+            "x": 4092.9064,
+            "y": 2324.976
+          },
+          "lengthMm": 3726,
+          "assessment": "Geometrically possible through the opening and onto B3-B4; shown only to quantify direction uncertainty, not to erase the perpendicular residual."
+        }
+      },
+      "conclusion": "The selected model faces match the named physical finished faces. Tile/reference layers do not explain all 41.41 mm. Because the exact field bearing was not marked, the result remains a conditional D3-normal residual. If the physical shot was perpendicular, -41.41 mm is a genuine retained model residual.",
+      "unchangedByThisTask": true,
+      "v11ModelMm": 3684.586,
+      "v12ModelMm": 3684.586,
+      "v11ResidualMm": -41.414,
+      "v12ResidualMm": -41.414,
+      "changeMm": 0,
+      "unchangedByV12": true,
+      "v13ModelMm": 3684.586,
+      "v13ResidualMm": -41.414,
+      "unchangedByV13": true
+    }
+  },
+  "geometry": {
+    "roomABeforeMm": {
+      "A2": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "A3": {
+        "x": 7730.93,
+        "y": -3819.6671
+      },
+      "A0": {
+        "x": 4480.48,
+        "y": -4166.6311
+      },
+      "A1": {
+        "x": 5780.9311,
+        "y": -4145.6684
+      },
+      "A4": {
+        "x": 7728.7742,
+        "y": -4085.4964
+      },
+      "A5": {
+        "x": 9018.83,
+        "y": -4067.3916
+      },
+      "A6": {
+        "x": 8955.0803,
+        "y": 202.6055
+      },
+      "A7": {
+        "x": 4416.3424,
+        "y": 134.8739
+      },
+      "W1-AL": {
+        "x": 8997.8291,
+        "y": -2660.3373
+      },
+      "W1-AR": {
+        "x": 8976.3946,
+        "y": -1225.1364
+      },
+      "D1-AL": {
+        "x": 8428.0186,
+        "y": 194.7396
+      },
+      "D1-AR": {
+        "x": 7238.3302,
+        "y": 176.9826
+      },
+      "D2-AL": {
+        "x": 4424.547,
+        "y": -415.0653
+      },
+      "D2-AR": {
+        "x": 4440.833,
+        "y": -1507.2847
+      }
+    },
+    "roomAFinalReviewMm": {
+      "A2": {
+        "x": 5732.9117,
+        "y": -3870.9017
+      },
+      "A3": {
+        "x": 7687.9103,
+        "y": -3868.563
+      },
+      "A0": {
+        "x": 4432.645,
+        "y": -4166.9873
+      },
+      "A1": {
+        "x": 5733.2641,
+        "y": -4165.4314
+      },
+      "A4": {
+        "x": 7681.7882,
+        "y": -4134.3306
+      },
+      "A5": {
+        "x": 8971.9705,
+        "y": -4135.4771
+      },
+      "A6": {
+        "x": 8971.942,
+        "y": 134.9958
+      },
+      "A7": {
+        "x": 4432.6987,
+        "y": 134.9958
+      },
+      "W1-AL": {
+        "x": 8971.9671,
+        "y": -2728.2661
+      },
+      "W1-AR": {
+        "x": 8971.9501,
+        "y": -1292.9052
+      },
+      "D1-AL": {
+        "x": 8444.8216,
+        "y": 134.9952
+      },
+      "D1-AR": {
+        "x": 7255.0007,
+        "y": 134.992
+      },
+      "D2-AL": {
+        "x": 4432.6966,
+        "y": -415.0046
+      },
+      "D2-AR": {
+        "x": 4432.6834,
+        "y": -1507.3454
+      }
+    },
+    "roomCUnchangedNodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "roomCUnchangedObjectNodesMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    },
+    "d2LayersBeforeMm": {
+      "roomAClearOpeningSegmentMm": [
+        {
+          "x": 4426.9723,
+          "y": -577.7176
+        },
+        {
+          "x": 4438.4077,
+          "y": -1344.6324
+        }
+      ],
+      "roomAMeasuredCasingSegmentMm": [
+        {
+          "x": 4424.5198,
+          "y": -413.2359
+        },
+        {
+          "x": 4440.8602,
+          "y": -1509.1141
+        }
+      ],
+      "roomCStructuralOpeningAtRoomCFaceMm": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "roomCStructuralOpeningAtRoomAFaceMm": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "roomCLeafClosingPlaneMm": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ]
+    },
+    "d2LayersFinalReviewMm": {
+      "roomAClearOpeningSegmentMm": [
+        {
+          "x": 4432.6946,
+          "y": -577.675
+        },
+        {
+          "x": 4432.6854,
+          "y": -1344.675
+        }
+      ],
+      "roomAMeasuredCasingSegmentMm": [
+        {
+          "x": 4432.6967,
+          "y": -413.175
+        },
+        {
+          "x": 4432.6833,
+          "y": -1509.175
+        }
+      ],
+      "roomCStructuralOpeningAtRoomCFaceMm": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "roomCStructuralOpeningAtRoomAFaceMm": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "roomCLeafClosingPlaneMm": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ]
+    },
+    "roomBWCUnchangedMm": {
+      "B0": {
+        "x": 3309.78,
+        "y": 103.859
+      },
+      "D3-BR": {
+        "x": 4161.901,
+        "y": 103.859
+      },
+      "B0.5": {
+        "x": 4161.901,
+        "y": 239.859
+      },
+      "B1": {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      "B2": {
+        "x": 4979.843,
+        "y": 1115.525
+      },
+      "B3": {
+        "x": 4979.843,
+        "y": 2324.976
+      },
+      "B4": {
+        "x": 3309.78,
+        "y": 2324.976
+      },
+      "T0": {
+        "x": 5100.347,
+        "y": 232.783
+      },
+      "T1": {
+        "x": 6763.035,
+        "y": 232.783
+      },
+      "T2": {
+        "x": 6763.035,
+        "y": 1307.584
+      },
+      "T3": {
+        "x": 5100.347,
+        "y": 1307.584
+      },
+      "D5-WCL": {
+        "x": 5100.347,
+        "y": 1133.675
+      }
+    },
+    "roomBD3UnchangedMm": {
+      "outerLeft": {
+        "x": 3309.78,
+        "y": 103.859
+      },
+      "outerRight": {
+        "x": 4161.901,
+        "y": 103.859
+      },
+      "innerLeft": {
+        "x": 3389.78,
+        "y": 103.859
+      },
+      "innerRight": {
+        "x": 4096.901,
+        "y": 103.859
+      },
+      "doorLeft": {
+        "x": 3374.34,
+        "y": 0
+      },
+      "doorRight": {
+        "x": 4112.34,
+        "y": 0
+      },
+      "doorCentre": {
+        "x": 3743.34,
+        "y": 0
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLengthMm": 852.121,
+      "visibleClosedWidthMm": 738,
+      "physicalLeafWidthMm": null,
+      "alongAdjustmentMm": 15.44,
+      "derivedDoorFaceDepthMm": 103.859,
+      "leftInnerToDoorMm": 105,
+      "rightInnerToDoorMm": 105,
+      "geometryValid": true
+    },
+    "roomBD5BeforeV13Mm": {
+      "outerLeft": {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      "outerRight": {
+        "x": 4979.843,
+        "y": 1115.525
+      },
+      "innerLeft": {
+        "x": 4979.844,
+        "y": 298.866
+      },
+      "innerRight": {
+        "x": 4979.844,
+        "y": 1035.519
+      },
+      "visibleDoorLeft": {
+        "x": 5059.84,
+        "y": 298.868
+      },
+      "visibleDoorRight": {
+        "x": 5076.841,
+        "y": 1035.525
+      },
+      "doorLeft": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "doorRight": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "direction": {
+        "x": 0,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 80,
+      "rightInnerToDoorMm": 97,
+      "geometryValid": true
+    },
+    "roomBD5FinalReviewMm": {
+      "outerLeft": {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      "outerRight": {
+        "x": 4979.843,
+        "y": 1115.525
+      },
+      "innerLeft": {
+        "x": 4979.844,
+        "y": 298.866
+      },
+      "innerRight": {
+        "x": 4979.844,
+        "y": 1035.519
+      },
+      "visibleDoorLeft": {
+        "x": 5068.3405,
+        "y": 298.7685
+      },
+      "visibleDoorRight": {
+        "x": 5068.3405,
+        "y": 1035.6245
+      },
+      "doorLeft": {
+        "x": 5068.501,
+        "y": 293.73
+      },
+      "doorRight": {
+        "x": 5068.501,
+        "y": 1054.73
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "direction": {
+        "x": 0,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 88.4965,
+      "rightInnerToDoorMm": 88.4965,
+      "geometryValid": true
+    },
+    "wcD5BeforeV13Mm": {
+      "outerLeft": {
+        "x": 5100.347,
+        "y": 1133.675
+      },
+      "outerRight": {
+        "x": 5100.347,
+        "y": 232.783
+      },
+      "innerLeft": {
+        "x": 5100.347,
+        "y": 1052.678
+      },
+      "innerRight": {
+        "x": 5100.347,
+        "y": 295.778
+      },
+      "direction": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 900.892,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 40.622,
+      "bottomDerivedRevealDepthMm": 23.065,
+      "doorLeft": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "doorRight": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "wcD5FinalReviewMm": {
+      "outerLeft": {
+        "x": 5100.347,
+        "y": 1133.675
+      },
+      "outerRight": {
+        "x": 5100.347,
+        "y": 232.783
+      },
+      "innerLeft": {
+        "x": 5100.347,
+        "y": 1052.678
+      },
+      "innerRight": {
+        "x": 5100.347,
+        "y": 295.778
+      },
+      "direction": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 900.892,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 31.846,
+      "bottomDerivedRevealDepthMm": 31.846,
+      "doorLeft": {
+        "x": 5068.501,
+        "y": 1054.73
+      },
+      "doorRight": {
+        "x": 5068.501,
+        "y": 293.73
+      },
+      "doorCentre": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "d5SharedPhysicalLeafBeforeV13Mm": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 5059.726,
+        "y": 293.826
+      },
+      "leafBottomMm": {
+        "x": 5077.285,
+        "y": 1054.623
+      },
+      "leafCentreMm": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "leafBearingDegrees": 88.678,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 80,
+          "bottom": 97
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.035,
+          "bottom": 19.109,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.892,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 40.622,
+          "bottom": 23.065
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.504
+    },
+    "d5SharedPhysicalLeafFinalReviewMm": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 5068.501,
+        "y": 293.73
+      },
+      "leafBottomMm": {
+        "x": 5068.501,
+        "y": 1054.73
+      },
+      "leafCentreMm": {
+        "x": 5068.501,
+        "y": 674.23
+      },
+      "leafBearingDegrees": 90,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 88.4965,
+          "bottom": 88.4965
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.0385,
+          "bottom": 19.1055,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.892,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 31.846,
+          "bottom": 31.846
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.504
+    }
+  },
+  "preservation": {
+    "roomCNodeMovementMm": 0,
+    "roomBWCNodeMovementMm": 0,
+    "d3RegistrationChanged": false,
+    "d5GeometryChanged": true,
+    "roomCCupboardGeometryChanged": false,
+    "roomCPartitionGeometryChanged": false,
+    "roomAScaledOrDeformed": false,
+    "globalSolvePerformed": false,
+    "roomReconstructionPerformed": false,
+    "threeDimensionalWorkStarted": false,
+    "promotedToFinalOrConstructionLocked": false,
+    "approvedRoomAOrientationChanged": false,
+    "doorObjectDimensionsChanged": false,
+    "d5ShellOrObjectGeometryChanged": true,
+    "d5CompositionChanged": true,
+    "repositoryCleanupPerformed": false,
+    "modelling3DStarted": false,
+    "roomAMovementFromV12Mm": 0,
+    "roomCMovementFromV12Mm": 0,
+    "roomBShellMovementFromV12Mm": 0,
+    "wcShellMovementFromV12Mm": 0,
+    "d2MovementFromV12Mm": 0,
+    "d3MovementFromV12Mm": 0,
+    "b05MovementFromV12Mm": 0,
+    "cupboardsMovementFromV12Mm": 0,
+    "roomCPartitionMovementFromV12Mm": 0,
+    "d5ObjectGeometryChanged": true,
+    "d5ShellGeometryChanged": false,
+    "d5MaximumObjectNodeMovementMm": 8.7847
+  },
+  "unresolved": [],
+  "integrity": {
+    "roomAUnchanged": true,
+    "roomCUnchanged": true,
+    "roomBWCUnchanged": true,
+    "d2Unchanged": true,
+    "d3Unchanged": true,
+    "roomCObjectsUnchanged": true,
+    "d5CasingUnchanged": true,
+    "d5LeafCentreUnchanged": true,
+    "d5LeafWidthChangeMm": 0.000398364
+  },
+  "approvedCarryForward": {
+    "roomAOrientation": {
+      "approved": true,
+      "rotationDegreesFromPreV11Position": -0.854961637,
+      "pivotMm": {
+        "x": 4432.69,
+        "y": -961.175
+      },
+      "changedInV12": false
+    },
+    "roomBGeometryChanged": false,
+    "roomBReturnD3BRToB05Mm": 136,
+    "wcMainShellChanged": false,
+    "roomCGeometryChanged": false,
+    "d2RegistrationChanged": false,
+    "d3RegistrationChanged": false,
+    "cupboardsChanged": false,
+    "roomCPartitionChanged": false,
+    "continuousUpperRoomCWallRetained": true
+  },
+  "d5Cleanup": {
+    "classification": "outer-casing wall-junction composition correction plus tiny leaf-object alignment; no shell adjustment",
+    "oneOpening": true,
+    "opensInto": "WC",
+    "noWallAcrossOpening": true,
+    "straightReading": "Room B and WC casing faces remain parallel, one continuous reveal zone connects them, and the physical leaf is now parallel to the 90 degree doorway family.",
+    "doorwayZoneCornersMm": [
+      {
+        "x": 4979.843,
+        "y": 239.859
+      },
+      {
+        "x": 5100.347,
+        "y": 232.783
+      },
+      {
+        "x": 5100.347,
+        "y": 1133.675
+      },
+      {
+        "x": 4979.843,
+        "y": 1115.525
+      }
+    ],
+    "roomBCasingBearingDegrees": 90,
+    "wcCasingBearingDegrees": 90,
+    "casingParallelDifferenceDegrees": 0,
+    "opposingFaceCentreSeparationMm": 120.6311,
+    "topEndpointBridgeMm": 120.7116,
+    "bottomEndpointBridgeMm": 121.8632,
+    "roomBReturnTermination": "B0.5-B1 ends at Room B top casing endpoint B1; B2-B3 begins at Room B bottom casing endpoint B2",
+    "wcReturnTermination": "T0-T1 begins at WC top casing endpoint T0; T3-D5-WCL ends at WC bottom casing endpoint D5-WCL",
+    "overheadBulkhead": {
+      "observed": true,
+      "interpretation": "shallow cover/boxed ceiling wall crossing at high level",
+      "planTreatment": "documented but not drawn as a floor-level wall and does not interrupt D5",
+      "dimensionsKnown": false
+    },
+    "geometryAdjustmentMm": 8.7847,
+    "geometryAdjustmentScope": "D5 leaf-related object coordinates only",
+    "predecessorCompositionOnlyStatementSuperseded": true
+  },
+  "remainingIssues": [
+    "D1 actual leaf width and exact lateral leaf/lining position remain unmeasured; the recorded 781 mm clear opening is still used only as a schematic leaf proxy.",
+    "D3 opposing structural reveal and D4 structural reveal remain unmeasured.",
+    "The shallow high-level D5 cover/bulkhead is photographically/contextually observed but its exact 3D dimensions and extent are unmeasured.",
+    "The accepted Room A orientation retains the documented 0.855 degree difference between the separate D2 A-side casing and fixed Room C opening layers."
+  ],
+  "d5WallJunction": {
+    "classification": "composition and layer-selection correction; shell unchanged",
+    "roomBWallTerminationBoundary": "Room B outer casing endpoints B1/outerLeft and B2/outerRight",
+    "wcWallTerminationBoundary": "WC outer casing endpoints T0/outerRight and D5-WCL/outerLeft",
+    "changeFromV12": "Retains the continuous reveal zone but makes the wall-to-doorway boundary explicit at the outer casing edges; leaf endpoints no longer control wall termination.",
+    "noWallAcrossOpening": true,
+    "roomsAdjoinThroughOneOpening": true,
+    "shellMovementMm": 0
+  },
+  "d5DoorAlignment": {
+    "cause": "inherited local D5 object-angle error: top and bottom physical-leaf coordinates used different x positions, producing a diagonal 88.678 degree black leaf line even though both doorway casing faces are vertical",
+    "correctionType": "tiny D5 object-only rigid orientation correction; leaf and visible face straightened about their preserved centres",
+    "v12PhysicalLeafBearingDegrees": 88.677863,
+    "v13PhysicalLeafBearingDegrees": 90,
+    "referenceDoorwayBearingDegrees": 90,
+    "reference": "parallel 90 degree Room B and WC casing/wall family",
+    "physicalLeafWidthBeforeMm": 760.9996,
+    "physicalLeafWidthAfterMm": 761,
+    "physicalLeafCentreMovementMm": 0,
+    "hingeSideChanged": false,
+    "swingDestinationChanged": false,
+    "movementByObjectNodeMm": {
+      "sharedLeaf.leafTop / roomBD5.doorLeft / wcD5.doorRight": {
+        "before": {
+          "x": 5059.726,
+          "y": 293.826
+        },
+        "after": {
+          "x": 5068.501,
+          "y": 293.73
+        },
+        "deltaMm": {
+          "x": 8.775,
+          "y": -0.096
+        },
+        "magnitudeMm": 8.7755
+      },
+      "sharedLeaf.leafBottom / roomBD5.doorRight / wcD5.doorLeft": {
+        "before": {
+          "x": 5077.285,
+          "y": 1054.623
+        },
+        "after": {
+          "x": 5068.501,
+          "y": 1054.73
+        },
+        "deltaMm": {
+          "x": -8.784,
+          "y": 0.107
+        },
+        "magnitudeMm": 8.7847
+      },
+      "roomBD5.visibleDoorLeft": {
+        "before": {
+          "x": 5059.84,
+          "y": 298.868
+        },
+        "after": {
+          "x": 5068.3405,
+          "y": 298.7685
+        },
+        "deltaMm": {
+          "x": 8.5005,
+          "y": -0.0995
+        },
+        "magnitudeMm": 8.5011
+      },
+      "roomBD5.visibleDoorRight": {
+        "before": {
+          "x": 5076.841,
+          "y": 1035.525
+        },
+        "after": {
+          "x": 5068.3405,
+          "y": 1035.6245
+        },
+        "deltaMm": {
+          "x": -8.5005,
+          "y": 0.0995
+        },
+        "magnitudeMm": 8.5011
+      },
+      "sharedLeaf / roomBD5 / wcD5 doorCentre": {
+        "before": {
+          "x": 5068.501,
+          "y": 674.23
+        },
+        "after": {
+          "x": 5068.501,
+          "y": 674.23
+        },
+        "deltaMm": {
+          "x": 0,
+          "y": 0
+        },
+        "magnitudeMm": 0
+      }
+    },
+    "maximumObjectNodeMovementMm": 8.7847,
+    "casingGeometryChanged": false,
+    "casingAndWallSideRevealBoundaryGeometryChanged": false,
+    "leafSideRevealEndpointsFollowedStraightenedLeaf": true,
+    "dependentDerivedRevealDepthsMm": {
+      "roomBBefore": {
+        "top": 80,
+        "bottom": 97
+      },
+      "roomBAfter": {
+        "top": 88.4965,
+        "bottom": 88.4965
+      },
+      "wcBefore": {
+        "top": 40.622,
+        "bottom": 23.065
+      },
+      "wcAfter": {
+        "top": 31.846,
+        "bottom": 31.846
+      },
+      "interpretation": "The fixed opposing faces remain distinct; straightening about the leaf/visible-face centres replaces the former skewed endpoint depths with each face average."
+    },
+    "roomBShellChanged": false,
+    "wcShellChanged": false,
+    "conclusion": "D5 now sits straight/flush between Room B and WC rather than diagonally through the wall assembly."
+  },
+  "d3WallJunction": {
+    "classification": "composition-only casing-boundary/reveal-zone clarification",
+    "roomCWallTerminationBoundary": "Room C D3 outer casing endpoints D3-OUTER-R and D3-OUTER-L-CORNER/D3-CL",
+    "roomBWallTerminationBoundary": "Room B D3 outer casing endpoints B0/outerLeft and D3-BR/outerRight",
+    "changeFromV12": "Adds a clearly coded doorway/reveal zone and outer jamb bridges between the distinct Room C and Room B casing faces; no wall is angled between unlike casing endpoints.",
+    "casingAsymmetryRetained": true,
+    "roomCCasingWidthMm": 885,
+    "roomBCasingWidthMm": 852.121,
+    "d3RegistrationChanged": false,
+    "d3AxisChanged": false,
+    "sharedLeafChanged": false,
+    "roomCShellChanged": false,
+    "roomBShellChanged": false
+  },
+  "humanMarkupVerification": {
+    "reference": "grey-showing-wall-relationship-between-rooms.jpg (conversation attachment; drafting-intent only, no pixel dimensions used)",
+    "geometryDerivedFromMarkup": false,
+    "reviewedAgainstEnlargedD3AndD5Views": true,
+    "conclusion": "v1.3 already matches the human drafting intent; no v1.4 or composition change is required",
+    "wallTerminatesAtOuterCasingNotLeaf": true,
+    "revealZonesBridgeDistinctFaces": true,
+    "noWallAcrossD3OrD5": true,
+    "d5LeafBearingDegrees": 90,
+    "d3CasingAsymmetryRetained": true,
+    "endpointCoincidenceMm": {
+      "D5": {
+        "roomBTopWallToOuterCasing": 0,
+        "roomBBottomWallToOuterCasing": 0,
+        "wcTopWallToOuterCasing": 0,
+        "wcBottomWallToOuterCasing": 0
+      },
+      "D3": {
+        "roomCLeftWallToOuterCasing": 0,
+        "roomCRightWallToOuterCasingCorner": 0,
+        "roomBLeftWallToOuterCasing": 0,
+        "roomBReturnToOuterCasing": 0
+      }
+    },
+    "geometryMovementForMarkupReviewMm": 0
+  },
+  "remainingIssuesPreventingFinal2DApproval": [],
+  "nonBlockingFutureDetailMeasurements": [
+    "D1 actual leaf width and exact lateral leaf/lining position.",
+    "D3 opposing structural reveal and D4 structural reveal dimensions.",
+    "Exact 3D dimensions and extent of the shallow high-level D5 cover/bulkhead.",
+    "The already accepted 0.855 degree D2 A-side casing versus fixed Room C opening-layer difference remains documented."
+  ],
+  "freeze": {
+    "frozenForNextStage": true,
+    "designation": "PRE-FINAL 2D FIELD-VALIDATION CANDIDATE",
+    "scope": "v1.3 geometry and doorway composition frozen pending the separate whole-flat field-validation programme",
+    "fieldValidationPackageGenerated": false,
+    "repositoryCleanupPerformed": false,
+    "modelling3DStarted": false
+  }
+}

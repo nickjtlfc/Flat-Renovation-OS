@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1500" viewBox="0 0 2100 1500" role="img" aria-labelledby="title desc">
+  <title id="title">A/C/B/WC D3 rigid registration diagnostic v0.1</title>
+  <desc id="desc">Frozen A/C v0.2 frame with accepted Room B/WC P1 rigidly placed through the shared D3 leaf layer. D3 casing faces remain distinct. A thick-wall continuation is shown only as a diagnostic hypothesis.</desc>
+  <defs><style>
+    .page{fill:#fff;stroke:#0f172a;stroke-width:3}.panel{fill:#f8fafc;stroke:#94a3b8;stroke-width:2}.title{font:700 30px Arial,sans-serif;fill:#0f172a}.sub{font:16px Arial,sans-serif;fill:#334155}.warn{font:700 16px Arial,sans-serif;fill:#9f1239}.roomA{fill:#fff7ed;stroke:none}.roomC{fill:#eff6ff;stroke:none}.roomB{fill:#ecfdf5;stroke:none}.wc{fill:#f0fdfa;stroke:none}.wallA{stroke:#c2410c;stroke-width:7}.wallC{stroke:#1e3a8a;stroke-width:7}.wallB{stroke:#047857;stroke-width:7}.wallWC{stroke:#0f766e;stroke-width:7}.return{stroke:#7c3aed;stroke-width:12}.partition{fill:#e9d5ff;stroke:#7e22ce;stroke-width:3}.d2{fill:#fee2e2;stroke:#b91c1c;stroke-width:2}.openingC{stroke:#0f766e;stroke-width:10}.openingA{stroke:#2563eb;stroke-width:8}.casingC{stroke:#d97706;stroke-width:9}.casingB{stroke:#059669;stroke-width:9;stroke-dasharray:10 5}.leafC{stroke:#166534;stroke-width:7}.leafB{stroke:#2563eb;stroke-width:7}.window{stroke:#0284c7;stroke-width:9}.door{stroke:#d97706;stroke-width:9}.node{fill:#fff;stroke:#0f172a;stroke-width:2}.nodeB{fill:#fff;stroke:#047857;stroke-width:2}.label{font:700 12px Arial,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.labelB{font:700 12px Arial,sans-serif;fill:#065f46;paint-order:stroke;stroke:#fff;stroke-width:4px}.roomLabel{font:700 21px Arial,sans-serif}.hypothesis{fill:#fef3c7;fill-opacity:.55;stroke:#ca8a04;stroke-width:3;stroke-dasharray:10 7}.construction{stroke:#ca8a04;stroke-width:2;stroke-dasharray:7 6}.dimension{stroke:#be123c;stroke-width:2;marker-start:url(#back);marker-end:url(#arrow)}.sideHead{font:700 20px Arial,sans-serif;fill:#0f172a}.side{font:14px Arial,sans-serif;fill:#1f2937}.small{font:12px Arial,sans-serif;fill:#475569}.good{fill:#166534;font-weight:700}.callout{fill:#f0fdf4;stroke:#16a34a;stroke-width:2}.uncertain{fill:#fffbeb;stroke:#d97706;stroke-width:2}
+  </style><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#be123c"/></marker><marker id="back" markerWidth="7" markerHeight="7" refX="1" refY="3.5" orient="auto"><path d="M7 0 L0 3.5 L7 7 Z" fill="#be123c"/></marker></defs>
+  <rect x="12" y="12" width="2076" height="1476" rx="12" class="page"/>
+  <text x="48" y="55" class="title">GLOBAL RECONCILIATION · A/C/B/WC D3 RIGID REGISTRATION DIAGNOSTIC · v0.1</text>
+  <text x="48" y="84" class="sub">A/C v0.2 frozen · Room B/WC P1 rigid transform only · shared D3 leaf registered · +Y down drawing convention</text>
+  <text x="48" y="112" class="warn">HUMAN REVIEW ONLY — NOT FINAL WHOLE-FLAT GEOMETRY — NO NODE MOVEMENT OR GLOBAL OPTIMISATION</text>
+  <rect x="30" y="140" width="1545" height="1320" rx="10" class="panel"/><rect x="1590" y="140" width="480" height="1320" rx="10" class="panel"/>
+
+  <polygon points="99.7,872 108.2,295.6 759.2,295.6 750.6,872" class="roomC"/><polygon points="799.4,221.3 1004.3,226.6 1001.7,270.5 1307,275.4 1306.7,233.9 1508.1,236.8 1498.2,903.6 789.4,893" class="roomA"/><polygon points="616.2,888.2 750,888.2 748.4,926.5 877,926.7 868.7,1063.2 860.9,1253.1 601.5,1239.7" class="roomB"/><polygon points="895.8,926.7 1152.4,927.1 1151.3,1095.4 888.2,1094.1 887.4,1067.1" class="wc"/><polygon points="350.4,295.6 345,659.6 753.8,659.6 754.1,639.4 364.6,639.4 369.7,295.6" class="partition"/><polygon points="753.8,661.2 752,781.4 791,782 792.8,661.7" class="d2"/><polygon points="750.6,872 791.9,721.9 788.9,926.5 749.8,926.5" class="hypothesis"/>
+  <line x1="99.7" y1="872" x2="108.2" y2="295.6" class="wallC"/><line x1="108.2" y1="295.6" x2="350.4" y2="295.6" class="wallC"/><line x1="369.7" y1="295.6" x2="641.3" y2="295.6" class="wallC"/><line x1="759.2" y1="295.6" x2="750.6" y2="872" class="wallC"/>
+  <line x1="99.7" y1="872" x2="151.2" y2="872" class="wallC"/><line x1="151.2" y1="872" x2="150.8" y2="897.7" class="wallC"/><line x1="150.8" y1="897.7" x2="349" y2="897.7" class="window"/><line x1="349" y1="897.7" x2="349.4" y2="872" class="wallC"/><line x1="349.4" y1="872" x2="435" y2="872" class="wallC"/><line x1="435" y1="872" x2="578.6" y2="872" class="door"/><line x1="578.6" y1="872" x2="612.4" y2="872" class="wallC"/>
+  <line x1="799.4" y1="221.3" x2="1004.3" y2="226.6" class="wallA"/><line x1="1004.3" y1="226.6" x2="1001.7" y2="270.5" class="wallA"/><line x1="1001.7" y1="270.5" x2="1307" y2="275.4" class="wallA"/><line x1="1307" y1="275.4" x2="1306.7" y2="233.9" class="wallA"/><line x1="1306.7" y1="233.9" x2="1508.1" y2="236.8" class="wallA"/><line x1="1508.1" y1="236.8" x2="1504.9" y2="456.5" class="wallA"/><line x1="1504.9" y1="456.5" x2="1501.5" y2="680.6" class="openingA"/><line x1="1501.5" y1="680.6" x2="1498.2" y2="903.6" class="wallA"/><line x1="1498.2" y1="903.6" x2="1415.9" y2="902.4" class="wallA"/><line x1="1415.9" y1="902.4" x2="1230.1" y2="899.6" class="openingA"/><line x1="1230.1" y1="899.6" x2="789.4" y2="893" class="wallA"/><line x1="789.4" y1="893" x2="790.7" y2="807.1" class="wallA"/><line x1="793.2" y1="636.6" x2="799.4" y2="221.3" class="wallA"/>
+  <line x1="752" y1="781.4" x2="753.8" y2="661.2" class="openingC"/><line x1="791" y1="782" x2="792.8" y2="661.7" class="openingC"/>
+  <line x1="616.2" y1="888.2" x2="750" y2="888.2" class="casingB"/><line x1="626.6" y1="872" x2="741.9" y2="872" class="leafB"/><line x1="612.4" y1="872" x2="750.6" y2="872" class="casingC"/><line x1="624.9" y1="872" x2="743.6" y2="872" class="leafC"/>
+  <line x1="750" y1="888.2" x2="748.4" y2="926.5" class="return"/><line x1="748.4" y1="926.5" x2="877" y2="926.7" class="wallB"/><line x1="877" y1="926.7" x2="868.7" y2="1063.2" class="door"/><line x1="868.7" y1="1063.2" x2="860.9" y2="1253.1" class="wallB"/><line x1="860.9" y1="1253.1" x2="601.5" y2="1239.7" class="wallB"/><line x1="601.5" y1="1239.7" x2="616.2" y2="888.2" class="wallB"/>
+  <line x1="895.8" y1="926.7" x2="1152.4" y2="927.1" class="wallWC"/><line x1="1152.4" y1="927.1" x2="1151.3" y2="1095.4" class="wallWC"/><line x1="1151.3" y1="1095.4" x2="888.2" y2="1094.1" class="wallWC"/><line x1="888.2" y1="1094.1" x2="887.4" y2="1067.1" class="wallWC"/><line x1="887.4" y1="1067.1" x2="895.8" y2="926.7" class="door"/>
+  <line x1="750.6" y1="872" x2="749.8" y2="926.5" class="construction"/><line x1="791.9" y1="721.9" x2="788.9" y2="926.5" class="construction"/><line x1="681.5" y1="872" x2="683.1" y2="888.2" class="dimension"/>
+
+  <circle cx="616.2" cy="888.2" r="4" class="nodeB"/><circle cx="750" cy="888.2" r="4" class="nodeB"/><circle cx="748.4" cy="926.5" r="4" class="nodeB"/><circle cx="877" cy="926.7" r="4" class="nodeB"/><circle cx="868.7" cy="1063.2" r="4" class="nodeB"/><circle cx="860.9" cy="1253.1" r="4" class="nodeB"/><circle cx="601.5" cy="1239.7" r="4" class="nodeB"/><circle cx="895.8" cy="926.7" r="4" class="nodeB"/><circle cx="1152.4" cy="927.1" r="4" class="nodeB"/><circle cx="1151.3" cy="1095.4" r="4" class="nodeB"/><circle cx="888.2" cy="1094.1" r="4" class="nodeB"/><circle cx="887.4" cy="1067.1" r="4" class="nodeB"/>
+  <text x="611.2" y="908.2" class="labelB" text-anchor="end">B0 / D3-BL</text><text x="757" y="906.2" class="labelB" text-anchor="start">D3-BR</text><text x="738.4" y="960.5" class="labelB" text-anchor="end">B0.5 · corner</text><text x="883" y="945.7" class="labelB" text-anchor="start">B1 / D5-BL</text><text x="763.2" y="907.3" class="labelB" text-anchor="start">249 mm return</text>
+  <text x="674.3" y="872.1" class="label" text-anchor="end">~104 mm derived face separation</text><text x="684.3" y="854" class="label" text-anchor="middle">D3 shared leaf centre</text>
+  <text x="805.9" y="725.9" class="label" text-anchor="start">D2 · frozen A/C join</text><text x="769.3" y="906.5" class="label" text-anchor="middle">~250 mm A–C face band extrapolation</text>
+  <text x="373" y="590.9" class="roomLabel" fill="#1e3a8a" text-anchor="middle">ROOM C · FIXED</text>
+  <text x="1177.2" y="590.9" class="roomLabel" fill="#9a3412" text-anchor="middle">ROOM A · FROZEN v0.2</text>
+  <text x="760.4" y="1026.5" class="roomLabel" fill="#047857" text-anchor="middle">ROOM B · RIGIDLY PLACED</text>
+  <text x="995" y="1022.1" class="roomLabel" fill="#0f766e" text-anchor="middle">WC</text>
+
+  <text x="1620" y="185" class="sideHead">Rigid D3 registration</text>
+  <text x="1620" y="216" class="side">C D3 axis: <tspan font-weight="700">0.000000°</tspan></text>
+  <text x="1620" y="242" class="side">B D3 axis: <tspan font-weight="700">0.000000°</tspan></text>
+  <text x="1620" y="268" class="side">Pre-fit angular difference: <tspan class="good">0.000000°</tspan></text>
+  <text x="1620" y="294" class="side">Applied rotation: <tspan font-weight="700">0.000000°</tspan></text>
+  <text x="1620" y="320" class="side">Translation: <tspan font-weight="700">3307.32, 104.20 mm</tspan></text>
+  <text x="1620" y="346" class="small">Scale 1 · determinant +1 · no reflection</text>
+
+  <text x="1620" y="388" class="sideHead">D3 layers</text>
+  <text x="1620" y="419" class="side">B casing / C casing: <tspan font-weight="700">857.05 / 885.00</tspan></text>
+  <text x="1620" y="445" class="side">B visible face / C leaf: <tspan font-weight="700">738 / 760</tspan></text>
+  <text x="1620" y="471" class="side">Leaf centre mismatch: <tspan class="good">0.00 mm</tspan></text>
+  <text x="1620" y="497" class="side">Leaf end offsets: <tspan class="good">11.00 / 11.00 mm</tspan></text>
+  <text x="1620" y="523" class="side">Casing centre: +10.01 along</text>
+  <text x="1620" y="549" class="side">Derived wall-face separation: <tspan font-weight="700">104.20 mm</tspan></text>
+  <text x="1620" y="573" class="small">Opposite faces; C reveal depth remains unmeasured.</text>
+
+  <text x="1620" y="615" class="sideHead">Local directions</text>
+  <text x="1620" y="646" class="side">D3-BR→B0.5: <tspan font-weight="700">92.427°</tspan></text>
+  <text x="1620" y="672" class="side">vs C shared wall: <tspan class="good">1.573°</tspan></text>
+  <text x="1620" y="698" class="side">B0.5→B1: <tspan font-weight="700">0.095°</tspan></text>
+  <text x="1620" y="724" class="side">vs C lower wall: <tspan class="good">0.095°</tspan></text>
+
+  <rect x="1610" y="760" width="440" height="235" rx="8" class="uncertain"/>
+  <text x="1630" y="795" class="sideHead">Thick-wall hypothesis</text>
+  <text x="1630" y="827" class="side"><tspan class="good">Plausibly supported</tspan>, not accepted geometry.</text>
+  <text x="1630" y="855" class="side">Return to extrapolated C face: 2.4–9.1 mm</text>
+  <text x="1630" y="883" class="side">B0.5 to extrapolated A face: 259.1 mm</text>
+  <text x="1630" y="911" class="side">Extrapolated face-band depth: 250.0 mm</text>
+  <text x="1630" y="940" class="small">Gold construction overlay is diagnostic only.</text>
+  <text x="1630" y="966" class="small">D3 opposing-face depth still requires measurement.</text>
+
+  <rect x="1610" y="1030" width="440" height="165" rx="8" class="callout"/>
+  <text x="1630" y="1065" class="sideHead">Assessment</text>
+  <text x="1630" y="1098" class="side"><tspan class="good">Compatible</tspan> with explainable</text>
+  <text x="1630" y="1125" class="side">opposite-face/casing differences.</text>
+  <text x="1630" y="1155" class="small">No Room B local orientation correction indicated.</text>
+  <text x="1630" y="1181" class="small">A/C and D2 remain frozen.</text>
+
+  <text x="1620" y="1240" class="sideHead">Preservation</text>
+  <text x="1620" y="1272" class="side">A movement: 0.00 mm · C movement: 0.00 mm</text>
+  <text x="1620" y="1298" class="side">B/WC deformation: 0.00 mm</text>
+  <text x="1620" y="1324" class="side">Room B projects down: <tspan class="good">yes</tspan></text>
+  <text x="1620" y="1350" class="side">WC below/right of junction: <tspan class="good">yes</tspan></text>
+  <text x="1620" y="1395" class="small">Room B/WC P1 remains one rigid body.</text>
+  <text x="1620" y="1420" class="small">Stop for human review; no global solve.</text>
+</svg>

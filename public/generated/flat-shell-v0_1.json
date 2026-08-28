@@ -1,0 +1,3796 @@
+{
+  "documentType": "deterministic first 3D construction shell",
+  "version": "0.1",
+  "generatedDate": "2026-08-13",
+  "status": "FIRST 3D CONSTRUCTION SHELL — HUMAN VISUAL REVIEW REQUIRED",
+  "classificationVocabulary": [
+    "existing-permanent",
+    "existing-removable",
+    "proposed"
+  ],
+  "sourceAuthority": {
+    "horizontalGeometry": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_FINAL_2D_WORKING_SHELL_v1_0.json",
+    "horizontalGeometrySha256": "987008064D0D5D262026AA264CC3136633259AC577AD01E9973CFD519DB03B48",
+    "promotedGeometrySha256": "BF90135506785ABAB61FD79F37616F33F00EB2C6B6CEEDF01CFF1846465B90C0",
+    "topologyAndFeatureGrouping": [
+      "docs/survey/derived/room-a/ROOM_A_FINAL_2D_WORKING_BASELINE_v1_0.json",
+      "docs/survey/derived/room-b-wc/ROOM_B_WC_FINAL_2D_WORKING_BASELINE_v1_0.json",
+      "docs/survey/derived/room-c/ROOM_C_FINAL_2D_WORKING_BASELINE_v1_0.json"
+    ],
+    "verticalModel": "data/3d/vertical-model-v0_1.json",
+    "surveyValidationModel": "data/3d/survey-validation-v0_1.json",
+    "sourceFiles": {
+      "whole": {
+        "path": "docs/survey/derived/global-reconciliation/WHOLE_FLAT_FINAL_2D_WORKING_SHELL_v1_0.json",
+        "sha256": "987008064D0D5D262026AA264CC3136633259AC577AD01E9973CFD519DB03B48"
+      },
+      "roomA": {
+        "path": "docs/survey/derived/room-a/ROOM_A_FINAL_2D_WORKING_BASELINE_v1_0.json",
+        "sha256": "AF7821054811E09A7B91C8E50808CD9AA9C867A524F1339D20B4ABF335FBCC3B"
+      },
+      "roomB": {
+        "path": "docs/survey/derived/room-b-wc/ROOM_B_WC_FINAL_2D_WORKING_BASELINE_v1_0.json",
+        "sha256": "1AEA1845F084C20C56A34AC12FE991CBCE618DC9485BD901EBA9307042F27582"
+      },
+      "roomC": {
+        "path": "docs/survey/derived/room-c/ROOM_C_FINAL_2D_WORKING_BASELINE_v1_0.json",
+        "sha256": "D5AC2949E31F207E449D5EE9444DD7EB678301E650F2A7D58BEF8A3F7A1F36EF"
+      },
+      "vertical": {
+        "path": "data/3d/vertical-model-v0_1.json",
+        "sha256": "471A95E4C460F148E3F8059009967B6D8E3A202ECB31CDDF95C33A3E8BCDA17B"
+      },
+      "validation": {
+        "path": "data/3d/survey-validation-v0_1.json",
+        "sha256": "3B76C5D307FD2A9371A66B54E44701BB4D43D32313550F6934870C437184F069"
+      }
+    },
+    "transformChecksMaximumDeltaMm": {
+      "RoomA": 0,
+      "RoomBWC": 9.099386826154683e-13,
+      "RoomC": 0
+    }
+  },
+  "coordinateSystem": {
+    "sourceHorizontalAxes": "Promoted 2D x/y are retained without rotation or reflection.",
+    "sceneAxes": "source x -> scene X; elevation -> scene Y; source y -> scene Z",
+    "sourceOrigin": "Room C C0 = (0, 0) mm; finished floor level = elevation 0 mm",
+    "renderUnits": "metres",
+    "conversion": "1 source millimetre = 0.001 render metre"
+  },
+  "renderConventions": {
+    "wallVisualThicknessMm": 80,
+    "floorVisualThicknessMm": 40,
+    "ceilingVisualThicknessMm": 30,
+    "doorLeafVisualThicknessMm": 40,
+    "windowVisualThicknessMm": 24,
+    "windowFrameRailMm": 40,
+    "doorCasingVisualDepthMm": 110,
+    "doorRevealVisualThicknessMm": 18,
+    "cupboardPanelThicknessMm": 20,
+    "classificationNote": "Visual thicknesses are renderer conventions, not claims about concealed structural build-up."
+  },
+  "verticalModel": {
+    "roomCeilings": {
+      "RoomA": {
+        "modelHeightMm": 3167,
+        "modelStatus": "temporary flat working plane at one measured station",
+        "selectedEvidence": "SUP-054, finished floor to ceiling at W1-AR area = 3167 mm",
+        "allMeasuredStationRangeMm": [
+          3122,
+          3169
+        ],
+        "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+      },
+      "RoomB": {
+        "modelHeightMm": 2281,
+        "modelStatus": "temporary flat general ceiling; stair soffit deliberately omitted",
+        "selectedEvidence": "SUP-075, finished floor to ceiling at B4-B0 clear wall area = 2281 mm",
+        "otherMeasuredStationMm": 2274,
+        "source": "docs/survey/ROOM_B_EVIDENCE_v1.md"
+      },
+      "WC": {
+        "modelHeightMm": 2289,
+        "modelStatus": "temporary flat working plane at one measured station",
+        "selectedEvidence": "SUP-077, finished floor to ceiling at T0/D5-WCR area = 2289 mm",
+        "otherMeasuredStationMm": 2277,
+        "source": "docs/survey/ROOM_WC_EVIDENCE_v1.md"
+      },
+      "RoomC": {
+        "modelHeightMm": 2631,
+        "modelStatus": "temporary flat working plane at the measured D4/W2 high station",
+        "selectedEvidence": "D4 floor-to-ceiling = 2631 mm; corrected W2 chain also totals approximately 2631 mm",
+        "allMeasuredStationRangeMm": [
+          2594,
+          2631
+        ],
+        "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      }
+    },
+    "doors": {
+      "D1": {
+        "openingHeightMm": 2030,
+        "leafHeightMm": 2030,
+        "leafHeightStatus": "temporary proxy because the physical leaf height was not separately measured",
+        "casingTopMm": 2321,
+        "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+      },
+      "D2": {
+        "openingHeightMm": 1975,
+        "leafHeightMm": 1975,
+        "openingHeightStatus": "temporary 4 mm accommodation of the measured Room C leaf; Room A clear opening is 1971 mm",
+        "casingTopMm": 2140,
+        "roomACasingProjectionMm": 37,
+        "roomCCasingStatus": "exact Room C casing/rebate extent remains unmeasured; render the measured opening and through-reveal without invented trim",
+        "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md and accepted Room C vertical evidence"
+      },
+      "D3": {
+        "openingHeightMm": 1987,
+        "leafHeightMm": 1987,
+        "casingTopMm": 2067,
+        "roomBCasingTopMm": 2076,
+        "casingTopStatus": "derived as measured leaf height plus approximately 80 mm upper casing",
+        "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      },
+      "D4": {
+        "openingHeightMm": 1987,
+        "leafHeightMm": 1987,
+        "casingTopMm": 2067,
+        "casingTopStatus": "derived as measured leaf height plus 80 mm upper casing",
+        "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      },
+      "D5": {
+        "openingHeightMm": 1974,
+        "leafHeightMm": 1974,
+        "roomBCasingTopMm": 2157,
+        "wcCasingTopMm": 2064,
+        "wcCasingAboveDoorTopMm": 90,
+        "wcCasingProjectionMm": 30,
+        "wcObservedCasingTopToCeilingMm": 226,
+        "wcSelectedCeilingModelClearanceMm": 225,
+        "wcVerticalClosureNote": "The direct 90 mm casing-above-door observation places the casing top at 2064 mm from the existing 1974 mm opening/leaf datum. The selected flat WC ceiling is 2289 mm, so rendered clearance is 225 mm; the direct local clearance observation is 226 mm, a retained 1 mm field/model closure difference.",
+        "source": "docs/survey/ROOM_B_EVIDENCE_v1.md and docs/survey/ROOM_WC_EVIDENCE_v1.md"
+      }
+    },
+    "windows": {
+      "W1": {
+        "sillMm": 986,
+        "headMm": 2873,
+        "openingHeightMm": 1887,
+        "verticalPlacementStatus": "temporary: recorded 1887 mm window height is placed with its head at the recorded 2873 mm outer-casing top because no sill datum was recorded",
+        "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md"
+      },
+      "W2": {
+        "sillMm": 1040,
+        "headMm": 2556,
+        "openingHeightMm": 1516,
+        "verticalPlacementStatus": "existing approximate sill/overall-height datums retained; direct 2026-08-14 field observation confirms a permanent upper wall strip",
+        "observedUpperWallStripHeightMm": 72,
+        "observedUpperWallStripStatus": "direct field observation, approximate; supersedes the earlier provisional approximately 70 mm description and the active approximate 75 mm top-clearance interpretation",
+        "selectedCeilingModelClosureMm": 75,
+        "fieldModelClosureDifferenceMm": 3,
+        "closureNote": "The protected 2556 mm W2 top and 2631 mm Room C working ceiling produce a 75 mm generated band. The new approximate 72 mm field observation is retained with a 3 mm closure difference; neither protected datum is moved in the explicit upper/lower wall-infill completion.",
+        "source": "2026-08-14 human field observation and photograph; prior vertical provenance in docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      }
+    },
+    "cupboards": {
+      "CP1": {
+        "bodyBaseMm": 1315,
+        "bodyHeightMm": 1261,
+        "topTrimHeightMm": 30,
+        "topTrimStatus": "lower bound of the observed approximately 30-40 mm range",
+        "lowerServiceEnclosure": {
+          "panelBaseMm": 0,
+          "panelTopMm": 1315,
+          "panelDepthMm": 10,
+          "accessAssemblyWidthMm": 722,
+          "accessLeafWidthMm": 560,
+          "accessHeightMm": 772,
+          "leftCasingWidthMm": 80,
+          "rightCasingWidthMm": 80,
+          "topCasingPresent": false,
+          "cp1FLToLeftOuterCasingMm": 535,
+          "po1ToRightOuterCasingMm": 243,
+          "placementControl": "left outer casing station measured 535 mm from CP1-FL; the 722 mm assembly width is retained, producing a model-implied 293.7 mm right-side offset from PO1",
+          "conflictingRightStationStatus": "the earlier 243 mm PO1-to-right-outer-casing observation remains unresolved local field evidence pending the next Room C / CP1 / partition investigation",
+          "lipHeightMm": 50,
+          "lipProjectionMm": 60,
+          "waterInletReferenceHeightMm": 150,
+          "waterInletVisualDiameterMm": 18,
+          "waterInletLocationStatus": "approximate right-hand service-area reference only; diameter is a visual convention and detailed routing/fittings are not inferred",
+          "existingConditionStatus": "existing joinery/service enclosure",
+          "futureDesignNote": "The lower CP1 enclosure/front panel is a possible future alteration or removal area during design exploration, potentially exposing/opening the service area; retain it in the current existing-condition shell.",
+          "source": "2026-08-15 human field dimensions and 2026-08-14 photographs"
+        },
+        "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      },
+      "CP2": {
+        "bodyBaseMm": 0,
+        "bodyTopMm": 2148,
+        "bodyBaseStatus": "temporary assumption: fixed body extends to finished floor because its lower datum/body height was not measured",
+        "upperClosureTopMm": 2631,
+        "upperClosureStatus": "temporary simple enclosed casing/build-up from the measured 2148 mm cupboard top to the selected 2631 mm Room C working ceiling; exact top-casing thickness and internal composition remain unmeasured",
+        "source": "docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md"
+      }
+    },
+    "removablePartition": {
+      "baseMm": 0,
+      "topMm": 2631,
+      "heightStatus": "temporary full-height representation; no separate partition-top datum was located",
+      "classification": "existing-removable"
+    }
+  },
+  "assumptions": [
+    "Each room uses one documented flat working ceiling plane selected from a measured station; differing station readings remain preserved in the vertical model.",
+    "Wall/floor/ceiling/leaf thicknesses are visual renderer conventions, not concealed-construction measurements.",
+    "temporary proxy because the physical leaf height was not separately measured",
+    "temporary 4 mm accommodation of the measured Room C leaf; Room A clear opening is 1971 mm",
+    "temporary: recorded 1887 mm window height is placed with its head at the recorded 2873 mm outer-casing top because no sill datum was recorded",
+    "temporary assumption: fixed body extends to finished floor because its lower datum/body height was not measured",
+    "temporary simple enclosed casing/build-up from the measured 2148 mm cupboard top to the selected 2631 mm Room C working ceiling; exact top-casing thickness and internal composition remain unmeasured",
+    "temporary full-height representation; no separate partition-top datum was located"
+  ],
+  "deferredFeatures": [
+    {
+      "id": "ROOM-B-SOFFIT",
+      "status": "intentionally omitted from first 3D shell",
+      "statement": "Room B is temporarily represented with a flat ceiling at 2281 mm. The recorded soffit presence and 192 mm start-location observation remain evidence for a later dedicated modelling task."
+    },
+    {
+      "id": "D5-HIGH-LEVEL-BULKHEAD",
+      "status": "omitted because exact 3D extent is unmeasured"
+    }
+  ],
+  "surveyValidation": {
+    "nodes": [
+      {
+        "id": "A2",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 5732.9117,
+          "y": -3870.9017,
+          "elevation": 0
+        },
+        "description": "Room A A2 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A3",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 7687.9103,
+          "y": -3868.563,
+          "elevation": 0
+        },
+        "description": "Room A A3 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A0",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4432.645,
+          "y": -4166.9873,
+          "elevation": 0
+        },
+        "description": "Room A A0 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A1",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 5733.2641,
+          "y": -4165.4314,
+          "elevation": 0
+        },
+        "description": "Room A A1 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A4",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 7681.7882,
+          "y": -4134.3306,
+          "elevation": 0
+        },
+        "description": "Room A A4 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A5",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 8971.9705,
+          "y": -4135.4771,
+          "elevation": 0
+        },
+        "description": "Room A A5 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A6",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 8971.942,
+          "y": 134.9958,
+          "elevation": 0
+        },
+        "description": "Room A A6 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "A7",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4432.6987,
+          "y": 134.9958,
+          "elevation": 0
+        },
+        "description": "Room A A7 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "W1-AL",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 8971.9671,
+          "y": -2728.2661,
+          "elevation": 0
+        },
+        "description": "Room A W1-AL measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "W1-AR",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 8971.9501,
+          "y": -1292.9052,
+          "elevation": 0
+        },
+        "description": "Room A W1-AR measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "D1-AL",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 8444.8216,
+          "y": 134.9952,
+          "elevation": 0
+        },
+        "description": "Room A D1-AL measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "D1-AR",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 7255.0007,
+          "y": 134.992,
+          "elevation": 0
+        },
+        "description": "Room A D1-AR measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "D2-AL",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4432.6966,
+          "y": -415.0046,
+          "elevation": 0
+        },
+        "description": "Room A D2-AL measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "D2-AR",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4432.6834,
+          "y": -1507.3454,
+          "elevation": 0
+        },
+        "description": "Room A D2-AR measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomAFinalReviewMm"
+      },
+      {
+        "id": "C0",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 0,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C permanent finished-wall corner below CP1",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "D3-CL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4168.34,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C face of D3, viewer-left casing edge coincident with the permanent turning corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "CP1-FL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 54.99,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP1 viewer-left identifiable front outer footprint corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PO1",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 1605.69,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, open-room face top junction",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "CP1-FR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 1380.69,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP1 viewer-right identifiable front outer footprint corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PO2",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 1570.95,
+          "y": -1359.61,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, open-room face turning corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PO3",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 4188.6,
+          "y": -1359.61,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, open-room face lower end",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PI1",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 1729.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, bedroom face top junction",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PI2",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 1696.53,
+          "y": -1489.16,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, bedroom face turning corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "PI3",
+        "roomId": "ROOM-C",
+        "classification": "existing-removable",
+        "coordinateMm": {
+          "x": 4190.53,
+          "y": -1489.16,
+          "elevation": 0
+        },
+        "description": "Room C removable stud wall, bedroom face lower end",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "CP2-FL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3468.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP2 viewer-left identifiable front outer footprint corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "CP2-FR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4223.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP2 viewer-right identifiable front outer footprint corner at the A-C wall",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "C1",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 330,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C finished-wall return at the viewer-right side of W2",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "C2",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 1599,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C finished-wall return at the viewer-left side of W2",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "W2-CR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 327.54,
+          "y": 164.98,
+          "elevation": 0
+        },
+        "description": "Room C W2 viewer-right visible casing/opening edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "W2-CL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 1596.54,
+          "y": 164.98,
+          "elevation": 0
+        },
+        "description": "Room C W2 viewer-left visible casing/opening edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "D4-CR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 2147,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D4-CR measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "D4-CL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3048.67,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D4-CL measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "D3-CR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3266.67,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C face of D3, viewer-right outer casing edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "D2-CR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4176.98,
+          "y": -579.94,
+          "elevation": 0
+        },
+        "description": "Room C face of D2, viewer-right outer casing edge on the wall from D3-CL",
+        "sourceCollection": "whole.geometry.roomCUnchangedNodesMm"
+      },
+      {
+        "id": "CP1-BODY-FL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 54.99,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP1 cupboard-body front-left corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP1-BODY-FR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 1339.99,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP1 cupboard-body front-right corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP1-BODY-BL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 62.71,
+          "y": -4208.86,
+          "elevation": 0
+        },
+        "description": "CP1 cupboard-body rear-left corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP1-BODY-BR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 1347.71,
+          "y": -4208.86,
+          "elevation": 0
+        },
+        "description": "CP1 cupboard-body rear-right corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP2-CASING-FL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3468.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP2 viewer-left casing edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP2-BODY-FL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3488.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP2 cupboard-body front-left corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP2-BODY-FR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4196.33,
+          "y": -3690.92,
+          "elevation": 0
+        },
+        "description": "CP2 cupboard-body front-right corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP2-BODY-BL",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3496.32,
+          "y": -4226.86,
+          "elevation": 0
+        },
+        "description": "CP2 cupboard-body rear-left corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "CP2-BODY-BR",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4204.32,
+          "y": -4226.86,
+          "elevation": 0
+        },
+        "description": "CP2 cupboard-body rear-right corner",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D4-OUTER-R",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 2147,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D4-OUTER-R measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D4-OUTER-L",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3067,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D4-OUTER-L measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D4-LEAF-R",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 2227,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "D4 physical leaf endpoint, viewer-right from Room C",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D4-LEAF-L",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 2987,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "D4 physical leaf endpoint, viewer-left from Room C",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D3-OUTER-L-CORNER",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4168.34,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D3-OUTER-L-CORNER measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D3-OUTER-R",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3283.34,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "Room C D3-OUTER-R measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D3-LEAF-L",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4123.34,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "D3 physical leaf endpoint at the Room C turning-corner side",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D3-LEAF-R",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3363.34,
+          "y": 0,
+          "elevation": 0
+        },
+        "description": "D3 physical leaf endpoint at the D4 side",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-OPENING-R",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4176.98,
+          "y": -579.94,
+          "elevation": 0
+        },
+        "description": "Room C face of D2 structural opening, viewer-right edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-OPENING-L-INFERRED",
+        "roomId": "ROOM-C",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4188.45,
+          "y": -1349.85,
+          "elevation": 0
+        },
+        "description": "Room C face of D2 structural opening, inferred viewer-left edge",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-A-FACE-R",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4426.95,
+          "y": -576.22,
+          "elevation": 0
+        },
+        "description": "Room A face of D2 clear opening, viewer-right edge from Room C",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-A-FACE-L",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4438.43,
+          "y": -1346.13,
+          "elevation": 0
+        },
+        "description": "Room A face of D2 clear opening, viewer-left edge from Room C",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-LEAF-A-FACE-R-INFERRED",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4427.16,
+          "y": -590.22,
+          "elevation": 0
+        },
+        "description": "Room A D2-LEAF-A-FACE-R-INFERRED door-leaf reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "D2-LEAF-A-FACE-L-INFERRED",
+        "roomId": "ROOM-A",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4438.21,
+          "y": -1332.14,
+          "elevation": 0
+        },
+        "description": "Room A D2-LEAF-A-FACE-L-INFERRED door-leaf reference",
+        "sourceCollection": "whole.geometry.roomCUnchangedObjectNodesMm"
+      },
+      {
+        "id": "B0",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3309.78,
+          "y": 103.859,
+          "elevation": 0
+        },
+        "description": "Room B B0 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "D3-BR",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4161.901,
+          "y": 103.859,
+          "elevation": 0
+        },
+        "description": "Room B D3-BR measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "B0.5",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4161.901,
+          "y": 239.859,
+          "elevation": 0
+        },
+        "description": "Room B B0.5 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "B1",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4979.843,
+          "y": 239.859,
+          "elevation": 0
+        },
+        "description": "Room B B1 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "B2",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4979.843,
+          "y": 1115.525,
+          "elevation": 0
+        },
+        "description": "Room B B2 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "B3",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 4979.843,
+          "y": 2324.976,
+          "elevation": 0
+        },
+        "description": "Room B B3 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "B4",
+        "roomId": "ROOM-B",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 3309.78,
+          "y": 2324.976,
+          "elevation": 0
+        },
+        "description": "Room B B4 permanent shell reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "T0",
+        "roomId": "WC",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 5100.347,
+          "y": 232.783,
+          "elevation": 0
+        },
+        "description": "WC permanent wall endpoint coincident with the WC-side D5 outer casing edge (D5-WCR); casing-layer datum",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "T1",
+        "roomId": "WC",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 6763.035,
+          "y": 232.783,
+          "elevation": 0
+        },
+        "description": "WC permanent corner joining WC-WALL-01 and WC-WALL-02",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "T2",
+        "roomId": "WC",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 6763.035,
+          "y": 1307.584,
+          "elevation": 0
+        },
+        "description": "WC permanent rear corner joining WC-WALL-02 and WC-WALL-03; rectangularised working-shell position",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "T3",
+        "roomId": "WC",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 5100.347,
+          "y": 1307.584,
+          "elevation": 0
+        },
+        "description": "WC permanent return corner joining WC-WALL-03 to the short wall toward D5-WCL",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      },
+      {
+        "id": "D5-WCL",
+        "roomId": "WC",
+        "classification": "existing-permanent",
+        "coordinateMm": {
+          "x": 5100.347,
+          "y": 1133.675,
+          "elevation": 0
+        },
+        "description": "WC D5-WCL measured opening/casing reference",
+        "sourceCollection": "whole.geometry.roomBWCUnchangedMm"
+      }
+    ],
+    "repositoryMeasurements": [
+      {
+        "id": "RC-01",
+        "from": "D3-CL",
+        "to": "C0",
+        "recordedMm": 4185,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "shell closure run",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4168.34,
+            "y": 0,
+            "elevation": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C face of D3, viewer-left casing edge coincident with the permanent turning corner",
+          "Room C permanent finished-wall corner below CP1"
+        ],
+        "modelPlanDistanceMm": 4168.34,
+        "residualMm": -16.659999999999854
+      },
+      {
+        "id": "RC-02",
+        "from": "C0",
+        "to": "CP1-FL",
+        "recordedMm": 3705,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "shell closure run",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 0,
+            "y": 0,
+            "elevation": 0
+          },
+          {
+            "x": 54.99,
+            "y": -3690.92,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C permanent finished-wall corner below CP1",
+          "CP1 viewer-left identifiable front outer footprint corner"
+        ],
+        "modelPlanDistanceMm": 3691.32961769875,
+        "residualMm": -13.670382301249902
+      },
+      {
+        "id": "RC-03",
+        "from": "CP1-FL",
+        "to": "PO1",
+        "recordedMm": 1534,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "upper shell / CP1 relationship",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 54.99,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 1605.69,
+            "y": -3690.92,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP1 viewer-left identifiable front outer footprint corner",
+          "Room C removable stud wall, open-room face top junction"
+        ],
+        "modelPlanDistanceMm": 1550.7,
+        "residualMm": 16.700000000000045
+      },
+      {
+        "id": "RC-05",
+        "from": "PO1",
+        "to": "PO2",
+        "recordedMm": 2318,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "outer stud-wall face",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 1605.69,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 1570.95,
+            "y": -1359.61,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C removable stud wall, open-room face top junction",
+          "Room C removable stud wall, open-room face turning corner"
+        ],
+        "modelPlanDistanceMm": 2331.5688245685565,
+        "residualMm": 13.568824568556465
+      },
+      {
+        "id": "RC-06",
+        "from": "PO2",
+        "to": "PO3",
+        "recordedMm": 2601,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "outer stud-wall face",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 1570.95,
+            "y": -1359.61,
+            "elevation": 0
+          },
+          {
+            "x": 4188.6,
+            "y": -1359.61,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C removable stud wall, open-room face turning corner",
+          "Room C removable stud wall, open-room face lower end"
+        ],
+        "modelPlanDistanceMm": 2617.6500000000005,
+        "residualMm": 16.650000000000546
+      },
+      {
+        "id": "RC-07",
+        "from": "PO3",
+        "to": "D3-CL",
+        "recordedMm": 1346,
+        "status": "direct",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "A-C wall relationship",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4188.6,
+            "y": -1359.61,
+            "elevation": 0
+          },
+          {
+            "x": 4168.34,
+            "y": 0,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C removable stud wall, open-room face lower end",
+          "Room C face of D3, viewer-left casing edge coincident with the permanent turning corner"
+        ],
+        "modelPlanDistanceMm": 1359.7609421144584,
+        "residualMm": 13.76094211445843
+      },
+      {
+        "id": "RC-08",
+        "from": "D3-CL",
+        "to": "D2-CR",
+        "recordedMm": 580,
+        "status": "direct, human-observed topology correction",
+        "source": "Room C accepted baseline measurementFitSummary.primaryShellResiduals",
+        "note": "D3-CL is the turning corner; D2-CR lies along the adjoining wall",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4168.34,
+            "y": 0,
+            "elevation": 0
+          },
+          {
+            "x": 4176.98,
+            "y": -579.94,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C face of D3, viewer-left casing edge coincident with the permanent turning corner",
+          "Room C face of D2, viewer-right outer casing edge on the wall from D3-CL"
+        ],
+        "modelPlanDistanceMm": 580.0043561905377,
+        "residualMm": 0.004356190537691873
+      },
+      {
+        "id": "RC-19",
+        "from": "CP2-FR",
+        "to": "PI3",
+        "recordedMm": 2206,
+        "status": "direct validation, corrected endpoint; not used to re-solve",
+        "source": "Room C accepted baseline measurementFitSummary.correctedRC19",
+        "note": "CP2-FR is the active field endpoint",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4223.33,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 4190.53,
+            "y": -1489.16,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP2 viewer-right identifiable front outer footprint corner at the A-C wall",
+          "Room C removable stud wall, bedroom face lower end"
+        ],
+        "modelPlanDistanceMm": 2202.004300086628,
+        "residualMm": -3.9956999133719364
+      },
+      {
+        "id": "ROOM-C-W2-WIDTH",
+        "from": "W2-CR",
+        "to": "W2-CL",
+        "recordedMm": 1269,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.W2.openingWidthMm",
+        "note": "visible casing/opening width relationship",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 327.54,
+            "y": 164.98,
+            "elevation": 0
+          },
+          {
+            "x": 1596.54,
+            "y": 164.98,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C W2 viewer-right visible casing/opening edge",
+          "Room C W2 viewer-left visible casing/opening edge"
+        ],
+        "modelPlanDistanceMm": 1269,
+        "residualMm": 0
+      },
+      {
+        "id": "ROOM-C-CP1-BODY-WIDTH",
+        "from": "CP1-BODY-FL",
+        "to": "CP1-BODY-FR",
+        "recordedMm": 1285,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.CP1.body.widthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 54.99,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 1339.99,
+            "y": -3690.92,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP1 cupboard-body front-left corner",
+          "CP1 cupboard-body front-right corner"
+        ],
+        "modelPlanDistanceMm": 1285,
+        "residualMm": 0
+      },
+      {
+        "id": "ROOM-C-CP1-BODY-DEPTH",
+        "from": "CP1-BODY-FL",
+        "to": "CP1-BODY-BL",
+        "recordedMm": 518,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.CP1.body.depthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 54.99,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 62.71,
+            "y": -4208.86,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP1 cupboard-body front-left corner",
+          "CP1 cupboard-body rear-left corner"
+        ],
+        "modelPlanDistanceMm": 517.9975308821458,
+        "residualMm": -0.0024691178541615955
+      },
+      {
+        "id": "ROOM-C-CP2-BODY-WIDTH",
+        "from": "CP2-BODY-FL",
+        "to": "CP2-BODY-FR",
+        "recordedMm": 708,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.CP2.body.widthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 3488.33,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 4196.33,
+            "y": -3690.92,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP2 cupboard-body front-left corner",
+          "CP2 cupboard-body front-right corner"
+        ],
+        "modelPlanDistanceMm": 708,
+        "residualMm": 0
+      },
+      {
+        "id": "ROOM-C-CP2-BODY-DEPTH",
+        "from": "CP2-BODY-FL",
+        "to": "CP2-BODY-BL",
+        "recordedMm": 536,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.CP2.body.depthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 3488.33,
+            "y": -3690.92,
+            "elevation": 0
+          },
+          {
+            "x": 3496.32,
+            "y": -4226.86,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "CP2 cupboard-body front-left corner",
+          "CP2 cupboard-body rear-left corner"
+        ],
+        "modelPlanDistanceMm": 535.999555690114,
+        "residualMm": -0.000444309886006522
+      },
+      {
+        "id": "ROOM-C-D2-OPENING-WIDTH",
+        "from": "D2-OPENING-R",
+        "to": "D2-OPENING-L-INFERRED",
+        "recordedMm": 770,
+        "status": "direct object observation; viewer-left model endpoint inferred from width",
+        "source": "Room C accepted baseline objectEvidence.D2.structuralOpeningWidthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4176.98,
+            "y": -579.94,
+            "elevation": 0
+          },
+          {
+            "x": 4188.45,
+            "y": -1349.85,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "Room C face of D2 structural opening, viewer-right edge",
+          "Room C face of D2 structural opening, inferred viewer-left edge"
+        ],
+        "modelPlanDistanceMm": 769.9954344020489,
+        "residualMm": -0.004565597951113887
+      },
+      {
+        "id": "ROOM-C-D3-LEAF-WIDTH",
+        "from": "D3-LEAF-L",
+        "to": "D3-LEAF-R",
+        "recordedMm": 760,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.D3.visibleClosedLeafWidthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 4123.34,
+            "y": 0,
+            "elevation": 0
+          },
+          {
+            "x": 3363.34,
+            "y": 0,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "D3 physical leaf endpoint at the Room C turning-corner side",
+          "D3 physical leaf endpoint at the D4 side"
+        ],
+        "modelPlanDistanceMm": 760,
+        "residualMm": 0
+      },
+      {
+        "id": "ROOM-C-D4-LEAF-WIDTH",
+        "from": "D4-LEAF-R",
+        "to": "D4-LEAF-L",
+        "recordedMm": 760,
+        "status": "direct object observation",
+        "source": "Room C accepted baseline objectEvidence.D4.visibleClosedLeafWidthMm",
+        "category": "repository-field-observation",
+        "endpoints": [
+          {
+            "x": 2227,
+            "y": 0,
+            "elevation": 0
+          },
+          {
+            "x": 2987,
+            "y": 0,
+            "elevation": 0
+          }
+        ],
+        "endpointDescriptions": [
+          "D4 physical leaf endpoint, viewer-right from Room C",
+          "D4 physical leaf endpoint, viewer-left from Room C"
+        ],
+        "modelPlanDistanceMm": 760,
+        "residualMm": 0
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "ASSUMPTION-W1-SILL",
+        "label": "W1 sill elevation",
+        "detail": "Derived by placing the recorded 1887 mm window height under the recorded 2873 mm casing top."
+      },
+      {
+        "id": "ASSUMPTION-CP2-BASE",
+        "label": "CP2 lower datum",
+        "detail": "The usable cavity is temporarily modelled from finished floor to the measured 2148 mm top."
+      },
+      {
+        "id": "ASSUMPTION-CP2-UPPER",
+        "label": "CP2 upper closure",
+        "detail": "Simplified enclosed build-up from 2148 mm to the selected 2631 mm Room C ceiling."
+      },
+      {
+        "id": "ASSUMPTION-CEILINGS",
+        "label": "Flat room ceilings",
+        "detail": "One measured station is selected as each room's temporary flat working plane; station variation remains evidence."
+      },
+      {
+        "id": "ASSUMPTION-PARTITION",
+        "label": "Room C removable partition height",
+        "detail": "Temporarily full height to the selected Room C ceiling because no separate top datum was located."
+      },
+      {
+        "id": "DEFERRED-ROOM-B-SOFFIT",
+        "label": "Room B soffit deferred",
+        "detail": "No soffit geometry is generated; Room B remains represented by a temporary flat ceiling."
+      }
+    ],
+    "excludedMeasurementClasses": [
+      "Observations with approximate-area endpoints rather than permanent marks",
+      "Perpendicular surface checks whose exact landing station was not marked",
+      "Vertical observations without a defensible plan station in the promoted model",
+      "Superseded readings and topology interpretations"
+    ],
+    "geometryValidation": {
+      "toleranceMm": 0.000001,
+      "validationNodeCount": 69,
+      "roomBoundaryPointCount": 31,
+      "openingEndpointCount": 16,
+      "cupboardFootprintPointCount": 8,
+      "maximumSourceNodeDeltaMm": 0,
+      "maximumActiveLocalTransformDeltaMm": 9.099386826154683e-13,
+      "status": "generated coordinates match the promoted source geometry within tolerance"
+    }
+  },
+  "rooms": [
+    {
+      "id": "ROOM-A",
+      "name": "Room A",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 3167,
+      "points": [
+        {
+          "x": 4432.645,
+          "y": -4166.9873
+        },
+        {
+          "x": 5733.2641,
+          "y": -4165.4314
+        },
+        {
+          "x": 5732.9117,
+          "y": -3870.9017
+        },
+        {
+          "x": 7687.9103,
+          "y": -3868.563
+        },
+        {
+          "x": 7681.7882,
+          "y": -4134.3306
+        },
+        {
+          "x": 8971.9705,
+          "y": -4135.4771
+        },
+        {
+          "x": 8971.942,
+          "y": 134.9958
+        },
+        {
+          "x": 4432.6987,
+          "y": 134.9958
+        }
+      ]
+    },
+    {
+      "id": "ROOM-C",
+      "name": "Room C",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 2631,
+      "points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        {
+          "x": 4223.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4168.34,
+          "y": 0
+        },
+        {
+          "x": 3266.67,
+          "y": 0
+        },
+        {
+          "x": 3048.67,
+          "y": 0
+        },
+        {
+          "x": 2147,
+          "y": 0
+        },
+        {
+          "x": 1599,
+          "y": 0
+        },
+        {
+          "x": 1596.54,
+          "y": 164.98
+        },
+        {
+          "x": 327.54,
+          "y": 164.98
+        },
+        {
+          "x": 330,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "ROOM-B",
+      "name": "Room B",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 2281,
+      "points": [
+        {
+          "x": 3309.78,
+          "y": 103.859
+        },
+        {
+          "x": 4161.901,
+          "y": 103.859
+        },
+        {
+          "x": 4161.901,
+          "y": 239.859
+        },
+        {
+          "x": 4979.843,
+          "y": 239.859
+        },
+        {
+          "x": 4979.843,
+          "y": 1115.525
+        },
+        {
+          "x": 4979.843,
+          "y": 2324.976
+        },
+        {
+          "x": 3309.78,
+          "y": 2324.976
+        }
+      ]
+    },
+    {
+      "id": "WC",
+      "name": "WC",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 2289,
+      "points": [
+        {
+          "x": 5100.347,
+          "y": 232.783
+        },
+        {
+          "x": 6763.035,
+          "y": 232.783
+        },
+        {
+          "x": 6763.035,
+          "y": 1307.584
+        },
+        {
+          "x": 5100.347,
+          "y": 1307.584
+        },
+        {
+          "x": 5100.347,
+          "y": 1133.675
+        }
+      ]
+    }
+  ],
+  "roomExtensions": [
+    {
+      "id": "CP1-INTERNAL-RECESS",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 2631,
+      "points": [
+        {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1339.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1347.71,
+          "y": -4208.86
+        },
+        {
+          "x": 62.71,
+          "y": -4208.86
+        }
+      ]
+    },
+    {
+      "id": "CP2-INTERNAL-RECESS",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "ceilingHeightMm": 2631,
+      "points": [
+        {
+          "x": 3488.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4196.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4204.32,
+          "y": -4226.86
+        },
+        {
+          "x": 3496.32,
+          "y": -4226.86
+        }
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "ROOM-A-WALL-01",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4432.645,
+          "y": -4166.9873,
+          "id": "A0"
+        },
+        {
+          "x": 5733.2641,
+          "y": -4165.4314,
+          "id": "A1"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A0",
+        "A1"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-02",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 5733.2641,
+          "y": -4165.4314,
+          "id": "A1"
+        },
+        {
+          "x": 5732.9117,
+          "y": -3870.9017,
+          "id": "A2"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A1",
+        "A2"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-03",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 5732.9117,
+          "y": -3870.9017,
+          "id": "A2"
+        },
+        {
+          "x": 7687.9103,
+          "y": -3868.563,
+          "id": "A3"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A2",
+        "A3"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-04",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 7687.9103,
+          "y": -3868.563,
+          "id": "A3"
+        },
+        {
+          "x": 7681.7882,
+          "y": -4134.3306,
+          "id": "A4"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A3",
+        "A4"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-05",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 7681.7882,
+          "y": -4134.3306,
+          "id": "A4"
+        },
+        {
+          "x": 8971.9705,
+          "y": -4135.4771,
+          "id": "A5"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A4",
+        "A5"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-06",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 8971.9705,
+          "y": -4135.4771,
+          "id": "A5"
+        },
+        {
+          "x": 8971.9671,
+          "y": -2728.2661,
+          "id": "W1-AL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A5",
+        "W1-AL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-07",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 8971.9501,
+          "y": -1292.9052,
+          "id": "W1-AR"
+        },
+        {
+          "x": 8971.942,
+          "y": 134.9958,
+          "id": "A6"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "W1-AR",
+        "A6"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-08",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 8971.942,
+          "y": 134.9958,
+          "id": "A6"
+        },
+        {
+          "x": 8444.8216,
+          "y": 134.9952,
+          "id": "D1-AL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A6",
+        "D1-AL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-09",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 7255.0007,
+          "y": 134.992,
+          "id": "D1-AR"
+        },
+        {
+          "x": 4432.6987,
+          "y": 134.9958,
+          "id": "A7"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "D1-AR",
+        "A7"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-10",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4432.6987,
+          "y": 134.9958,
+          "id": "A7"
+        },
+        {
+          "x": 4432.6966,
+          "y": -415.0046,
+          "id": "D2-AL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "A7",
+        "D2-AL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-A-WALL-11",
+      "roomId": "ROOM-A",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4432.6834,
+          "y": -1507.3454,
+          "id": "D2-AR"
+        },
+        {
+          "x": 4432.645,
+          "y": -4166.9873,
+          "id": "A0"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 3167,
+      "sourceFeatureIds": [
+        "D2-AR",
+        "A0"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-B-WALL-01",
+      "roomId": "ROOM-B",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4161.901,
+          "y": 103.859,
+          "id": "D3-BR"
+        },
+        {
+          "x": 4161.901,
+          "y": 239.859,
+          "id": "B0.5"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2281,
+      "sourceFeatureIds": [
+        "D3-BR",
+        "B0.5"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-B-WALL-02",
+      "roomId": "ROOM-B",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4161.901,
+          "y": 239.859,
+          "id": "B0.5"
+        },
+        {
+          "x": 4979.843,
+          "y": 239.859,
+          "id": "B1"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2281,
+      "sourceFeatureIds": [
+        "B0.5",
+        "B1"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-B-WALL-03",
+      "roomId": "ROOM-B",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4979.843,
+          "y": 1115.525,
+          "id": "B2"
+        },
+        {
+          "x": 4979.843,
+          "y": 2324.976,
+          "id": "B3"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2281,
+      "sourceFeatureIds": [
+        "B2",
+        "B3"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-B-WALL-04",
+      "roomId": "ROOM-B",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4979.843,
+          "y": 2324.976,
+          "id": "B3"
+        },
+        {
+          "x": 3309.78,
+          "y": 2324.976,
+          "id": "B4"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2281,
+      "sourceFeatureIds": [
+        "B3",
+        "B4"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-B-WALL-05",
+      "roomId": "ROOM-B",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 3309.78,
+          "y": 2324.976,
+          "id": "B4"
+        },
+        {
+          "x": 3309.78,
+          "y": 103.859,
+          "id": "B0"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2281,
+      "sourceFeatureIds": [
+        "B4",
+        "B0"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "WC-WALL-01",
+      "roomId": "WC",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 5100.347,
+          "y": 232.783,
+          "id": "T0"
+        },
+        {
+          "x": 6763.035,
+          "y": 232.783,
+          "id": "T1"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2289,
+      "sourceFeatureIds": [
+        "T0",
+        "T1"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "WC-WALL-02",
+      "roomId": "WC",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 6763.035,
+          "y": 232.783,
+          "id": "T1"
+        },
+        {
+          "x": 6763.035,
+          "y": 1307.584,
+          "id": "T2"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2289,
+      "sourceFeatureIds": [
+        "T1",
+        "T2"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "WC-WALL-03",
+      "roomId": "WC",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 6763.035,
+          "y": 1307.584,
+          "id": "T2"
+        },
+        {
+          "x": 5100.347,
+          "y": 1307.584,
+          "id": "T3"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2289,
+      "sourceFeatureIds": [
+        "T2",
+        "T3"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "WC-WALL-04",
+      "roomId": "WC",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 5100.347,
+          "y": 1307.584,
+          "id": "T3"
+        },
+        {
+          "x": 5100.347,
+          "y": 1133.675,
+          "id": "D5-WCL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2289,
+      "sourceFeatureIds": [
+        "T3",
+        "D5-WCL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-01",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 0,
+          "y": 0,
+          "id": "C0"
+        },
+        {
+          "x": 54.99,
+          "y": -3690.92,
+          "id": "CP1-BODY-FL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "C0",
+        "CP1-BODY-FL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-02",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 54.99,
+          "y": -3690.92,
+          "id": "CP1-BODY-FL"
+        },
+        {
+          "x": 62.71,
+          "y": -4208.86,
+          "id": "CP1-BODY-BL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP1-BODY-FL",
+        "CP1-BODY-BL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-03",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 62.71,
+          "y": -4208.86,
+          "id": "CP1-BODY-BL"
+        },
+        {
+          "x": 1347.71,
+          "y": -4208.86,
+          "id": "CP1-BODY-BR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP1-BODY-BL",
+        "CP1-BODY-BR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-04",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 1347.71,
+          "y": -4208.86,
+          "id": "CP1-BODY-BR"
+        },
+        {
+          "x": 1339.99,
+          "y": -3690.92,
+          "id": "CP1-BODY-FR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP1-BODY-BR",
+        "CP1-BODY-FR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-05",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 1339.99,
+          "y": -3690.92,
+          "id": "CP1-BODY-FR"
+        },
+        {
+          "x": 3468.33,
+          "y": -3690.92,
+          "id": "CP2-CASING-FL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP1-BODY-FR",
+        "CP2-CASING-FL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-06",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 3468.33,
+          "y": -3690.92,
+          "id": "CP2-CASING-FL"
+        },
+        {
+          "x": 3488.33,
+          "y": -3690.92,
+          "id": "CP2-BODY-FL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP2-CASING-FL",
+        "CP2-BODY-FL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-07",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 3488.33,
+          "y": -3690.92,
+          "id": "CP2-BODY-FL"
+        },
+        {
+          "x": 3496.32,
+          "y": -4226.86,
+          "id": "CP2-BODY-BL"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP2-BODY-FL",
+        "CP2-BODY-BL"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-08",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 3496.32,
+          "y": -4226.86,
+          "id": "CP2-BODY-BL"
+        },
+        {
+          "x": 4204.32,
+          "y": -4226.86,
+          "id": "CP2-BODY-BR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP2-BODY-BL",
+        "CP2-BODY-BR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-09",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4204.32,
+          "y": -4226.86,
+          "id": "CP2-BODY-BR"
+        },
+        {
+          "x": 4196.33,
+          "y": -3690.92,
+          "id": "CP2-BODY-FR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP2-BODY-BR",
+        "CP2-BODY-FR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-10",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4196.33,
+          "y": -3690.92,
+          "id": "CP2-BODY-FR"
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85,
+          "id": "D2-OPENING-L-INFERRED"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "CP2-BODY-FR",
+        "D2-OPENING-L-INFERRED"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "left",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-11",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 0,
+          "y": 0,
+          "id": "C0"
+        },
+        {
+          "x": 330,
+          "y": 0,
+          "id": "C1"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "C0",
+        "C1"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-12",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 330,
+          "y": 0,
+          "id": "C1"
+        },
+        {
+          "x": 327.54,
+          "y": 164.98,
+          "id": "W2-CR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "C1",
+        "W2-CR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-13",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 1596.54,
+          "y": 164.98,
+          "id": "W2-CL"
+        },
+        {
+          "x": 1599,
+          "y": 0,
+          "id": "C2"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "W2-CL",
+        "C2"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-14",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 1599,
+          "y": 0,
+          "id": "C2"
+        },
+        {
+          "x": 2147,
+          "y": 0,
+          "id": "D4-CR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "C2",
+        "D4-CR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-15",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 3067,
+          "y": 0,
+          "id": "D4-OUTER-L"
+        },
+        {
+          "x": 3283.34,
+          "y": 0,
+          "id": "D3-OUTER-R"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "D4-OUTER-L",
+        "D3-OUTER-R"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    },
+    {
+      "id": "ROOM-C-WALL-16",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 4168.34,
+          "y": 0,
+          "id": "D3-CL"
+        },
+        {
+          "x": 4176.98,
+          "y": -579.94,
+          "id": "D2-CR"
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "D3-CL",
+        "D2-CR"
+      ],
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 80,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+    }
+  ],
+  "doorFaces": [
+    {
+      "id": "D1-A",
+      "doorId": "D1",
+      "roomId": "ROOM-A",
+      "outerEndpoints": [
+        {
+          "x": 8444.8216,
+          "y": 134.9952,
+          "id": "D1-AL"
+        },
+        {
+          "x": 7255.0007,
+          "y": 134.992,
+          "id": "D1-AR"
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 8240.4111,
+          "y": 134.9947
+        },
+        {
+          "x": 7459.4112,
+          "y": 134.9925
+        }
+      ],
+      "openingHeightMm": 2030,
+      "casingTopMm": 2321,
+      "ceilingHeightMm": 3167,
+      "casingStatus": "measured Room A outer casing",
+      "wallRoomFacingSide": "left",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "left",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D2-A",
+      "doorId": "D2",
+      "roomId": "ROOM-A",
+      "outerEndpoints": [
+        {
+          "x": 4432.6966,
+          "y": -415.0046,
+          "id": "D2-AL"
+        },
+        {
+          "x": 4432.6834,
+          "y": -1507.3454,
+          "id": "D2-AR"
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "openingHeightMm": 1975,
+      "casingTopMm": 2140,
+      "ceilingHeightMm": 3167,
+      "casingStatus": "measured Room A outer casing",
+      "wallRoomFacingSide": "left",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "left",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D2-C",
+      "doorId": "D2",
+      "roomId": "ROOM-C",
+      "outerEndpoints": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "openingHeightMm": 1975,
+      "casingTopMm": null,
+      "ceilingHeightMm": 2631,
+      "casingStatus": "exact Room C casing/rebate extent remains unmeasured; render the measured opening and through-reveal without invented trim",
+      "wallRoomFacingSide": "right",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D3-C",
+      "doorId": "D3",
+      "roomId": "ROOM-C",
+      "outerEndpoints": [
+        {
+          "x": 3283.34,
+          "y": 0
+        },
+        {
+          "x": 4168.34,
+          "y": 0
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 3363.34,
+          "y": 0
+        },
+        {
+          "x": 4123.34,
+          "y": 0
+        }
+      ],
+      "openingHeightMm": 1987,
+      "casingTopMm": 2067,
+      "ceilingHeightMm": 2631,
+      "casingStatus": "approximate 45/80/80 mm Room C casing",
+      "wallRoomFacingSide": "right",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D3-B",
+      "doorId": "D3",
+      "roomId": "ROOM-B",
+      "outerEndpoints": [
+        {
+          "x": 3309.78,
+          "y": 103.859
+        },
+        {
+          "x": 4161.901,
+          "y": 103.859
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 3374.34,
+          "y": 0
+        },
+        {
+          "x": 4112.34,
+          "y": 0
+        }
+      ],
+      "openingHeightMm": 1975,
+      "casingTopMm": 2076,
+      "ceilingHeightMm": 2281,
+      "casingStatus": "measured Room B face",
+      "wallRoomFacingSide": "left",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "left",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D4-C",
+      "doorId": "D4",
+      "roomId": "ROOM-C",
+      "outerEndpoints": [
+        {
+          "x": 2147,
+          "y": 0
+        },
+        {
+          "x": 3067,
+          "y": 0
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 2227,
+          "y": 0
+        },
+        {
+          "x": 2987,
+          "y": 0
+        }
+      ],
+      "openingHeightMm": 1987,
+      "casingTopMm": 2067,
+      "ceilingHeightMm": 2631,
+      "casingStatus": "measured 80/80/80 mm casing",
+      "wallRoomFacingSide": "right",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D5-B",
+      "doorId": "D5",
+      "roomId": "ROOM-B",
+      "outerEndpoints": [
+        {
+          "x": 4979.843,
+          "y": 239.859
+        },
+        {
+          "x": 4979.843,
+          "y": 1115.525
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 5068.3405,
+          "y": 298.7685
+        },
+        {
+          "x": 5068.3405,
+          "y": 1035.6245
+        }
+      ],
+      "openingHeightMm": 1974,
+      "casingTopMm": 2157,
+      "ceilingHeightMm": 2281,
+      "casingStatus": "measured Room B face",
+      "wallRoomFacingSide": "right",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "D5-WC",
+      "doorId": "D5",
+      "roomId": "WC",
+      "outerEndpoints": [
+        {
+          "x": 5100.347,
+          "y": 1133.675
+        },
+        {
+          "x": 5100.347,
+          "y": 232.783
+        }
+      ],
+      "clearEndpoints": [
+        {
+          "x": 5068.501,
+          "y": 1054.73
+        },
+        {
+          "x": 5068.501,
+          "y": 293.73
+        }
+      ],
+      "openingHeightMm": 1974,
+      "casingTopMm": 2064,
+      "ceilingHeightMm": 2289,
+      "casingStatus": "measured WC face",
+      "wallRoomFacingSide": "right",
+      "casingAboveDoorTopMm": 90,
+      "casingProjectionMm": 30,
+      "observedCasingTopToCeilingMm": 226,
+      "selectedCeilingModelClearanceMm": 225,
+      "casingRoomFacingSide": "left",
+      "wallHeadDatum": "WC permanent wall / outer-casing-boundary plane",
+      "wallHeadRoomFacingSide": "left",
+      "wallHeadEndpoints": [
+        {
+          "x": 5100.347,
+          "y": 1054.73
+        },
+        {
+          "x": 5100.347,
+          "y": 293.7299999999999
+        }
+      ],
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      },
+      "wallHeadFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "left",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    }
+  ],
+  "doorReveals": [
+    {
+      "id": "D2-THROUGH-REVEAL",
+      "doorId": "D2",
+      "classification": "existing-permanent",
+      "faceA": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "faceB": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 1975,
+      "status": "one continuous through-opening across the accepted approximately 250 mm A-C wall depth"
+    },
+    {
+      "id": "D3-THROUGH-REVEAL",
+      "doorId": "D3",
+      "classification": "existing-permanent",
+      "faceA": [
+        {
+          "x": 3374.34,
+          "y": 0
+        },
+        {
+          "x": 4112.34,
+          "y": 0
+        }
+      ],
+      "faceB": [
+        {
+          "x": 3363.34,
+          "y": 0
+        },
+        {
+          "x": 4123.34,
+          "y": 0
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 1975,
+      "status": "simple reveal between accepted opposing doorway faces; structural reveal detail remains unmeasured"
+    },
+    {
+      "id": "D5-THROUGH-REVEAL",
+      "doorId": "D5",
+      "classification": "existing-permanent",
+      "faceA": [
+        {
+          "x": 5068.3405,
+          "y": 298.7685
+        },
+        {
+          "x": 5068.3405,
+          "y": 1035.6245
+        }
+      ],
+      "faceB": [
+        {
+          "x": 5068.501,
+          "y": 293.73
+        },
+        {
+          "x": 5068.501,
+          "y": 1054.73
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 1974,
+      "status": "simple reveal across the accepted Room B/WC casing-face separation"
+    }
+  ],
+  "doorLeaves": [
+    {
+      "id": "D1",
+      "endpoints": [
+        {
+          "x": 7459.4112,
+          "y": 134.9925
+        },
+        {
+          "x": 8240.4111,
+          "y": 134.9947
+        }
+      ],
+      "heightMm": 2030,
+      "status": "clear-opening-width proxy",
+      "classification": "existing-permanent",
+      "bottomMm": 0,
+      "sourceFeatureId": "D1"
+    },
+    {
+      "id": "D2",
+      "endpoints": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ],
+      "heightMm": 1975,
+      "status": "measured leaf",
+      "classification": "existing-permanent",
+      "bottomMm": 0,
+      "sourceFeatureId": "D2"
+    },
+    {
+      "id": "D3",
+      "endpoints": [
+        {
+          "x": 3363.34,
+          "y": 0
+        },
+        {
+          "x": 4123.34,
+          "y": 0
+        }
+      ],
+      "heightMm": 1987,
+      "status": "measured leaf",
+      "classification": "existing-permanent",
+      "bottomMm": 0,
+      "sourceFeatureId": "D3"
+    },
+    {
+      "id": "D4",
+      "endpoints": [
+        {
+          "x": 2227,
+          "y": 0
+        },
+        {
+          "x": 2987,
+          "y": 0
+        }
+      ],
+      "heightMm": 1987,
+      "status": "measured leaf",
+      "classification": "existing-permanent",
+      "bottomMm": 0,
+      "sourceFeatureId": "D4"
+    },
+    {
+      "id": "D5",
+      "endpoints": [
+        {
+          "x": 5068.501,
+          "y": 293.73
+        },
+        {
+          "x": 5068.501,
+          "y": 1054.73
+        }
+      ],
+      "heightMm": 1974,
+      "status": "measured shared physical leaf",
+      "classification": "existing-permanent",
+      "bottomMm": 0,
+      "sourceFeatureId": "D5"
+    }
+  ],
+  "windows": [
+    {
+      "id": "W1",
+      "roomId": "ROOM-A",
+      "endpoints": [
+        {
+          "x": 8971.9671,
+          "y": -2728.2661
+        },
+        {
+          "x": 8971.9501,
+          "y": -1292.9052
+        }
+      ],
+      "wallRoomFacingSide": "left",
+      "sillMm": 986,
+      "headMm": 2873,
+      "openingHeightMm": 1887,
+      "verticalPlacementStatus": "temporary: recorded 1887 mm window height is placed with its head at the recorded 2873 mm outer-casing top because no sill datum was recorded",
+      "source": "docs/survey/ROOM_A_EVIDENCE_v1_1.md",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "left",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    },
+    {
+      "id": "W2",
+      "roomId": "ROOM-C",
+      "endpoints": [
+        {
+          "x": 327.54,
+          "y": 164.98
+        },
+        {
+          "x": 1596.54,
+          "y": 164.98
+        }
+      ],
+      "wallRoomFacingSide": "right",
+      "sillMm": 1040,
+      "headMm": 2556,
+      "openingHeightMm": 1516,
+      "verticalPlacementStatus": "existing approximate sill/overall-height datums retained; direct 2026-08-14 field observation confirms a permanent upper wall strip",
+      "observedUpperWallStripHeightMm": 72,
+      "observedUpperWallStripStatus": "direct field observation, approximate; supersedes the earlier provisional approximately 70 mm description and the active approximate 75 mm top-clearance interpretation",
+      "selectedCeilingModelClosureMm": 75,
+      "fieldModelClosureDifferenceMm": 3,
+      "closureNote": "The protected 2556 mm W2 top and 2631 mm Room C working ceiling produce a 75 mm generated band. The new approximate 72 mm field observation is retained with a 3 mm closure difference; neither protected datum is moved in the explicit upper/lower wall-infill completion.",
+      "source": "2026-08-14 human field observation and photograph; prior vertical provenance in docs/survey/derived/room-c/archive/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.md",
+      "classification": "existing-permanent",
+      "wallFaceMetadata": {
+        "authoritativeFinishedFaceAligned": true,
+        "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+        "roomFacingSide": "right",
+        "visualThicknessMm": 80,
+        "roomFacingPlaneOffsetMm": 0,
+        "oppositeFaceStatus": "schematic visual thickness; not a surveyed opposite face"
+      }
+    }
+  ],
+  "windowWallInfills": [
+    {
+      "windowId": "W2",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 330,
+          "y": 0
+        },
+        {
+          "x": 1599,
+          "y": 0
+        }
+      ],
+      "sourceFeatureIds": [
+        "C1",
+        "C2"
+      ],
+      "recessedWindowEdgeIds": [
+        "W2-CR",
+        "W2-CL"
+      ],
+      "depthMm": 164.98,
+      "backPlaneMeaning": "protected recessed W2 frame/casing plane",
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 164.98,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "protected recessed W2 frame/casing plane derived from unchanged W2 XY datum",
+      "id": "W2-C-UPPER-WALL-INFILL",
+      "position": "upper",
+      "bottomMm": 2556,
+      "topMm": 2631,
+      "modelHeightMm": 75,
+      "observedHeightMm": 72,
+      "fieldModelClosureDifferenceMm": 3,
+      "evidenceStatus": "direct field observation, approximate; supersedes the earlier provisional approximately 70 mm description and the active approximate 75 mm top-clearance interpretation"
+    },
+    {
+      "windowId": "W2",
+      "roomId": "ROOM-C",
+      "classification": "existing-permanent",
+      "endpoints": [
+        {
+          "x": 330,
+          "y": 0
+        },
+        {
+          "x": 1599,
+          "y": 0
+        }
+      ],
+      "sourceFeatureIds": [
+        "C1",
+        "C2"
+      ],
+      "recessedWindowEdgeIds": [
+        "W2-CR",
+        "W2-CL"
+      ],
+      "depthMm": 164.98,
+      "backPlaneMeaning": "protected recessed W2 frame/casing plane",
+      "authoritativeFinishedFaceAligned": true,
+      "sourceDatumMeaning": "authoritative surveyed finished-wall face",
+      "roomFacingSide": "right",
+      "visualThicknessMm": 164.98,
+      "roomFacingPlaneOffsetMm": 0,
+      "oppositeFaceStatus": "protected recessed W2 frame/casing plane derived from unchanged W2 XY datum",
+      "id": "W2-C-LOWER-WALL-INFILL",
+      "position": "lower",
+      "bottomMm": 0,
+      "topMm": 1040,
+      "modelHeightMm": 1040,
+      "evidenceStatus": "existing approximate sill/overall-height datums retained; direct 2026-08-14 field observation confirms a permanent upper wall strip"
+    }
+  ],
+  "cupboards": [
+    {
+      "id": "CP1",
+      "name": "CP1 fixed suspended open cupboard",
+      "classification": "existing-permanent",
+      "points": [
+        {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1339.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1347.71,
+          "y": -4208.86
+        },
+        {
+          "x": 62.71,
+          "y": -4208.86
+        }
+      ],
+      "cavityBaseMm": 1315,
+      "cavityTopMm": 2576,
+      "panelThicknessMm": 20,
+      "topCasingMm": 30,
+      "upperClosure": null,
+      "openFront": true,
+      "sourceFeatureIds": [
+        "CP1-BODY-FL",
+        "CP1-BODY-FR",
+        "CP1-BODY-BR",
+        "CP1-BODY-BL"
+      ]
+    },
+    {
+      "id": "CP2",
+      "name": "CP2 fixed open cupboard with enclosed upper build-up",
+      "classification": "existing-permanent",
+      "points": [
+        {
+          "x": 3488.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4196.33,
+          "y": -3690.92
+        },
+        {
+          "x": 4204.32,
+          "y": -4226.86
+        },
+        {
+          "x": 3496.32,
+          "y": -4226.86
+        }
+      ],
+      "cavityBaseMm": 0,
+      "cavityTopMm": 2148,
+      "panelThicknessMm": 20,
+      "topCasingMm": null,
+      "upperClosure": {
+        "baseMm": 2148,
+        "topMm": 2631,
+        "status": "temporary simple enclosed casing/build-up from the measured 2148 mm cupboard top to the selected 2631 mm Room C working ceiling; exact top-casing thickness and internal composition remain unmeasured"
+      },
+      "openFront": true,
+      "sourceFeatureIds": [
+        "CP2-BODY-FL",
+        "CP2-BODY-FR",
+        "CP2-BODY-BR",
+        "CP2-BODY-BL"
+      ]
+    }
+  ],
+  "cp1LowerServiceAssembly": {
+    "id": "CP1-LOWER-SERVICE-ASSEMBLY",
+    "roomId": "ROOM-C",
+    "classification": "existing-permanent",
+    "componentClass": "existing-joinery-and-service-reference",
+    "sourceFeatureIds": [
+      "CP1-FL",
+      "PO1"
+    ],
+    "frontageEndpoints": [
+      {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      {
+        "x": 1605.69,
+        "y": -3690.92
+      }
+    ],
+    "frontageLengthMm": 1550.7,
+    "panel": {
+      "id": "CP1-LOWER-SERVICE-ENCLOSURE",
+      "depthMm": 10,
+      "bottomMm": 0,
+      "topMm": 1315,
+      "roomFacingSide": "left",
+      "frontFaceAligned": true,
+      "fragments": [
+        {
+          "id": "CP1-LOWER-SERVICE-ENCLOSURE-LEFT",
+          "endpoints": [
+            {
+              "x": 54.99,
+              "y": -3690.92
+            },
+            {
+              "x": 589.99,
+              "y": -3690.92
+            }
+          ],
+          "bottomMm": 0,
+          "topMm": 1315
+        },
+        {
+          "id": "CP1-LOWER-SERVICE-ENCLOSURE-RIGHT",
+          "endpoints": [
+            {
+              "x": 1311.99,
+              "y": -3690.92
+            },
+            {
+              "x": 1605.69,
+              "y": -3690.92
+            }
+          ],
+          "bottomMm": 0,
+          "topMm": 1315
+        },
+        {
+          "id": "CP1-LOWER-SERVICE-ENCLOSURE-ABOVE-DOOR",
+          "endpoints": [
+            {
+              "x": 589.99,
+              "y": -3690.92
+            },
+            {
+              "x": 1311.99,
+              "y": -3690.92
+            }
+          ],
+          "bottomMm": 772,
+          "topMm": 1315
+        }
+      ]
+    },
+    "accessDoor": {
+      "id": "CP1-LOWER-ACCESS-DOOR",
+      "outerEndpoints": [
+        {
+          "x": 589.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1311.99,
+          "y": -3690.92
+        }
+      ],
+      "bottomMm": 0,
+      "topMm": 772,
+      "depthMm": 10,
+      "roomFacingSide": "left",
+      "frontFaceAligned": true,
+      "assemblyWidthMm": 722,
+      "leaf": {
+        "id": "CP1-LOWER-ACCESS-DOOR-LEAF",
+        "endpoints": [
+          {
+            "x": 670.99,
+            "y": -3690.92
+          },
+          {
+            "x": 1230.99,
+            "y": -3690.92
+          }
+        ],
+        "widthMm": 560
+      },
+      "casings": [
+        {
+          "id": "CP1-LOWER-ACCESS-CASING-L",
+          "endpoints": [
+            {
+              "x": 589.99,
+              "y": -3690.92
+            },
+            {
+              "x": 669.99,
+              "y": -3690.92
+            }
+          ],
+          "widthMm": 80
+        },
+        {
+          "id": "CP1-LOWER-ACCESS-CASING-R",
+          "endpoints": [
+            {
+              "x": 1231.99,
+              "y": -3690.92
+            },
+            {
+              "x": 1311.99,
+              "y": -3690.92
+            }
+          ],
+          "widthMm": 80
+        }
+      ],
+      "sideClearanceMm": 1,
+      "topCasingPresent": false,
+      "closed": true,
+      "placement": {
+        "control": "CP1-FL left-hand station",
+        "leftOuterDistanceFromCP1FLMm": 535,
+        "rightOuterDistanceFromPO1Mm": 293.70000000000005,
+        "observedLeftOuterDistanceFromCP1FLMm": 535,
+        "observedRightOuterDistanceFromPO1Mm": 243,
+        "rightStationResidualMm": 50.700000000000045,
+        "stationImpliedAssemblyWidthMm": 772.7,
+        "stationClosureResidualMm": 50.700000000000045,
+        "note": "left outer casing station measured 535 mm from CP1-FL; the 722 mm assembly width is retained, producing a model-implied 293.7 mm right-side offset from PO1",
+        "conflictingRightStationStatus": "the earlier 243 mm PO1-to-right-outer-casing observation remains unresolved local field evidence pending the next Room C / CP1 / partition investigation"
+      }
+    },
+    "lip": {
+      "id": "CP1-LOWER-LIP",
+      "endpoints": [
+        {
+          "x": 54.99,
+          "y": -3690.92
+        },
+        {
+          "x": 1605.69,
+          "y": -3690.92
+        }
+      ],
+      "bottomMm": 1265,
+      "topMm": 1315,
+      "projectionMm": 60,
+      "roomFacingSide": "left",
+      "sourcePlaneBackAligned": true
+    },
+    "waterInletReference": {
+      "id": "CP1-WATER-INLET-REFERENCE",
+      "coordinate": {
+        "x": 1484.1899999999998,
+        "y": -3720.92
+      },
+      "bottomMm": 0,
+      "topMm": 150,
+      "visualDiameterMm": 18,
+      "locationStatus": "approximate right-hand service-area reference only; diameter is a visual convention and detailed routing/fittings are not inferred"
+    },
+    "futureDesignNote": "The lower CP1 enclosure/front panel is a possible future alteration or removal area during design exploration, potentially exposing/opening the service area; retain it in the current existing-condition shell."
+  },
+  "volumes": [
+    {
+      "id": "ROOM-C-REMOVABLE-PARTITION",
+      "name": "Current Room C removable partition",
+      "classification": "existing-removable",
+      "points": [
+        {
+          "x": 1605.69,
+          "y": -3690.92
+        },
+        {
+          "x": 1570.95,
+          "y": -1359.61
+        },
+        {
+          "x": 4188.6,
+          "y": -1359.61
+        },
+        {
+          "x": 4190.53,
+          "y": -1489.16
+        },
+        {
+          "x": 1696.53,
+          "y": -1489.16
+        },
+        {
+          "x": 1729.33,
+          "y": -3690.92
+        }
+      ],
+      "baseMm": 0,
+      "topMm": 2631,
+      "sourceFeatureIds": [
+        "PO1",
+        "PO2",
+        "PO3",
+        "PI3",
+        "PI2",
+        "PI1"
+      ]
+    }
+  ],
+  "designStageNotes": [
+    {
+      "id": "CP1-LOWER-ENCLOSURE-POTENTIAL-ALTERATION",
+      "scopeFeatureId": "CP1-LOWER-SERVICE-ASSEMBLY",
+      "status": "design-stage possibility only; no existing-condition removal",
+      "note": "The lower CP1 enclosure/front panel is a possible future alteration or removal area during design exploration, potentially exposing/opening the service area; retain it in the current existing-condition shell."
+    }
+  ]
+}

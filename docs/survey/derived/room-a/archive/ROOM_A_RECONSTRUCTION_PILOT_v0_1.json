@@ -1,0 +1,1828 @@
+{
+  "documentType": "derived Room A pilot reconstruction and evidence/residual record - not source evidence",
+  "version": "0.1",
+  "generatedDate": "2026-08-03",
+  "units": "millimetres",
+  "authoritativeEvidence": "docs/survey/ROOM_A_EVIDENCE_v1_1.md",
+  "coordinateGauge": {
+    "A2": [
+      0,
+      0
+    ],
+    "A3": [
+      1955,
+      0
+    ],
+    "note": "Gauge only: fixes translation, rotation and scale; not site north."
+  },
+  "repeatObservationTreatment": {
+    "method": "Separate weighted observations",
+    "explanation": "Each repeat remains a distinct residual. Equal-sigma original/repeat pairs are mathematically equivalent to their mean with sigma divided by sqrt(2), assuming independent random reading error, while preserving evidence visibility.",
+    "normalRepeatSigmaMm": 8,
+    "difficultSup028RepeatSigmaMm": 24,
+    "approximateAreaSup046RepeatSigmaMm": 75,
+    "baselineRechecks": "A0-A1 and A4-A5 agreed with existing values but were not duplicated numerically because separate readings were not supplied."
+  },
+  "angleTreatment": {
+    "method": "Six independent soft included-angle observations with Huber robust loss",
+    "sigmaDegrees": 1.75,
+    "exactRightAnglesImposed": false,
+    "directlyMeasuredCorners": [
+      "A0",
+      "A1",
+      "A4",
+      "A5",
+      "A6",
+      "A7"
+    ],
+    "notDirectlyMeasured": [
+      "A2",
+      "A3"
+    ]
+  },
+  "evidence": {
+    "repeatedDistances": [
+      {
+        "id": "SUP-038-R1",
+        "from": "A0",
+        "to": "D1-AR",
+        "measuredMm": 5137,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-038",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-046-R1",
+        "from": "A6",
+        "to": "D2-AR",
+        "measuredMm": 4837,
+        "sigmaMm": 75,
+        "category": "repeat-approximate-area",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-046",
+        "exactEndpoint": false,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-032-R1",
+        "from": "A4",
+        "to": "W1-AL",
+        "measuredMm": 1901,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-032",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-039-R1",
+        "from": "A1",
+        "to": "D2-AR",
+        "measuredMm": 2947,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-039",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-044-R1",
+        "from": "W1-AR",
+        "to": "D1-AL",
+        "measuredMm": 1517,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-044",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-025-R1",
+        "from": "A3",
+        "to": "A5",
+        "measuredMm": 1318,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-025",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-001-R1",
+        "from": "A2",
+        "to": "A0",
+        "measuredMm": 1338,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-001",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      },
+      {
+        "id": "SUP-028-R1",
+        "from": "A3",
+        "to": "D1-AL",
+        "measuredMm": 4077,
+        "sigmaMm": 24,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-028",
+        "exactEndpoint": true,
+        "note": "Approximate difficult repeat; deliberately lower confidence"
+      },
+      {
+        "id": "SUP-003-R1",
+        "from": "A2",
+        "to": "A7",
+        "measuredMm": 4220,
+        "sigmaMm": 8,
+        "category": "repeat-node-to-node",
+        "evidenceSet": "repeat",
+        "sourceObservationId": "SUP-003",
+        "exactEndpoint": true,
+        "note": "Repeat field observation, 3 August 2026"
+      }
+    ],
+    "angles": [
+      {
+        "id": "ANGLE-A0-R1",
+        "node": "A0",
+        "previous": "A7",
+        "next": "A1",
+        "measuredDegrees": 91,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      },
+      {
+        "id": "ANGLE-A1-R1",
+        "node": "A1",
+        "previous": "A0",
+        "next": "A2",
+        "measuredDegrees": 90,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      },
+      {
+        "id": "ANGLE-A4-R1",
+        "node": "A4",
+        "previous": "A3",
+        "next": "A5",
+        "measuredDegrees": 89,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      },
+      {
+        "id": "ANGLE-A5-R1",
+        "node": "A5",
+        "previous": "A4",
+        "next": "A6",
+        "measuredDegrees": 90,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      },
+      {
+        "id": "ANGLE-A6-R1",
+        "node": "A6",
+        "previous": "A5",
+        "next": "A7",
+        "measuredDegrees": 90,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      },
+      {
+        "id": "ANGLE-A7-R1",
+        "node": "A7",
+        "previous": "A6",
+        "next": "A0",
+        "measuredDegrees": 89,
+        "sigmaDegrees": 1.75,
+        "provenance": "Practical physical angle-measurer field reading, 3 August 2026; soft constraint only"
+      }
+    ]
+  },
+  "solutions": {
+    "S1": {
+      "id": "S1",
+      "label": "Existing distance-only",
+      "includedEvidence": {
+        "includeRepeats": false,
+        "includeAngles": false
+      },
+      "clearBaselineNodeRmsMm": 4.835,
+      "largestExactDistanceResidual": {
+        "id": "SUP-038",
+        "residualMm": 13.12
+      },
+      "bearings": {
+        "convention": "Degrees from solver +X; A2 to A3 is 0 degrees; not site north",
+        "A1toA2Degrees": 93.62,
+        "A4toA3Degrees": 88.255,
+        "signedReturnDifferenceDegrees": 5.365,
+        "absoluteReturnDifferenceDegrees": 5.365
+      },
+      "coordinatesMm": {
+        "A2": {
+          "x": 0,
+          "y": 0
+        },
+        "A3": {
+          "x": 1955,
+          "y": 0
+        },
+        "A0": {
+          "x": -1297.3,
+          "y": -298.03
+        },
+        "A1": {
+          "x": 17.83,
+          "y": -281.81
+        },
+        "A4": {
+          "x": 1946.9,
+          "y": -265.89
+        },
+        "A5": {
+          "x": 3237.99,
+          "y": -265.99
+        },
+        "A6": {
+          "x": 3241.35,
+          "y": 4003.93
+        },
+        "A7": {
+          "x": -1296.81,
+          "y": 4004.51
+        }
+      },
+      "finishedWallAreaM2": 18.8875,
+      "angleObservationRmsDegrees": 1.47,
+      "distanceResiduals": [
+        {
+          "id": "BASE-A-01",
+          "measuredMm": 1316,
+          "predictedMm": 1315.23,
+          "residualMm": -0.77,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-02",
+          "measuredMm": 284,
+          "predictedMm": 282.38,
+          "residualMm": -1.62,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-04",
+          "measuredMm": 268,
+          "predictedMm": 266.01,
+          "residualMm": -1.99,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-05",
+          "measuredMm": 1293,
+          "predictedMm": 1291.09,
+          "residualMm": -1.91,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-06",
+          "measuredMm": 1410,
+          "predictedMm": 1408.04,
+          "residualMm": -1.96,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-07",
+          "measuredMm": 1431,
+          "predictedMm": 1428.92,
+          "residualMm": -2.08,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-08",
+          "measuredMm": 529,
+          "predictedMm": 527.63,
+          "residualMm": -1.37,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-09",
+          "measuredMm": 2825,
+          "predictedMm": 2823.3,
+          "residualMm": -1.7,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-10",
+          "measuredMm": 550,
+          "predictedMm": 550,
+          "residualMm": 0,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-11",
+          "measuredMm": 2664,
+          "predictedMm": 2661.37,
+          "residualMm": -2.63,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "SUP-001",
+          "measuredMm": 1338,
+          "predictedMm": 1331.09,
+          "residualMm": -6.91,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-002",
+          "measuredMm": 2696,
+          "predictedMm": 2695.84,
+          "residualMm": -0.16,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-003",
+          "measuredMm": 4215,
+          "predictedMm": 4209.26,
+          "residualMm": -5.74,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-004",
+          "measuredMm": 4287,
+          "predictedMm": 4285.25,
+          "residualMm": -1.75,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-005",
+          "measuredMm": 5155,
+          "predictedMm": 5151.48,
+          "residualMm": -3.52,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-006",
+          "measuredMm": 3430,
+          "predictedMm": 3434.54,
+          "residualMm": 4.54,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-025",
+          "measuredMm": 1318,
+          "predictedMm": 1310.28,
+          "residualMm": -7.72,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-026",
+          "measuredMm": 1721,
+          "predictedMm": 1718.49,
+          "residualMm": -2.51,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-027",
+          "measuredMm": 4206,
+          "predictedMm": 4205.49,
+          "residualMm": -0.51,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-028",
+          "measuredMm": 4082,
+          "predictedMm": 4075.25,
+          "residualMm": -6.75,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-029",
+          "measuredMm": 4029,
+          "predictedMm": 4027.01,
+          "residualMm": -1.99,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-030",
+          "measuredMm": 5157,
+          "predictedMm": 5158.53,
+          "residualMm": 1.53,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-032",
+          "measuredMm": 1900,
+          "predictedMm": 1911.04,
+          "residualMm": 11.04,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-033",
+          "measuredMm": 4458,
+          "predictedMm": 4461.72,
+          "residualMm": 3.72,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-034",
+          "measuredMm": 4342,
+          "predictedMm": 4338.19,
+          "residualMm": -3.81,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-035",
+          "measuredMm": 1333,
+          "predictedMm": 1331.09,
+          "residualMm": -1.91,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-036",
+          "measuredMm": 4760,
+          "predictedMm": 4759.49,
+          "residualMm": -0.51,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-037",
+          "measuredMm": 6251,
+          "predictedMm": 6253.49,
+          "residualMm": 2.49,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-038",
+          "measuredMm": 5133,
+          "predictedMm": 5146.12,
+          "residualMm": 13.12,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-039",
+          "measuredMm": 2945,
+          "predictedMm": 2953.91,
+          "residualMm": 8.91,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-040",
+          "measuredMm": 4485,
+          "predictedMm": 4483.4,
+          "residualMm": -1.6,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-041",
+          "measuredMm": 4298,
+          "predictedMm": 4302.05,
+          "residualMm": 4.05,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-042",
+          "measuredMm": 6225,
+          "predictedMm": 6229.1,
+          "residualMm": 4.1,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-043",
+          "measuredMm": 5237,
+          "predictedMm": 5242.09,
+          "residualMm": 5.09,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-044",
+          "measuredMm": 1514,
+          "predictedMm": 1522.89,
+          "residualMm": 8.89,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-031",
+          "measuredMm": 4017,
+          "predictedMm": 4020.06,
+          "residualMm": 3.06,
+          "sigmaMm": 40,
+          "category": "approximate"
+        },
+        {
+          "id": "SUP-045",
+          "measuredMm": 4760,
+          "predictedMm": 4756.91,
+          "residualMm": -3.09,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        },
+        {
+          "id": "SUP-046",
+          "measuredMm": 4838,
+          "predictedMm": 4825.77,
+          "residualMm": -12.23,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        }
+      ],
+      "angleResiduals": [
+        {
+          "id": "ANGLE-A0-R1",
+          "node": "A0",
+          "measuredDegrees": 91,
+          "fittedDegrees": 89.287,
+          "residualDegrees": -1.713,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A1-R1",
+          "node": "A1",
+          "measuredDegrees": 90,
+          "fittedDegrees": 87.087,
+          "residualDegrees": -2.913,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A4-R1",
+          "node": "A4",
+          "measuredDegrees": 89,
+          "fittedDegrees": 88.26,
+          "residualDegrees": -0.74,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A5-R1",
+          "node": "A5",
+          "measuredDegrees": 90,
+          "fittedDegrees": 90.04,
+          "residualDegrees": 0.04,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A6-R1",
+          "node": "A6",
+          "measuredDegrees": 90,
+          "fittedDegrees": 89.962,
+          "residualDegrees": -0.038,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A7-R1",
+          "node": "A7",
+          "measuredDegrees": 89,
+          "fittedDegrees": 89.999,
+          "residualDegrees": 0.999,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        }
+      ]
+    },
+    "S2": {
+      "id": "S2",
+      "label": "Distance with repeats",
+      "includedEvidence": {
+        "includeRepeats": true,
+        "includeAngles": false
+      },
+      "clearBaselineNodeRmsMm": 5.119,
+      "largestExactDistanceResidual": {
+        "id": "SUP-038",
+        "residualMm": 12.068
+      },
+      "bearings": {
+        "convention": "Degrees from solver +X; A2 to A3 is 0 degrees; not site north",
+        "A1toA2Degrees": 93.303,
+        "A4toA3Degrees": 88.587,
+        "signedReturnDifferenceDegrees": 4.717,
+        "absoluteReturnDifferenceDegrees": 4.717
+      },
+      "coordinatesMm": {
+        "A2": {
+          "x": 0,
+          "y": 0
+        },
+        "A3": {
+          "x": 1955,
+          "y": 0
+        },
+        "A0": {
+          "x": -1298.46,
+          "y": -296.1
+        },
+        "A1": {
+          "x": 16.2,
+          "y": -280.77
+        },
+        "A4": {
+          "x": 1948.44,
+          "y": -265.72
+        },
+        "A5": {
+          "x": 3238.88,
+          "y": -268.64
+        },
+        "A6": {
+          "x": 3244.42,
+          "y": 4001.98
+        },
+        "A7": {
+          "x": -1295.63,
+          "y": 4007.08
+        }
+      },
+      "finishedWallAreaM2": 18.8965,
+      "angleObservationRmsDegrees": 1.347,
+      "distanceResiduals": [
+        {
+          "id": "BASE-A-01",
+          "measuredMm": 1316,
+          "predictedMm": 1314.75,
+          "residualMm": -1.25,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-02",
+          "measuredMm": 284,
+          "predictedMm": 281.23,
+          "residualMm": -2.77,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-04",
+          "measuredMm": 268,
+          "predictedMm": 265.8,
+          "residualMm": -2.2,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-05",
+          "measuredMm": 1293,
+          "predictedMm": 1290.44,
+          "residualMm": -2.56,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-06",
+          "measuredMm": 1410,
+          "predictedMm": 1407.24,
+          "residualMm": -2.76,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-07",
+          "measuredMm": 1431,
+          "predictedMm": 1427.93,
+          "residualMm": -3.07,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-08",
+          "measuredMm": 529,
+          "predictedMm": 527.14,
+          "residualMm": -1.86,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-09",
+          "measuredMm": 2825,
+          "predictedMm": 2822.35,
+          "residualMm": -2.65,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-10",
+          "measuredMm": 550,
+          "predictedMm": 550,
+          "residualMm": 0,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-11",
+          "measuredMm": 2664,
+          "predictedMm": 2660.03,
+          "residualMm": -3.97,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "SUP-001",
+          "measuredMm": 1338,
+          "predictedMm": 1331.79,
+          "residualMm": -6.21,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-002",
+          "measuredMm": 2696,
+          "predictedMm": 2696.22,
+          "residualMm": 0.22,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-003",
+          "measuredMm": 4215,
+          "predictedMm": 4211.34,
+          "residualMm": -3.66,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-004",
+          "measuredMm": 4287,
+          "predictedMm": 4285.11,
+          "residualMm": -1.89,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-005",
+          "measuredMm": 5155,
+          "predictedMm": 5151.91,
+          "residualMm": -3.09,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-006",
+          "measuredMm": 3430,
+          "predictedMm": 3434.91,
+          "residualMm": 4.91,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-025",
+          "measuredMm": 1318,
+          "predictedMm": 1311.69,
+          "residualMm": -6.31,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-026",
+          "measuredMm": 1721,
+          "predictedMm": 1717.4,
+          "residualMm": -3.6,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-027",
+          "measuredMm": 4206,
+          "predictedMm": 4204.58,
+          "residualMm": -1.42,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-028",
+          "measuredMm": 4082,
+          "predictedMm": 4074.52,
+          "residualMm": -7.48,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-029",
+          "measuredMm": 4029,
+          "predictedMm": 4026.75,
+          "residualMm": -2.25,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-030",
+          "measuredMm": 5157,
+          "predictedMm": 5159.77,
+          "residualMm": 2.77,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-032",
+          "measuredMm": 1900,
+          "predictedMm": 1908.42,
+          "residualMm": 8.42,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-033",
+          "measuredMm": 4458,
+          "predictedMm": 4460.14,
+          "residualMm": 2.14,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-034",
+          "measuredMm": 4342,
+          "predictedMm": 4336.99,
+          "residualMm": -5.01,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-035",
+          "measuredMm": 1333,
+          "predictedMm": 1331.79,
+          "residualMm": -1.21,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-036",
+          "measuredMm": 4760,
+          "predictedMm": 4760.5,
+          "residualMm": 0.5,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-037",
+          "measuredMm": 6251,
+          "predictedMm": 6253.9,
+          "residualMm": 2.9,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-038",
+          "measuredMm": 5133,
+          "predictedMm": 5145.07,
+          "residualMm": 12.07,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-039",
+          "measuredMm": 2945,
+          "predictedMm": 2952.65,
+          "residualMm": 7.65,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-040",
+          "measuredMm": 4485,
+          "predictedMm": 4484.03,
+          "residualMm": -0.97,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-041",
+          "measuredMm": 4298,
+          "predictedMm": 4302.94,
+          "residualMm": 4.94,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-042",
+          "measuredMm": 6225,
+          "predictedMm": 6232.46,
+          "residualMm": 7.46,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-043",
+          "measuredMm": 5237,
+          "predictedMm": 5244.23,
+          "residualMm": 7.23,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-044",
+          "measuredMm": 1514,
+          "predictedMm": 1522.04,
+          "residualMm": 8.04,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-031",
+          "measuredMm": 4017,
+          "predictedMm": 4020.17,
+          "residualMm": 3.17,
+          "sigmaMm": 40,
+          "category": "approximate"
+        },
+        {
+          "id": "SUP-045",
+          "measuredMm": 4760,
+          "predictedMm": 4759.08,
+          "residualMm": -0.92,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        },
+        {
+          "id": "SUP-046",
+          "measuredMm": 4838,
+          "predictedMm": 4827.53,
+          "residualMm": -10.47,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        },
+        {
+          "id": "SUP-038-R1",
+          "measuredMm": 5137,
+          "predictedMm": 5145.07,
+          "residualMm": 8.07,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-046-R1",
+          "measuredMm": 4837,
+          "predictedMm": 4827.53,
+          "residualMm": -9.47,
+          "sigmaMm": 75,
+          "category": "repeat-approximate-area"
+        },
+        {
+          "id": "SUP-032-R1",
+          "measuredMm": 1901,
+          "predictedMm": 1908.42,
+          "residualMm": 7.42,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-039-R1",
+          "measuredMm": 2947,
+          "predictedMm": 2952.65,
+          "residualMm": 5.65,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-044-R1",
+          "measuredMm": 1517,
+          "predictedMm": 1522.04,
+          "residualMm": 5.04,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-025-R1",
+          "measuredMm": 1318,
+          "predictedMm": 1311.69,
+          "residualMm": -6.31,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-001-R1",
+          "measuredMm": 1338,
+          "predictedMm": 1331.79,
+          "residualMm": -6.21,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-028-R1",
+          "measuredMm": 4077,
+          "predictedMm": 4074.52,
+          "residualMm": -2.48,
+          "sigmaMm": 24,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-003-R1",
+          "measuredMm": 4220,
+          "predictedMm": 4211.34,
+          "residualMm": -8.66,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        }
+      ],
+      "angleResiduals": [
+        {
+          "id": "ANGLE-A0-R1",
+          "node": "A0",
+          "measuredDegrees": 91,
+          "fittedDegrees": 89.294,
+          "residualDegrees": -1.706,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A1-R1",
+          "node": "A1",
+          "measuredDegrees": 90,
+          "fittedDegrees": 87.365,
+          "residualDegrees": -2.635,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A4-R1",
+          "node": "A4",
+          "measuredDegrees": 89,
+          "fittedDegrees": 88.716,
+          "residualDegrees": -0.284,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A5-R1",
+          "node": "A5",
+          "measuredDegrees": 90,
+          "fittedDegrees": 89.945,
+          "residualDegrees": -0.055,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A6-R1",
+          "node": "A6",
+          "measuredDegrees": 90,
+          "fittedDegrees": 89.99,
+          "residualDegrees": -0.01,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        },
+        {
+          "id": "ANGLE-A7-R1",
+          "node": "A7",
+          "measuredDegrees": 89,
+          "fittedDegrees": 89.973,
+          "residualDegrees": 0.973,
+          "sigmaDegrees": 1.75,
+          "usedInFit": false
+        }
+      ]
+    },
+    "S3": {
+      "id": "S3",
+      "label": "Distance with repeats and soft angles",
+      "includedEvidence": {
+        "includeRepeats": true,
+        "includeAngles": true
+      },
+      "clearBaselineNodeRmsMm": 5.101,
+      "largestExactDistanceResidual": {
+        "id": "SUP-038",
+        "residualMm": 12.171
+      },
+      "bearings": {
+        "convention": "Degrees from solver +X; A2 to A3 is 0 degrees; not site north",
+        "A1toA2Degrees": 92.461,
+        "A4toA3Degrees": 88.612,
+        "signedReturnDifferenceDegrees": 3.849,
+        "absoluteReturnDifferenceDegrees": 3.849
+      },
+      "coordinatesMm": {
+        "A2": {
+          "x": 0,
+          "y": 0
+        },
+        "A3": {
+          "x": 1955,
+          "y": 0
+        },
+        "A0": {
+          "x": -1300.62,
+          "y": -294.53
+        },
+        "A1": {
+          "x": 12.08,
+          "y": -281.16
+        },
+        "A4": {
+          "x": 1948.56,
+          "y": -265.76
+        },
+        "A5": {
+          "x": 3238.74,
+          "y": -268.45
+        },
+        "A6": {
+          "x": 3243.82,
+          "y": 4002.02
+        },
+        "A7": {
+          "x": -1295.42,
+          "y": 4007.45
+        }
+      },
+      "finishedWallAreaM2": 18.8986,
+      "angleObservationRmsDegrees": 1.106,
+      "distanceResiduals": [
+        {
+          "id": "BASE-A-01",
+          "measuredMm": 1316,
+          "predictedMm": 1312.77,
+          "residualMm": -3.23,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-02",
+          "measuredMm": 284,
+          "predictedMm": 281.42,
+          "residualMm": -2.58,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-04",
+          "measuredMm": 268,
+          "predictedMm": 265.84,
+          "residualMm": -2.16,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-05",
+          "measuredMm": 1293,
+          "predictedMm": 1290.19,
+          "residualMm": -2.81,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-06",
+          "measuredMm": 1410,
+          "predictedMm": 1407.21,
+          "residualMm": -2.79,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-07",
+          "measuredMm": 1431,
+          "predictedMm": 1427.91,
+          "residualMm": -3.09,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-08",
+          "measuredMm": 529,
+          "predictedMm": 527.12,
+          "residualMm": -1.88,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-09",
+          "measuredMm": 2825,
+          "predictedMm": 2822.3,
+          "residualMm": -2.7,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-10",
+          "measuredMm": 550,
+          "predictedMm": 550,
+          "residualMm": 0,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "BASE-A-11",
+          "measuredMm": 2664,
+          "predictedMm": 2659.64,
+          "residualMm": -4.36,
+          "sigmaMm": 4,
+          "category": "baseline"
+        },
+        {
+          "id": "SUP-001",
+          "measuredMm": 1338,
+          "predictedMm": 1333.55,
+          "residualMm": -4.45,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-002",
+          "measuredMm": 2696,
+          "predictedMm": 2697.59,
+          "residualMm": 1.59,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-003",
+          "measuredMm": 4215,
+          "predictedMm": 4211.62,
+          "residualMm": -3.38,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-004",
+          "measuredMm": 4287,
+          "predictedMm": 4285.32,
+          "residualMm": -1.68,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-005",
+          "measuredMm": 5155,
+          "predictedMm": 5151.56,
+          "residualMm": -3.44,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-006",
+          "measuredMm": 3430,
+          "predictedMm": 3434.69,
+          "residualMm": 4.69,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-025",
+          "measuredMm": 1318,
+          "predictedMm": 1311.51,
+          "residualMm": -6.49,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-026",
+          "measuredMm": 1721,
+          "predictedMm": 1717.29,
+          "residualMm": -3.71,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-027",
+          "measuredMm": 4206,
+          "predictedMm": 4204.43,
+          "residualMm": -1.57,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-028",
+          "measuredMm": 4082,
+          "predictedMm": 4074.48,
+          "residualMm": -7.52,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-029",
+          "measuredMm": 4029,
+          "predictedMm": 4026.9,
+          "residualMm": -2.1,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-030",
+          "measuredMm": 5157,
+          "predictedMm": 5159.93,
+          "residualMm": 2.93,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-032",
+          "measuredMm": 1900,
+          "predictedMm": 1908.29,
+          "residualMm": 8.29,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-033",
+          "measuredMm": 4458,
+          "predictedMm": 4460.01,
+          "residualMm": 2.01,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-034",
+          "measuredMm": 4342,
+          "predictedMm": 4336.98,
+          "residualMm": -5.02,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-035",
+          "measuredMm": 1333,
+          "predictedMm": 1333.55,
+          "residualMm": 0.55,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-036",
+          "measuredMm": 4760,
+          "predictedMm": 4761.86,
+          "residualMm": 1.86,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-037",
+          "measuredMm": 6251,
+          "predictedMm": 6253.99,
+          "residualMm": 2.99,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-038",
+          "measuredMm": 5133,
+          "predictedMm": 5145.17,
+          "residualMm": 12.17,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-039",
+          "measuredMm": 2945,
+          "predictedMm": 2952.55,
+          "residualMm": 7.55,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-040",
+          "measuredMm": 4485,
+          "predictedMm": 4483.5,
+          "residualMm": -1.5,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-041",
+          "measuredMm": 4298,
+          "predictedMm": 4302.89,
+          "residualMm": 4.89,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-042",
+          "measuredMm": 6225,
+          "predictedMm": 6232.33,
+          "residualMm": 7.33,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-043",
+          "measuredMm": 5237,
+          "predictedMm": 5245.22,
+          "residualMm": 8.22,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-044",
+          "measuredMm": 1514,
+          "predictedMm": 1522.1,
+          "residualMm": 8.1,
+          "sigmaMm": 8,
+          "category": "node-to-node"
+        },
+        {
+          "id": "SUP-031",
+          "measuredMm": 4017,
+          "predictedMm": 4021.43,
+          "residualMm": 4.43,
+          "sigmaMm": 40,
+          "category": "approximate"
+        },
+        {
+          "id": "SUP-045",
+          "measuredMm": 4760,
+          "predictedMm": 4758.55,
+          "residualMm": -1.45,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        },
+        {
+          "id": "SUP-046",
+          "measuredMm": 4838,
+          "predictedMm": 4827.24,
+          "residualMm": -10.76,
+          "sigmaMm": 75,
+          "category": "approximate-area"
+        },
+        {
+          "id": "SUP-038-R1",
+          "measuredMm": 5137,
+          "predictedMm": 5145.17,
+          "residualMm": 8.17,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-046-R1",
+          "measuredMm": 4837,
+          "predictedMm": 4827.24,
+          "residualMm": -9.76,
+          "sigmaMm": 75,
+          "category": "repeat-approximate-area"
+        },
+        {
+          "id": "SUP-032-R1",
+          "measuredMm": 1901,
+          "predictedMm": 1908.29,
+          "residualMm": 7.29,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-039-R1",
+          "measuredMm": 2947,
+          "predictedMm": 2952.55,
+          "residualMm": 5.55,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-044-R1",
+          "measuredMm": 1517,
+          "predictedMm": 1522.1,
+          "residualMm": 5.1,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-025-R1",
+          "measuredMm": 1318,
+          "predictedMm": 1311.51,
+          "residualMm": -6.49,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-001-R1",
+          "measuredMm": 1338,
+          "predictedMm": 1333.55,
+          "residualMm": -4.45,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-028-R1",
+          "measuredMm": 4077,
+          "predictedMm": 4074.48,
+          "residualMm": -2.52,
+          "sigmaMm": 24,
+          "category": "repeat-node-to-node"
+        },
+        {
+          "id": "SUP-003-R1",
+          "measuredMm": 4220,
+          "predictedMm": 4211.62,
+          "residualMm": -8.38,
+          "sigmaMm": 8,
+          "category": "repeat-node-to-node"
+        }
+      ],
+      "angleResiduals": [
+        {
+          "id": "ANGLE-A0-R1",
+          "node": "A0",
+          "measuredDegrees": 91,
+          "fittedDegrees": 89.347,
+          "residualDegrees": -1.653,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        },
+        {
+          "id": "ANGLE-A1-R1",
+          "node": "A1",
+          "measuredDegrees": 90,
+          "fittedDegrees": 88.122,
+          "residualDegrees": -1.878,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        },
+        {
+          "id": "ANGLE-A4-R1",
+          "node": "A4",
+          "measuredDegrees": 89,
+          "fittedDegrees": 88.731,
+          "residualDegrees": -0.269,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        },
+        {
+          "id": "ANGLE-A5-R1",
+          "node": "A5",
+          "measuredDegrees": 90,
+          "fittedDegrees": 89.949,
+          "residualDegrees": -0.051,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        },
+        {
+          "id": "ANGLE-A6-R1",
+          "node": "A6",
+          "measuredDegrees": 90,
+          "fittedDegrees": 90,
+          "residualDegrees": 0,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        },
+        {
+          "id": "ANGLE-A7-R1",
+          "node": "A7",
+          "measuredDegrees": 89,
+          "fittedDegrees": 90.001,
+          "residualDegrees": 1.001,
+          "sigmaDegrees": 1.75,
+          "usedInFit": true
+        }
+      ]
+    }
+  },
+  "residualChanges": {
+    "S1toS2": [
+      {
+        "id": "SUP-042",
+        "fromResidualMm": 4.1,
+        "toResidualMm": 7.46,
+        "changeMm": 3.36,
+        "activeFrom": true,
+        "activeTo": true
+      },
+      {
+        "id": "SUP-032",
+        "fromResidualMm": 11.04,
+        "toResidualMm": 8.42,
+        "changeMm": -2.62,
+        "activeFrom": true,
+        "activeTo": true
+      },
+      {
+        "id": "SUP-045",
+        "fromResidualMm": -3.09,
+        "toResidualMm": -0.92,
+        "changeMm": 2.17,
+        "activeFrom": true,
+        "activeTo": true
+      },
+      {
+        "id": "SUP-043",
+        "fromResidualMm": 5.09,
+        "toResidualMm": 7.23,
+        "changeMm": 2.14,
+        "activeFrom": true,
+        "activeTo": true
+      },
+      {
+        "id": "SUP-003",
+        "fromResidualMm": -5.74,
+        "toResidualMm": -3.66,
+        "changeMm": 2.08,
+        "activeFrom": true,
+        "activeTo": true
+      }
+    ],
+    "S2toS3": []
+  },
+  "selection": {
+    "selectedSolutionId": "S3",
+    "selectedType": "angle-informed",
+    "tests": {
+      "compatibleWithDistanceNetwork": true,
+      "modestResidualDeterioration": true,
+      "betterReflectsVerifiedAngles": true,
+      "noSeriousExactDistanceContradiction": true
+    },
+    "thresholds": {
+      "modestRmsIncreaseMm": 1,
+      "modestLargestExactResidualIncreaseMm": 2,
+      "seriousExactResidualMm": 25
+    },
+    "reason": "The angle-informed fit better matches the six practical angle readings while causing only modest distance-residual deterioration and no serious exact-distance contradiction."
+  },
+  "selectedGeometry": {
+    "allNodeCoordinatesMm": {
+      "A2": {
+        "x": 0,
+        "y": 0
+      },
+      "A3": {
+        "x": 1955,
+        "y": 0
+      },
+      "A0": {
+        "x": -1300.62,
+        "y": -294.53
+      },
+      "A1": {
+        "x": 12.08,
+        "y": -281.16
+      },
+      "A4": {
+        "x": 1948.56,
+        "y": -265.76
+      },
+      "A5": {
+        "x": 3238.74,
+        "y": -268.45
+      },
+      "A6": {
+        "x": 3243.82,
+        "y": 4002.02
+      },
+      "A7": {
+        "x": -1295.42,
+        "y": 4007.45
+      },
+      "W1-AL": {
+        "x": 3240.42,
+        "y": 1138.76
+      },
+      "W1-AR": {
+        "x": 3242.12,
+        "y": 2574.12
+      },
+      "D1-AL": {
+        "x": 2716.7,
+        "y": 4002.65
+      },
+      "D1-AR": {
+        "x": 1526.88,
+        "y": 4004.07
+      },
+      "D2-AL": {
+        "x": -1296.08,
+        "y": 3457.45
+      },
+      "D2-AR": {
+        "x": -1297.4,
+        "y": 2365.11
+      }
+    },
+    "derivedDimensions": {
+      "roomAreaM2": 18.899,
+      "A5ToA6WallRunMm": 4270.5,
+      "A6ToA7WallRunMm": 4539.2,
+      "A7ToA0WallRunMm": 4302,
+      "W1WallPlaneNodeSpanMm": 1435.4,
+      "D1WallPlaneNodeSpanMm": 1189.8,
+      "D2WallPlaneNodeSpanMm": 1092.3
+    },
+    "intervalChecks": [
+      {
+        "id": "SUP-061",
+        "measuredMm": 4558,
+        "admissibleRangeMm": [
+          4539.2,
+          4758.5
+        ],
+        "compatible": true,
+        "usedInFit": false
+      },
+      {
+        "id": "SUP-062",
+        "measuredMm": 4547,
+        "admissibleRangeMm": [
+          4539.3,
+          4761.9
+        ],
+        "compatible": true,
+        "usedInFit": false
+      },
+      {
+        "id": "SUP-063",
+        "measuredMm": 4297,
+        "admissibleRangeMm": [
+          4287,
+          4545.1
+        ],
+        "compatible": true,
+        "usedInFit": false
+      },
+      {
+        "id": "SUP-064",
+        "measuredMm": 4268,
+        "admissibleRangeMm": [
+          527.1,
+          4302.9
+        ],
+        "compatible": true,
+        "usedInFit": false
+      }
+    ],
+    "ceilingHeightsMm": {
+      "A0": 3125,
+      "A1": 3124,
+      "A2": 3122,
+      "A3": 3142,
+      "A4": 3143,
+      "A5": 3147,
+      "W1-AL": 3160,
+      "W1-AR": 3167,
+      "A6": 3169,
+      "D1-AL": 3165,
+      "D1-AR": 3151,
+      "A7": 3146,
+      "D2-AL": 3140,
+      "D2-AR": 3137
+    },
+    "objects": {
+      "W1": {
+        "wallPlaneNodes": [
+          "W1-AL",
+          "W1-AR"
+        ],
+        "frontFaceWidthMm": 1430,
+        "recordedWindowWidthMm": 1026,
+        "recordedWindowHeightMm": 1887
+      },
+      "D1": {
+        "wallPlaneNodes": [
+          "D1-AL",
+          "D1-AR"
+        ],
+        "frontFaceWidthMm": 1204,
+        "clearOpeningWidthMm": 781,
+        "clearOpeningHeightMm": 2030
+      },
+      "D2": {
+        "wallPlaneNodes": [
+          "D2-AL",
+          "D2-AR"
+        ],
+        "frontFaceWidthMm": 1096,
+        "clearOpeningWidthMm": 767,
+        "clearOpeningHeightMm": 1971
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1450" viewBox="0 0 1800 1450" role="img" aria-labelledby="title desc">
+  <title id="title">Room C first-pass measured reconstruction v0.1</title>
+  <desc id="desc">Architecture-informed first-pass Room C finished-wall shell and current thick stud partition. Detailed door, window and cupboard geometry remains provisional. Not construction geometry.</desc>
+  <defs>
+    <style>
+      .page{fill:#fff;stroke:#0f172a;stroke-width:3}.head{font:700 34px Arial,sans-serif;fill:#0f172a}.sub{font:19px Arial,sans-serif;fill:#334155}.warn{font:700 18px Arial,sans-serif;fill:#9f1239}.panel{fill:#f8fafc;stroke:#94a3b8;stroke-width:2}.envelope{fill:#eff6ff;stroke:none}.bedroom{fill:#faf5ff;stroke:none}.partition{fill:#e9d5ff;stroke:#7e22ce;stroke-width:4;stroke-linejoin:miter}.wall{stroke:#1e293b;stroke-width:9;stroke-linecap:square}.struct{stroke:#b91c1c;stroke-width:11;stroke-linecap:square}.opening{stroke:#0f766e;stroke-width:10}.openingProvisional{stroke:#d97706;stroke-width:10;stroke-dasharray:14 8}.window{stroke:#0284c7;stroke-width:11}.uncertain{stroke:#d97706;stroke-width:18;stroke-dasharray:7 8;opacity:.45}.perm{fill:#fff;stroke:#0f172a;stroke-width:3}.object{fill:#fffbeb;stroke:#d97706;stroke-width:3}.provisionalNode{stroke-dasharray:4 3}.studNode{fill:#faf5ff;stroke:#7e22ce;stroke-width:3}.label{font:700 15px Arial,sans-serif;fill:#0f172a}.objectLabel{font:700 15px Arial,sans-serif;fill:#9a3412}.studLabel{font:700 15px Arial,sans-serif;fill:#7e22ce}.tiny{font:14px Arial,sans-serif;fill:#475569}.room{font:700 25px Arial,sans-serif;fill:#1e3a8a}.sideHead{font:700 23px Arial,sans-serif;fill:#0f172a}.side{font:17px Arial,sans-serif;fill:#1f2937}.sideSmall{font:15px Arial,sans-serif;fill:#334155}.mono{font-family:Consolas,monospace;font-weight:700}.bad{fill:#b91c1c;font-weight:700}.callout{fill:#fff7ed;stroke:#d97706;stroke-width:2}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none}.cupFront{stroke:#a16207;stroke-width:15}.measure{stroke:#64748b;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M7 3.5 L0 0 L0 7 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect x="15" y="15" width="1770" height="1420" rx="12" class="page"/>
+  <text id="titleText" x="55" y="70" class="head">ROOM C FIRST-PASS 2D RECONSTRUCTION · v0.1</text>
+  <text x="55" y="105" class="sub">Measured shell network + current thick stud partition · selected solution A1 · units mm</text>
+  <text x="55" y="138" class="warn">HUMAN REVIEW ONLY — NOT ACCEPTED OR CONSTRUCTION GEOMETRY — OBJECT DETAIL AWAITS SECOND-PASS SURVEY</text>
+  <rect x="45" y="175" width="1225" height="1210" rx="12" class="panel"/>
+  <rect x="1290" y="175" width="465" height="1210" rx="12" class="panel"/>
+
+  <polygon points="120.3,1176.9 133,321.5 1099,321.5 1086.3,1176.9" class="envelope"/>
+  <polygon points="521,321.5 1099,321.5 1091.4,831.8 513.4,831.8" class="bedroom"/>
+  <polygon points="492.4,321.5 484.3,861.8 1091,861.8 1091.4,831.8 513.4,831.8 521,321.5" class="partition"/>
+
+  <line x1="120.3" y1="1176.9" x2="133" y2="321.5" class="wall" />
+  <line x1="133" y1="321.5" x2="440.2" y2="321.5" class="cupFront" />
+  <line x1="440.2" y1="321.5" x2="492.4" y2="321.5" class="wall" />
+  <line x1="521" y1="321.5" x2="924.1" y2="321.5" class="wall" />
+  <line x1="924.1" y1="321.5" x2="1099" y2="321.5" class="cupFront" />
+  <line x1="1099" y1="321.5" x2="1091.4" y2="831.8" class="struct" />
+  <line x1="1086.3" y1="1176.9" x2="1088.3" y2="1042.5" class="struct" />
+  <line x1="1091" y1="861.8" x2="1088.3" y2="1042.5" class="uncertain" />
+
+  <line x1="120.3" y1="1176.9" x2="196.7" y2="1176.9" class="wall" />
+  <line x1="196.7" y1="1176.9" x2="196.2" y2="1215.1" class="wall" />
+  <line x1="196.2" y1="1215.1" x2="490.3" y2="1215.1" class="window" />
+  <line x1="490.3" y1="1215.1" x2="490.8" y2="1176.9" class="wall" />
+  <line x1="490.8" y1="1176.9" x2="617.8" y2="1176.9" class="wall" />
+  <line x1="617.8" y1="1176.9" x2="826.8" y2="1176.9" class="openingProvisional" />
+  <line x1="826.8" y1="1176.9" x2="877.3" y2="1176.9" class="wall" />
+  <line x1="877.3" y1="1176.9" x2="1086.3" y2="1176.9" class="openingProvisional" />
+
+  <line x1="133" y1="287.5" x2="440.2" y2="287.5" class="guide"/>
+  <text x="286.6" y="274.5" class="tiny" text-anchor="middle">CP1 front supported · rear/depth not solved</text>
+  <line x1="924.1" y1="287.5" x2="1099" y2="287.5" class="guide"/>
+  <text x="1011.6" y="274.5" class="tiny" text-anchor="middle">CP2 front supported · rear/depth not solved</text>
+
+  <line x1="1111" y1="861.8" x2="1108.3" y2="1042.5" class="guide"/>
+  <text x="1065.6" y="952.1" class="tiny" text-anchor="end">D2 extent / D2-CL unresolved</text>
+
+  <circle cx="120.3" cy="1176.9" r="8" class="perm"/><circle cx="196.7" cy="1176.9" r="8" class="perm"/><circle cx="490.8" cy="1176.9" r="8" class="perm"/>
+  <path d="M133 313.5 L141 321.5 L133 329.5 L125 321.5 Z" class="object"/><path d="M440.2 313.5 L448.2 321.5 L440.2 329.5 L432.2 321.5 Z" class="object"/><path d="M924.1 313.5 L932.1 321.5 L924.1 329.5 L916.1 321.5 Z" class="object"/><path d="M1099 313.5 L1107 321.5 L1099 329.5 L1091 321.5 Z" class="object"/>
+  <path d="M196.2 1207.1 L204.2 1215.1 L196.2 1223.1 L188.2 1215.1 Z" class="object"/><path d="M490.3 1207.1 L498.3 1215.1 L490.3 1223.1 L482.3 1215.1 Z" class="object"/><path d="M617.8 1168.9 L625.8 1176.9 L617.8 1184.9 L609.8 1176.9 Z" class="object"/><path d="M826.8 1168.9 L834.8 1176.9 L826.8 1184.9 L818.8 1176.9 Z" class="object provisionalNode"/><path d="M877.3 1168.9 L885.3 1176.9 L877.3 1184.9 L869.3 1176.9 Z" class="object provisionalNode"/><path d="M1088.3 1034.5 L1096.3 1042.5 L1088.3 1050.5 L1080.3 1042.5 Z" class="object"/>
+  <circle cx="1086.3" cy="1176.9" r="8" class="perm"/><path d="M1086.3 1168.9 L1094.3 1176.9 L1086.3 1184.9 L1078.3 1176.9 Z" class="object"/>
+  <rect x="485.4" y="314.5" width="14" height="14" class="studNode"/><rect x="477.3" y="854.8" width="14" height="14" class="studNode"/><rect x="1084" y="854.8" width="14" height="14" class="studNode"/><rect x="514" y="314.5" width="14" height="14" class="studNode"/><rect x="506.4" y="824.8" width="14" height="14" class="studNode"/><rect x="1084.4" y="824.8" width="14" height="14" class="studNode"/>
+
+  <text x="108.3" y="1202.9" class="label" text-anchor="end">C0</text><text x="189.7" y="1161.9" class="label" text-anchor="end">C1</text><text x="497.8" y="1161.9" class="label" text-anchor="start">C2</text>
+  <text x="188.2" y="1242.1" class="objectLabel" text-anchor="end">W2-CR</text><text x="498.3" y="1242.1" class="objectLabel" text-anchor="start">W2-CL</text>
+  <text x="609.8" y="1161.9" class="objectLabel" text-anchor="end">D4-CR</text><text x="818.8" y="1204.9" class="objectLabel" text-anchor="end">D4-CL*</text>
+  <text x="885.3" y="1204.9" class="objectLabel" text-anchor="start">D3-CR*</text><text x="1076.3" y="1159.9" class="objectLabel" text-anchor="end">D3-CL · CORNER</text>
+  <text x="1073.3" y="1047.5" class="objectLabel" text-anchor="end">D2-CR</text>
+  <text x="125" y="346.5" class="objectLabel" text-anchor="end">CP1-FL</text><text x="448.2" y="346.5" class="objectLabel" text-anchor="start">CP1-FR</text>
+  <text x="916.1" y="346.5" class="objectLabel" text-anchor="end">CP2-FL</text><text x="1107" y="346.5" class="objectLabel" text-anchor="start">CP2-FR</text>
+  <text x="482.4" y="307.5" class="studLabel" text-anchor="end">PO1</text><text x="531" y="307.5" class="studLabel" text-anchor="start">PI1</text>
+  <text x="474.3" y="886.8" class="studLabel" text-anchor="end">PO2</text><text x="523.4" y="816.8" class="studLabel" text-anchor="start">PI2</text>
+  <text x="1101" y="886.8" class="studLabel" text-anchor="start">PO3</text><text x="1101.4" y="816.8" class="studLabel" text-anchor="start">PI3</text>
+
+  <text x="560.6" y="1003.1" class="room" text-anchor="middle">OPEN ROOM C</text>
+  <text x="815.5" y="528" class="room" text-anchor="middle">CURRENT BEDROOM</text>
+  <text x="815.5" y="553" class="tiny" text-anchor="middle">inside existing stud partition</text>
+  <rect x="78" y="1286" width="1135" height="72" rx="8" class="callout"/>
+  <text x="96" y="1314" class="side"><tspan font-weight="700">* D4-CL / D3-CR stations:</tspan> display-only equal split of an underdetermined span.</text>
+  <text x="96" y="1341" class="side">Dashed amber openings and cupboard/W2 detail remain provisional pending the second-pass object survey.</text>
+
+  <text x="1320" y="220" class="sideHead">Selected geometry</text>
+  <text x="1320" y="255" class="side">Wall-family angle: <tspan font-weight="700">90.85°</tspan></text>
+  <text x="1320" y="286" class="side">C0 → D3-CL: <tspan font-weight="700">4168.3 mm</tspan></text>
+  <text x="1320" y="317" class="side">C0 → CP1-FL: <tspan font-weight="700">3691.3 mm</tspan></text>
+  <text x="1320" y="348" class="side">PO wall: <tspan font-weight="700">2331.6 × 2617.6 mm</tspan></text>
+  <text x="1320" y="379" class="side">PI wall: <tspan font-weight="700">2202 × 2494 mm</tspan></text>
+
+  <rect x="1310" y="410" width="425" height="238" rx="8" class="callout"/>
+  <text x="1330" y="444" class="sideHead">Network conflict</text>
+  <text x="1330" y="477" class="side">RC-19 implies <tspan font-weight="700">99.56°</tspan>.</text>
+  <text x="1330" y="507" class="side">Three approximate checks imply</text>
+  <text x="1330" y="532" class="side">roughly 90–93° and agree with</text>
+  <text x="1330" y="557" class="side">the plan/photo topology.</text>
+  <text x="1330" y="589" class="warn">RC-19 held out of selected fit</text>
+  <text x="1330" y="618" class="side">Residual retained: <tspan class="bad">+111.17 mm</tspan></text>
+
+  <text x="1320" y="696" class="sideHead">Largest residuals</text>
+  <text x="1325" y="726" class="sideSmall"><tspan class="mono">ID</tspan><tspan x="1415">measured</tspan><tspan x="1505">solved</tspan><tspan x="1600">residual</tspan></text>
+  <text x="1325" y="755" class="sideSmall"><tspan class="mono">RC-19</tspan><tspan x="1415">2206</tspan><tspan x="1505">2317.2</tspan><tspan x="1600" class="bad">+111.2</tspan></text>
+<text x="1325" y="790" class="sideSmall"><tspan class="mono">RC-16</tspan><tspan x="1415">2100</tspan><tspan x="1505">2077.6</tspan><tspan x="1600" class="">-22.4</tspan></text>
+<text x="1325" y="825" class="sideSmall"><tspan class="mono">RC-15</tspan><tspan x="1415">2760</tspan><tspan x="1505">2780.9</tspan><tspan x="1600" class="">+20.9</tspan></text>
+<text x="1325" y="860" class="sideSmall"><tspan class="mono">RC-03</tspan><tspan x="1415">1534</tspan><tspan x="1505">1550.7</tspan><tspan x="1600" class="">+16.7</tspan></text>
+<text x="1325" y="895" class="sideSmall"><tspan class="mono">RC-01</tspan><tspan x="1415">4185</tspan><tspan x="1505">4168.3</tspan><tspan x="1600" class="">-16.7</tspan></text>
+<text x="1325" y="930" class="sideSmall"><tspan class="mono">RC-06</tspan><tspan x="1415">2601</tspan><tspan x="1505">2617.6</tspan><tspan x="1600" class="">+16.6</tspan></text>
+<text x="1325" y="965" class="sideSmall"><tspan class="mono">RC-07</tspan><tspan x="1415">1346</tspan><tspan x="1505">1359.8</tspan><tspan x="1600" class="">+13.8</tspan></text>
+
+  <text x="1320" y="1020" class="sideHead">Reference key</text>
+  <circle cx="1335" cy="1055" r="8" class="perm"/><text x="1360" y="1061" class="side">permanent point/corner</text>
+  <path d="M1335 1080 L1343 1088 L1335 1096 L1327 1088 Z" class="object"/><text x="1360" y="1094" class="side">object/casing edge</text>
+  <rect x="1328" y="1114" width="14" height="14" class="studNode"/><text x="1360" y="1127" class="side">stud-wall face node</text>
+  <line x1="1322" y1="1157" x2="1348" y2="1157" class="wall"/><text x="1360" y="1163" class="side">permanent wall</text>
+  <line x1="1322" y1="1193" x2="1348" y2="1193" class="openingProvisional"/><text x="1360" y="1199" class="side">provisional object extent</text>
+  <text x="1320" y="1250" class="sideSmall">Schematic sheet orientation only.</text>
+  <text x="1320" y="1275" class="sideSmall">No site-north bearing is asserted.</text>
+  <text x="1320" y="1316" class="sideSmall">Generated 2026-08-12</text>
+  <text x="1320" y="1342" class="sideSmall">Solver: scripts/solve_room_c_first_pass.mjs</text>
+</svg>

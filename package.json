@@ -1,0 +1,19 @@
+{
+  "name": "flat-renovation-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:3d-shell": "node scripts/generate_3d_shell_v0_1.mjs",
+    "validate:3d-shell": "node scripts/validate_3d_shell_v0_1.mjs",
+    "dev": "npm run build && vite preview",
+    "build": "npm run generate:3d-shell && npm run validate:3d-shell && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.2"
+  }
+}

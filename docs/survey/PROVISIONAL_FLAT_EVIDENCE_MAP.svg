@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Corrected provisional flat evidence map</title>
+  <desc id="desc">A human-reviewable topology map based principally on rough-paint-sketch.jpg and 2dPlan.jpeg. It shows Rooms A, B and C, the WC, stepped shell, cupboards, openings, the removable Room C bedroom enclosure and uncertain fixed features without verified dimensions.</desc>
+  <defs>
+    <pattern id="soffitHatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="12" height="12" fill="#fffbeb"/>
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#d97706" stroke-width="3"/>
+    </pattern>
+    <marker id="northArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#172554"/>
+    </marker>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #374151; }
+      .shell { stroke: #1e293b; stroke-width: 11; stroke-linecap: square; stroke-linejoin: miter; fill: none; }
+      .structural { stroke: #b91c1c; stroke-width: 15; stroke-linecap: square; fill: none; }
+      .demolition { stroke: #9333ea; stroke-width: 11; stroke-dasharray: 20 10; stroke-linecap: square; fill: none; }
+      .uncertain { stroke: #64748b; stroke-width: 5; stroke-dasharray: 11 8; fill: none; }
+      .opening { stroke: #0f766e; stroke-width: 12; fill: none; }
+      .door-leaf { stroke: #0f766e; stroke-width: 4; stroke-dasharray: 7 5; fill: none; }
+      .window { stroke: #0284c7; stroke-width: 14; fill: none; }
+      .cupboard { fill: #fef3c7; stroke: #a16207; stroke-width: 4; }
+      .service { fill: #ecfdf5; stroke: #15803d; stroke-width: 3; stroke-dasharray: 7 5; }
+      .room-a { fill: #f0f9ff; }
+      .room-b { fill: #f0fdf4; }
+      .room-c { fill: #fff7ed; }
+      .wc { fill: #f5f3ff; }
+      .demo-fill { fill: #faf5ff; stroke: none; }
+      .outside { fill: #f8fafc; stroke: #64748b; stroke-width: 3; stroke-dasharray: 9 7; }
+      .room-label { font: 700 28px Arial, sans-serif; fill: #0f172a; text-anchor: middle; }
+      .room-use { font: 15px Arial, sans-serif; fill: #475569; text-anchor: middle; }
+      .label { font: 700 17px Arial, sans-serif; fill: #111827; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; }
+      .tiny { font: 12px Arial, sans-serif; fill: #475569; }
+      .source { font: 700 11px Arial, sans-serif; fill: #475569; letter-spacing: .5px; }
+      .legend-title { font: 700 20px Arial, sans-serif; fill: #111827; }
+      .legend { font: 15px Arial, sans-serif; fill: #1f2937; }
+      .warning { font: 700 15px Arial, sans-serif; fill: #9f1239; }
+      .conflict { fill: #fff1f2; stroke: #be123c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" fill="#ffffff"/>
+  <text x="50" y="48" class="title">CONCEPTUAL SURVEY BASIS — NOT VERIFIED GEOMETRY</text>
+  <text x="50" y="78" class="subtitle">Principally follows rough-paint-sketch.jpg and 2dPlan.jpeg. Not to scale; no angle, length, wall thickness or drawn proportion is verified.</text>
+  <rect x="48" y="98" width="1504" height="58" rx="8" fill="#fff1f2" stroke="#be123c" stroke-width="2"/>
+  <text x="70" y="124" class="warning">APPROVED FOR SURVEY-STRATEGY DESIGN ONLY — NOT AN ACCEPTED SHELL — R4 MAP REQUIRES FIELD REVIEW</text>
+  <text x="70" y="146" class="small">This approval confirms sufficient spatial understanding for measurement planning only; no SVG coordinate, proportion, angle or dimension is verified.</text>
+
+  <g transform="translate(0 50)">
+  <!-- Room-area washes: schematic only, beneath the authoritative linework. -->
+  <path class="room-c" d="M120 220 H610 V515 H500 V780 H780 V650 H910 V515 H610 V220 Z" opacity="0"/>
+  <rect x="125" y="225" width="480" height="285" class="room-c"/>
+  <path class="room-a" d="M615 155 H745 V200 H965 V155 H1105 V510 H615 Z"/>
+  <path class="room-b" d="M505 520 H780 V780 H505 Z"/>
+  <rect x="785" y="520" width="120" height="125" class="wc"/>
+  <rect x="330" y="220" width="280" height="220" class="demo-fill"/>
+
+  <!-- Fixed cupboard/recess projections from the corrected sketch topology. -->
+  <rect x="120" y="120" width="160" height="100" class="cupboard"/>
+  <text x="200" y="160" class="label" text-anchor="middle">C1</text>
+  <text x="200" y="183" class="tiny" text-anchor="middle">cupboard / boiler area</text>
+
+  <rect x="500" y="150" width="110" height="70" class="cupboard"/>
+  <text x="555" y="181" class="label" text-anchor="middle">C2</text>
+  <text x="555" y="201" class="tiny" text-anchor="middle">cupboard</text>
+
+  <!-- Full stepped permanent outer shell, deliberately not normalised into rectangles. -->
+  <path class="shell" d="M120 515 V120 H280 V220 H500 V150 H750 V195 H960 V150 H1110"/>
+  <path class="shell" d="M1110 150 V292"/>
+  <path class="shell" d="M1110 405 V515 H1040"/>
+  <path class="shell" d="M970 515 H610"/>
+  <path class="shell" d="M910 515 V650 H780 V780 H500 V515 H520"/>
+  <path class="shell" d="M600 515 H610"/>
+  <path class="shell" d="M120 515 H145 V535"/>
+  <path class="shell" d="M330 535 V515 H390"/>
+  <path class="shell" d="M480 515 H520"/>
+
+  <!-- A-C permanent structural-sensitive boundary with D2 below the removable enclosure. -->
+  <path class="structural" d="M610 150 V455"/>
+  <path class="structural" d="M610 505 V515"/>
+  <text x="596" y="414" class="source" fill="#991b1b" transform="rotate(-90 596 414)">STRUCTURAL-SENSITIVE A–C WALL</text>
+
+  <!-- Permanent B-WC division; D5 is the supported opening but its swing remains uncertain. -->
+  <path class="shell" d="M780 515 V540"/>
+  <path class="shell" d="M780 605 V650"/>
+
+  <!-- Current Room C bedroom enclosure: purple demolition layer with an approximate gap for the existing glass doors. -->
+  <path class="demolition" d="M330 220 V395 H480 M560 395 H610"/>
+  <text x="465" y="295" class="label" fill="#6b21a8" text-anchor="middle">CURRENT BEDROOM</text>
+  <text x="465" y="316" class="label" fill="#6b21a8" text-anchor="middle">ENCLOSURE</text>
+  <text x="465" y="341" class="small" fill="#7e22ce" text-anchor="middle">purple partition layer intended for removal</text>
+  <text x="465" y="362" class="tiny" text-anchor="middle">general position from sketch; construction unverified</text>
+
+  <!-- Room labels -->
+  <text x="210" y="300" class="room-label">ROOM C</text>
+  <text x="210" y="330" class="room-use">current kitchen / circulation</text>
+  <text x="210" y="350" class="room-use">future open shell after demolition</text>
+
+  <text x="850" y="315" class="room-label">ROOM A</text>
+  <text x="850" y="342" class="room-use">living room</text>
+
+  <text x="625" y="665" class="room-label">ROOM B</text>
+  <text x="625" y="692" class="room-use">bathroom</text>
+
+  <text x="845" y="565" class="room-label" style="font-size:23px">WC</text>
+
+  <!-- Latest rough sketch clarifies the chimney-breast step; proportions remain provisional. -->
+  <text x="855" y="208" class="tiny" text-anchor="middle">chimney-breast projection</text>
+  <text x="855" y="225" class="source" text-anchor="middle">LATEST SKETCH; SIZE/ANGLES PROVISIONAL</text>
+
+  <!-- Windows -->
+  <line x1="1110" y1="292" x2="1110" y2="405" class="window"/>
+  <line x1="1092" y1="292" x2="1092" y2="405" stroke="#7dd3fc" stroke-width="4"/>
+  <text x="1128" y="355" class="label" fill="#0369a1">W1</text>
+
+  <line x1="145" y1="535" x2="330" y2="535" class="window"/>
+  <line x1="145" y1="517" x2="330" y2="517" stroke="#7dd3fc" stroke-width="4"/>
+  <text x="238" y="570" class="label" text-anchor="middle" fill="#0369a1">W2</text>
+  <text x="238" y="590" class="tiny" text-anchor="middle">window within lower Room C recess</text>
+
+  <!-- Doors/openings: identity and general wall follow sketch; leaf/swing is dashed and must be confirmed. -->
+  <line x1="610" y1="455" x2="610" y2="505" class="opening"/>
+  <path d="M610 465 H665 A55 55 0 0 0 610 410" class="door-leaf"/>
+  <text x="632" y="482" class="label">D2 ≈</text>
+  <text x="632" y="501" class="tiny">A ↔ permanent Room C; exact position provisional</text>
+
+  <line x1="520" y1="515" x2="600" y2="515" class="opening"/>
+  <path d="M590 515 V455 A60 60 0 0 0 530 515" class="door-leaf"/>
+  <text x="548" y="545" class="label">D3</text>
+  <text x="548" y="565" class="tiny">C ↔ B</text>
+
+  <line x1="390" y1="515" x2="480" y2="515" class="opening"/>
+  <path d="M475 515 V445 A70 70 0 0 0 405 515" class="door-leaf"/>
+  <text x="420" y="548" class="label">D4</text>
+
+  <line x1="970" y1="515" x2="1040" y2="515" class="opening"/>
+  <path d="M970 515 V445 A70 70 0 0 1 1040 515" class="door-leaf"/>
+  <text x="990" y="482" class="label">D1</text>
+
+  <line x1="780" y1="540" x2="780" y2="605" class="opening"/>
+  <path d="M780 550 H845 A65 65 0 0 1 780 615" class="door-leaf"/>
+  <text x="798" y="623" class="label">D5</text>
+
+  <!-- Entrance and circulation context outside the flat boundary. -->
+  <rect x="925" y="555" width="175" height="75" rx="7" class="outside"/>
+  <text x="1012" y="584" class="small" text-anchor="middle">entrance / common</text>
+  <text x="1012" y="605" class="small" text-anchor="middle">circulation outside D1</text>
+
+  <rect x="365" y="585" width="135" height="70" rx="7" class="outside"/>
+  <text x="432" y="613" class="small" text-anchor="middle">small shared</text>
+  <text x="432" y="634" class="small" text-anchor="middle">external area</text>
+
+  <!-- Soffit shown as a supported but unmeasured zone. -->
+  <rect x="690" y="675" width="80" height="95" fill="url(#soffitHatch)" stroke="#d97706" stroke-width="4" stroke-dasharray="10 7"/>
+  <text x="730" y="710" class="label" text-anchor="middle" fill="#92400e">stair</text>
+  <text x="730" y="730" class="label" text-anchor="middle" fill="#92400e">soffit</text>
+  <text x="730" y="750" class="tiny" text-anchor="middle">extent/slope uncertain</text>
+
+  <!-- Supported service areas only; these are not routes. -->
+  <circle cx="245" cy="195" r="16" class="service"/>
+  <text x="245" y="201" class="label" text-anchor="middle" fill="#166534">S</text>
+  <text x="145" y="245" class="tiny">water inlet / associated services within C1</text>
+
+  <circle cx="275" cy="495" r="16" class="service"/>
+  <text x="275" y="501" class="label" text-anchor="middle" fill="#166534">S</text>
+  <text x="292" y="487" class="tiny">current kitchen wet area</text>
+
+  <circle cx="875" cy="620" r="16" class="service"/>
+  <text x="875" y="626" class="label" text-anchor="middle" fill="#166534">S</text>
+
+  <circle cx="1065" cy="485" r="16" class="service"/>
+  <text x="1065" y="491" class="label" text-anchor="middle" fill="#166534">E</text>
+  <text x="925" y="410" class="tiny">electrical entry:</text>
+  <text x="925" y="426" class="tiny">immediately right of D1, in corner</text>
+
+  <!-- Proposed hatch remains a proposal but is not given a false position. -->
+  <path d="M625 255 H700" class="uncertain"/>
+  <text x="712" y="252" class="small">proposed A–C hatch not positioned</text>
+  <text x="712" y="271" class="tiny">location/size/structure remain missing</text>
+  </g>
+
+  <!-- Compass follows explicit plan clarification. -->
+  <line x1="1450" y1="205" x2="1325" y2="205" stroke="#172554" stroke-width="5" marker-end="url(#northArrow)"/>
+  <text x="1388" y="187" class="label" text-anchor="middle">0° NORTH</text>
+  <text x="1388" y="230" class="tiny" text-anchor="middle">source-plan arrow points generally left</text>
+
+  <!-- Legend -->
+  <rect x="1170" y="260" width="380" height="535" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="1200" y="295" class="legend-title">Legend</text>
+  <line x1="1200" y1="330" x2="1275" y2="330" class="shell"/>
+  <text x="1295" y="336" class="legend">permanent shell / boundary</text>
+  <line x1="1200" y1="373" x2="1275" y2="373" class="structural"/>
+  <text x="1295" y="379" class="legend">structural-sensitive A–C wall</text>
+  <line x1="1200" y1="416" x2="1275" y2="416" class="demolition"/>
+  <text x="1295" y="422" class="legend">current enclosure for demolition</text>
+  <line x1="1200" y1="459" x2="1275" y2="459" class="uncertain"/>
+  <text x="1295" y="465" class="legend">uncertain / approximate geometry</text>
+  <line x1="1200" y1="502" x2="1275" y2="502" class="opening"/>
+  <text x="1295" y="508" class="legend">supported opening identity</text>
+  <line x1="1200" y1="545" x2="1275" y2="545" class="window"/>
+  <text x="1295" y="551" class="legend">supported window identity</text>
+  <rect x="1200" y="574" width="75" height="28" class="cupboard"/>
+  <text x="1295" y="595" class="legend">fixed cupboard/recess</text>
+  <rect x="1200" y="620" width="75" height="28" fill="url(#soffitHatch)" stroke="#d97706" stroke-width="2"/>
+  <text x="1295" y="641" class="legend">soffit warning zone</text>
+  <circle cx="1237" cy="680" r="15" class="service"/>
+  <text x="1237" y="686" class="label" text-anchor="middle" fill="#166534">S</text>
+  <text x="1295" y="686" class="legend">supported service area only</text>
+  <circle cx="1237" cy="727" r="14" class="conflict"/>
+  <text x="1237" y="733" class="label" text-anchor="middle" fill="#9f1239">?</text>
+  <text x="1295" y="733" class="legend">source conflict / human check</text>
+  <text x="1200" y="772" class="tiny">Door arcs show the sketch’s general leaf indication;</text>
+  <text x="1200" y="789" class="tiny">hinge side and swing are not verified.</text>
+
+  <!-- Review status -->
+  <rect x="895" y="875" width="655" height="145" rx="9" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="920" y="906" class="legend-title" fill="#92400e">Survey-design approval status</text>
+  <text x="920" y="935" class="legend">1. Conceptual topology accepted only for designing physical measurement paths.</text>
+  <text x="920" y="962" class="legend">2. Geometry, dimensions and the fixed shell remain unverified and unaccepted.</text>
+  <text x="920" y="989" class="legend">3. Human-review the R4 laser map and matching field sheet before field use.</text>
+  <text x="920" y="1010" class="tiny">Survey Plan R4 was regenerated; it remains not to scale and pending human field review.</text>
+
+  <rect x="48" y="875" width="810" height="145" rx="9" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+  <text x="72" y="906" class="legend-title">Evidence priority used for this correction</text>
+  <text x="72" y="935" class="legend">Topology/footprint: rough-paint-sketch.jpg + 2dPlan.jpeg</text>
+  <text x="72" y="962" class="legend">Openings/features: plan + sketch labels, checked against photos, sampled video frames and transcript</text>
+  <text x="72" y="989" class="legend">Proportions/dimensions: deliberately not inferred</text>
+  <text x="72" y="1010" class="tiny">See PROVISIONAL_FLAT_EVIDENCE_MAP_NOTES.md and EVIDENCE_MAP_CORRECTION_LOG.md.</text>
+
+  <text x="50" y="1085" class="tiny">Conceptual survey-basis approval: 2026-07-27. After survey review, measured data replaces this SVG as the primary geometry source.</text>
+</svg>

@@ -1,0 +1,859 @@
+{
+  "documentType": "derived Room B/WC field-reconciled orthogonal candidate; not source evidence and not final shell",
+  "version": "0.2",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres",
+  "status": "candidate - HUMAN REVIEW REQUIRED",
+  "predecessor": "ROOM_B_WC_RECONSTRUCTION_PILOT_v0_1 (preserved and not overwritten)",
+  "provenance": {
+    "rawEvidenceEdited": false,
+    "auditFilesPreserved": [
+      "ROOM_B_WALL_PLANE_NODE_EVIDENCE_AUDIT_v0_1.*",
+      "ROOM_B_D3_EVIDENCE_AUDIT_v0_1.svg",
+      "ROOM_B_D5_WC_EVIDENCE_AUDIT_v0_1.svg"
+    ],
+    "sameEndpointFinding": "BASE-B-02.jpeg and ROOMB-D3BR-RELATIONTOB0,5ANDB1WALL.jpeg identify the old 249 mm and new 136 mm values as the same physical D3-BR casing-edge to B0.5 permanent-corner span. No casing, reveal or tile layer offset of 113 mm is evidenced.",
+    "correctionHistory": {
+      "active": "D3-BR -> B0.5 = 136 mm, physical field recheck",
+      "inactiveSuperseded": "BASE-B-02 = 249 mm; P1 fitted 244.9 mm",
+      "treatment": "Retained for traceability and excluded from the v0.2 solve."
+    },
+    "evidenceReconciliation": [
+      {
+        "relationship": "D3-BR -> B0.5",
+        "previousValue": "249 mm (P1 model 244.9)",
+        "newFieldValue": "136 mm",
+        "difference": "-113 mm vs record",
+        "samePhysicalEndpoints": "Yes: same annotated casing edge and B0.5 corner",
+        "proposedStatus": "New active; 249 inactive/superseded"
+      },
+      {
+        "relationship": "B0 / D3-BL -> B4",
+        "previousValue": "2200-2220 mm active range; older 2010-2030 inactive",
+        "newFieldValue": "2216 mm",
+        "difference": "Within active range",
+        "samePhysicalEndpoints": "Yes",
+        "proposedStatus": "New active exact refinement; history retained"
+      },
+      {
+        "relationship": "B1 / D5-BL -> B3",
+        "previousValue": "No direct record; 874 + 1218 = 2092 mm chain",
+        "newFieldValue": "2091 mm",
+        "difference": "-1 mm vs chain",
+        "samePhysicalEndpoints": "Yes",
+        "proposedStatus": "New active"
+      },
+      {
+        "relationship": "B0.5 -> perpendicular B3-B4 landing",
+        "previousValue": "No same-start direct record",
+        "newFieldValue": "2080 mm",
+        "difference": "n/a",
+        "samePhysicalEndpoints": "New explicitly described landing",
+        "proposedStatus": "New active; SUP-080 remains separate"
+      },
+      {
+        "relationship": "B2 / D5-BR -> B3",
+        "previousValue": "1218 mm",
+        "newFieldValue": "1219 mm",
+        "difference": "+1 mm",
+        "samePhysicalEndpoints": "Yes",
+        "proposedStatus": "New active; 1218 retained as consistent history"
+      }
+    ]
+  },
+  "solver": {
+    "method": "Deterministic three-parameter robust coordinate descent with Huber loss; 136 mm D3 return fixed from the verified field recheck; exact orthogonal Room B topology",
+    "parameters": [
+      "fixed D3 return",
+      "fitted D3 casing width",
+      "fitted main Room B width",
+      "fitted B0.5/B1-to-back depth"
+    ],
+    "fixedAcceptedAssembly": "D5 and WC are transformed rigidly from P1 about B1; their internal geometry is not re-solved.",
+    "robustCost": 14.453271,
+    "fittedParametersMm": {
+      "return": 136,
+      "d3OuterCasingWidth": 852.1206,
+      "mainWidth": 1670.0625,
+      "mainDepth": 2085.1172,
+      "d5RoomBCasingLength": 875.666310531586
+    }
+  },
+  "observations": {
+    "active": [
+      {
+        "id": "FIELD-B-D3-RETURN-2026-08",
+        "label": "D3-BR -> B0.5",
+        "measured": 136,
+        "predicted": 136,
+        "sigma": 2,
+        "quality": "new exact field recheck",
+        "residualMm": 0
+      },
+      {
+        "id": "BASE-B-03",
+        "label": "B0.5 -> B1",
+        "measured": 823,
+        "predicted": 817.942,
+        "sigma": 4,
+        "quality": "existing exact endpoint",
+        "residualMm": -5.058
+      },
+      {
+        "id": "D5-B-CASING-WIDTH",
+        "label": "B1 -> B2",
+        "measured": 874,
+        "predicted": 875.666,
+        "sigma": 5,
+        "quality": "existing door-object",
+        "residualMm": 1.666
+      },
+      {
+        "id": "FIELD-B-B2-B3-2026-08",
+        "label": "B2 -> B3",
+        "measured": 1219,
+        "predicted": 1209.451,
+        "sigma": 4,
+        "quality": "new exact field recheck",
+        "residualMm": -9.549
+      },
+      {
+        "id": "BASE-B-06",
+        "label": "B3 -> B4",
+        "measured": 1665,
+        "predicted": 1670.063,
+        "sigma": 7,
+        "quality": "finished tile face",
+        "residualMm": 5.063
+      },
+      {
+        "id": "FIELD-B-B0-B4-2026-08",
+        "label": "B0 / D3-BL -> B4",
+        "measured": 2216,
+        "predicted": 2221.117,
+        "sigma": 4,
+        "quality": "new exact field recheck",
+        "residualMm": 5.117
+      },
+      {
+        "id": "SUP-065",
+        "label": "B0 -> B0.5",
+        "measured": 888,
+        "predicted": 862.906,
+        "sigma": 7,
+        "quality": "existing exact endpoint",
+        "residualMm": -25.094
+      },
+      {
+        "id": "SUP-066",
+        "label": "B0 -> B2",
+        "measured": 1952,
+        "predicted": 1952.583,
+        "sigma": 30,
+        "quality": "approximate difficult shot",
+        "residualMm": 0.583
+      },
+      {
+        "id": "SUP-067",
+        "label": "B0 -> B3",
+        "range": [
+          2755,
+          2765
+        ],
+        "predicted": 2778.933,
+        "sigma": 12,
+        "quality": "measured range",
+        "residualMm": 13.933
+      },
+      {
+        "id": "SUP-068",
+        "label": "B0.5 -> B2",
+        "range": [
+          1182,
+          1190
+        ],
+        "predicted": 1198.257,
+        "sigma": 12,
+        "quality": "measured range",
+        "residualMm": 8.257
+      },
+      {
+        "id": "SUP-069",
+        "label": "B0.5 -> B3",
+        "measured": 2228,
+        "predicted": 2239.808,
+        "sigma": 8,
+        "quality": "existing exact endpoint",
+        "residualMm": 11.808
+      },
+      {
+        "id": "SUP-070",
+        "label": "B1 -> B4",
+        "measured": 2673,
+        "predicted": 2671.483,
+        "sigma": 8,
+        "quality": "existing exact endpoint",
+        "residualMm": -1.517
+      },
+      {
+        "id": "SUP-071",
+        "label": "B2 -> B4",
+        "measured": 2046,
+        "predicted": 2062.009,
+        "sigma": 8,
+        "quality": "existing exact endpoint",
+        "residualMm": 16.009
+      },
+      {
+        "id": "FIELD-B-B1-B3-2026-08",
+        "label": "B1 / D5-BL -> B3",
+        "measured": 2091,
+        "predicted": 2085.117,
+        "sigma": 4,
+        "quality": "new exact field recheck",
+        "residualMm": -5.883
+      },
+      {
+        "id": "FIELD-B-B05-BACK-PERP-2026-08",
+        "label": "B0.5 -> perpendicular B3-B4 landing",
+        "measured": 2080,
+        "predicted": 2085.117,
+        "sigma": 8,
+        "quality": "new perpendicular field recheck",
+        "residualMm": 5.117
+      },
+      {
+        "id": "SUP-080",
+        "label": "D3-BR -> perpendicular B3-B4 landing",
+        "measured": 2217,
+        "predicted": 2221.117,
+        "sigma": 30,
+        "quality": "existing validation-grade wall span",
+        "residualMm": 4.117
+      },
+      {
+        "id": "SUP-079",
+        "label": "B0 -> T2",
+        "measured": 3674,
+        "predicted": 3660.639,
+        "sigma": 12,
+        "quality": "existing B/WC cross-tie",
+        "residualMm": -13.361
+      }
+    ],
+    "supersededInactive": [
+      {
+        "id": "BASE-B-02",
+        "relationship": "D3-BR -> B0.5",
+        "valueMm": 249,
+        "reason": "Same-span physical recheck gives 136 mm"
+      },
+      {
+        "id": "BASE-B-07-OLD",
+        "relationship": "B0 -> B4",
+        "rangeMm": [
+          2010,
+          2030
+        ],
+        "reason": "Previously superseded; retained history"
+      }
+    ]
+  },
+  "diagnostics": {
+    "movementFromP1": {
+      "nodes": {
+        "B0": {
+          "previous": {
+            "x": 0,
+            "y": 0
+          },
+          "corrected": {
+            "x": 0,
+            "y": 0
+          },
+          "deltaMm": {
+            "x": 0,
+            "y": 0
+          },
+          "magnitudeMm": 0
+        },
+        "D3-BR": {
+          "previous": {
+            "x": 857.05,
+            "y": 0
+          },
+          "corrected": {
+            "x": 852.121,
+            "y": 0
+          },
+          "deltaMm": {
+            "x": -4.929,
+            "y": 0
+          },
+          "magnitudeMm": 4.929
+        },
+        "B0.5": {
+          "previous": {
+            "x": 846.68,
+            "y": 244.69
+          },
+          "corrected": {
+            "x": 852.121,
+            "y": 136
+          },
+          "deltaMm": {
+            "x": 5.441,
+            "y": -108.69
+          },
+          "magnitudeMm": 108.826
+        },
+        "B1": {
+          "previous": {
+            "x": 1670.11,
+            "y": 246.05
+          },
+          "corrected": {
+            "x": 1670.063,
+            "y": 136
+          },
+          "deltaMm": {
+            "x": -0.047,
+            "y": -110.05
+          },
+          "magnitudeMm": 110.05
+        },
+        "B2": {
+          "previous": {
+            "x": 1617.26,
+            "y": 1120.12
+          },
+          "corrected": {
+            "x": 1670.063,
+            "y": 1011.666
+          },
+          "deltaMm": {
+            "x": 52.803,
+            "y": -108.454
+          },
+          "magnitudeMm": 120.625
+        },
+        "B3": {
+          "previous": {
+            "x": 1567.24,
+            "y": 2336.18
+          },
+          "corrected": {
+            "x": 1670.063,
+            "y": 2221.117
+          },
+          "deltaMm": {
+            "x": 102.823,
+            "y": -115.063
+          },
+          "magnitudeMm": 154.312
+        },
+        "B4": {
+          "previous": {
+            "x": -94.01,
+            "y": 2250.45
+          },
+          "corrected": {
+            "x": 0,
+            "y": 2221.117
+          },
+          "deltaMm": {
+            "x": 94.01,
+            "y": -29.333
+          },
+          "magnitudeMm": 98.48
+        },
+        "T0": {
+          "previous": {
+            "x": 1790.82,
+            "y": 246.26
+          },
+          "corrected": {
+            "x": 1790.566,
+            "y": 128.924
+          },
+          "deltaMm": {
+            "x": -0.254,
+            "y": -117.336
+          },
+          "magnitudeMm": 117.336
+        },
+        "T1": {
+          "previous": {
+            "x": 3433.51,
+            "y": 248.99
+          },
+          "corrected": {
+            "x": 3430.426,
+            "y": 32.506
+          },
+          "deltaMm": {
+            "x": -3.084,
+            "y": -216.484
+          },
+          "magnitudeMm": 216.506
+        },
+        "T2": {
+          "previous": {
+            "x": 3426.78,
+            "y": 1326.61
+          },
+          "corrected": {
+            "x": 3488.747,
+            "y": 1108.568
+          },
+          "deltaMm": {
+            "x": 61.967,
+            "y": -218.042
+          },
+          "magnitudeMm": 226.676
+        },
+        "T3": {
+          "previous": {
+            "x": 1742.15,
+            "y": 1318.33
+          },
+          "corrected": {
+            "x": 1806.688,
+            "y": 1201.977
+          },
+          "deltaMm": {
+            "x": 64.538,
+            "y": -116.353
+          },
+          "magnitudeMm": 133.053
+        },
+        "D5-WCL": {
+          "previous": {
+            "x": 1736.45,
+            "y": 1145.51
+          },
+          "corrected": {
+            "x": 1790.568,
+            "y": 1029.816
+          },
+          "deltaMm": {
+            "x": 54.118,
+            "y": -115.694
+          },
+          "magnitudeMm": 127.726
+        }
+      },
+      "maximum": {
+        "node": "T2",
+        "magnitudeMm": 226.676
+      },
+      "rmsAllNodesMm": 134.809,
+      "rmsRoomBNodesMm": 101.446,
+      "rmsWCNodesMm": 170.904
+    },
+    "measurementRms": {
+      "definition": "Unweighted RMS residual over the listed 12 principal Room B direct/field observations, evaluated against the corrected observation set.",
+      "roomBBeforeMm": 47.326,
+      "roomBAfterMm": 10.246,
+      "wcBeforeMm": 1.354,
+      "wcAfterMm": 1.354,
+      "wcNote": "WC/D5 assembly preserved by rigid local transform; WC residuals are invariant."
+    },
+    "principalWallAnglesDegrees": {
+      "D3_to_return": 90,
+      "return_to_top": 90,
+      "top_to_right": 90,
+      "right_to_back": 90,
+      "back_to_left": 90,
+      "left_to_D3": 90
+    },
+    "parallelism": {
+      "d3ParallelTopDifferenceDegrees": 0,
+      "topParallelBackDifferenceDegrees": 0,
+      "returnParallelLeftDifferenceDegrees": 0,
+      "rightSegmentsCollinearDifferenceDegrees": 0
+    },
+    "correctedReadings": {
+      "d3ReturnBeforeModelMm": 244.91,
+      "d3ReturnAfterMm": 136,
+      "b1ToB3Mm": 2085.117,
+      "b05PerpendicularDepthMm": 2085.117,
+      "differenceBetweenNewDepthChecksMm": 11
+    },
+    "stopConditionAssessment": "No unexplained >40 mm movement at multiple principal nodes. Large coordinate changes are the expected propagation of the verified 109-113 mm return correction in the fixed B0/D3 gauge; direct corrected evidence closes with small residuals.",
+    "architecturalAnswer": "Yes. With the same-span 136 mm correction active, the main Room B shell is exactly orthogonal without forcing any principal dimension away from the new field checks by more than a small survey residual."
+  },
+  "geometry": {
+    "nodesMm": {
+      "B0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-BR": {
+        "x": 852.121,
+        "y": 0
+      },
+      "B0.5": {
+        "x": 852.121,
+        "y": 136
+      },
+      "B1": {
+        "x": 1670.063,
+        "y": 136
+      },
+      "B2": {
+        "x": 1670.063,
+        "y": 1011.666
+      },
+      "B3": {
+        "x": 1670.063,
+        "y": 2221.117
+      },
+      "B4": {
+        "x": 0,
+        "y": 2221.117
+      },
+      "T0": {
+        "x": 1790.566,
+        "y": 128.924
+      },
+      "T1": {
+        "x": 3430.426,
+        "y": 32.506
+      },
+      "T2": {
+        "x": 3488.747,
+        "y": 1108.568
+      },
+      "T3": {
+        "x": 1806.688,
+        "y": 1201.977
+      },
+      "D5-WCL": {
+        "x": 1790.568,
+        "y": 1029.816
+      }
+    },
+    "aliases": {
+      "B0": [
+        "D3-BL"
+      ],
+      "B1": [
+        "D5-BL"
+      ],
+      "B2": [
+        "D5-BR"
+      ],
+      "T0": [
+        "D5-WCR"
+      ]
+    },
+    "roomBBoundarySequence": [
+      "B0",
+      "D3-BR",
+      "B0.5",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "wcBoundarySequence": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "D5-WCL"
+    ],
+    "areasM2": {
+      "roomB": 3.5982,
+      "wc": 1.7956
+    },
+    "D3RoomB": {
+      "outerLeft": {
+        "x": 0,
+        "y": 0
+      },
+      "outerRight": {
+        "x": 852.121,
+        "y": 0
+      },
+      "innerLeft": {
+        "x": 80,
+        "y": 0
+      },
+      "innerRight": {
+        "x": 787.121,
+        "y": 0
+      },
+      "doorLeft": {
+        "x": 64.56,
+        "y": -103.859
+      },
+      "doorRight": {
+        "x": 802.56,
+        "y": -103.859
+      },
+      "doorCentre": {
+        "x": 433.56,
+        "y": -103.859
+      },
+      "direction": {
+        "x": 1,
+        "y": 0
+      },
+      "inward": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLengthMm": 852.121,
+      "visibleClosedWidthMm": 738,
+      "physicalLeafWidthMm": null,
+      "alongAdjustmentMm": 15.44,
+      "derivedDoorFaceDepthMm": 103.859,
+      "leftInnerToDoorMm": 105,
+      "rightInnerToDoorMm": 105,
+      "geometryValid": true
+    },
+    "D5RoomB": {
+      "outerLeft": {
+        "x": 1670.063,
+        "y": 136
+      },
+      "outerRight": {
+        "x": 1670.063,
+        "y": 1011.666
+      },
+      "innerLeft": {
+        "x": 1670.064,
+        "y": 195.007
+      },
+      "innerRight": {
+        "x": 1670.064,
+        "y": 931.66
+      },
+      "visibleDoorLeft": {
+        "x": 1750.06,
+        "y": 195.009
+      },
+      "visibleDoorRight": {
+        "x": 1767.061,
+        "y": 931.666
+      },
+      "doorLeft": {
+        "x": 1749.946,
+        "y": 189.967
+      },
+      "doorRight": {
+        "x": 1767.505,
+        "y": 950.764
+      },
+      "doorCentre": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "direction": {
+        "x": 0,
+        "y": 1
+      },
+      "inward": {
+        "x": 1,
+        "y": 0
+      },
+      "casingLength": 875.66,
+      "visibleClosedWidthMm": 736.856,
+      "derivedDoorFaceDepthMm": 88.5,
+      "leftInnerToDoorMm": 80,
+      "rightInnerToDoorMm": 97,
+      "geometryValid": true
+    },
+    "D5WC": {
+      "outerLeft": {
+        "x": 1790.568,
+        "y": 1029.816
+      },
+      "outerRight": {
+        "x": 1790.566,
+        "y": 128.924
+      },
+      "innerLeft": {
+        "x": 1790.57,
+        "y": 948.819
+      },
+      "innerRight": {
+        "x": 1790.568,
+        "y": 191.919
+      },
+      "direction": {
+        "x": 0,
+        "y": -1
+      },
+      "casingLength": 900.901,
+      "topFrameOffsetMm": 61.052,
+      "bottomFrameOffsetMm": 79.052,
+      "topDerivedRevealDepthMm": 40.622,
+      "bottomDerivedRevealDepthMm": 23.065,
+      "doorLeft": {
+        "x": 1767.505,
+        "y": 950.764
+      },
+      "doorRight": {
+        "x": 1749.946,
+        "y": 189.967
+      },
+      "doorCentre": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "derivedDoorWidthMm": 761
+    },
+    "D5SharedPhysicalLeaf": {
+      "onePhysicalLeaf": true,
+      "physicalLeafWidthMm": 761,
+      "leafTopMm": {
+        "x": 1749.946,
+        "y": 189.967
+      },
+      "leafBottomMm": {
+        "x": 1767.505,
+        "y": 950.764
+      },
+      "leafCentreMm": {
+        "x": 1758.721,
+        "y": 570.371
+      },
+      "leafBearingDegrees": 88.678,
+      "roomB": {
+        "casingWidthMm": 875.66,
+        "visibleClosedWidthMm": 736.856,
+        "visibleClosedResidualMm": -0.144,
+        "outerCasingOffsetsMm": {
+          "topFromB1": 59,
+          "bottomToB2": 80
+        },
+        "revealDepthsMm": {
+          "top": 80,
+          "bottom": 97
+        },
+        "hiddenLeafBehindStopsMm": {
+          "top": 5.035,
+          "bottom": 19.109,
+          "total": 24.144
+        }
+      },
+      "wc": {
+        "casingWidthMm": 900.901,
+        "frameOffsetsMm": {
+          "topFromT0": 61.052,
+          "bottomFromD5WCL": 79.052
+        },
+        "frameOffsetResidualsMm": {
+          "top63": -1.948,
+          "bottom81": -1.948
+        },
+        "derivedRevealDepthsMm": {
+          "top": 40.622,
+          "bottom": 23.065
+        }
+      },
+      "oppositeCasingFaceSeparationMm": 120.506
+    },
+    "wallBearingsDegrees": {
+      "D3": 0,
+      "D3Return": 90,
+      "B05B1": 0,
+      "B0B4": 90,
+      "B1B2": 90,
+      "B2B3": 90,
+      "B4B3": 0,
+      "T0T1": 356.635,
+      "T1T2": 86.898,
+      "T3T2": 356.821
+    },
+    "topologyEdges": [
+      {
+        "from": "B0 / D3-BL",
+        "to": "D3-BR",
+        "physicalType": "D3 opening/casing",
+        "isWall": false,
+        "derivedMm": 852.121
+      },
+      {
+        "from": "D3-BR",
+        "to": "B0.5",
+        "physicalType": "short permanent Room B wall return",
+        "isWall": true,
+        "activeMeasuredMm": 136,
+        "supersededMeasuredMm": 249
+      },
+      {
+        "from": "B0.5",
+        "to": "B1 / D5-BL",
+        "physicalType": "Room B finished wall",
+        "isWall": true,
+        "measuredMm": 823
+      },
+      {
+        "from": "B1 / D5-BL",
+        "to": "B2 / D5-BR",
+        "physicalType": "D5 Room B casing/opening, not wall",
+        "isWall": false,
+        "measuredMm": 874
+      },
+      {
+        "from": "B2 / D5-BR",
+        "to": "B3",
+        "physicalType": "Room B finished wall",
+        "isWall": true,
+        "measuredMm": 1219
+      }
+    ],
+    "tileAndWallLayers": {
+      "B3ToB4": "Measured finished tile face; underlying wall plane shown 10 mm behind as approximate derived layer.",
+      "D5B2Cutaway": "Approximately 20 mm local tile/casing cutaway shown as a photo-derived secondary detail; not a shell constraint."
+    },
+    "soffit": {
+      "startPointMm": {
+        "x": 1673.766,
+        "y": 1203.633
+      },
+      "fromB2Mm": 192,
+      "fullGeometryModelled": false
+    },
+    "verticalEvidence": {
+      "roomB": {
+        "B4B0ClearAreaCeilingMm": 2281,
+        "B2D5AreaCeilingMm": 2274
+      },
+      "wc": {
+        "T0D5AreaCeilingMm": 2289,
+        "T3AreaCeilingMm": 2277
+      },
+      "doors": {
+        "D3RoomB": {
+          "doorHeightMm": 1975,
+          "casingTopFromFloorMm": 2076,
+          "casingTopToCeilingMm": 221
+        },
+        "D5RoomB": {
+          "casingHeightMm": 2157,
+          "casingTopToCeilingMm": 237,
+          "doorHeightMm": 1974
+        },
+        "D5WC": {
+          "casingHeightMm": 2057,
+          "casingTopToCeilingMm": 225
+        }
+      }
+    }
+  },
+  "preservation": {
+    "predecessorOverwritten": false,
+    "rawEvidenceOverwritten": false,
+    "wcGeometryChanged": false,
+    "wcRigidlyRepositioned": true,
+    "d5TopologyChanged": false,
+    "d3ReturnTopologyPreserved": true,
+    "finalShellPromoted": false,
+    "modelling3DStarted": false
+  }
+}

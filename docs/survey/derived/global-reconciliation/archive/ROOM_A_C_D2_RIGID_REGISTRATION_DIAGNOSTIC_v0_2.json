@@ -1,0 +1,563 @@
+{
+  "documentType": "GLOBAL RECONCILIATION - A/C D2 RIGID REGISTRATION DIAGNOSTIC",
+  "version": "0.2",
+  "generatedDate": "2026-08-12",
+  "units": "millimetres unless stated otherwise",
+  "status": "diagnostic for human review; not a final whole-flat model",
+  "scope": {
+    "completed": "Rigidly register accepted Room A S3 to fixed accepted Room C v1.0 through D2.",
+    "excluded": [
+      "node deformation",
+      "scaling",
+      "global solve",
+      "Room B/WC",
+      "D3 reconciliation",
+      "changes to source baselines"
+    ]
+  },
+  "sources": {
+    "roomA": {
+      "relativePath": "docs/survey/derived/room-a/ROOM_A_RECONSTRUCTION_PILOT_v0_1.json",
+      "selectedSolution": "S3",
+      "sha256": "91E6D48F3DBA7BDDC42A07CC4BD39E253974BECF1EB8B61FF895A401729F8C51",
+      "fixedInternally": true
+    },
+    "roomC": {
+      "relativePath": "docs/survey/derived/room-c/ROOM_C_ACCEPTED_PROVISIONAL_BASELINE_v1_0.json",
+      "selectedSolution": "A1",
+      "sha256": "4D36F1445E5AEBA95FAF6A1FE404E6BF81400CDDE67C22CB05386AF77A855C67",
+      "globalFrame": true,
+      "fixed": true
+    }
+  },
+  "evidenceClasses": {
+    "directMeasured": [
+      "Room A D2 clear opening 767 mm",
+      "Room C D2 structural opening 770 mm",
+      "Room C D2 leaf 742 x 1975 mm"
+    ],
+    "approximateMeasured": [
+      "A-C wall/reveal depth approximately 250 mm",
+      "Room A D2 casing face projection maximum 37 mm"
+    ],
+    "topologyAndLayerConstraints": [
+      "one shared D2 assembly",
+      "Room C left / Room A right",
+      "closing plane on Room A side",
+      "door opens into Room A",
+      "opposite casing faces remain distinct"
+    ],
+    "inferredPlacement": [
+      "centred Room A clear opening and casing presentation",
+      "Room C opposite structural-opening endpoint",
+      "exact closing-plane rebate"
+    ]
+  },
+  "registrationDiagnostics": {
+    "roomAOpeningWidthMm": 767,
+    "roomCStructuralOpeningWidthMm": 770,
+    "openingWidthDifferenceRoomCMinusRoomAMm": 3,
+    "axes": {
+      "convention": "Numeric atan2 bearings from local +X. Both accepted room drawing gauges use +Y down, so increasing bearing appears clockwise on the sheet; bearings are not site north. Directed endpoints reverse across opposite doorway faces.",
+      "roomA": {
+        "directedEndpoints": [
+          "D2-AL",
+          "D2-AR"
+        ],
+        "unitVector": {
+          "x": -0.0012,
+          "y": -1
+        },
+        "bearingDegrees": 269.930763
+      },
+      "roomC": {
+        "directedEndpoints": [
+          "D2-A-FACE-R",
+          "D2-A-FACE-L"
+        ],
+        "unitVector": {
+          "x": 0.0149,
+          "y": -0.9999
+        },
+        "bearingDegrees": 270.854265,
+        "reverseDirectionBearingDegrees": 90.854265
+      }
+    },
+    "rigidTransformRoomAToRoomCFrame": {
+      "rotationDegrees": 0.923502,
+      "rotationRadians": 0.0161181432,
+      "matrix": [
+        [
+          0.9998701055,
+          -0.0161174453
+        ],
+        [
+          0.0161174453,
+          0.9998701055
+        ]
+      ],
+      "determinant": 1,
+      "reflectionIntroduced": false,
+      "translationMm": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "scale": 1,
+      "registrationTarget": "Room A D2 clear-opening centre to Room C structural-opening centre on the Room A wall face; directed axes aligned with opposite-face handedness reversed."
+    },
+    "wallAndLayerResult": {
+      "roomCFaceCentreMm": {
+        "x": 4182.715,
+        "y": -964.895
+      },
+      "roomAFaceCentreMm": {
+        "x": 4432.69,
+        "y": -961.175
+      },
+      "resultingWallFaceSeparationMm": 250.0027,
+      "targetWallDepthMm": 250,
+      "separationResidualMm": 0.0027,
+      "throughWallAxisUnitTowardRoomA": {
+        "x": 0.9999,
+        "y": 0.0149
+      },
+      "roomAClosingPlaneCoincidesWithRoomAFaceInDiagnostic": true
+    },
+    "endpointAndCasingResult": {
+      "structuralVsClearOpeningWidthDifferenceMm": 3,
+      "centredClearEndpointOffsetsMm": [
+        1.4978,
+        1.4978
+      ],
+      "roomAModelCasingNodeSpanMm": 1092.3408,
+      "roomAMeasuredCasingFrontWidthMm": 1096,
+      "modelCasingNodeSpanMinusMeasuredCasingWidthMm": -3.6592,
+      "casingNodeOverhangBeyondCStructuralOpeningEachEndMm": 161.1704,
+      "measuredCasingOverhangBeyondCStructuralOpeningEachEndMm": 163,
+      "cLeafVsAOpeningWidthDifferenceMm": 25,
+      "cLeafVsAOpeningCentredOffsetEachEndMm": 12.5,
+      "leafHeightDifferenceRoomCMinusRoomAMm": 4,
+      "interpretation": "The 3 mm structural/clear difference is small. Larger casing endpoint offsets are expected because Room A outer casing, the structural opening and the Room C reveal are distinct layers; they are not evidence of shell error."
+    },
+    "sanityChecks": {
+      "roomAExtendsTowardExpectedRightHandSide": true,
+      "roomAInteriorReferenceOffsetOutwardFromAFaceMm": 3897.38,
+      "roomABoundaryOffsetsFromRegisteredAFaceMm": [
+        0.088,
+        -0.0368,
+        -0.016,
+        0.016
+      ],
+      "roomCShellReferenceOffsetFromCRoomFaceMm": -2083.92,
+      "shellOverlapToleranceMm": 5,
+      "incorrectRoomAShellOverlapIntoRoomC": false,
+      "unexplainedLargeGapAtD2": false,
+      "conceptualTopologyCheck": "Consistent with Room C on the left, Room A extending rightward, D2 through the shared permanent wall and the Room A chimney-breast step retained."
+    }
+  },
+  "sourceCoordinates": {
+    "roomALocalNodesMm": {
+      "A2": {
+        "x": 0,
+        "y": 0
+      },
+      "A3": {
+        "x": 1955,
+        "y": 0
+      },
+      "A0": {
+        "x": -1300.62,
+        "y": -294.53
+      },
+      "A1": {
+        "x": 12.08,
+        "y": -281.16
+      },
+      "A4": {
+        "x": 1948.56,
+        "y": -265.76
+      },
+      "A5": {
+        "x": 3238.74,
+        "y": -268.45
+      },
+      "A6": {
+        "x": 3243.82,
+        "y": 4002.02
+      },
+      "A7": {
+        "x": -1295.42,
+        "y": 4007.45
+      },
+      "W1-AL": {
+        "x": 3240.42,
+        "y": 1138.76
+      },
+      "W1-AR": {
+        "x": 3242.12,
+        "y": 2574.12
+      },
+      "D1-AL": {
+        "x": 2716.7,
+        "y": 4002.65
+      },
+      "D1-AR": {
+        "x": 1526.88,
+        "y": 4004.07
+      },
+      "D2-AL": {
+        "x": -1296.08,
+        "y": 3457.45
+      },
+      "D2-AR": {
+        "x": -1297.4,
+        "y": 2365.11
+      }
+    },
+    "roomCGlobalNodesMm": {
+      "C0": {
+        "x": 0,
+        "y": 0
+      },
+      "D3-CL": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "CP1-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "PO1": {
+        "x": 1605.69,
+        "y": -3690.92
+      },
+      "CP1-FR": {
+        "x": 1380.69,
+        "y": -3690.92
+      },
+      "PO2": {
+        "x": 1570.95,
+        "y": -1359.61
+      },
+      "PO3": {
+        "x": 4188.6,
+        "y": -1359.61
+      },
+      "PI1": {
+        "x": 1729.33,
+        "y": -3690.92
+      },
+      "PI2": {
+        "x": 1696.53,
+        "y": -1489.16
+      },
+      "PI3": {
+        "x": 4190.53,
+        "y": -1489.16
+      },
+      "CP2-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-FR": {
+        "x": 4223.33,
+        "y": -3690.92
+      },
+      "C1": {
+        "x": 330,
+        "y": 0
+      },
+      "C2": {
+        "x": 1599,
+        "y": 0
+      },
+      "W2-CR": {
+        "x": 327.54,
+        "y": 164.98
+      },
+      "W2-CL": {
+        "x": 1596.54,
+        "y": 164.98
+      },
+      "D4-CR": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-CL": {
+        "x": 3048.67,
+        "y": 0
+      },
+      "D3-CR": {
+        "x": 3266.67,
+        "y": 0
+      },
+      "D2-CR": {
+        "x": 4176.98,
+        "y": -579.94
+      }
+    },
+    "roomCObjectNodesMm": {
+      "CP1-BODY-FL": {
+        "x": 54.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-FR": {
+        "x": 1339.99,
+        "y": -3690.92
+      },
+      "CP1-BODY-BL": {
+        "x": 62.71,
+        "y": -4208.86
+      },
+      "CP1-BODY-BR": {
+        "x": 1347.71,
+        "y": -4208.86
+      },
+      "CP2-CASING-FL": {
+        "x": 3468.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FL": {
+        "x": 3488.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-FR": {
+        "x": 4196.33,
+        "y": -3690.92
+      },
+      "CP2-BODY-BL": {
+        "x": 3496.32,
+        "y": -4226.86
+      },
+      "CP2-BODY-BR": {
+        "x": 4204.32,
+        "y": -4226.86
+      },
+      "D4-OUTER-R": {
+        "x": 2147,
+        "y": 0
+      },
+      "D4-OUTER-L": {
+        "x": 3067,
+        "y": 0
+      },
+      "D4-LEAF-R": {
+        "x": 2227,
+        "y": 0
+      },
+      "D4-LEAF-L": {
+        "x": 2987,
+        "y": 0
+      },
+      "D3-OUTER-L-CORNER": {
+        "x": 4168.34,
+        "y": 0
+      },
+      "D3-OUTER-R": {
+        "x": 3283.34,
+        "y": 0
+      },
+      "D3-LEAF-L": {
+        "x": 4123.34,
+        "y": 0
+      },
+      "D3-LEAF-R": {
+        "x": 3363.34,
+        "y": 0
+      },
+      "D2-OPENING-R": {
+        "x": 4176.98,
+        "y": -579.94
+      },
+      "D2-OPENING-L-INFERRED": {
+        "x": 4188.45,
+        "y": -1349.85
+      },
+      "D2-A-FACE-R": {
+        "x": 4426.95,
+        "y": -576.22
+      },
+      "D2-A-FACE-L": {
+        "x": 4438.43,
+        "y": -1346.13
+      },
+      "D2-LEAF-A-FACE-R-INFERRED": {
+        "x": 4427.16,
+        "y": -590.22
+      },
+      "D2-LEAF-A-FACE-L-INFERRED": {
+        "x": 4438.21,
+        "y": -1332.14
+      }
+    }
+  },
+  "placedGeometry": {
+    "roomATransformedNodesMm": {
+      "A2": {
+        "x": 5776.184,
+        "y": -3851.1767
+      },
+      "A3": {
+        "x": 7730.93,
+        "y": -3819.6671
+      },
+      "A0": {
+        "x": 4480.48,
+        "y": -4166.6311
+      },
+      "A1": {
+        "x": 5792.794,
+        "y": -4132.1055
+      },
+      "A4": {
+        "x": 7728.7742,
+        "y": -4085.4964
+      },
+      "A5": {
+        "x": 9018.83,
+        "y": -4067.3916
+      },
+      "A6": {
+        "x": 8955.0803,
+        "y": 202.6055
+      },
+      "A7": {
+        "x": 4416.3424,
+        "y": 134.8739
+      },
+      "W1-AL": {
+        "x": 8997.8291,
+        "y": -2660.3373
+      },
+      "W1-AR": {
+        "x": 8976.3946,
+        "y": -1225.1364
+      },
+      "D1-AL": {
+        "x": 8428.0186,
+        "y": 194.7396
+      },
+      "D1-AR": {
+        "x": 7238.3302,
+        "y": 176.9826
+      },
+      "D2-AL": {
+        "x": 4424.547,
+        "y": -415.0653
+      },
+      "D2-AR": {
+        "x": 4440.833,
+        "y": -1507.2847
+      }
+    },
+    "d2": {
+      "roomAClearOpeningSegmentMm": [
+        {
+          "x": 4426.9723,
+          "y": -577.7176
+        },
+        {
+          "x": 4438.4077,
+          "y": -1344.6324
+        }
+      ],
+      "roomAMeasuredCasingSegmentMm": [
+        {
+          "x": 4424.5198,
+          "y": -413.2359
+        },
+        {
+          "x": 4440.8602,
+          "y": -1509.1141
+        }
+      ],
+      "roomCStructuralOpeningAtRoomCFaceMm": [
+        {
+          "x": 4176.98,
+          "y": -579.94
+        },
+        {
+          "x": 4188.45,
+          "y": -1349.85
+        }
+      ],
+      "roomCStructuralOpeningAtRoomAFaceMm": [
+        {
+          "x": 4426.95,
+          "y": -576.22
+        },
+        {
+          "x": 4438.43,
+          "y": -1346.13
+        }
+      ],
+      "roomCLeafClosingPlaneMm": [
+        {
+          "x": 4427.16,
+          "y": -590.22
+        },
+        {
+          "x": 4438.21,
+          "y": -1332.14
+        }
+      ]
+    }
+  },
+  "localGeometryPreservation": {
+    "roomCNodeMovementMm": 0,
+    "roomANodeDeformationMm": 0,
+    "roomAScale": 1,
+    "roomALocalPairwiseDistancesPreserved": true,
+    "roomAMaxPairwiseDistanceResidualMm": 0,
+    "measurementsChanged": false
+  },
+  "orientationReview": {
+    "diagnosis": "The v0.1 combined SVG was vertically reflected by its world-to-SVG conversion. The accepted Room A and Room C drawing gauges both use increasing model Y down the sheet, but v0.1 rendered Y as maxY minus Y as though the model used Cartesian Y-up.",
+    "issueClass": "display-only coordinate-conversion reflection; underlying transformed geometry and D2 registration unchanged",
+    "topologyReferences": [
+      "source-material/plans/2dPlan.jpeg",
+      "source-material/plans/rough-paint-sketch.jpg"
+    ],
+    "topologyReferenceUse": "Room adjacency, handedness, feature side and opening order only; no lengths, angles or proportions derived.",
+    "acceptedInputDrawingConventions": {
+      "roomA": "The accepted Room A SVG generator maps local Y directly to increasing SVG Y (down the page).",
+      "roomC": "The Room C coordinate gauge explicitly states positive Y is down on the reconstruction sheet, and its accepted SVG generator maps it directly to increasing SVG Y."
+    },
+    "rigidTransform": {
+      "linearDeterminant": 1,
+      "reflectionIntroduced": false,
+      "rotationAndTranslationUnchangedFromV01": true
+    },
+    "v01WorldToSvg": {
+      "yMapping": "plotY + (maxY - modelY) * scale",
+      "linearDeterminantSign": -1,
+      "effect": "vertical reflection relative to the accepted project drawing convention"
+    },
+    "v02WorldToSvg": {
+      "yMapping": "plotY + (modelY - minY) * scale",
+      "linearDeterminantSign": 1,
+      "effect": "preserves the accepted project drawing handedness"
+    },
+    "sourcePlanLabels": "The source plans' cupboard labels C1/C2 correspond to survey objects CP1/CP2. Permanent nodes C1/C2 are separately retained at the W2 recess.",
+    "correctedTopologyChecks": {
+      "roomCLeftOfRoomA": true,
+      "sourcePlanC1C2CupboardsOnUpperSideAsSurveyCP1CP2": true,
+      "w2OnLowerSideOfRoomC": true,
+      "roomASteppedChimneyBoundaryOnUpperSide": true,
+      "w1OnFarRightRoomAWall": true,
+      "d1OnLowerSideOfRoomA": true,
+      "d2TowardLowerEndOfSharedWall": true
+    },
+    "d2RigidRegistrationRemainsValid": true
+  },
+  "conclusion": {
+    "classification": "compatible with small explainable face/casing differences",
+    "statement": "The rigid D2 registration is architecturally credible. The 3 mm opening-width difference produces 1.5 mm centred endpoint offsets; larger outer-casing offsets arise from deliberately distinct casing, reveal and structural-opening layers rather than shell error.",
+    "remainingInterfaceAmbiguity": [
+      "Exact Room A finished-face/casing projection and casing-to-structural-opening side offsets.",
+      "Exact structural jamb/rebate position within the approximately 250 mm reveal.",
+      "Whether the 250 mm depth varies between the two jambs."
+    ],
+    "minimumAdditionalFieldCheckForTighterRegistration": "Measure perpendicular finished-face-to-finished-face depth at both D2 jambs and each Room A casing edge to the corresponding structural jamb/reveal edge."
+  }
+}
